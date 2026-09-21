@@ -1,0 +1,15 @@
+# Projetos em andamento (Ocultos do GitHub temporariamente)
+insulfilm/
+Junta_dilatacao/
+limpeza_FV/
+MNT_subestacao/
+teto_elevadores/
+
+# Arquivos e pastas de ambiente/sistema
+.DS_Store
+Orca.zip
+.venv/
+.temp_ag_kit/
+.sixth/
+__pycache__/
+*.pyc

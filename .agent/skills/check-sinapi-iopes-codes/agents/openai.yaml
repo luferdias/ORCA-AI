@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check SINAPI/IOPES Codes"
+  short_description: "Valida codigos SINAPI e IOPES em planilhas e listas locais."
+  default_prompt: "Analise os arquivos fornecidos, identifique codigos SINAPI e IOPES, valide-os nas bases locais e aponte inconsistencias."

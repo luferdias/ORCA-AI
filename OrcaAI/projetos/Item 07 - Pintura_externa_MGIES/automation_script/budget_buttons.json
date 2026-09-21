@@ -1,0 +1,1990 @@
+[
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-primary btn-block mg-b-10 rounded",
+    "text": "Falar com o gerente",
+    "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Medi%C3%A7%C3%A3o%20do%20Or%C3%A7aFascio!"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-primary btn-block mg-b-10 rounded",
+    "text": "Falar com o gerente",
+    "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Compras%20do%20Or%C3%A7aFascio!"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-primary btn-block mg-b-10 rounded",
+    "text": "Falar com o gerente",
+    "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Planejamento%20do%20Or%C3%A7aFascio!"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-primary btn-block mg-b-10 rounded",
+    "text": "Falar com o gerente",
+    "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Di%C3%A1rio%20do%20Or%C3%A7aFascio!"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-outline-primary btn-block mg-b-10 rounded",
+    "text": "Teste Grátis",
+    "href": "https://app.orcafascio.com/admin/upsell/purchases?admin_upsell_purchase%5Bcampaign_id%5D=6663ad393ebd735346cea294&admin_upsell_purchase%5Bempresa_id%5D=672d100984bf06160d2d8b4b&admin_upsell_purchase%5Bproduct_id%5D=6663ad043ebd735344cea686"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-primary btn-block mg-b-10 rounded",
+    "text": "Falar com o gerente",
+    "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20OF%20CDE%20do%20Or%C3%A7aFascio!"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-outline-primary btn-block mg-b-10 rounded",
+    "text": "Teste Grátis",
+    "href": "https://app.orcafascio.com/admin/upsell/purchases?admin_upsell_purchase%5Bcampaign_id%5D=66faefc4361fa22dd3253116&admin_upsell_purchase%5Bempresa_id%5D=672d100984bf06160d2d8b4b&admin_upsell_purchase%5Bproduct_id%5D=66faeeab361fa22dd325304f"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "sh-logo-text",
+    "text": "",
+    "href": "https://app.orcafascio.com/v2023/home"
+  },
+  {
+    "tag": "a",
+    "id": "navicon",
+    "class": "sh-navicon d-none d-xl-block",
+    "text": "",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "naviconMobile",
+    "class": "sh-navicon d-xl-none",
+    "text": "",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link",
+    "text": "home\n  Home",
+    "href": "https://app.orcafascio.com/v2023/home"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link with-sub",
+    "text": "Orçamentos",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Lista de Orçamentos",
+    "href": "https://app.orcafascio.com/orc/orcamentos"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Criar Orçamento",
+    "href": "https://app.orcafascio.com/orc/orcamentos/new"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Lixeira",
+    "href": "https://app.orcafascio.com/lixeira/orc_orcamento"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Arquivos",
+    "href": "https://app.orcafascio.com/arquivos/orcamentos_admin"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link with-sub",
+    "text": "Composições",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Pesquisar",
+    "href": "https://app.orcafascio.com/banco/composicoes"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Criar Composição",
+    "href": "https://app.orcafascio.com/banco/emp/composicoes/new"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link with-sub",
+    "text": "Insumos",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Pesquisar",
+    "href": "https://app.orcafascio.com/banco/insumos"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Criar Insumo",
+    "href": "https://app.orcafascio.com/banco/emp/insumos/new"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Grupos",
+    "href": "https://app.orcafascio.com/banco/insumo/grupo"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link openModalButton nao_possui_acesso",
+    "text": "Planejamentos",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link openModalButton nao_possui_acesso",
+    "text": "receipt_long\n  Diário de Obras",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link openModalButton nao_possui_acesso",
+    "text": "Medições",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link openModalButton nao_possui_acesso",
+    "text": "shopping_cart\n  Compras",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link with-sub",
+    "text": "Cadastros",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "BDI",
+    "href": "https://app.orcafascio.com/bdi"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Encargos sociais",
+    "href": "https://app.orcafascio.com/charge_compositions"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Clientes",
+    "href": "https://app.orcafascio.com/clientes"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Empreiteiros (Exclusivo do módulo Medição)",
+    "href": "https://app.orcafascio.com/empreiteiros"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Fiscais (Exclusivo do módulo Medição)",
+    "href": "https://app.orcafascio.com/fiscais"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Supervisores (Exclusivo do módulo Medição)",
+    "href": "https://app.orcafascio.com/supervisores"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link ",
+    "text": "Relatórios Personalizados",
+    "href": "https://app.orcafascio.com/cadastros/relatorios"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link",
+    "text": "Integrações",
+    "href": "https://app.orcafascio.com/integracoes"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "nav-link",
+    "text": "Webinars",
+    "href": "https://app.orcafascio.com/webinars"
+  },
+  {
+    "tag": "a",
+    "id": "navbarDropdown",
+    "class": "sh-icon-link nav-link",
+    "text": "Exibir",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Lista de Insumos",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/resources"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Lista de Composições",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/compositions"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "hourglass_top Cronograma",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/cronograma"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Análise Geral",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/analise_geral"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "straighten Medições (Exclusivo do módulo Medição)",
+    "href": "https://app.orcafascio.com/medicoes/new?orcamento_id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-toggle dropdown-item",
+    "text": "Encargos Sociais Cadastrados",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary pointer",
+    "text": "aqui",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-leis-sociais"
+  },
+  {
+    "tag": "a",
+    "id": "btn-modal-filter-items",
+    "class": "dropdown-item btn-modal-filter-items",
+    "text": "Filtrar a lista de itens",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Importações",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/excel_imports"
+  },
+  {
+    "tag": "a",
+    "id": "navbarDropdown",
+    "class": "sh-icon-link nav-link",
+    "text": "Editar",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Orçamento",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Permissão de Acesso",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/permissoes"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Bancos",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "percent BDI - Benefícios e Despesas Indiretas",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "engineering Encargos Sociais",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "car_crash Fator de Interferência de Tráfego (FIT)",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Distância Média de Transporte (DMT)",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/dmts"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "location_on Endereço",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "keyboard Atalhos de teclado e menu",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "descriptionEditar todos as Descrições",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/edit_todos?descricao=true&id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "123Editar todos as Quantidades",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/edit_todos?id=6a283a2310bef06fabf83ea8&quantidade=true"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "percentEditar todos os BDIs Diferenciados",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/edit_todos?bdi=true&id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "noteEditar todas as Observações",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/edit_todos?id=6a283a2310bef06fabf83ea8&observacao=true"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "block Finalizar Orçamento e Bloquear Edição",
+    "href": "https://app.orcafascio.com/orc/orcamentos/bloquear_edicao?id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "delete Apagar Orçamento",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "navbarDropdown",
+    "class": "sh-icon-link nav-link",
+    "text": "Ferramentas",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Copiar Orçamento",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Enviar Cópia para Outro Usuário",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Importar do Excel",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/excel_imports/new"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item analitycal-import",
+    "text": "Importar Composições Analíticas Com Preço Unitário",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/excel_imports/new"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Importar Itens de outro Orçamento",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/importar_itens_passo_um?id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Sincronizar com a Base Própria",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Trazer e sincronizar Cadernos Técnicos",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/synchronize_cadernos_tecnicos"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Compatibilização de Bases",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Ajustar Valor do Orçamento",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/ajustar_valor_passo_1"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "price_change Gerador de propostas para Pregão",
+    "href": "https://app.orcafascio.com/v2023/bud/tools/proposals?orcamento_id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Comparação de Preços",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/comparacao_de_precos_passo_1?id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "cde-modal-trigger dropdown-item",
+    "text": "Enviar orçamento para OF CDE",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Autodesk ACC",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/autodesk"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item disabled",
+    "text": "Extrator Autodesk Civil 3DExclusivo Módulo Civil 3D",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/extrator_civil3d"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item",
+    "text": "Recuperar itens excluídos",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/trash"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "relatorio-modal-trigger sh-icon-link nav-link",
+    "text": "Relatórios\nfiber_new",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Relatórios v2",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/reports"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Personalizar Relatórios",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Resumo",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Sintético",
+    "href": "https://app.orcafascio.com/v2023/bud/budgets/6a283a2310bef06fabf83ea8/reports/synthetic.xlsx"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Sintético com Fórmula",
+    "href": "https://app.orcafascio.com/v2023/bud/budgets/6a283a2310bef06fabf83ea8/reports/synthetic_with_formula.xlsx"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Sintético com Memorial de Cálculo",
+    "href": "https://app.orcafascio.com/v2023/bud/budgets/6a283a2310bef06fabf83ea8/reports/synthetic.xlsx?with_cm=true"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Sintético com Valor de Mão de Obra",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/sintetico_com_mao_de_obra"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Sintético com Valor de Mão de Obra e Material",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/sintetico_com_mao_de_obra_e_material"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Sintético com Valor da Mão de Obra, Equipamento e Material",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/sintetico_com_mao_de_obra_equipamento_e_material"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Orçamento Analítico",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/analitico"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Composições Analíticas com Preço Unitário",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Curva ABC de Insumos",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Curva ABC de Serviços",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/curva_abc_de_servicos"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Curva ABC de Serviços com Preços da Base",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/curva_abc_de_servicos?precos_da_base=true"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Encargos Sociais",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/report_charge_composition"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Cadernos Técnicos",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/cadernos_tecnicos"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Cronograma",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/cronograma"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Observações",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/note"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Importações",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8/excel_imports"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-item ",
+    "text": "Exportar para TOTVS",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/export_to_totvs"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "",
+    "href": "https://forms.office.com/Pages/ResponsePage.aspx?id=LXHHkFrRhk2ynwio4PlknuV8T55KE1FEpc51Z2-MNwlUMktYVDJHSFFTTVkxMEFaTUNKVTU3OFgxSy4u"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-link dropdown-link-notification bell-sign-dropdown",
+    "text": "",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "read-full-message ",
+    "text": "ler a mensagem completa",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "link-message",
+    "text": "Saiba Mais!",
+    "href": "https://app.orcafascio.com/webinars"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "read-full-message ",
+    "text": "ler a mensagem completa",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "link-message",
+    "text": "Saiba Mais!",
+    "href": "https://youtu.be/MqJr35M0OvM"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "dropdown-link",
+    "text": "",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "Editar Perfil",
+    "href": "https://app.orcafascio.com/usuarios/6744caaaee3cb826dbe87050"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "Indicações",
+    "href": "https://app.orcafascio.com/comu/indicacoes"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "Sair",
+    "href": "https://app.orcafascio.com/login/new"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "link-mostrar-criacao-cliente",
+    "class": "",
+    "text": "Novo cliente +",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#"
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "close-div-cliente",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close-cancel",
+    "class": "btn mr-1",
+    "text": "Voltar",
+    "href": null
+  },
+  {
+    "tag": "input",
+    "id": "create_cliente",
+    "class": "btn btn-primary  font-weight-bold",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "submit_button_bases",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-outline-secondary",
+    "text": "Novo BDI",
+    "href": "https://app.orcafascio.com/bdi"
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "font-weight-bold btn btn-outline-primary rounded-lg py-2 mr-3",
+    "text": "Cancelar",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "p-2 btn btn-primary rounded py-2 px-3 font-weight-bold next-step-arquivos",
+    "text": "Próximo",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary",
+    "text": "Personalizar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary",
+    "text": "Personalizar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "p-2 pointer text-primary py-2 px-3 next-step-arquivos go-back-btn",
+    "text": "Voltar",
+    "href": null
+  },
+  {
+    "tag": "input",
+    "id": "",
+    "class": "btn btn-primary font-weight-bold block-and-publish rounded-lg py-2",
+    "text": "Bloquear e publicar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "btnCreateProject",
+    "class": "btn btn-primary rounded font-weight-bold py-2",
+    "text": "+ criar projeto",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "p-2 btn btn-link rounded py-2 px-3",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "next-btn-project",
+    "class": "p-2 btn btn-primary rounded py-2 px-3 font-weight-bold next-step-cde",
+    "text": "Próximo",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary",
+    "text": "Personalizar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary",
+    "text": "Personalizar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary",
+    "text": "Personalizar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "p-2 pointer text-primary py-2 px-3 next-step-cde",
+    "text": "Voltar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "send-to-cde btn btn-primary py-2 px-3 rounded",
+    "text": "Enviar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary rounded mb-2",
+    "text": "Fazer login no OF CDE",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-link mb-2",
+    "text": "Fechar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "Conhecer o produto",
+    "href": "https://www.youtube.com/embed/Q4DvUNo66pw?si=lwvBjfQBbEn7HUy2"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "font-weight-bold btn btn-outline-primary w-100 rounded mb-3",
+    "text": "Sim, desejo sincronizar minha conta do OrçaFascio com a do OF CDE",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "font-weight-bold btn btn-outline-primary w-100 rounded mb-2 teste-cde",
+    "text": "Não, desejo criar um teste gratuito de 15 dias no OF CDE",
+    "href": "https://sso.orcafascio.com/sign_up"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-primary px-5 rounded font-weight-bold go_to_cde",
+    "text": "Ir para o OF CDE",
+    "href": "https://sso.orcafascio.com/sign_in"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn-help btn btn-outline-primary py-2 rounded-lg font-weight-bold mr-2",
+    "text": "Ajuda",
+    "href": "https://suporte.orcafascio.com/artigos-suporte/nova-tela-do-modelo-de-relatorio"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary mr-3 show-options",
+    "text": "settings",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary mr-3 show-options",
+    "text": "settings",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-primary mr-3 show-options",
+    "text": "settings",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "mr-3 pointer text-decoration-none download-report-with-params",
+    "text": "download",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btn-block rounded download-reports",
+    "text": "Baixar relatórios",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-outline-primary btn-block rounded btn-open-meet",
+    "text": "Exportar para o OF CDE",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn button-padrao option-btn active",
+    "text": "Prévia",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn button-padrao option-btn",
+    "text": "Cabeçalho e rodapé",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn button-padrao option-btn",
+    "text": "Logo da empresa",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn button-padrao option-btn",
+    "text": "Informações do orçamento",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn button-padrao option-btn",
+    "text": "Cores",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn button-padrao option-btn",
+    "text": "Assinaturas",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-header",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-header",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-header",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-footer",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-footer",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-footer",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btn-sm ml-2 rounded btn-toggle-logo",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-orcamento",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-orcamento",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-orcamento",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-orcamento",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "js-font-color-btn font-color-btn",
+    "text": "A",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn rounded-circle p-1 reset-color js-col-reset btn-secondary disabled opaca",
+    "text": "",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "js-font-color-btn font-color-btn",
+    "text": "A",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn rounded-circle p-1 reset-color js-col-reset btn-secondary disabled opaca",
+    "text": "",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "js-font-color-btn font-color-btn",
+    "text": "A",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn rounded-circle p-1 reset-color js-col-reset btn-secondary disabled opaca",
+    "text": "",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-assinatura",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded bg-primary text-white btn-toggle-info-assinatura",
+    "text": "visibilityvisibility_off",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-sm rounded-circle bg-primary text-white js-add-signature-slot",
+    "text": "",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "text-dark",
+    "text": "Exportar para TOTVS",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/export_to_totvs"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "d-flex align-items-center",
+    "text": "download",
+    "href": "https://app.orcafascio.com/v2023/orc/orcamentos/6a283a2310bef06fabf83ea8/relatorios/export_to_totvs"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "cancel-btn font-weight-bold text-primary align-content-center mr-3",
+    "text": "Cancelar",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary py-2 px-3 rounded",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-outline-primary btn-block rounded btn-open-meet",
+    "text": "Exportar para o OF CDE",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btn-block rounded download-reports",
+    "text": "Baixar relatórios",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "btn-change-item",
+    "class": "btn btn-primary replace-btn rounded-lg text-wrap font-weight-bold ml-3",
+    "text": "Substituir",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "btn-substituir",
+    "class": "btn btn-primary rounded-lg text-wrap font-weight-bold ml-3",
+    "text": "Substituir",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "criar_encargo_horista",
+    "class": "text-primary mb-2",
+    "text": "Criar encargo horista +",
+    "href": "https://app.orcafascio.com/charge_compositions"
+  },
+  {
+    "tag": "a",
+    "id": "exibir_encargo_horista",
+    "class": "text-white",
+    "text": "Exibir encargo horista",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "criar_encargo_mensalista",
+    "class": "text-primary mb-2",
+    "text": "Criar encargo Mensalista +",
+    "href": "https://app.orcafascio.com/charge_compositions"
+  },
+  {
+    "tag": "a",
+    "id": "exibir_encargo_mensalista",
+    "class": "text-white",
+    "text": "Exibir encargo mensalista",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "mr-auto btn btn-outline-primary rounded-lg d-flex align-items-center allow-unpriced-btn",
+    "text": "Permitir insumos com preço zerado",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-outline-danger rounded py-2 px-4",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "save-new-prices",
+    "class": "btn btn-primary rounded py-2 px-4",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "submit_button",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Copiar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "btn-enviar-orc",
+    "class": "btn btn-primary btnsave",
+    "text": "Enviar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Processar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Proximo >>",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn btn-link text-right pr-0",
+    "text": "Restaurar cores originais",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "salvarjson",
+    "class": "btn btn-primary",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Gerar Relatório",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Gerar Relatório",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Gerar Relatório",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-danger",
+    "text": "Processar Exclusão",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "btnFilterMarkOff",
+    "class": "badge badge-primary",
+    "text": "Desmarcar todos",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "btnFilterMarkOn",
+    "class": "badge badge-primary",
+    "text": "Marcar todos",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "button",
+    "id": "btnClearFilterItem",
+    "class": "btn btn-default",
+    "text": "Limpar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "btnFilterItem",
+    "class": "btn btn-primary",
+    "text": "Filtrar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "rounded btn btn-primary py-2",
+    "text": "Concluido",
+    "href": "https://app.orcafascio.com/orc/orcamentos/bloquear_edicao?id=6a283a2310bef06fabf83ea8"
+  },
+  {
+    "tag": "a",
+    "id": "btn-close",
+    "class": "btn",
+    "text": "Cancelar",
+    "href": null
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "btn btn-primary btnsave",
+    "text": "Salvar",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "breadcrumb-item",
+    "text": "Home",
+    "href": "https://app.orcafascio.com/home"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "breadcrumb-item",
+    "text": "Orçamentos",
+    "href": "https://app.orcafascio.com/orc/orcamentos"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "breadcrumb-item",
+    "text": "Orçamento",
+    "href": "javascript:void(0);"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "add_phase_end shortcut-icon shortcut-icon-gray pointer bg-phase",
+    "text": "Adicionar\nEtapa",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "add_item_end shortcut-icon shortcut-icon-gray pointer bg-composition",
+    "text": "Adicionar\nComposição",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "add_item_end shortcut-icon shortcut-icon-gray pointer bg-resource",
+    "text": "Adicionar\nInsumo",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "Bancos",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-bases"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "SINAPI - 02/2026 - Espírito Santo",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-bases"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "IOPES - 12/2025 - Espírito Santo",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-bases"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "BDI",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-bdi"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "value-bdi-budget",
+    "text": "25,0%",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-bdi"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "",
+    "text": "Encargos Sociais",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-leis-sociais"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "ls_onerado",
+    "text": "Desonerada",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-leis-sociais"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "ls_horista",
+    "text": "Horista: 0,0%",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-leis-sociais"
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "ls_mensalista",
+    "text": "Mensalista: 0,0%",
+    "href": "https://app.orcafascio.com/orc/orcamentos/6a283a2310bef06fabf83ea8#modal-edit-leis-sociais"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "link-message",
+    "text": "Saiba Mais!",
+    "href": "https://app.orcafascio.com/webinars"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "class": "close",
+    "text": "×",
+    "href": null
+  },
+  {
+    "tag": "a",
+    "id": "",
+    "class": "link-message",
+    "text": "Saiba Mais!",
+    "href": "https://youtu.be/MqJr35M0OvM"
+  }
+]

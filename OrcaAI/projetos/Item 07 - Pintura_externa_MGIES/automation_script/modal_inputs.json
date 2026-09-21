@@ -1,0 +1,562 @@
+[
+  {
+    "tag": "input",
+    "name": "utf8",
+    "id": "",
+    "type": "hidden",
+    "value": "✓"
+  },
+  {
+    "tag": "input",
+    "name": "authenticity_token",
+    "id": "",
+    "type": "hidden",
+    "value": "sJpzv6Ok6p6YHI+TrPJUhGYMEjVRK4lajwJId21a5zsFJiSBVFoWDk8pz7OkqIivjKIbxuE7dSVcyhtHgkqjQQ=="
+  },
+  {
+    "tag": "input",
+    "name": "atualizar_composicoes",
+    "id": "radio_false",
+    "type": "radio",
+    "value": "{&quot;atualizar_comp&quot;:false,&quot;atualizar_ins&quot;:true}"
+  },
+  {
+    "tag": "input",
+    "name": "atualizar_composicoes",
+    "id": "radio_ins_true",
+    "type": "radio",
+    "value": "{&quot;atualizar_comp&quot;:true,&quot;atualizar_ins&quot;:false}"
+  },
+  {
+    "tag": "input",
+    "name": "atualizar_composicoes",
+    "id": "radio_true",
+    "type": "radio",
+    "value": "{&quot;atualizar_comp&quot;:true,&quot;atualizar_ins&quot;:true}"
+  },
+  {
+    "tag": "input",
+    "name": "SINAPI_exibir_relatorio",
+    "id": "SINAPI_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SINAPI_estado",
+    "id": "SINAPI_estado",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SINAPI_data",
+    "id": "SINAPI_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SINAPI_rounding_option",
+    "id": "SINAPI_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SBC_exibir_relatorio",
+    "id": "SBC_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SBC_estado",
+    "id": "SBC_estado",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SBC_data",
+    "id": "SBC_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SBC_rounding_option",
+    "id": "SBC_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SICRO3_exibir_relatorio",
+    "id": "SICRO3_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SICRO3_estado",
+    "id": "SICRO3_estado",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SICRO3_data",
+    "id": "SICRO3_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SICRO3_rounding_option",
+    "id": "SICRO3_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SIURB_exibir_relatorio",
+    "id": "SIURB_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SIURB_data",
+    "id": "SIURB_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SIURB_rounding_option",
+    "id": "SIURB_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SIURB INFRA_exibir_relatorio",
+    "id": "SIURB_INFRA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SIURB INFRA_data",
+    "id": "SIURB_INFRA_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SIURB INFRA_rounding_option",
+    "id": "SIURB_INFRA_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "FDE_exibir_relatorio",
+    "id": "FDE_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "FDE_data",
+    "id": "FDE_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "FDE_rounding_option",
+    "id": "FDE_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "CPOS_exibir_relatorio",
+    "id": "CPOS_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "CPOS_data",
+    "id": "CPOS_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "CPOS_rounding_option",
+    "id": "CPOS_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "EMOP_exibir_relatorio",
+    "id": "EMOP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "EMOP_data",
+    "id": "EMOP_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "EMOP_rounding_option",
+    "id": "EMOP_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SCO_exibir_relatorio",
+    "id": "SCO_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SCO_data",
+    "id": "SCO_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SCO_rounding_option",
+    "id": "SCO_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SETOP_exibir_relatorio",
+    "id": "SETOP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SETOP_estado",
+    "id": "SETOP_estado",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SETOP_data",
+    "id": "SETOP_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SETOP_rounding_option",
+    "id": "SETOP_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SUDECAP_exibir_relatorio",
+    "id": "SUDECAP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SUDECAP_data",
+    "id": "SUDECAP_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SUDECAP_rounding_option",
+    "id": "SUDECAP_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "IOPES_exibir_relatorio",
+    "id": "IOPES_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "IOPES_data",
+    "id": "IOPES_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "IOPES_rounding_option",
+    "id": "IOPES_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "ORSE_exibir_relatorio",
+    "id": "ORSE_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "ORSE_data",
+    "id": "ORSE_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "ORSE_rounding_option",
+    "id": "ORSE_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SEINFRA_exibir_relatorio",
+    "id": "SEINFRA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SEINFRA_data",
+    "id": "SEINFRA_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SEINFRA_rounding_option",
+    "id": "SEINFRA_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "CAEMA_exibir_relatorio",
+    "id": "CAEMA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "CAEMA_data",
+    "id": "CAEMA_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "CAEMA_rounding_option",
+    "id": "CAEMA_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "EMBASA_exibir_relatorio",
+    "id": "EMBASA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "EMBASA_estado",
+    "id": "EMBASA_estado",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "EMBASA_data",
+    "id": "EMBASA_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "EMBASA_rounding_option",
+    "id": "EMBASA_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "CAERN_exibir_relatorio",
+    "id": "CAERN_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "CAERN_data",
+    "id": "CAERN_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "CAERN_rounding_option",
+    "id": "CAERN_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "COMPESA_exibir_relatorio",
+    "id": "COMPESA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "COMPESA_data",
+    "id": "COMPESA_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "COMPESA_rounding_option",
+    "id": "COMPESA_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "AGESUL_exibir_relatorio",
+    "id": "AGESUL_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "AGESUL_data",
+    "id": "AGESUL_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "AGESUL_rounding_option",
+    "id": "AGESUL_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "AGETOP CIVIL_exibir_relatorio",
+    "id": "AGETOP_CIVIL_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP CIVIL_data",
+    "id": "AGETOP_CIVIL_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP CIVIL_rounding_option",
+    "id": "AGETOP_CIVIL_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "AGETOP RODOVIARIA_exibir_relatorio",
+    "id": "AGETOP_RODOVIARIA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP RODOVIARIA_data",
+    "id": "AGETOP_RODOVIARIA_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP RODOVIARIA_rounding_option",
+    "id": "AGETOP_RODOVIARIA_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "SEDOP_exibir_relatorio",
+    "id": "SEDOP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "input",
+    "name": "SEDOP_ls",
+    "id": "SEDOP_ls",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "SEDOP_data",
+    "id": "SEDOP_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "SEDOP_rounding_option",
+    "id": "SEDOP_rounding_option",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "input",
+    "name": "DERPR_exibir_relatorio",
+    "id": "DERPR_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true"
+  },
+  {
+    "tag": "select",
+    "name": "DERPR_data",
+    "id": "DERPR_data",
+    "type": "",
+    "value": ""
+  },
+  {
+    "tag": "select",
+    "name": "DERPR_rounding_option",
+    "id": "DERPR_rounding_option",
+    "type": "",
+    "value": ""
+  }
+]

@@ -1,0 +1,2050 @@
+{
+  "links": [
+    {
+      "text": "Falar com o gerente",
+      "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Medi%C3%A7%C3%A3o%20do%20Or%C3%A7aFascio!",
+      "class": "btn btn-primary btn-block mg-b-10 rounded",
+      "id": ""
+    },
+    {
+      "text": "Falar com o gerente",
+      "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Compras%20do%20Or%C3%A7aFascio!",
+      "class": "btn btn-primary btn-block mg-b-10 rounded",
+      "id": ""
+    },
+    {
+      "text": "Falar com o gerente",
+      "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Planejamento%20do%20Or%C3%A7aFascio!",
+      "class": "btn btn-primary btn-block mg-b-10 rounded",
+      "id": ""
+    },
+    {
+      "text": "Falar com o gerente",
+      "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20Di%C3%A1rio%20do%20Or%C3%A7aFascio!",
+      "class": "btn btn-primary btn-block mg-b-10 rounded",
+      "id": ""
+    },
+    {
+      "text": "Teste Grátis",
+      "href": "https://app.orcafascio.com/admin/upsell/purchases?admin_upsell_purchase%5Bcampaign_id%5D=6663ad393ebd735346cea294&admin_upsell_purchase%5Bempresa_id%5D=672d100984bf06160d2d8b4b&admin_upsell_purchase%5Bproduct_id%5D=6663ad043ebd735344cea686",
+      "class": "btn btn-outline-primary btn-block mg-b-10 rounded",
+      "id": ""
+    },
+    {
+      "text": "Falar com o gerente",
+      "href": "https://wa.me/+556195795149?text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20o%20modulo%20OF%20CDE%20do%20Or%C3%A7aFascio!",
+      "class": "btn btn-primary btn-block mg-b-10 rounded",
+      "id": ""
+    },
+    {
+      "text": "Teste Grátis",
+      "href": "https://app.orcafascio.com/admin/upsell/purchases?admin_upsell_purchase%5Bcampaign_id%5D=66faefc4361fa22dd3253116&admin_upsell_purchase%5Bempresa_id%5D=672d100984bf06160d2d8b4b&admin_upsell_purchase%5Bproduct_id%5D=66faeeab361fa22dd325304f",
+      "class": "btn btn-outline-primary btn-block mg-b-10 rounded",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/v2023/home",
+      "class": "sh-logo-text",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "sh-navicon d-none d-xl-block",
+      "id": "navicon"
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "sh-navicon d-xl-none",
+      "id": "naviconMobile"
+    },
+    {
+      "text": "home\n  Home",
+      "href": "https://app.orcafascio.com/v2023/home",
+      "class": "nav-link",
+      "id": ""
+    },
+    {
+      "text": "Orçamentos",
+      "href": "javascript:void(0);",
+      "class": "nav-link with-sub",
+      "id": ""
+    },
+    {
+      "text": "Lista de Orçamentos",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Criar Orçamento",
+      "href": "https://app.orcafascio.com/orc/orcamentos/new",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Lixeira",
+      "href": "https://app.orcafascio.com/lixeira/orc_orcamento",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Arquivos",
+      "href": "https://app.orcafascio.com/arquivos/orcamentos_admin",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Composições",
+      "href": "javascript:void(0);",
+      "class": "nav-link with-sub",
+      "id": ""
+    },
+    {
+      "text": "Pesquisar",
+      "href": "https://app.orcafascio.com/banco/composicoes",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Criar Composição",
+      "href": "https://app.orcafascio.com/banco/emp/composicoes/new",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Insumos",
+      "href": "javascript:void(0);",
+      "class": "nav-link with-sub",
+      "id": ""
+    },
+    {
+      "text": "Pesquisar",
+      "href": "https://app.orcafascio.com/banco/insumos",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Criar Insumo",
+      "href": "https://app.orcafascio.com/banco/emp/insumos/new",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Grupos",
+      "href": "https://app.orcafascio.com/banco/insumo/grupo",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Planejamentos",
+      "href": "javascript:void(0);",
+      "class": "nav-link openModalButton nao_possui_acesso",
+      "id": ""
+    },
+    {
+      "text": "receipt_long\n  Diário de Obras",
+      "href": "javascript:void(0);",
+      "class": "nav-link openModalButton nao_possui_acesso",
+      "id": ""
+    },
+    {
+      "text": "Medições",
+      "href": "javascript:void(0);",
+      "class": "nav-link openModalButton nao_possui_acesso",
+      "id": ""
+    },
+    {
+      "text": "shopping_cart\n  Compras",
+      "href": "javascript:void(0);",
+      "class": "nav-link openModalButton nao_possui_acesso",
+      "id": ""
+    },
+    {
+      "text": "Cadastros",
+      "href": "javascript:void(0);",
+      "class": "nav-link with-sub",
+      "id": ""
+    },
+    {
+      "text": "BDI",
+      "href": "https://app.orcafascio.com/bdi",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Encargos sociais",
+      "href": "https://app.orcafascio.com/charge_compositions",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Clientes",
+      "href": "https://app.orcafascio.com/clientes",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Empreiteiros (Exclusivo do módulo Medição)",
+      "href": "https://app.orcafascio.com/empreiteiros",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Fiscais (Exclusivo do módulo Medição)",
+      "href": "https://app.orcafascio.com/fiscais",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Supervisores (Exclusivo do módulo Medição)",
+      "href": "https://app.orcafascio.com/supervisores",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Relatórios Personalizados",
+      "href": "https://app.orcafascio.com/cadastros/relatorios",
+      "class": "nav-link ",
+      "id": ""
+    },
+    {
+      "text": "Integrações",
+      "href": "https://app.orcafascio.com/integracoes",
+      "class": "nav-link",
+      "id": ""
+    },
+    {
+      "text": "Webinars",
+      "href": "https://app.orcafascio.com/webinars",
+      "class": "nav-link",
+      "id": ""
+    },
+    {
+      "text": "add_circle\nCriar orçamento",
+      "href": "https://app.orcafascio.com/orc/orcamentos/new",
+      "class": "sh-icon-link nav-link",
+      "id": ""
+    },
+    {
+      "text": "folder\nCriar pasta",
+      "href": "https://app.orcafascio.com/orc/orcamentos#modal-new_pasta",
+      "class": "sh-icon-link nav-link",
+      "id": "btn-open-modal"
+    },
+    {
+      "text": "Lixeira",
+      "href": "https://app.orcafascio.com/lixeira/orc_orcamento",
+      "class": "sh-icon-link nav-link",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://forms.office.com/Pages/ResponsePage.aspx?id=LXHHkFrRhk2ynwio4PlknuV8T55KE1FEpc51Z2-MNwlUMktYVDJHSFFTTVkxMEFaTUNKVTU3OFgxSy4u",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "dropdown-link dropdown-link-notification bell-sign-dropdown",
+      "id": ""
+    },
+    {
+      "text": "ler a mensagem completa",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "read-full-message ",
+      "id": ""
+    },
+    {
+      "text": "Saiba Mais!",
+      "href": "https://app.orcafascio.com/webinars",
+      "class": "link-message",
+      "id": ""
+    },
+    {
+      "text": "ler a mensagem completa",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "read-full-message ",
+      "id": ""
+    },
+    {
+      "text": "Saiba Mais!",
+      "href": "https://youtu.be/MqJr35M0OvM",
+      "class": "link-message",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "dropdown-link",
+      "id": ""
+    },
+    {
+      "text": "Editar Perfil",
+      "href": "https://app.orcafascio.com/usuarios/6744caaaee3cb826dbe87050",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Indicações",
+      "href": "https://app.orcafascio.com/comu/indicacoes",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Sair",
+      "href": "https://app.orcafascio.com/login/new",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Home",
+      "href": "https://app.orcafascio.com/home",
+      "class": "breadcrumb-item",
+      "id": ""
+    },
+    {
+      "text": "Orçamentos",
+      "href": "https://app.orcafascio.com/orc/orcamentos",
+      "class": "breadcrumb-item",
+      "id": ""
+    },
+    {
+      "text": "1",
+      "href": "https://app.orcafascio.com/orc/orcamentos#",
+      "class": "page-link-custom active",
+      "id": ""
+    },
+    {
+      "text": "2",
+      "href": "https://app.orcafascio.com/orc/orcamentos?page=2",
+      "class": "page-link-custom",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos?page=2",
+      "class": "page-link-custom next",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d121584bf06160f2d835d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Acre",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d121584bf06160f2d835d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=672d121584bf06160f2d835d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Acre",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d121584bf06160f2d835d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d126984bf06160d2d8c99",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Alagoas",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d126984bf06160d2d8c99",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=672d126984bf06160d2d8c99",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Alagoas",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d126984bf06160d2d8c99",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d132084bf06160d2d8cef",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Amapá",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d132084bf06160d2d8cef",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=672d132084bf06160d2d8cef",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Amapá",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=672d132084bf06160d2d8cef",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b987b859a024057c5d8b2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Amazonas",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b987b859a024057c5d8b2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b987b859a024057c5d8b2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Amazonas",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b987b859a024057c5d8b2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b988c859a02405bc5d4b6",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Bahia",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b988c859a02405bc5d4b6",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b988c859a02405bc5d4b6",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Bahia",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b988c859a02405bc5d4b6",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b989b859a024059c5d0a5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Ceará",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b989b859a024059c5d0a5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b989b859a024059c5d0a5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Ceará",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b989b859a024059c5d0a5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=6758a77dd04f9c1e6f7363fd",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Central - Brasília",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=6758a77dd04f9c1e6f7363fd",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=6758a77dd04f9c1e6f7363fd",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Central - Brasília",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=6758a77dd04f9c1e6f7363fd",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b98fc859a024057c5dab7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Espírito Santo",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b98fc859a024057c5dab7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b98fc859a024057c5dab7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Espírito Santo",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b98fc859a024057c5dab7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9911859a02405fc5d9e4",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Goiás e Tocantins",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9911859a02405fc5d9e4",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9911859a02405fc5d9e4",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Goiás e Tocantins",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9911859a02405fc5d9e4",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9923859a024057c5dacc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Maranhão",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9923859a024057c5dacc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9923859a024057c5dacc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Maranhão",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9923859a024057c5dacc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9932859a024057c5daf9",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Mato Grosso",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9932859a024057c5daf9",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9932859a024057c5daf9",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Mato Grosso",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9932859a024057c5daf9",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9940859a02405bc5d4df",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Mato Grosso do Sul",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9940859a02405bc5d4df",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9940859a02405bc5d4df",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Mato Grosso do Sul",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9940859a02405bc5d4df",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ab9859a024059c5d217",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Minas Gerais",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ab9859a024059c5d217",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9ab9859a024059c5d217",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Minas Gerais",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ab9859a024059c5d217",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ac5859a024057c5dbb3",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Pará",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ac5859a024057c5dbb3",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9ac5859a024057c5dbb3",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Pará",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ac5859a024057c5dbb3",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ad3859a024057c5dbbc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Paraíba",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ad3859a024057c5dbbc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9ad3859a024057c5dbbc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Paraíba",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9ad3859a024057c5dbbc",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9adf859a024057c5dbc2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Paraná",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9adf859a024057c5dbc2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9adf859a024057c5dbc2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Paraná",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9adf859a024057c5dbc2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9af2859a02405dc5cdb5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Pernambuco",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9af2859a02405dc5cdb5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9af2859a02405dc5cdb5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Pernambuco",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9af2859a02405dc5cdb5",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b01859a024063c5c899",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Piauí",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b01859a024063c5c899",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b01859a024063c5c899",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Piauí",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b01859a024063c5c899",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b0d859a02405bc5d537",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Rio de Janeiro",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b0d859a02405bc5d537",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b0d859a02405bc5d537",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Rio de Janeiro",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b0d859a02405bc5d537",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b26859a024057c5dc0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Rio Grande do Norte",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b26859a024057c5dc0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b26859a024057c5dc0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Rio Grande do Norte",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b26859a024057c5dc0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b36859a02405bc5d53f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Rio Grande do Sul",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b36859a02405bc5d53f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b36859a02405bc5d53f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Rio Grande do Sul",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b36859a02405bc5d53f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b47859a024057c5dc18",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Rondônia",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b47859a024057c5dc18",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b47859a024057c5dc18",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Rondônia",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b47859a024057c5dc18",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b53859a02405bc5d54b",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Roraima",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b53859a02405bc5d54b",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b53859a02405bc5d54b",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Roraima",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b53859a02405bc5d54b",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b60859a02405bc5d54d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Santa Catarina",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b60859a02405bc5d54d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b60859a02405bc5d54d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Santa Catarina",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b60859a02405bc5d54d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b6e859a02405bc5d550",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "São Paulo",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b6e859a02405bc5d550",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b6e859a02405bc5d550",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "São Paulo",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b6e859a02405bc5d550",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "folder",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b7c859a024057c5dd31",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Sergipe",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b7c859a024057c5dd31",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "drive_file_move",
+      "href": "https://app.orcafascio.com/orc/pastas?pasta_id=673b9b7c859a024057c5dd31",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "pointer fa-solid fa-trash text-danger pastas-delete",
+      "id": ""
+    },
+    {
+      "text": "Sergipe",
+      "href": "https://app.orcafascio.com/orc/orcamentos?pasta_id=673b9b7c859a024057c5dd31",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a2066de9d31db34b49e35fa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-CE-ALAMBRADP",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a2066de9d31db34b49e35fa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Serviço de Instalação de Alambrado no Perímetro Externo do Edifício Sede do MGI-CE",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a2066de9d31db34b49e35fa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Serviço de Instalação de Alambrado no Perímetro Externo do Edifício Sede do MGI-CE",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a2066de9d31db34b49e35fa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1f135e582762ae8e2c2c0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-SPteste",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1f135e582762ae8e2c2c0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "teste",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1f135e582762ae8e2c2c0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "teste",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1f135e582762ae8e2c2c0f",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a10848c348df07f93793a46",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-ES-016",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a10848c348df07f93793a46",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "PROJETO DE ARQUITETURA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a10848c348df07f93793a46",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "PROJETO DE ARQUITETURA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a10848c348df07f93793a46",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1082b0c6e59ad4a9793a00",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-ES-015",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1082b0c6e59ad4a9793a00",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "PROJETO DE ARQUITETURA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1082b0c6e59ad4a9793a00",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "PROJETO DE ARQUITETURA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a1082b0c6e59ad4a9793a00",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0f23071be43449e9faf353",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SPU",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0f23071be43449e9faf353",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "CONTENÇÃO PAREDES PARANAGUÁ",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0f23071be43449e9faf353",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "CONTENÇÃO PAREDES PARANAGUÁ",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0f23071be43449e9faf353",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0736289e9864101f6d8805",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OS 009.2/MNTPRED/...",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0736289e9864101f6d8805",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "PINTURA CORREDORES/SALAS E ESCADAS",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0736289e9864101f6d8805",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "PINTURA CORREDORES/SALAS E ESCADAS",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0736289e9864101f6d8805",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0722c9bf5a0db82c0f984d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OS 009.2/MNTPRED/...",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0722c9bf5a0db82c0f984d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OBRAS CIVIS EDIFÍCIO SEDE GRTE-LONDRINA-PR",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0722c9bf5a0db82c0f984d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "OBRAS CIVIS EDIFÍCIO SEDE GRTE-LONDRINA-PR",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a0722c9bf5a0db82c0f984d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a033893e57a7bac15ed7644",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "PINTURA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a033893e57a7bac15ed7644",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "PINTURA CORREDORES/SALAS E ESCADAS",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a033893e57a7bac15ed7644",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "PINTURA CORREDORES/SALAS E ESCADAS",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6a033893e57a7bac15ed7644",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fe28cda21c985ae9b7e369",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-AM - Contrata...",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fe28cda21c985ae9b7e369",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "PARQUE DE EQUIPAMENTOS DE CLIMATIZAÇÃO",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fe28cda21c985ae9b7e369",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "PARQUE DE EQUIPAMENTOS DE CLIMATIZAÇÃO",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fe28cda21c985ae9b7e369",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fcaa2642052141ae9a4c1d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OS 012/MNTPRED/20...",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fcaa2642052141ae9a4c1d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Projeto - área de maquinas Palácio da Fazenda RJ",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fcaa2642052141ae9a4c1d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Projeto -  área de maquinas Palácio da Fazenda RJ",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69fcaa2642052141ae9a4c1d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69f8f33e59fddaec83faf350",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OS 012/MNTPRED/20...",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69f8f33e59fddaec83faf350",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "REVITALIZAÇÃO DE FACHADA DO EDIFÍCIO SEDE SRA-PE",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69f8f33e59fddaec83faf350",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "REVITALIZAÇÃO DE FACHADA DO EDIFÍCIO SEDE SRA-PE",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69f8f33e59fddaec83faf350",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69efa1996fb079f7e1ba6379",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA/MA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69efa1996fb079f7e1ba6379",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "CONTRATAÇÃO DE PROJETO",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69efa1996fb079f7e1ba6379",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "CONTRATAÇÃO DE PROJETO",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69efa1996fb079f7e1ba6379",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ef809d5347b23bb4259706",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA/SC Ref.CasaBarão",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ef809d5347b23bb4259706",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Infiltrações Casa do Barão",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ef809d5347b23bb4259706",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Infiltrações Casa do Barão",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ef809d5347b23bb4259706",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ca75dd0c68032896dd2bba",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRAES-013",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ca75dd0c68032896dd2bba",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Contratação de serviços de engenharia para elaboração de projetos do padrão de entrada de energia, das instalações elétric...",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ca75dd0c68032896dd2bba",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Contratação de serviços de engenharia para elaboração de projetos do padrão de entrada de energia, das instalações elétric...",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69ca75dd0c68032896dd2bba",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69c2f849b82171c734a69ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRAES-011",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69c2f849b82171c734a69ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Teste",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69c2f849b82171c734a69ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Teste",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69c2f849b82171c734a69ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b45181aa866de62ed985e2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-MT_MatCont",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b45181aa866de62ed985e2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Reparo quadro elétrico ar-condicionado central sala 614",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b45181aa866de62ed985e2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Reparo quadro elétrico ar-condicionado central sala 614",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b45181aa866de62ed985e2",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b05e62f49d8b43d6cd7b38",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-RO_ 013 [ONJ]",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b05e62f49d8b43d6cd7b38",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "caixa de passagem em pvc 4 x 2 para eletroduto flexivel corrugado",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b05e62f49d8b43d6cd7b38",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "caixa de passagem em pvc 4 x 2 para eletroduto flexivel corrugado",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69b05e62f49d8b43d6cd7b38",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aaebaaee20e6ac221b1337",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-RO_ 013 [ONI]",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aaebaaee20e6ac221b1337",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Reparo quadro elétrico ar-condicionado central sala 614",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aaebaaee20e6ac221b1337",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Reparo quadro elétrico ar-condicionado central sala 614",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aaebaaee20e6ac221b1337",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aae939ee20e6ac221b0eb8",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-RO_ 013 [ONH]",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aae939ee20e6ac221b0eb8",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Reparo quadro elétrico ar-condicionado central sala 614",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aae939ee20e6ac221b0eb8",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Reparo quadro elétrico ar-condicionado central sala 614",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69aae939ee20e6ac221b0eb8",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69a6e3bc4b439ae8ac25957d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-RN_ 017",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69a6e3bc4b439ae8ac25957d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Substituição de Pisos",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69a6e3bc4b439ae8ac25957d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Substituição de Pisos",
+      "href": "https://app.orcafascio.com/orc/orcamentos/69a6e3bc4b439ae8ac25957d",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6911d0a7a719af0e2a194ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-MG",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6911d0a7a719af0e2a194ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Elaboração de Projetos Elétricos e de Rede de Dados para a PSFN de Uberaba-MG",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6911d0a7a719af0e2a194ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Elaboração de Projetos Elétricos e de Rede de Dados para a PSFN de Uberaba-MG",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6911d0a7a719af0e2a194ca0",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c25f8bb9fd85f327f020",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-SP-MANUT/PE04",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c25f8bb9fd85f327f020",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Orçamento para estimagiva de instalação elétrica refletores RGB",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c25f8bb9fd85f327f020",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Orçamento para estimagiva de instalação elétrica refletores RGB",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c25f8bb9fd85f327f020",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c1e61d58c62bc527ef65",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-SP-MANUT/PE03",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c1e61d58c62bc527ef65",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Orçamento para estimagiva de instalação elétrica refletores RGB",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c1e61d58c62bc527ef65",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Orçamento para estimagiva de instalação elétrica refletores RGB",
+      "href": "https://app.orcafascio.com/orc/orcamentos/6900c1e61d58c62bc527ef65",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f2968e6bfad76029fb9734",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-PR/2025",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f2968e6bfad76029fb9734",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "ARTE TOLEDO",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f2968e6bfad76029fb9734",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "ARTE TOLEDO",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f2968e6bfad76029fb9734",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f291336bfad76029fb8865",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-AP-02",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f291336bfad76029fb8865",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OBRAS CIVIS BWC'S EDIFÍCIO SEDE SRA-PR",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f291336bfad76029fb8865",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "OBRAS CIVIS BWC'S EDIFÍCIO SEDE SRA-PR",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68f291336bfad76029fb8865",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ee9dd8e0ee5cb09adebf12",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "SRA-MG-01",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ee9dd8e0ee5cb09adebf12",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Contratação de levantamento topográfico e ensaio de solo",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ee9dd8e0ee5cb09adebf12",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Contratação de levantamento topográfico e ensaio de solo",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ee9dd8e0ee5cb09adebf12",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68e40bcadff1cc341b182dfa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OS 012/MNTPRED/2027",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68e40bcadff1cc341b182dfa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Cópia de: Cópia de: Manutenção Subestação de Energia 13,8 KV , 1,25 MVA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68e40bcadff1cc341b182dfa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Cópia de: Cópia de: Manutenção Subestação de Energia 13,8 KV , 1,25 MVA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68e40bcadff1cc341b182dfa",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68b5d67c4d200ad37a7c3c78",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "OS 003/MNTPRED/2029",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68b5d67c4d200ad37a7c3c78",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Manutenção descentralizada BA_RR_AC_PR_AP por demanda",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68b5d67c4d200ad37a7c3c78",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Manutenção descentralizada BA_RR_AC_PR_AP por demanda",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68b5d67c4d200ad37a7c3c78",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68adadec882bbcd0ff4c8d20",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "LIMPEZA PS",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68adadec882bbcd0ff4c8d20",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "Cópia de: LIMPEZA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68adadec882bbcd0ff4c8d20",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "Cópia de: LIMPEZA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68adadec882bbcd0ff4c8d20",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ada848b47db048bb4c6ae7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "LIMPEZA PR",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ada848b47db048bb4c6ae7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "LIMPEZA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ada848b47db048bb4c6ae7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "",
+      "class": "fa-solid fa-trash text-muted",
+      "id": ""
+    },
+    {
+      "text": "LIMPEZA",
+      "href": "https://app.orcafascio.com/orc/orcamentos/68ada848b47db048bb4c6ae7",
+      "class": "",
+      "id": ""
+    },
+    {
+      "text": "1",
+      "href": "https://app.orcafascio.com/orc/orcamentos#",
+      "class": "page-link-custom active",
+      "id": ""
+    },
+    {
+      "text": "2",
+      "href": "https://app.orcafascio.com/orc/orcamentos?page=2",
+      "class": "page-link-custom",
+      "id": ""
+    },
+    {
+      "text": "",
+      "href": "https://app.orcafascio.com/orc/orcamentos?page=2",
+      "class": "page-link-custom next",
+      "id": ""
+    },
+    {
+      "text": "Cancelar",
+      "href": "",
+      "class": "btn",
+      "id": "btn-close"
+    },
+    {
+      "text": "Saiba Mais!",
+      "href": "https://app.orcafascio.com/webinars",
+      "class": "link-message",
+      "id": ""
+    },
+    {
+      "text": "Saiba Mais!",
+      "href": "https://youtu.be/MqJr35M0OvM",
+      "class": "link-message",
+      "id": ""
+    }
+  ]
+}

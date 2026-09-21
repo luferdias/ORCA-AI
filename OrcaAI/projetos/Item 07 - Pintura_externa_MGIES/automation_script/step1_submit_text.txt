@@ -1,0 +1,114 @@
+home
+  Home
+  Orçamentos
+  Composições
+  Insumos
+  Planejamentos
+receipt_long
+  Diário de Obras
+  Medições
+shopping_cart
+  Compras
+  Cadastros
+  Integrações
+  Webinars
+ Home
+ Novo
+Novo orçamento
+Formulário de criação de orçamento
+Passo 1
+Informações Gerais
+Passo 2
+Arredondamento, encargos e BDI
+Passo 3
+Bases
+Em qual versão quer criar seu orçamento?
+Versão antiga sem auto-itemização
+Versão nova com auto-itemização e novas funcionalidades
+Código*
+Descrição*
+Cliente
+Selecione o cliente
+Superintedência Regional do Trabalho em Sergipe
+Superintencia Regional MGI de Sao Paulo
+Superintendência do Patrimônio da União em Sergipe (SPU/SE)
+SUPERINT. REG. DE ADMINISTRACAO DO MGI - MINAS GERAIS
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+Superintendência do Patrimônio da União em Santa Catarina - SPU/SC
+Controladoria Regional da União em Sergipe (CGU/SE)
+Procuradoria da Fazenda Nacional no Estado de Sergipe - PFN/SE
+Superintendência Regional de Administração em Sergipe - SRA/SE
+Superintendência Regional de Administração do MGI no Maranhão - SRA/MA
+RUI DE SA
+SRA/ES - Superintendência Regional de Administração do Espírito Santo
+Superintendência Regional de Administração no Esatdo do Acre - SRA/AC
+Superintendência Regional de Administração do MGI em Santa Catarina
+SUPERINTENDÊNCIA REGIONAL DO MINISTÉRIO DA GESTÃO E DA INOVAÇÃO EM SERVICOS PÚBLICOS
+RUI DE SA
+MGI SRA-RO
+Superintendência Regional de Administração no Estado da Bahia - SRA-BA
+MGI-SRA/RN
+Procuradoria da Fazenda Nacional - PFN/RN
+SRA/PE
+Superintendência Regional de Administração do RN
+SUPERINTENDÊNCIA DE ADMINISTRAÇÃO DO MGI PR
+SUPERINTENDÊNCIA DE ADMINISTRAÇÃO DO MGI PR
+MGI-SRA/CE
+Controladoria Geral da União do Rio Grande do Norte (CGU/RN)
+Superintendência Regional da Bahia
+SRA-PE
+Superintendência Regional de Administração do MGI no Estado do Maranhão - SRA/MA
+SRA/RS
+SRA/RS
+PROCURADORIA DA FAZENDA NACIONAL EM RONDONIA
+AGÊNCIA REGIONAL DO TRABALHO E EMPREGO - SÃO JOSÉ DOS PINHAIS
+GERÊNCIA REGIONAL DO TRABALHO E EMPREGO - SÃO JOSÉ DOS PINHAIS
+STE - SUPERINTENDÊNCIA DO TRABALHO E EMPREGO DO PARANÁ
+STE - SUPERINTENDÊNCIA DO TRABALHO E EMPREGO DO PARANÁ
+SRA/MT
+SRA/AP
+Superintendência Regional do Amazonas - SRA-AM
+GERÊNCIA REGIONAL DO TRABALHO E EMPREGO DE LONDRINA
+SUPERINTENDÊNCIA DO PATRIMÔNIO DA UNIÃO NO PARANÁ
+Superintendência Regional de Administração na Paraíba - SRA-PB
++ Novo cliente
+Categoria*
+Selecione a categoria
+Calçadas e meio-fio
+Construção e ampliação de rede de abastecimento de água
+Creches e escolas - Construção
+Creches e escolas - Reforma
+Espaços públicos e praças - Construção
+Espaços públicos e praças - Reforma
+Galpões
+Infraestruturas Esportivas - Construção
+Infraestruturas Esportivas - Reforma
+Hospitais e unidades de saúde - Construção
+Hospitais e unidades de saúde - Reforma
+Muros
+Passagens molhadas e pontes - Construção
+Passagens molhadas e pontes - Reforma
+Pavimentação asfáltica
+Pavimentação e drenagem
+Pavimentação em bloco de concreto intertravado
+Pavimentação em paralelepípedo
+Prédios públicos - Construção
+Prédios públicos - Reforma
+Unidades habitacionais - Construção
+Unidades habitacionais - Reforma
+Usinas fotovoltaicas
+Outros
+Prazo de entrega do orçamento
+ Permitir insumos com preço zerado
+ LICITAÇÃO
+Tipo de Licitação
+Data e Hora de Abertura da Licitação
+Número do Processo de Licitação
+ TRANSFEREGOV
+Número proposta
+Ano proposta
+Valor repassado
+
+Qual de vocês, se quiser construir uma torre, primeiro não se assenta e calcula o preço, para ver se tem dinheiro suficiente para completá-la? - Lucas 14:28
+Copyright © 2026 3f Ltda. Todos os direitos reservados.
+Suporte

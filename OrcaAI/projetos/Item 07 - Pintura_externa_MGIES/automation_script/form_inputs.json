@@ -1,0 +1,376 @@
+[
+  {
+    "tag": "input",
+    "name": "utf8",
+    "id": "",
+    "type": "hidden",
+    "value": "✓",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "authenticity_token",
+    "id": "",
+    "type": "hidden",
+    "value": "pkTMA4vm0sbwFfWaLWkDdvyXQfhgNTfKlszmPQbyw7JL7CyJYXsI4vwNP8xQmkW3F9Zg6JXyaKVxIRRUfqQn9Q==",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "cliente[pj]",
+    "id": "",
+    "type": "hidden",
+    "value": "0",
+    "placeholder": "",
+    "labelText": "Pessoa Jurídica"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[pj]",
+    "id": "cliente_pj",
+    "type": "checkbox",
+    "value": "1",
+    "placeholder": "",
+    "labelText": "Pessoa Jurídica"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[cpf]",
+    "id": "cliente_cpf",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "CPF"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[rg]",
+    "id": "cliente_rg",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "RG"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[cnpj]",
+    "id": "cliente_cnpj",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "CNPJ"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[nome]",
+    "id": "cliente_nome",
+    "type": "text",
+    "value": "",
+    "placeholder": "Obrigatório",
+    "labelText": "Nome"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[telefone]",
+    "id": "cliente_telefone",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Telefone"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[email]",
+    "id": "cliente_email",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Email"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[end_cep]",
+    "id": "cliente_end_cep",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "CEP"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[end_logradouro]",
+    "id": "cliente_end_logradouro",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Logradouro"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[end_numero]",
+    "id": "cliente_end_numero",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Número"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[end_complemento]",
+    "id": "cliente_end_complemento",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Complemento"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[end_bairro]",
+    "id": "cliente_end_bairro",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Bairro"
+  },
+  {
+    "tag": "input",
+    "name": "cliente[end_cidade]",
+    "id": "cliente_end_cidade",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Cidade"
+  },
+  {
+    "tag": "select",
+    "name": "cliente[end_estado]",
+    "id": "cliente_end_estado",
+    "type": "select-one",
+    "value": "ES",
+    "labelText": "Estado"
+  },
+  {
+    "tag": "select",
+    "name": "cliente[end_pais]",
+    "id": "cliente_end_pais",
+    "type": "select-one",
+    "value": "",
+    "labelText": "País"
+  },
+  {
+    "tag": "input",
+    "name": "utf8",
+    "id": "",
+    "type": "hidden",
+    "value": "✓",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "authenticity_token",
+    "id": "",
+    "type": "hidden",
+    "value": "pkTMA4vm0sbwFfWaLWkDdvyXQfhgNTfKlszmPQbyw7JL7CyJYXsI4vwNP8xQmkW3F9Zg6JXyaKVxIRRUfqQn9Q==",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[pasta_id]",
+    "id": "orc_orcamento_pasta_id",
+    "type": "hidden",
+    "value": "673b98fc859a024057c5dab7",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[version_2023]",
+    "id": "version_2023_old",
+    "type": "radio",
+    "value": "false",
+    "placeholder": "",
+    "labelText": "Versão antiga sem auto-itemização"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[version_2023]",
+    "id": "orc_orcamento_version_2023_true",
+    "type": "radio",
+    "value": "true",
+    "placeholder": "",
+    "labelText": "Versão nova com auto-itemização e novas funcionalidades"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[codigo]",
+    "id": "orc_orcamento_codigo",
+    "type": "text",
+    "value": "SRA-SP-MANUT/AP03_por grupot",
+    "placeholder": "",
+    "labelText": "Código*"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[descricao]",
+    "id": "orc_orcamento_descricao",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Descrição*"
+  },
+  {
+    "tag": "select",
+    "name": "orc_orcamento[cliente_id]",
+    "id": "orc_orcamento_cliente_id",
+    "type": "select-one",
+    "value": "",
+    "labelText": "Cliente"
+  },
+  {
+    "tag": "select",
+    "name": "orc_orcamento[standard_category_name]",
+    "id": "standard-category",
+    "type": "select-one",
+    "value": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[custom_category_name]",
+    "id": "custom-category-text",
+    "type": "text",
+    "value": "",
+    "placeholder": "Digite a categoria personalizada",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[validity]",
+    "id": "orc_orcamento_validity",
+    "type": "datetime-local",
+    "value": "",
+    "placeholder": "",
+    "labelText": "Prazo de entrega do orçamento"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[insumos_zerados]",
+    "id": "",
+    "type": "hidden",
+    "value": "0",
+    "placeholder": "",
+    "labelText": "Permitir insumos com preço zerado"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[insumos_zerados]",
+    "id": "orc_orcamento_insumos_zerados",
+    "type": "checkbox",
+    "value": "true",
+    "placeholder": "",
+    "labelText": "Permitir insumos com preço zerado"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[licitacao]",
+    "id": "",
+    "type": "hidden",
+    "value": "0",
+    "placeholder": "",
+    "labelText": "LICITAÇÃO"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[licitacao]",
+    "id": "orc_orcamento_licitacao",
+    "type": "checkbox",
+    "value": "true",
+    "placeholder": "",
+    "labelText": "LICITAÇÃO"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[licitacao_tipo]",
+    "id": "licitacao_tipo",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[licitacao_abertura]",
+    "id": "licitacao_abertura",
+    "type": "text",
+    "value": "",
+    "placeholder": "99/99/9999 - 99:99",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[licitacao_processo]",
+    "id": "licitacao_processo",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[transfere_gov]",
+    "id": "",
+    "type": "hidden",
+    "value": "0",
+    "placeholder": "",
+    "labelText": "TRANSFEREGOV"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[transfere_gov]",
+    "id": "orc_orcamento_transfere_gov",
+    "type": "checkbox",
+    "value": "true",
+    "placeholder": "",
+    "labelText": "TRANSFEREGOV"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[transfere_gov_nr_proposta]",
+    "id": "transfere_gov_nr_proposta",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[transfere_gov_ano_proposta]",
+    "id": "transfere_gov_ano_proposta",
+    "type": "text",
+    "value": "",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[transfere_gov_valor_repassado]",
+    "id": "transfere_gov_valor_repassado",
+    "type": "text",
+    "value": "0.0",
+    "placeholder": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "commit",
+    "id": "check-btn",
+    "type": "submit",
+    "value": "Próximo",
+    "placeholder": "",
+    "labelText": ""
+  }
+]

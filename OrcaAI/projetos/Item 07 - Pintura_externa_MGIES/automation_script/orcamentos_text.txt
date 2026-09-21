@@ -1,0 +1,445 @@
+home
+  Home
+  Orçamentos
+  Composições
+  Insumos
+  Planejamentos
+receipt_long
+  Diário de Obras
+  Medições
+shopping_cart
+  Compras
+  Cadastros
+  Integrações
+  Webinars
+add_circle
+Criar orçamento
+folder
+Criar pasta
+Lixeira
+ Home
+ Orçamentos
+Orçamentos
+Pesquisa de orçamentos e pastas
+Descrição
+Código
+Pastas e orçamentos
+1
+2
+CÓDIGO
+DESCRIÇÃO
+CRIADO EM
+CATEGORIA
+CLIENTE
+SINAPI
+DONO
+STATUS
+folder
+Acre
+07/11/2024 16:16
+CGGIP/DCD
+more_vert
+folder
+Alagoas
+07/11/2024 16:18
+CGGIP/DCD
+more_vert
+folder
+Amapá
+07/11/2024 16:21
+CGGIP/DCD
+more_vert
+folder
+Amazonas
+18/11/2024 16:41
+CGGIP/DCD
+more_vert
+folder
+Bahia
+18/11/2024 16:42
+CGGIP/DCD
+more_vert
+folder
+Ceará
+18/11/2024 16:42
+CGGIP/DCD
+more_vert
+folder
+Central - Brasília
+10/12/2024 17:41
+CGGIP/DCD
+more_vert
+folder
+Espírito Santo
+18/11/2024 16:43
+CGGIP/DCD
+more_vert
+folder
+Goiás e Tocantins
+18/11/2024 16:44
+CGGIP/DCD
+more_vert
+folder
+Maranhão
+18/11/2024 16:44
+CGGIP/DCD
+more_vert
+folder
+Mato Grosso
+18/11/2024 16:44
+CGGIP/DCD
+more_vert
+folder
+Mato Grosso do Sul
+18/11/2024 16:45
+CGGIP/DCD
+more_vert
+folder
+Minas Gerais
+18/11/2024 16:51
+CGGIP/DCD
+more_vert
+folder
+Pará
+18/11/2024 16:51
+CGGIP/DCD
+more_vert
+folder
+Paraíba
+18/11/2024 16:51
+CGGIP/DCD
+more_vert
+folder
+Paraná
+18/11/2024 16:51
+CGGIP/DCD
+more_vert
+folder
+Pernambuco
+18/11/2024 16:52
+CGGIP/DCD
+more_vert
+folder
+Piauí
+18/11/2024 16:52
+CGGIP/DCD
+more_vert
+folder
+Rio de Janeiro
+18/11/2024 16:52
+CGGIP/DCD
+more_vert
+folder
+Rio Grande do Norte
+18/11/2024 16:53
+CGGIP/DCD
+more_vert
+folder
+Rio Grande do Sul
+18/11/2024 16:53
+CGGIP/DCD
+more_vert
+folder
+Rondônia
+18/11/2024 16:53
+CGGIP/DCD
+more_vert
+folder
+Roraima
+18/11/2024 16:53
+CGGIP/DCD
+more_vert
+folder
+Santa Catarina
+18/11/2024 16:54
+CGGIP/DCD
+more_vert
+folder
+São Paulo
+18/11/2024 16:54
+CGGIP/DCD
+more_vert
+folder
+Sergipe
+18/11/2024 16:54
+CGGIP/DCD
+more_vert
+SRA-CE-ALAMBRADP
+Auto
+Serviço de Instalação de Alambrado no Perímetro Externo do Edifício Sede do MGI-CE
+03/06/2026 14:39
+Prédios públicos - Construção
+MGI-SRA/CE
+CE - 04/2026
+SRA/CE
+
+Em andamento
+
+SRA-SPteste
+Auto
+teste
+02/06/2026 14:31
+Hospitais e unidades de saúde - Reforma
+Superintendência Regional de Administração no Esatdo do Acre - SRA/AC
+CE - 04/2026
+SRA/CE
+
+Não iniciado
+
+SRA-ES-016
+Auto
+PROJETO DE ARQUITETURA
+22/05/2026 13:30
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+RJ - 04/2026
+SRA/RJ
+
+Atrasado
+
+SRA-ES-015
+PROJETO DE ARQUITETURA
+22/05/2026 13:22
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+RJ - 04/2026
+SRA/RJ
+SPU
+Auto
+CONTENÇÃO PAREDES PARANAGUÁ
+21/05/2026 12:21
+SUPERINTENDÊNCIA DO PATRIMÔNIO DA UNIÃO NO PARANÁ
+PR - 04/2026
+SRA/PR
+
+Atrasado
+
+OS 009.2/MNTPRED/...
+Auto
+PINTURA CORREDORES/SALAS E ESCADAS
+15/05/2026 12:05
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+RJ - 04/2026
+SRA/RJ
+
+Atrasado
+
+OS 009.2/MNTPRED/...
+Auto
+OBRAS CIVIS EDIFÍCIO SEDE GRTE-LONDRINA-PR
+15/05/2026 10:42
+GERÊNCIA REGIONAL DO TRABALHO E EMPREGO DE LONDRINA
+PR - 04/2026
+SRA/PR
+
+Em andamento
+
+PINTURA
+Auto
+PINTURA CORREDORES/SALAS E ESCADAS
+12/05/2026 11:26
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+RJ - 03/2026
+SRA/RJ
+
+Atrasado
+
+SRA-AM - Contrata...
+Auto
+PARQUE DE EQUIPAMENTOS DE CLIMATIZAÇÃO
+08/05/2026 15:17
+Outros
+AM - 03/2026
+SRA/AM
+
+Em andamento
+
+OS 012/MNTPRED/20...
+Auto
+Projeto - área de maquinas Palácio da Fazenda RJ
+07/05/2026 12:05
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+RJ - 03/2026
+SRA/RJ
+
+Não iniciado
+
+OS 012/MNTPRED/20...
+Auto
+REVITALIZAÇÃO DE FACHADA DO EDIFÍCIO SEDE SRA-PE
+04/05/2026 16:28
+Espaços públicos e praças - Reforma
+SRA-PE
+PE - 03/2026
+SRA/PE
+
+Atrasado
+
+SRA/MA
+Auto
+CONTRATAÇÃO DE PROJETO
+27/04/2026 14:49
+Superintendência Regional de Administração do MGI no Maranhão - SRA/MA
+MA - 03/2026
+SRA/MA
+
+Em andamento
+
+SRA/SC Ref.CasaBarão
+Auto
+Infiltrações Casa do Barão
+27/04/2026 12:28
+Superintendência do Patrimônio da União em Santa Catarina - SPU/SC
+SC - 03/2026
+SRA/SC
+
+Em andamento
+
+SRAES-013
+Auto
+Contratação de serviços de engenharia para elaboração de projetos do padrão de entrada de energia, das instalações elétric...
+30/03/2026 10:08
+SUPERINT. REG. DE ADMINISTRACAO DO MGI - MINAS GERAIS
+MG - 02/2026
+SRA/MG
+
+Atrasado
+
+SRAES-011
+Teste
+24/03/2026 17:47
+Muros
+AM - 02/2026
+SRA/AM
+SRA-MT_MatCont
+Reparo quadro elétrico ar-condicionado central sala 614
+13/03/2026 15:03
+Prédios públicos - Construção
+RJ - 01/2026
+SRA/RJ
+SRA-RO_ 013 [ONJ]
+Auto
+caixa de passagem em pvc 4 x 2 para eletroduto flexivel corrugado
+10/03/2026 15:09
+Outros
+SUPERINTENDÊNCIA REGIONAL DO MINISTÉRIO DA GESTÃO E DA INOVAÇÃO EM SERVICOS PÚBLICOS
+RJ - 01/2026
+SRA/RJ
+
+Atrasado
+
+SRA-RO_ 013 [ONI]
+Auto
+Reparo quadro elétrico ar-condicionado central sala 614
+06/03/2026 11:58
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+RJ - 01/2026
+SRA/RJ
+
+Atrasado
+
+SRA-RO_ 013 [ONH]
+Auto
+Reparo quadro elétrico ar-condicionado central sala 614
+06/03/2026 11:48
+Superintendência Regional de Administração no Rio de Janeiro - SSC/MGISP
+RJ - 01/2026
+SRA/RJ
+
+Atrasado
+
+SRA-RN_ 017
+Substituição de Pisos
+03/03/2026 10:35
+MGI SRA-RO
+RO - 01/2026
+SRA/MG
+SRA-MG
+Auto
+Elaboração de Projetos Elétricos e de Rede de Dados para a PSFN de Uberaba-MG
+10/11/2025 08:46
+Espaços públicos e praças - Reforma
+SUPERINT. REG. DE ADMINISTRACAO DO MGI - MINAS GERAIS
+MG - 09/2025
+SRA/MG
+
+Em andamento
+
+SRA-SP-MANUT/PE04
+Orçamento para estimagiva de instalação elétrica refletores RGB
+28/10/2025 10:17
+SRA-PE
+PE - 09/2025
+SRA/PE
+SRA-SP-MANUT/PE03
+Orçamento para estimagiva de instalação elétrica refletores RGB
+28/10/2025 10:15
+Prédios públicos - Construção
+SUPERINTENDÊNCIA REGIONAL DO MINISTÉRIO DA GESTÃO E DA INOVAÇÃO EM SERVICOS PÚBLICOS
+PE - 09/2025
+SRA/PE
+SRA-PR/2025
+Auto
+ARTE TOLEDO
+17/10/2025 16:18
+RUI DE SA
+PR - 09/2025
+SRA/PR
+
+Atrasado
+
+SRA-AP-02
+Auto
+OBRAS CIVIS BWC'S EDIFÍCIO SEDE SRA-PR
+17/10/2025 15:55
+Prédios públicos - Construção
+PR - 09/2025
+SRA/PR
+
+Em andamento
+
+SRA-MG-01
+Contratação de levantamento topográfico e ensaio de solo
+14/10/2025 16:00
+Outros
+SUPERINT. REG. DE ADMINISTRACAO DO MGI - MINAS GERAIS
+MG - 09/2025
+Coordenação de Gestão de Infraestrutura Predial Descentralizada
+OS 012/MNTPRED/2027
+Auto
+Cópia de: Cópia de: Manutenção Subestação de Energia 13,8 KV , 1,25 MVA
+06/10/2025 15:34
+Outros
+Superintendência Regional de Administração no Estado da Bahia - SRA-BA
+BA - 08/2025
+SRA/SC
+
+Atrasado
+
+OS 003/MNTPRED/2029
+Auto
+Manutenção descentralizada BA_RR_AC_PR_AP por demanda
+01/09/2025 14:23
+Superintencia Regional MGI de Sao Paulo
+SP - 07/2025
+SRA/SP
+LIMPEZA PS
+Auto
+Cópia de: LIMPEZA
+26/08/2025 09:51
+SUPERINTENDÊNCIA DE ADMINISTRAÇÃO DO MGI PR
+PR - 07/2025
+SRA/PR
+LIMPEZA PR
+Auto
+LIMPEZA
+26/08/2025 09:27
+SUPERINTENDÊNCIA DE ADMINISTRAÇÃO DO MGI PR
+PR - 07/2025
+SRA/PR
+
+Em andamento
+
+1
+2
+Qual de vocês, se quiser construir uma torre, primeiro não se assenta e calcula o preço, para ver se tem dinheiro suficiente para completá-la? - Lucas 14:28
+Copyright © 2026 3f Ltda. Todos os direitos reservados.
+Suporte

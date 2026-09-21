@@ -1,0 +1,8 @@
+{
+  "name": "orcafascio-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "puppeteer-core": "^22.10.0"
+  }
+}

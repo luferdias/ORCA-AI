@@ -1,0 +1,162 @@
+[
+  {
+    "tag": "input",
+    "name": "utf8",
+    "id": "",
+    "type": "hidden",
+    "value": "✓",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "authenticity_token",
+    "id": "",
+    "type": "hidden",
+    "value": "W7wARfiDlumfdbwVdn+Z/9ZOBM2WdKePyjyvmKG/mdUqX3mzTICvWV7JAbMjEwAZREJolgWU+ccv5P1+ZKQtwg==",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[tipo_de_arredondamento]",
+    "id": "orc_orcamento_tipo_de_arredondamento_1",
+    "type": "radio",
+    "value": "1",
+    "labelText": "Arredondar tudo em 2 casas decimais"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[tipo_de_arredondamento]",
+    "id": "orc_orcamento_tipo_de_arredondamento_2",
+    "type": "radio",
+    "value": "2",
+    "labelText": "Arredondar em 2 casas decimais incluindo as composições auxiliares"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[tipo_de_arredondamento]",
+    "id": "orc_orcamento_tipo_de_arredondamento_3",
+    "type": "radio",
+    "value": "3",
+    "labelText": "Arredondar em 2 casas decimais e truncar os preços unitários"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[tipo_de_arredondamento]",
+    "id": "orc_orcamento_tipo_de_arredondamento_4",
+    "type": "radio",
+    "value": "4",
+    "labelText": "Truncar tudo em 2 casas decimaisPadrão do TCU"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[tipo_de_arredondamento]",
+    "id": "orc_orcamento_tipo_de_arredondamento_0",
+    "type": "radio",
+    "value": "0",
+    "labelText": "Não Arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[rounding_option]",
+    "id": "orc_orcamento_rounding_option_1",
+    "type": "radio",
+    "value": "1",
+    "labelText": "Truncar em 2 casas decimaisPadrão do TCU"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[rounding_option]",
+    "id": "orc_orcamento_rounding_option_2",
+    "type": "radio",
+    "value": "2",
+    "labelText": "Arredondar em 2 casas decimais"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[rounding_option]",
+    "id": "orc_orcamento_rounding_option_3",
+    "type": "radio",
+    "value": "3",
+    "labelText": "Não arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[desonerado]",
+    "id": "orc_orcamento_desonerado_true",
+    "type": "radio",
+    "value": "true",
+    "labelText": "Desonerado"
+  },
+  {
+    "tag": "input",
+    "name": "orc_orcamento[desonerado]",
+    "id": "orc_orcamento_desonerado_false",
+    "type": "radio",
+    "value": "false",
+    "labelText": "Não desonerado"
+  },
+  {
+    "tag": "input",
+    "name": "no_final",
+    "id": "no_final_false",
+    "type": "radio",
+    "value": "false",
+    "labelText": "Incidir sobre o preço unitário da composiçãoTCU recomenda"
+  },
+  {
+    "tag": "input",
+    "name": "no_final",
+    "id": "no_final_true",
+    "type": "radio",
+    "value": "true",
+    "labelText": "Incidir sobre o preço final do orçamento"
+  },
+  {
+    "tag": "input",
+    "name": "change_bdi",
+    "id": "change_bdi",
+    "type": "hidden",
+    "value": "true",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "unico",
+    "id": "unico",
+    "type": "hidden",
+    "value": "true",
+    "labelText": ""
+  },
+  {
+    "tag": "select",
+    "name": "base_bdi",
+    "id": "select_bdi",
+    "type": "select-one",
+    "value": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "bdi_manual",
+    "id": "checkbox_bdi_manual",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "0",
+    "id": "input_bdi_manual",
+    "type": "text",
+    "value": "",
+    "labelText": ""
+  },
+  {
+    "tag": "input",
+    "name": "commit",
+    "id": "",
+    "type": "submit",
+    "value": "Próximo",
+    "labelText": ""
+  }
+]

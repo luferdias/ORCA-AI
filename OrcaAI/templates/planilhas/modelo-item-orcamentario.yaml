@@ -1,0 +1,21 @@
+item:
+  numero: "1.1"
+  codigo: ""
+  sistema: ""
+  descricao: ""
+  unidade: ""
+  quantidade: 0
+  custo_unitario_sem_bdi: 0
+  bdi_percentual: 25.00
+  preco_unitario_com_bdi: 0
+  preco_total_com_bdi: 0
+  fonte:
+    nome: ""
+    data_base: ""
+    arquivo_referencia: ""
+  validacao:
+    codigo_encontrado: false
+    unidade_compativel: false
+    descricao_compativel: false
+  observacoes: ""
+

@@ -1,0 +1,875 @@
+=== PÁGINA 1 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+ADVOCACIA-GERAL DA UNIAO
+CONSULTORIA-GERAL DA UNIAO
+SUBCONSULTORIA-GERAL DA UNIAO DE GESTAO PUBLICA
+COORDENACAO JURIDICA DE ENGENHARIA NOS ESTADOS
+SAS, QUADRA 03, LOTE 5/6, 12? ANDAR - AGU SEDE I - BRAS{LIA/DF 70.070-030
+
+PARECER N°? 01199/2026/CJENG-EST-SUMARIO/SCGP/CGU/AGU
+
+NUP: 10783.000206/2026-71
+
+INTERESSADOS: SUPERINTENDENCIA REGIONAL DE ADMINISTRAGAO NO ESTADO DO ESPIRITO SANTO
+- SRA/ES
+ASSUNTOS: PREGAO ELETRONICO PARA REGISTRO DE PRECOS
+
+EMENTA:
+
+EMENTA: PARECER COM RESTRICAO DE ACESSO ATE A PUBLICAGAO DO EDITAL DO CERTAME,
+SALVO ENTENDIMENTO EM CONTRARIO DO ORGAO ASSESSORADO (ATO PREPARATORIO. LEI
+N. 12.527, DE 2011). PREGAO ELETRONICO, COM SISTEMA DE REGISTRO DE PREGOS, PARA
+EVENTUAL CONTRATACAO DE SERVICOS COMUNS DE ENGENHARIA. PARAMETRO
+NORMATIVO: LEI N. 14.133, DE 2021, E REGULAMENTAGAO DELA DECORRENTE. VIABILIDADE
+JURIDICA DE PROSSEGUIMENTO DA LICITAGAO, DESDE QUE ATENDIDAS AS RECOMENDAGOES
+PREVISTAS NESTE PARECER.
+
+INTRODUCAO
+
+1. A CONSULTORIA JURIDICA DA UNIAO NO ESTADO DO ESPIRITO SANTO, por meio do DESPACHO
+N° 00075/2026/CJU-ES/CGU/AGU, encaminhou os autos do procedimento em epigrafe, disponiveis via link de acesso externo
+ao SEI, para analise de licitagéo na modalidade pregao, cujo objeto € a contratacgao de servicgos comuns de engenharia com
+registro de precgos destinados 4 manutengdo preventiva e corretiva do Edificio-Sede do MGI-ES, pelo rito da Lei n°
+14.133/2021, para atender as necessidades da Superintendéncia Regional de Administragao no Estado do Espirito Santo.
+
+2. A manifestagao da Advocacia-Geral da Uniaéo tem como referéncia os parametros de controle prévio de
+legalidade indicados no art. 53 da Lei n° 14.133/2021, e sera apresentada com linguagem simples e compreensivel, de forma
+clara e objetiva.
+
+3. Os elementos indispensaveis 4 contratagaéo e aqueles considerados relevantes pela AGU serao apreciados
+juridicamente com exposicao dos pressupostos de fato, pressupostos de direito especificos e pressupostos de direito gerais.
+
+4. Os pressupostos de fato seraéo expostos com a indicacaéo dos documentos apresentados no processo
+administrativo, sendo que eventual nao localizagao sera objeto de expressa indicagao na manifestagdo para saneamento.
+
+5. Os pressupostos de direito especificos da contratacdo serao expostos durante o parecer, em caso de nao
+atendimento dos requisitos normativos da contratacdo, situacdo em que o advogado apresentara recomendagées juridicas para o
+prosseguimento do processo. Em qualquer situagéo, o advogado podera fazer sugestées para seu aperfeicoamento. As
+recomendagées juridicas e as sugestées de aperfeigoamento nao vinculam a decisdo do gestor, que podera prosseguir com a
+contratagaéo motivadamente (art. 50, inciso VII, da Lei n° 9.784/1999).
+
+6. Os pressupostos de direito gerais, que representam os entendimentos da Consultoria-Geral da Uniaio sobre
+quest6es juridicas transversais envolvendo contratagGes, estao expostos apds a assinatura do advogado, nas Notas Juridicas
+Complementares.
+
+7. A padronizagaéo de modelos de documentos da fase interna da licitagdo constitui medida de eficiéncia e
+celeridade administrativa que encontra previsdo no inciso IV do art. 19 da Lei n° 14.133/2021. A seu turno, seu art. 25, §1°,
+dispde que a Administracao deve adotar minutas padronizadas de contrato com clausulas uniformes, sempre que o objeto assim
+permitir, preceito reforgado pelo art. 29, caput, da Instrugéo Normativa SEGES/MPDG n° 5/2017 e pelo Enunciado BPC n° 06
+do Manual de Boas Praticas Consultivas da Advocacia-Geral da Uniao.
+
+8. Assim, para que os objetivos de celeridade, eficiéncia e seguranga sejam alcangados, é preciso que o Orgéo
+assessorado: i) certifique se utilizou o modelo padronizado; ii) indique qual modelo foi adotado; iii) justifique a eventual nao
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 1/13
+
+
+=== PÁGINA 2 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+utilizagdéo do modelo padronizado e iv) destaque e justifique as modificagdes ou adaptacdes eventualmente efetuadas no modelo.
+9. O parecer analisara os itens que ja foram padronizados pela AGU nos modelos de artefatos de planejamento,
+editais, instrumentos de contrato e outros caso o Orgao indique, de forma clara, a alteragéo na redagado “padrao”. O mesmo
+raciocinio se aplica aos casos em que os modelos oferecem ao gestor op¢ées fixas de escolha.
+
+10. A profundidade da andlise de cada topico dependera das circunsténcias do caso concreto e da percepgao do
+advogado parecerista. Quanto maior a discricionariedade ou 0 aspecto técnico do tema, menor o espago para opinides juridicas
+conclusivas, a exemplo do exame dos requisitos da contratagaéo, da descrigéo da solugéo, das contratagdes correlatas ou
+independentes, do demonstrativo da previsdo no plano de contratagdes anual, dos resultados pretendidos e das providéncias
+prévias a serem adotadas.
+
+ANALISE JURIDICA
+1.Da autoriza¢gao para a celebracgdo de novos contratos e das normas de governanca
+
+ll. Para atividades de custeio, deve a Administracgéo Publica comprovar que foi obtida autorizacgéo para celebragao
+de contrato prevista no art. 3° do Decreto n° 10.193, de 2019. A PORTARIA ME N° 7.828, de 30 de agosto de 2022, estabelece
+normas complementares para o cumprimento do Decreto n° 10.193, de 2019.
+
+12. No presente caso, 0 orgéo assessorado declarou que o objeto licitado constitui atividade de custeio (62229498).
+
+13. Por isso, recomenda-se ao 6rgio assessorado que instrua os autos com a autorizacao prevista no art. 3° do
+Decreto n° 10.193, de 27 de dezembro de 2019, o que podera ser feito até antes da assinatura do contrato.
+
+2. Da utilizagdo do pregao eletrénico para servigos comuns de engenharia
+
+14. Cumpre registrar que a contratagdéo de servi¢os comuns de engenharia deve adotar a modalidade licitatoria
+pregao, em razao do disposto no art. 29, paragrafo tinico, da Lei n° 14.133, de 2021.
+
+15. No caso, para que seja comprovada a adequagaéo da modalidade escolhida para o processamento da
+licitagao, devera a Administracéo declarar expressamente nos autos que o objeto é classificado como servi¢o comum de
+engenharia, atendendo aos requisitos do art. 6°, XXI, alinea “a”, e art. 29 da Lei n° 14.133, de 2021. Se esse for 0 caso, somente
+sera possivel licitar o presente objeto sob o tipo menor pre¢o ou maior desconto (art. 6°, XLI, da Lei n° 14.133, de 2021).
+
+16. Registre-se que nao cabe ao Orgdo de Assessoramento Juridico adentrar no mérito da classificagao do objeto,
+tendo em vista o teor técnico da definigaéo, que exige profissional de engenharia, cabendo apenas analisar a adequagao da
+modalidade licitatéria escolhida, conforme entendimento consolidado na Orientagéo Normativa AGU n. 54/2014.
+
+17. No caso concreto em andlise, a Administragéo Consulente atestou a classificagao do objeto do certame como
+servigo comum de engenharia no TJTR (Sei n. 61790928), estando adequado o emprego da modalidade licitatoria pregdo. Nao
+obstante,_recomenda-se_que_o consulente _justifique no bojo do citado documento, de forma técnica, _a_aludida
+classificacAo do objeto.
+
+18. Adicionalmente, recomendamos a esse r. 6rgio assessorado observar a Diretriz de Manutencao Predial E-
+CJU_Engenharia n. 1- Objeto_contratual: Contrato de manutenc4o predial por demanda decorrente de Sistema de
+Registro de Precos "destina-se a viabilizar o funcionamento do prédio tal como recebido para 0 uso" e nfo se presta para
+a realizacio de "servicos que modificam as instalacées existentes". Assim, a manutenc4o predial deve se resumir_a
+"singelas modificacdes, frequentes no Ambito dos érgdos publicos, a exemplo de eventual mudanca de local de uma
+diviséria ou de algum equipamento de informatica ou de um bebedor de agua ou de um aparelho de ar condicionado"
+(Acérdio TCU _n. 482/2011-Plenadrio) ou, ainda, em situacées onde "a demanda pelo objeto é repetida e rotineira"
+(Acérd4o_1381/2018-Plenario). Em_regra, nao é compativel com _a ideia de _manutencdo predial a realizacio de
+adequacées, adaptacées, reformas, levantamentos arquiteténicos, bem como a elaboracao de projetos, seja em razio da
+vedacao contida no art. 9°, Inciso I, da Lei 8.666, de 1993, seja porque o encadeamento de diversos servicos como uma
+unidade a ser _executada demonstra a existéncia de obra ou servico de engenharia incompativel com o sistema de
+manutencdo predial (Acérdao 1381/2018-Plenario). Recomendamos a esse r.6rgio assessorado observar a Diretriz de
+Manutencéo Predial E- CJU_ Engenharia n.22 -Servicos de Engenharia: A declaracao sobre a natureza comum dos
+servicos de manutencdo predial é de competéncia de_profissionais habilitados perante os conselhos responsaveis que
+devem,_ também, _deter_atribuicéo funcional especifica_para_o exercicio_profissional dentro do é6rgiéo promotor da
+licitagdo. A mera previséo de contratacao de profissionais relacionados a engenharia ou arquitetura como terceirizados
+nao é condicao suficiente para caracterizar 0 servi¢o como de engenharia. Antes é necessario que 0 objeto pretendido
+pela__Administracéo _revele__grau___de__ complexidade___ que __ demande __a___participacfio__de__ profissional
+engenheiro/arquiteto/técnico na elaboracéo do projeto basico ou do termo de referéncia e na supervisio constante dos
+servicos a serem executados (Despacho n. 025/2020/COORD/E-CJU/SSEM/CGU, 08657.012362/2020-92).
+
+19. Registre-se que ndo cabe ao Orgiio de Assessoramento Juridico adentrar no mérito da classificacao do objeto,
+tendo em vista o teor técnico da definigéo, que exige profissional de engenharia, cabendo apenas analisar a adequacdo da
+modalidade licitatoria escolhida, conforme entendimento consolidado na Orientagéo Normativa AGU n. 54/2014.
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 2/13
+
+
+=== PÁGINA 3 ===
+15/09/2026, 21:53 SUPER SAPIENS
+3. Da avaliagao de conformidade legal
+20. No presente processo, o Orgdo consulente anexou aos autos a Lista de Verificagao constante do site da AGU.
+
+4. Do Termo de Justificativas Técnicas Relevantes e do Instrumento de Padronizacao dos Procedimentos
+de Contratagao de Obras e Servi¢os de Engenharia — IPPC Engenharia
+
+21. Recomenda-se a elaboragaéo do Termo de Justificativas Técnicas Relevantes - obras e servigos de engenharia
+(Lei n° 14.133, de 2021), conforme modelo elaborado conjuntamente pela E-CJU-Engenharia e a Diretoria de Obras e Servigos
+de Engenharia da Consultoria-Geral da Unido / AGU (Agosto/2023).
+
+22. O responsavel técnico deve marcar os espagos entre parénteses, e, em alguns casos, apresentar a justificativa
+técnica detalhada abordando as razdes que motivam a op¢ao adotada no caso concreto.
+
+23. No_presente_caso, foram juntados dois documentos intitulados “Termo de Justificativas Técnicas
+Relevantes”, constantes no SEI 61728530 _e 61790928, no entanto, somente este ultimo esté_assinado por profissional
+habilitado, motivo pelo qual este advogado levara em consideracdo somente este ultimo. Nesse sentido, observo que do
+referido documento - em que pese regularmente assinado por profissional competente -, em diversos itens, nao consta a
+regular justificativa da escolha feita pelo consulente. Requer providéncias.
+
+24. Somado a isso, recomenda-se também a adocao do Instrumento de Padronizacao dos Procedimentos de
+Contratac4o de Obras e Servicos de Engenharia - IPPC Engenharia.
+
+5. Planejamento da contratagado
+5.1. Justificativa para a contratagao
+
+25. A Lei n° 14.133/21, em seu art. 18, I, exige "a descrigdo da necessidade da contratagao fundamentada em
+estudo técnico preliminar que caracterize o interesse publico envolvido".
+
+26. No item 1 do Documento de Formalizacéo da Demanda e no item 2 do Estudo Técnico Preliminar foi
+apresentada justificativa para a necessidade da contratacgao.
+
+27. O ETP contem justificativa para o quantitativo dos servicos a serem contratados, conforme exige 0 art. 9°, inciso
+V, da Instrugéo Normativa SEGES n. 58, de 2022. Nada a ponderar.
+
+5.2. Documento de formalizacga4o da demanda
+28. O requisito foi atendido no documento Sei n. 62787067.
+5.3. Designagao formal da Equipe de Planejamento da Contratagao
+
+29. O requisito foi atendido no documento Sei n. 58761872. Por cautela, recomenda-se que seja observado o
+principio da segregacao de fungdes e demais disposi¢des do art. 7° da Lei n° 14.133/2021.
+
+Art. 7° Cabera a autoridade maxima do orgéo ou da entidade, ou a quem as normas de organizacao
+administrativa indicarem, promover gestao por competéncias e designar agentes publicos para o desempenho das
+fung6es essenciais 4 execucao desta Lei que preencham os seguintes requisitos:
+
+I - sejam, preferencialmente, servidor efetivo ou empregado publico dos quadros permanentes da Administragao
+Publica;
+
+II - tenham atribuigdes relacionadas a licitagdes e contratos ou possuam formacao compativel ou qualificacao
+atestada por certificagdo profissional emitida por escola de governo criada e mantida pelo poder publico; e
+
+III - nao sejam cénjuge ou companheiro de licitantes ou contratados habituais da Administracéo nem tenham
+com eles vinculo de parentesco, colateral ou por afinidade, até o terceiro grau, ou de natureza técnica, comercial,
+econdémica, financeira, trabalhista e civil.
+
+§ 1° A autoridade referida no caput deste artigo devera observar o principio da segregacao de funcdes, vedada
+a designagao do mesmo agente publico para atuagao simultanea em fungdes mais suscetiveis a riscos, de modo a
+reduzir a possibilidade de ocultagao de erros e de ocorréncia de fraudes na respectiva contratacao.
+
+§ 2° O disposto no caput e no § 1° deste artigo, inclusive os requisitos estabelecidos, também se aplica aos
+orgaos de assessoramento juridico e de controle interno da Administracao.
+
+5.4. Estudos preliminares
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 3/13
+
+
+=== PÁGINA 4 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+30. Quanto aos estudos preliminares, a equipe de planejamento devera certificar-se de que trazem os contetidos
+previstos no art. 9°, da IN SEGES n° 58/2022.
+31, Eventual nao previsdo de qualquer dos conteudos (aqueles nao incluidos no rol dos essenciais) descritos art. 9°,
+
+da IN SEGES n° 58/2022, devera ser devidamente justificada no proprio documento, consoante art. 9°, § 1°, da IN SEGES n°
+58/2022.
+
+32. Em se tratando de servicos de manutengdo e assisténcia técnica, durante a elaborac¢éo do ETP, devera ser
+avaliada a necessidade de ser exigido que tais servicos sejam prestados mediante deslocamento de técnico ou disponibilizados
+em unidade de prestacao de servigos localizada em distancia compativel com suas necessidades, conforme dispde o § 4° do art.
+40 da Lei n° 14.133, de 2021.
+
+33, No caso, verifica-se que a Administragao juntou 0 estudo técnico preliminar no Doc. SEI n. 63787321. Verifica-
+se que este contempla os elementos necessarios, inclusive a descrigdo de possiveis impactos ambientais. O documento encontra-
+se, portanto, em conformidade.
+
+5.5. Gerenciamento de riscos
+
+34, O requisito foi atendido no documento Sei n. 62777053 e 63787257. Recomenda-se seja_providenciada a
+assinatura dos subscreventes.
+
+5.6. Termo de referéncia
+
+35. O Termo de Referéncia ¢ 0 documento que devera conter a definigéo do objeto, incluidos sua natureza, os
+quantitativos, o prazo do contrato e, se for o caso, a possibilidade de sua prorrogagao, a fundamentagao da contratagao, a
+descric¢4o da solugao, os requisitos da contratacg4o, o modelo de execugao do objeto, o modelo de gestao do contrato, os critérios
+de medigao e de pagamento, a forma e critérios de selegéo do fornecedor, as estimativas do valor da contratagéo, acompanhadas
+dos pregos unitarios referenciais, das memorias de calculo e dos documentos que Ihe dao suporte, com os parametros utilizados
+para a obtengao dos precos e para os respectivos calculos, que devem constar de documento separado e classificado e a
+adequagao orgamentaria (art. 6°, inciso XXIII, da Lei n° 14.133, de 2021).
+
+36. Cumpre lembrar que é recomendavel a utilizagéo do modelo de termo de referéncia disponibilizado pela
+Advocacia-Geral da Unido, a fim de garantir 0 conteido minimo necessario, bem como a padronizagao e a celeridade na analise
+(art. 19, IV, da Lei n° 14.133, de 2021).
+
+37. No caso, consta dos autos o Termo de Referéncia, elaborado pela area requisitante, datado e assinado (Doc. SEI
+n. 63787318).
+
+5.7. Projeto Basico
+
+38. O art. 6°, inc. XXV, da Lei n° 14.133, de 2021, dispde que o Projeto Basico é o documento que envolve
+© conjunto de elementos necessarios e suficientes, com nivel de precisaéo adequado para definir e dimensionar a obra ou o
+servigo, ou o complexo de obras ou de servigos objeto da licitagéo, elaborado com base nas indicagdes dos estudos técnicos
+preliminares, que assegure a viabilidade técnica e 0 adequado tratamento do impacto ambiental do empreendimento e que
+possibilite a avaliagao do custo da obra e a definicaéo dos métodos e do prazo de execugaéo, devendo conter os elementos
+previstos no referido dispositivo legal.
+
+39. Nao identificamos nos autos documento denominado projeto basico, razio pela qual recomendamos sua
+incluséo, ou que seja atestado que consta nos autos documento que atende aos requisitos do art. 6°, inciso XXV, da Lei n.
+14.133/2021.
+
+5.8. Projeto Executivo
+
+40. A Lei 14.133/2021 traz em seu art. 6, inc. XXVI, os parametros objetivos a serem observados pelo Projeto
+Executivo: “(...) conjunto de elementos necessdrios e suficientes a execugdo completa da obra, com o detalhamento das
+solugdes previstas no projeto basico, a identificagao de servigos, de materiais e de equipamentos a serem incorporados a obra,
+bem como suas especificagées técnicas, de acordo com as normas técnicas pertinentes”’.
+
+41. Quanto a obrigatoriedade do Projeto Executivo, o § 1° do art. 46 da Lei 14.133/2021 prevé que “é vedada a
+realizagdo de obras e servicgos de engenharia sem projeto executivo, ressalvada a hipotese prevista no § 3° do art. 18 desta Lei”.
+A obrigatoriedade ¢é, portanto, excepcionada desde que atendidos os requisitos legais constantes do § 3° do art. 18 da Lei
+14.133/2021:
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 4/13
+
+
+=== PÁGINA 5 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+§ 3° Em se tratando de estudo técnico preliminar para contratagao de obras e servigos comuns de engenharia, se
+
+demonstrada a inexisténcia de prejuizo para a aferig&éo dos padrdes de desempenho e qualidade almejados, a
+especificacéo do objeto podera ser realizada apenas em termo de referéncia ou em projeto basico, dispensada a
+elaboragao de projetos.
+
+42. O art. 14, §4°, da Lei 14.133/2021, dispde ainda que o Projeto Executivo podera ser atribuido a contratada:
+
+§ 4° O disposto neste artigo nao impede a licitacéo ou a contratacéo de obra ou servico que inclua como encargo
+do contratado a elaboracgdo do projeto basico e do projeto executivo, nas contratagdes integradas, e do projeto
+executivo, nos demais regimes de execugao.
+
+43. Em tal situagéo, para que a tarefa de elaboracgao do projeto executivo possa ser repassada a contratada, é
+necessario que os documentos técnicos prévios da licitagéo sejam suficientemente detalhados, com a descrigéo completa das
+caracteristicas e especificagdes relevantes do objeto licitado, nos termos do art. 6°, XXV, da Lei n. 14.133, de 2021. Adverte-se
+que, caso a responsabilidade pela elaboragdo dos projetos executivos seja transferida 4 contratada, isso deve constar como
+obrigagao especifica no Termo de Referéncia ou Projeto Basico e os custos inerentes devem estar contemplados na proposta.
+
+44, O 6rgio assessorado atestou no TJTR (item 13) que NAO FORAM elaborados os projetos executivos,
+sendo tal atribuicfo expressamente repassada a contratada, com os custos contemplados na _planilha orcamentaria
+elaborada.
+
+45. Nesse_sentido,_recomenda-se_ que _o edital e 0 contrato_prevejam_expressamente_a obrigac4o de sua
+elaboracao pela contratada, com as especificacées e o nivel de detalhamento exigidos pelo art. 6°, XXVI, da Lei n° 14.133,
+de 2021.
+
+5.9. Da viabilidade juridica da terceirizacao
+
+46. O § 1° do art. 3°do Decreto n° 9.507, de 2018, aplicavel a toda a Administragéo Publica Federal direta,
+autarquica e fundacional e das empresas publicas e sociedades de economia mista, explicita que somente poderao ser objeto de
+execugao indireta‘“‘Os servigos auxiliares, instrumentais ou acessorios de que tratam os incisos do caput poderdo ser
+executados de forma indireta, vedada a transferéncia de responsabilidade para a realizagaéo de atos administrativos ou a
+tomada de decisGo para o contratado”.
+
+47. Além disso, acrescente-se a vedagao de terceiriza¢ao como mero fornecimento de mao de obra, a teor do art. 3°
+da Instrugéo Normativa SEGES//MP n. 05/2017:
+
+Art. 3° O objeto da licitagao sera definido como prestagao de servigos, sendo vedada a caracterizagao exclusiva
+do objeto como fornecimento de mao de obra.
+
+48. Recomenda-se_ao 6rgio_assessorado que declare nos autos que o objeto da contratacéo se refere_a
+atividades materiais_acessérias, instrumentais ou_complementares, nao inerentes as categorias funcionais abrangidas
+
+pelo _seu_plano de cargos, conforme exigido pelo Decreto n° 9.507, de 2017, em _cumprimento_aos_pareceres 153 e
+156/2025/CJENG-BSB/SCGP/CGU/AGU.
+
+5.10. Parcelamento da contratacAo e regra geral da adjudicac¢ao por itens
+
+49. Outro ponto relevante diz respeito ao parcelamento do objeto a ser contratado em licitagdes. Em havendo
+divisibilidade de natureza técnica e econdmica, a regra geral é realizar a adjudicagao por itens, tal qual previsto na Sumula TCU
+n° 247.
+50. No Estudo Técnico Preliminar (63787321 - item 9) foi apresentada a justificativa para o parcelamento do objeto,
+nao cabendo ao Orgio de Assessoramento Juridico adentrar no mérito da justificativa, em razio do seu teor estritamente
+técnico.
+
+6. Critérios e praticas de sustentabilidade nas contratagdes
+
+51. No tocante a promogao do Desenvolvimento Nacional Sustentavel previsto nos arts. 5°, e 11, IV, da Lei n.
+14.133, de 2021, 0 Gestor Publico deve tomar as seguintes medidas quando do planejamento de obras e servicos de engenharia:
+
+a) definir os critérios e praticas sustentaveis, objetivamente e em adequagao ao objeto da contratagao pretendida,
+como especificagéo técnica do objeto, obrigagéo da contratada, e/ou requisito de habilitagado/qualificagéo
+previsto em lei especial;
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 5/13
+
+
+=== PÁGINA 6 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+b) verificar se os critérios e praticas sustentaveis especificados preservam 0 carater competitivo do certame;
+c) verificar a incidéncia de normas de acessibilidade (Decreto n. 6.949, de 2009 e Lei n. 13.146, de2015); e
+
+d) verificar o alinhamento da contratagéo com o Plano de Gestao de Logistica Sustentavel.
+
+52. Cabe ao Orgio assessorado a verificacéo técnica dos critérios de sustentabilidade aplicaveis aos servigos a serem
+contratados. Se a Administragéo entender que os servigos objeto desta contratag4o nado se sujeitam aos critcrios e praticas de
+sustentabilidade ou que as especificagées de sustentabilidade restringem indevidamente a competigao em dado mercado, devera
+apresentar a devida justificativa.
+
+53. Estabelecidas estas orientagdes, observa-se que no Estudo Técnico Preliminar e no Termo de Referéncia
+constam informagoes sobre os critérios de sustentabilidade.
+
+54. Recomendamos que sejam analisados os critérios de sustentabilidade a partir dos parametros indicados
+no Guia Nacional de Contratacédes Sustentaveis da AGU (outubro de 2024), com o objetivo de averiguar a necessidade de
+ajuste e/ou complementagao nos documentos preparatorios do certame.
+
+7. Do orcamento da contratacao
+
+55. Quanto ao orgamento, ¢ dever da Administragao, na contratagao de servigos, elaborar planilha detalhada com a
+consolidagao dos quantitativos e pregos unitarios e total da contratagao (art. 6°, XXIII, alinea "i", art. 18, IV, e § 1°, VI, da Lei n°
+14.133, de 2021 c/c art. 2°, incisos I, II, VIII e IX, do Decreto n° 7.983, de 2013).
+
+56. Destaque-se que no regime da Lei n. 14.133/2021, © regramento principal para a orgamentagao da licitagao
+encontra-se no art. 23, §2° do referido diploma legal, com aplicagao, no que couber, do Decreto n. 7.983, de 2013.
+
+57. Compulsando os autos, verifica-se que foi juntada planilhas Orgamentarias Sintética (Doc. SEI 61826267 ,
+61826477, 61826643, 61826863, 61831673, 61832194, 62216913, 61833731, 61834527, 61835041, 61835298). Todavia, nao
+identificou-se a planilha analitica, motivo pelo qual recomenda-se que o 6rgao certifique a respeito da tal fato.
+
+58. Nesse contexto, recomendamos: seja_juntada aos autos justificativa detalhada_demonstrando que a
+Administrac4o seguiu rigorosamente a sequéncia hierarquica prevista no art. 23, § 2°, da Lei n° 14.133/2021, explicitando
+as razées pelas quais o sistema SINAPI se mostrou insuficiente para determinados itens; em sendo 0 caso, recomenda-se
+que seja demonstrada a adequacao das tabelas referenciais de outros entes federativos ao mercado local da obra.
+
+59. No mais, tendo em conta a natureza estritamente técnica do orgamento, a adequagao da metodologia empregada
+para estimar os custos unitarios da contratagdo deixara de ser examinada neste parecer, por se trata de atribuigéo nao afeta a
+formacao juridica e ao prisma do exame da estrita legalidade.
+
+7.1. Composi¢ao dos custos e definic¢éo de critérios de aceitabilidade dos pregos unitarios e global
+
+60. Com relacgéo 4 composicao dos custos dos servigos de engenharia ao prego total estimado para cada despesa, a
+lei exige que seus elementos estejam muito bem evidenciados na planilha orgamentaria prevista no art. 6°, XXIII, "i", art. 18, IV,
+e § 1°, VI, da Lei n° 14.133, de 2021, incluindo os valores unitarios de todos os insumos, imprescindivel para orientar o gestor
+em caso de acréscimos futuros.
+
+61. Para as obras e servicos de engenharia, aplica-se a Samula TCU n° 258/2010:
+
+Sumula TCU n° 258 - As composigées de custos unitarios e o detalhamento de encargos sociais e do BDI
+integram 0 orgamento que compée o projeto basico da obra ou servi¢o de engenharia, devem constar dos anexos
+do edital de licitag4o e das propostas das licitantes e nao podem ser indicados mediante uso da expressio "verba"
+ou de unidades genéricas.
+
+62. No caso, a decomposicao dos custos unitarios é passo essencial para a previsao dos critérios de aceitabilidade
+dos precos unitarios e global a serem aplicados no julgamento das propostas — medida obrigatoria para as obras e servicos de
+engenharia, conforme Orientagao Normativa AGU n° 5/2009 e Simula TCU n° 259.
+
+63. Consta no TR (63787318), item 9.4, a defini¢éo dos critérios de aceitabilidade de pregos. Nada obstante,
+recomendamos a certificagfo dos precos e parametros para avaliacdo da aceitabilidade das propostas, a fim de que
+contemplem tanto a analise global dos custos quanto 0 exame especifico dos custos unitarios.
+
+7.2. Bonificagdes e despesas indiretas - BDI
+
+64. O requisito foi atendido no documento Sei n. 63355968, tendo sido asseverado no Termo de Justificativas
+Técnicas Relevantes (item 10), que foram atendidos os parametros previstos no Acordao n. 2.622/2013- Plenario, do Tribunal de
+Contas da Uniao para a defini¢ao do BDI estimado.
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 6/13
+
+
+=== PÁGINA 7 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+7.3. BDI diferenciado para o fornecimento de materiais e equipamentos
+
+65. Quando o fornecimento de materiais e equipamentos para a obra ou servi¢o de engenharia represente parcela
+significativa do empreendimento e puder ser realizado separadamente do contrato principal de empreitada sem
+comprometimento da eficiéncia do contrato ou da realizagao do seu objeto, a Administragao devera realizar licitagdes diferentes
+para a empreitada e para o fornecimento.
+
+66. Caso, porém, haja inviabilidade técnica do parcelamento do objeto, justificada mediante fundamentacado
+plausivel e aprovada pela autoridade competente, 0 projeto basico devera apresentar BDI diferenciado para a parcela relativa ao
+fornecimento, conforme consignado na Sumula n° 253 do TCU:
+
+Comprovada a inviabilidade técnico-econémica de parcelamento do objeto da licitagdo, nos termos da
+legislagdo em vigor, os itens de fornecimento de materiais e equipamentos de natureza especifica que possam ser
+fornecidos por empresas com especialidades proprias e diversas e que representem percentual significativo do
+prego global da obra devem apresentar incidéncia de taxa de Bonificagdo e Despesas Indiretas - BDI reduzida
+em relagdo a taxa aplicavel aos demais itens.
+
+67. O orgao assessorado informa, no TJTR (item 11) que nao sera adotado o BDI reduzido sobre os custos dos
+materiais e equipamentos. Apresenta a seguinte justificativa: “[...] as composig6es de custos unitarios, extraidas diretamente dos
+bancos de dados oficiais (como o SINAPI), ja englobam de forma indivisivel o fornecimento de material e a mao de obra
+necessaria para a execugao. Assim, o BDI geral da obra incide integralmente sobre 0 custo total do servico.”
+
+7.4, Contribuicaéo previdenciaria sobre a renda bruta (desoneracao tributaria)
+
+68. O orgaio promotor da licitagaéo deve atentar para o regime de tributag&o que esta sendo considerado no
+orgamento de referéncia da Administrag¢éo, mormente se esta ou nao considerando no BDI adotado no certame os efeitos da
+Contribuigéo Previdenciaria sobre a Renda Bruta (CPRB), ou seja, da desoneragao tributaria, evidentemente, enquanto ela
+estiver vigente e aplicavel as empresas do setor de engenharia.
+
+69. Cabe ao setor técnico anexar nos autos a simulagao dos pregos globais da obra ou servi¢o, com base nos dois
+cenarios — custos “‘desonerados” (acrescido o percentual da CPRB no BDI) versus custos “nao desonerados” (excluido o
+percentual da CPRB no BDI) — para justificar a opgaéo mais vantajosa para a Administragao, a qual sera adotada como
+orcamento de referéncia da licitacao.
+
+70. Ademais, foi sancionada a Lei n. 14.973, de 16 de setembro de 2024, publicada na mesma data e com vigéncia
+na data de publicagao. Esta lei estabelece, dentre outras disposigdes, o regime de transi¢4o para a contribuigdo substitutiva
+prevista nos arts. 7° e 8° da Lei n. 12.546, de 14 de dezembro de 2021, 0 que devera ser observado pela Administragao
+Consulente, naquilo que for cabivel.
+
+71. No presente caso, 0 6rgao assessorado informa que foram adotados os custos de referéncia desonerados, por se
+tratar da op¢ao mais vantajosa para a Administragao.
+
+72. Recomenda-se,_entretanto,_a_apresentacio de _manifestacdo técnica abordando as _questées acima e
+atestando que o regime adotado, apdés as devidas apuracées e comparacio , é de fato_o mais vantajoso para a
+Administracao.
+
+7.5. Elaboracao da curva ABC de servic¢os e insumos
+
+73. Nao foi _possivel visualizar_a Curva ABC de Insumos e Servicos. Recomenda-se_complementacao da
+instruc4o ou apresentacdo de justificativa para sua auséncia.
+
+8. Cronograma fisico-financeiro
+
+74. Cronograma fisico-financeiro consiste na divisdo da obra ou servigo de engenharia em fases que deverao ser
+executadas sequencialmente, onde cada uma delas prevé as atividades que serao realizadas e os respectivos prazos de execucio,
+ao final das quais a Administracgao devera verificar 0 devido cumprimento em comparagao com as especificagdes dos projetos
+basico/executivo e atestar as condicgdes daquilo que foi entregue pela contratada a fim de determinar as corregdes devidas pelo
+executor da obra ou comunicar ao setor financeiro competente a possibilidade de deflagracao dos procedimentos pertinentes ao
+pagamento da etapa cumprida.
+
+75. Tratando-se de servigos a serem contratados por demanda, nao é valido o cronograma apresentado, pois para
+cada espécie de servigo deve ser elaborado cronograma fisico-financeiro proprio. Diante da auséncia de obrigatoriedade de se
+contratar os servigos estimado nao se pode definir, a priori, quais servi¢os serao contratados, 0 que impede seja previamente
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 713
+
+
+=== PÁGINA 8 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+determinado o cronograma fisico-financeiro. Entretanto, remanesce o dever de se prever, dentro do possivel, o prazo de
+execucao estimado de cada servico isoladamente.
+76. Requisito atendido (63355968).
+
+9. Exigéncia de Anotacao de Responsabilidade Técnica — ART, Registro de Responsabilidade Técnica —
+RRT ou Termo de Responsabilidade Técnica — TRT.
+
+77. Nos termos do art. 10 do Decreto n° 7.983, de 2013, a anotagao de responsabilidade técnica pelas planilhas
+orgamentarias devera constar do projeto que integrar o edital de licitagao, inclusive de suas eventuais alteragdes.
+
+78. De acordo com a Stmula TCU n° 260, “é dever do gestor exigir apresentagdo de Anotagdo de Responsabilidade
+Técnica - ART referente a projeto, execugdo, supervisdo e fiscalizagado de obras e servigos de engenharia, com indicagdo do
+responsavel pela elaboragao de plantas, orgamento-base, especificagdes técnicas, composi¢g6es de custos unitarios, cronograma
+fisico-financeiro e outras pegas técnicas”’.
+
+79. No caso dos autos, junta-se uma ART, sob a forma de rascunho, portanto, sem validade juridica
+(61728759). Com efeito, necessario juntar a(s) ART(s)/RRT(s)/TRT(s) valida(s), cabendo a area técnica verificar se 0(s)
+referido(s) documento(s) corresponde(m) 4 totalidade da documentacao técnica demandante dos devidos registros.
+Lembrando que a administragéo deve providenciar os devidos registros, nos termos da Simula n. 260 do TCU,
+demonstrando a autenticidade dos documentos relativos as planilhas orgamentarias, projetos e demais que exigem
+atuac4o do profissional de engenharia.
+
+10. Titularidade do imével
+
+80. Constitui medida de precaucdo, na fase de planejamento da contratacdo, verificar se a Unido é a legitima
+proprietaria do imével onde se pretende realizar obra ou servigo de engenharia, o que se da por meio da certidao emitida pelo
+competente Registro de Iméveis.
+
+81. Em se tratando de imével alugado, com a finalidade de evitar 0 descumprimento de clausulas contratuais e
+resguardar o direito da Unido a indenizacao e a retencao pelas benfeitorias a serem introduzidas, deve o orgiao verificar se ha no
+contrato de locacao clausula que disponha sobre a introdugao de benfeitorias pelo locatario, bem como deve obter a prévia
+autorizagao por escrito do locador para a realizagao das benfeitorias. Isso porque, salvo expressa disposigao contratual em
+contrario, as benfeitorias necessarias introduzidas pelo locatario, ainda que nao autorizadas pelo locador, bem como as Uteis,
+desde que autorizadas, serio indenizaveis e permitem o exercicio do direito de retengao (art. 35 da Lei n° 8.245/91). Ja as
+benfeitorias voluptuarias nao serao indenizaveis, podendo ser levantadas pelo locatario, finda a locagao, desde que sua retirada
+nao afete a estrutura e a substancia do imével (art. 36 da Lei n° 8.245/91).
+
+82. Assim, caso 0 imdvel seja de propriedade de terceiros, 0 orgéo devera atentar para a natureza das benfeitorias
+realizadas, bem como aos termos do contrato de locagao a fim de atender as prescrigdes acima delineadas.
+
+83. Além disso, é preciso averiguar se o imével é tombado, hipdtese na qual sera necessario verificar se 0 servi¢o
+atende as exigéncias previstas na legislacao protetiva do patriménio histérico e artistico nacional, com prévia autorizacgaéo do
+Instituto do Patriménio Histdrico e Artistico Nacional (Iphan), conforme prescreve o art. 17 do Decreto-Lei n. 25, de 30 de
+novembro de 1937, ou, em sendo o caso, do orgao estadual ou municipal correspondente.
+
+84. O requisito foi atendido (63787269).
+11. Designagao formal do pregoeiro e equipe de apoio
+85. O requisito foi atendido no documento Sei n. 63787315.
+12. Participagao de microempresas e empresas de pequeno porte
+
+86. Acerca das regras voltadas para ME e EPP, 0 art. 4° da Lei n. 14.133/2021 estabelece critérios objetivos que
+podem impactar na aplicacao do tratamento favorecido e diferenciado a essas empresas, 0 que deve ser objeto de analise
+especifica.
+
+87. Superado este ponto, em sendo o caso de aplicagao do tratamento favorecido previsto nos arts. 42 a 49 da Lei
+Complementar n. 123/2006, deverao ser observadas suas disposigdes, com apresentacdo das justificativas para as opcdes
+adotadas, quando cabiveis:
+
+Art. 48. Para o cumprimento do disposto no art. 47 desta Lei Complementar, a administragao publica:
+I - devera realizar processo licitatorio destinado exclusivamente a participagao de microempresas e empresas de
+pequeno porte nos itens de contratagao cujo valor seja de até R$ 80.000,00 (oitenta mil reais);
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 8/13
+
+
+=== PÁGINA 9 ===
+15/09/2026, 21:53 SUPER SAPIENS
+II - podera, em relagao aos processos licitatorios destinados a aquisigao de obras e servi¢gos, exigir dos licitantes
+a subcontratagéo de microempresa ou empresa de pequeno porte;
+III - devera estabelecer, em certames para aquisicao de bens de natureza divisivel, cota de até 25% (vinte e cinco
+por cento) do objeto para a contratagao de microempresas e empresas de pequeno porte.
+1° (Revogado).
+§ 2° Na hipdtese do inciso II do caput deste artigo, os empenhos e pagamentos do orgaéo ou entidade da
+administragao plblica poderao ser destinados diretamente as microempresas e empresas de pequeno porte
+subcontratadas.
+§ 3° Os beneficios referidos no caput deste artigo poderao, justificadamente, estabelecer a prioridade de
+contratag4o para as microempresas e empresas de pequeno porte sediadas local ou regionalmente, até o limite
+de10% (dez por cento) do melhor prego valido.
+Art. 49. Nao se aplica o disposto nos arts. 47 e 48 desta Lei Complementar quando:
+I - (Revogado);
+II - néo houver um minimo de 3 (trés) fornecedores competitivos enquadrados como microempresas ou empresas
+de pequeno porte sediados local ou regionalmente e capazes de cumprir as exigéncias estabelecidas no
+instrumento convocatorio;
+III - o tratamento diferenciado e simplificado para as microempresas e empresas de pequeno porte nao for
+vantajoso para a administragaéo publica ou representar prejuizo ao conjunto ou complexo do objeto a ser
+contratado;
+IV - a licitagado for dispensavel ou inexigivel, nos termos dos arts. 24 e 25 da Lei n° 8.666, de 21 de junho
+de1993, excetuando-se as dispensas tratadas pelos incisos I e II do art. 24 da mesma Lei, nas quais a compra
+devera ser feita preferencialmente de microempresas e empresas de pequeno porte, aplicando-se 0 disposto no
+inciso I do art. 48.
+
+88. O requisito foi atendido no documento Sei n. 63787481.
+
+13. Dos regimes de execugao
+
+89. Os regimes de execugao sao elencados no art. 46, inciso I ao VII, c/c as definigdes constantes do art. 6°, incisos
+XXVIII a XXXV, ambos da Lei n° 14.133, de 2021.
+90. Os dois regimes de execugéo mais comuns das obras e servigos de engenharia — empreitada por prego global ou
+
+unitario — possuem disciplinas normativas diferentes, sobretudo quanto aos critérios de aceitabilidade de pregos e as eventuais
+alteragdes contratuais, de forma que a decisao por um ou outro é muito importante.
+
+91. Assim, a escolha do regime de execugéo devera ser devidamente motivada, até mesmo porque a questéo
+repercute, dentre outros aspectos, nos critérios de aceitabilidade de precos, medigGes e aditivos contratuais.
+
+92. Apesar do consulente ter optado pela empreitada por preco global (61790928 - item 2), néo consta a
+devida justificativa. Requer providéncia.
+
+14. Subestimativas e Superestimativas Relevantes
+
+93. Nos regimes de empreitada por prego global, recomenda-se que a Administragéo avalie a pertinéncia da
+elaboragao da matriz de riscos com a identificagao dos itens relevantes e dos correspondentes graus de riscos. Saliente-se
+que tal recomendagao decorre do entendimento do Tribunal de Contas da Unido nesse sentido (Acordao TCU 1977/2013-
+Plenario elaborado sob a égide da Lei n° 8.666/1993), e esta prevista nos arts. 6°, XXVII, 22, 92, IX, 103, da Lei n°
+14.133/2021.
+
+94. A partir dessa matriz, 0 Projeto Basico podera contemplar os indices de “subestimativas ou superestimativas
+relevantes” a fim de garantir seguranga juridica de eventual necessidade de aditivos para corregdo de Projeto, como orienta 0
+Tribunal de Contas da Unido no Acordao n. 1977/2013-Plenario: “(...) recomendagao a jurisdicionada, para que, doravante,
+inclua nos editais clausula a estabelecer, de forma objetiva, o que sera objeto de aditamentos durante a execugdo da avenga,
+bem como a definigdo do que venha a ser 'subestimativas ou superestimativas relevantes' (...)”.
+
+95. Portanto, é necessario que o processo seja instruido com a indicagao do percentual da margem de variagao de
+prego aceitavel para cada uma das etapas em que se divide o empreendimento, com a indica¢ao das situagdes onde havera, ou
+nao, a possibilidade de alteracao do projeto e, consequentemente, a celebragao de termo aditivo.
+
+96. A esse respeito, 0 art. 13, inciso II, do Decreto 7.983, de 2013, prescreve:
+
+Art. 13. Em caso de adogao dos regimes de empreitada por preco global e de empreitada integral, deverao ser
+observadas as seguintes disposicdes para formagao e aceitabilidade dos precos:
+
+[..]
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 9/13
+
+
+=== PÁGINA 10 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+II - devera constar do edital e do contrato clausula expressa de concordancia do contratado com a adequacao do
+projeto que integrar o edital de licitagéo e as alteracdes contratuais sob alegacao de falhas ou omiss6es em
+qualquer das pegas, orgamentos, plantas, especificagdes, memoriais e estudos técnicos preliminares do projeto
+nao poderao ultrapassar, no seu conjunto, dez por cento do valor total do contrato, computando-se esse
+percentual para verificagao do limite previsto no § 1° do art. 65 da Lei n° 8.666, de 1993.
+
+Ll
+
+97. Nao consta no processo a matriz de risco com os critérios e as regras de fixagao das subestimativas e
+superestimativas relevantes. E a partir desses levantamentos que a area técnica devera definir 0 que sera considerado como
+mera imprecisao, a ser tolerada pelas partes, e quais 0 percentuais de superestimavas ou subestimavas dos itens de maior valor e
+relevancia técnica (avaliado de acordo com a metodologia ABC) que, por erros ou omissdes, devem ensejar a elevacao de
+termos aditivos para manutengao do equilibrio econdémico-financeiro da avenga, por certo que se observando o limite maximo
+de tolerancia de erros de 10% do valor total do contrato, previsto no art. 13, inciso II, do Decreto n. 7.983, de 2013, em prestigio
+ao principio da seguranga juridica.
+
+98. Recomenda-se, assim, que a Administracao avalie a elaboragao da matriz de risco com os critérios e as regras de
+fixagdo das subestimativas e superestimativas relevantes, considerando o disposto nos arts. 6°, XX VII, 22, 92, IX, 103, da Lei n°
+14.133/2021.
+
+15. Sistema de Registro de Pregos
+
+99. Diversamente da regulamentagao anterior (Decreto n° 7.892/2013), que estabelecia rol taxativo de hipéteses de
+utilizagao do Sistema de Registro de Pregos, o Decreto n° 11.462/2023 passou a admitir a sua utilizagéo sempre que "a
+Administragao julgar pertinente":
+
+Art. 3° O SRP podera ser adotado quando a Administragao julgar pertinente, em especial:
+
+I - quando, pelas caracteristicas do objeto, houver necessidade de contratagdes permanentes ou frequentes;
+
+II - quando for conveniente a aquisi¢éo de bens com previsao de entregas parceladas ou contratagao de servicos
+remunerados por unidade de medida, como quantidade de horas de servigo, postos de trabalho ou em regime de
+tarefa;
+
+III - quando for conveniente para atendimento a mais de um 6rgao ou a mais de uma entidade, inclusive nas
+compras centralizadas;
+
+IV - quando for atender a execugao descentralizada de programa ou projeto federal, por meio de compra nacional
+ou da adesao de que trata o § 2° do art. 32; ou
+
+V - quando, pela natureza do objeto, nao for possivel definir previamente o quantitativo a ser demandado pela
+Administracao.
+
+Paragrafo unico. O SRP podera ser utilizado para a contratagao de execugao de obras e servigos de engenharia,
+desde que atendidos os seguintes requisitos:
+
+I - existéncia de termo de referéncia, anteprojeto, projeto basico ou projeto executivo padronizados, sem
+complexidade técnica e operacional; e
+
+II - necessidade permanente ou frequente de obra ou servigo a ser contratado.
+
+100. Por forga do art. 82, § 5°, da Lei n° 14.133/21, é admitida a utilizagao do Sistema de Registro de Pregos -
+SRP para a contratagao de bens e servicos, inclusive de obras e servigos de engenharia, desde que observadas as condicées nele
+previstas:
+
+I - realizacao prévia de ampla pesquisa de mercado;
+
+II - selegaéo de acordo com os procedimentos previstos em regulamento;
+
+III - desenvolvimento obrigatorio de rotina de controle;
+
+IV - atualizagao periddica dos precos registrados;
+
+V - definigao do periodo de validade do registro de pregos;
+
+VI - inclusao, em ata de registro de precos, do licitante que aceitar cotar os bens ou servigos em precos iguais aos
+do licitante vencedor na sequéncia de classificagao da licitagdo e inclusao do licitante que mantiver sua proposta
+original.
+
+101. Quando o objeto da licitagao for a execugao de obras e servigos de engenharia, o art. 85 da Lei n° 14.133/21
+dispde:
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 10/13
+
+
+=== PÁGINA 11 ===
+15/09/2026, 21:53 SUPER SAPIENS
+Art. 85. A Administragao podera contratar a execucao de obras e servigos de engenharia pelo sistema de registro
+de precos, desde que atendidos os seguintes requisitos:
+I - existéncia de projeto padronizado, sem complexidade técnica e operacional;
+II - necessidade permanente ou frequente de obra ou servico a ser contratado.
+
+102. Portanto, necessario seja verificado se a presente contratagéo atende aos requisitos estabelecidos na Lei n°
+14.133/21, em especial, a existéncia de projeto padronizado, sem complexidade técnica e operacional, e a necessidade
+permanente ou frequente de obra ou servico a ser contratado.
+
+103. No presente caso, em que pese tenha sido apresentada a devida justificativa para o emprego do SRP (63786173),
+recomenda-se seja demonstrado 0 atendimento dos requisitos especificos para sua utilizacdo na contratacéo do presente
+servico de engenharia.
+
+16. Intencao de Registro de Pre¢gos
+
+104. Com a intengao de obter a participagaéo de outros Orgéos governamentais que tenham interesse em contratar 0
+mesmo objeto, possibilitando, assim, auferir melhores pregos por meio de economia de escala, o art. 86 da Lei n° 14.133/21
+exige que o Orgao gerenciador da licitagao realize procedimento publico de intengao de registro de pregos para possibilitar a
+participagao de outros érgaos ou entidades.
+
+105. Excepcionalmente, podera ser dispensada a divulgagéo da intengao de registro de precos quando o Orgaéo
+gerenciador for o unico contratante (art. 86, § 1°, da Lei n° 14.133 e art. 9°, § 2°, do Decreto n° 11.462/2023).
+106. Assim sendo, compete ao Orgao assessorado atestar nos autos do processo no qual se objetiva a contratagao a
+
+realizagao do procedimento publico de intengao de registro de pregos ou justificar a respectiva dispensa com fundamento no art.
+86, § 1°, da Lei n° 14.133/21, bem como no art. 9°, § 2°, do Decreto n° 11.462/23.
+
+107. No presente caso, o consulente justificou a nao realizacgéo da IRP (63786173)
+17. Exigéncia de vistoria
+
+108. Quando a avaliacgao prévia do local de execucao for imprescindivel para o conhecimento pleno das condi¢gées e
+peculiaridades do objeto a ser contratado, o edital de licitagao podera prever, sob pena de inabilitagao, a necessidade de o
+licitante atestar que conhece 0 local e as condigées de realizagao da obra ou servico, assegurado a ele o direito de realizacao de
+vistoria prévia (Art. 63, § 2°, da Lei n° 14.133/2021). Se os licitantes optarem por realizar vistoria prévia, a Administragao
+devera disponibilizar data e horario diferentes para os eventuais interessados
+
+109. Essa exigéncia se insere no contexto da discricionariedade administrativa. Entretanto, 0 edital de licitagéo
+sempre devera prever a possibilidade de substituigéo da vistoria por declaracao formal assinada pelo responsavel técnico do
+licitante acerca do conhecimento pleno das condigées e peculiaridades da contratagao (Art. 63, § 3°, da Lei n° 14.133/2021).
+
+110. O requisito foi atendido no Termo de Referéncia (item 4.33) e no Termo de Justificativas Técnicas Relevantes
+(item 15). No entanto, recomenda-se harmonizar o disposto no TJTR, que dispée que a vistoria é facultativa, com o edital
+de pregao, que nao dispée sobre o assunto (excluindo o item 9.10.1, que tratava da vistoria facultativa).
+
+18. Analise da minuta do edital
+
+111. Recomenda-se a utilizagao das minutas disponibilizadas pela AGU, conforme art. 19, inciso IV, c/c art. 25, § 1°,
+da Lei n° 14.133, de 2021, bem como que as alteragdes realizadas nos modelos sejam destacadas visualmente e justificadas por
+escrito no processo (art. 19, § 2°, da Lei n° 14.133, de 2021).
+
+112. Dito isso, consta dos autos que foi utilizada a minuta padronizada de edital disponibilizada pela Advocacia-
+Geral da Unido (Doc. SEI 63787481).
+113. Sem embargo disso, quanto ao contetido das alteracdes destacadas ou das partes editaveis da minuta de
+
+edital, constata-se a necessidade de atendimento adicional as recomendagées abaixo, a saber: a) consta do item 3.10.11 vedagao
+a participagaéo das cooperativas no certame, no entanto, nao ha justificativa nos autos que sustente tal vedagao (item 19 do TJTR
+nao foi marcado, tampouco justificado). Requer providéncia; b) recomenda-se excluir item 8.15.2, por se tratar de dedicacao
+exclusiva de mao de obra, 0 que nao é 0 caso dos autos; c) recomenda-se adaptar o texto da Minuta do Edital as recomendagdes
+feitas no presente Parecer que impactem no contetido da Minuta.
+
+19. Analise da minuta do contrato
+
+114. Consta dos autos que foi utilizada a minuta padronizada de contrato disponibilizada pela Advocacia-Geral da
+Uniao (Doc. SEI 63807532).
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 11/13
+
+
+=== PÁGINA 12 ===
+15/09/2026, 21:53 SUPER SAPIENS
+
+115. Contudo, quanto ao contetido das alteragdes destacadas ou das partes editaveis da minuta de contrato, constata-
+se a necessidade de atendimento adicional as recomendagoes abaixo, a saber: a) Observa-se que 0 6rgao assessorado manteve no
+termo de contrato a segao referente as disposi¢des sobre protegao de dados pessoais nos termos da Lei n° 13.709, de 14 de
+agosto de 2018 (Lei Geral de Protegéo de Dados — LGPD). Registre-se que as clausulas dessa natureza sao necessarias para
+cumprimento da referida legislagéo quando a contratagéo envolve, de qualquer forma, o tratamento de dados pessoais.
+Entretanto, da analise dos documentos que formam o processo licitatorio, néo se evidencia que a contratagéo em questao
+envolva, sob qualquer aspecto, o tratamento de dados pessoais. A manutengao de clausulas inaplicaveis ao objeto contratado
+pode gerar confusao interpretativa e impor obrigacdes desnecessarias as partes, contrariando os principios da eficiéncia e da
+razoabilidade administrativa. Recomenda-se que 0 orgao assessorado promova nova avaliagéo quanto a pertinéncia das clausulas
+relativas 4 Lei Geral de Protegao de Dados, excluindo-as da minuta de termo de contrato caso conclua que a contratacdéo nao
+envolve, efetivamente, o tratamento de dados pessoais em qualquer de suas etapas ou modalidades."; b) Recomenda-se a
+inclusaéo do detalhamento completo da dotagao orgamentaria do exercicio corrente na Clausula Décima Quinta para assegurar a
+conformidade com as normas de execugao orgamentaria e financeira. Tratando-se de pregao, o momento dessa definigéo pode
+ser postergado até a assinatura do contrato.
+
+20. Analise da minuta de ata de registro de precos
+
+116. Foi utilizada a minuta padronizada de ata de registro de pregos disponibilizada pela Advocacia-Geral da
+Unido (Doc. SEI 63802412).
+
+21. Dotacao orgamentaria e Lei de Responsabilidade Fiscal
+
+117. Deve-se juntar aos autos a indispensavel declaragaéo do setor competente acerca da previséo dos recursos
+orgamentarios necessarios para fazer face as despesas decorrentes da futura contratagéo, indicando a respectiva a¢ao
+orgamentaria, 0 que atende ao art. 6°, XXIII, alinea "j", c/c art. 18, caput, da Lei n° 14.133, de 2021.
+
+118. Alerta-se, ainda, para a necessidade de juntar ao feito, antes da celebragao do contrato administrativo, a nota de
+empenho suficiente para o suporte financeiro da respectiva despesa, em atengao ao disposto no art. 60 da Lei n° 4.320, de 1964.
+119. Recomenda-se, pois, que a Administragéo informe nos autos a natureza da acao que suporta a despesa
+
+decorrente da futura contratagao, adotando, a depender do caso, as providéncias previstas no art. 16, incisos I e II, da Lei de
+Responsabilidade Fiscal,com as premissas da estimativa de impacto orgamentario-financeiro e a metodologia de calculo
+utilizadas (art. 16, §2°, da Lei Complementar n.° 101, de 2000).
+
+120. Nao foram encontradas nos autos a declaracéo de previsio de recursos orcamentarios e nem a de
+
+22. Autorizacao para abertura da licitacao
+
+121. Consta nos autos a autorizagao para abertura do processo licitatério, proferida pela Superintendente Regional de
+Administragao (Sei n.63807657).
+
+23. Publicacaéo do edital e do contrato
+
+122. Conforme art. 54, caput e §1°, c/c art. 94 da Lei n° 14.133, de 2021, ¢ obrigatoria a divulgacao e a manutengaéo
+do inteiro teor do edital de licitagAo e dos seus anexos e do termo de contrato no Portal Nacional de Contratagdes Publicas e a
+publicagao de extrato do edital no Diario Oficial da Unido.
+
+123. No caso de servigos comuns de engenharia, deve ser observado 0 prazo minimo de 10 (dez) dias uteis,
+contados a partir da data de divulgagao do edital de licitagdo, para a apresentagao das propostas e lances, quando adotados os
+critérios de julgamento de menor prego ou de maior desconto (art. 55, inciso IL, alinea “a”, Lei n° 14.133, de 2021).
+
+124. Destaca-se também que, apds a homologagao do processo licitatorio, ¢ obrigatéria a disponibilizagao no Portal
+Nacional de Contratagdes Publicas (PNCP) dos documentos elaborados na fase preparatoria que porventura nao tenham
+integrado o edital e seus anexos, conforme determina 0 art. 54, § 3°, da Lei n° 14.133, de 2021.
+
+CONCLUSAO
+125. Este 6rgéo consultivo conclui pela viabilidade juridica da licitagao, desde que atendidas as recomendacgdes
+mencionadas nos itens 13, 17 a 19, 23, 24, 34, 39, 45, 48, 57, 58, 63, 72, 73, 79, 92, 97, 98, 103, 110, 113, 115, 120.
+126. As recomendagoes juridicas e as sugestées de aperfeigoamento nao vinculam a decisao do gestor, que podera
+
+prosseguir de forma diversa, motivadamente (inciso VII do art. 50 da Lei n° 9.784/1999).
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 12/13
+
+
+=== PÁGINA 13 ===
+15/09/2026, 21:53 SUPER SAPIENS
+127. O gestor pode entrar em contato com o Advogado para tratar deste parecer pelo e-mail abaixo informado, em
+dias uteis, das 8h as 12hs e das 14hs as 18hs.
+128. Dispensada a aprovagao superior, nos termos da Portaria N° 01/2024/DIENG/SCGP/CGU/AGU, de 05 de
+agosto de 2024.
+129. Para maior detalhamento juridico acerta do tema, é possivel consultar as Notas Juridicas Complementares
+relativas a matcria por meio do link: https://sapiens.agu.gov.br/valida_publico?id=3097720114
+
+Brasilia, 04 de setembro de 2026.
+JAILDO PEIXOTO DA SILVA
+ADVOGADO DA UNIAO
+jaildo.silva@agu.gov.br
+
+Atengao, a consulta ao processo eletrénico esta disponivel em https://supersapiens.agu.gov.br mediante o
+fornecimento do Numero Unico de Protocolo (NUP) 10783000206202671 e da chave de acesso e74bd2be
+
+Documento assinado eletronicamente por JAILDO PEIXOTO DA SILVA, com certificado Al institucional
+
+fm] (*.AGU.GOV.BR), de acordo com os normativos legais aplicaveis. A conferéncia da autenticidade do
+
+= documento esta disponivel com 0 cédigo 3365512550 e chave de acesso e74bd2be no enderego eletrénico
+
+https://supersapiens.agu.gov.br. Informagées adicionais: Signatario (a): JAILDO PEIXOTO DA SILVA, com
+
+ort certificado Al institucional (*.AGU.GOV.BR). Data e Hora: 04-09-2026 22:01. Numero de Série:
+steal 65635031372271175007508848075. Emissor: Autoridade Certificadora do SERPRO Final SSL.
+
+Ck
+
+https://supersapiens.agu.gov.br/apps/processo/63211434/chave/e74bd2bc/visualizar 13/13

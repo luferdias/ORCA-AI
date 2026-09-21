@@ -1,0 +1,812 @@
+[
+  {
+    "tag": "input",
+    "name": "utf8",
+    "id": "",
+    "type": "hidden",
+    "value": "✓",
+    "labelText": "",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "name": "authenticity_token",
+    "id": "",
+    "type": "hidden",
+    "value": "WsyItKiHXJtK/FL0cnf0fY7Mj/0U4slSnZUhqfGA43CgdbKSKiW8L7/WAkTImb9Peiw0lM3KLvR3oK4n3RURzA==",
+    "labelText": "",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "name": "commit",
+    "id": "",
+    "type": "submit",
+    "value": "Salvar",
+    "labelText": "",
+    "class": "btn btn-primary mt-4 mr-2",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "name": "SINAPI_exibir_relatorio",
+    "id": "SINAPI_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SINAPI",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SINAPI_estado",
+    "id": "SINAPI_estado",
+    "type": "select-one",
+    "value": "ES",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Espírito Santo\nAcre\nAlagoas\nAmazonas\nAmapá\nBahia\nCeará\nDistrito Federal\nEspírito Santo\nGoiás\nMaranhão\nMato Grosso\nMato Grosso do Sul\nMinas Gerais\nPará\nParaíba\nParaná\nPernambuco\nPiauí\nRio de Janeiro\nRio Grande do Norte\nRio Grande do Sul\nRondônia\nRoraima\nSanta Catarina\nSão Paulo\nSergipe\nTocantins"
+  },
+  {
+    "tag": "select",
+    "name": "SINAPI_data",
+    "id": "SINAPI_data",
+    "type": "select-one",
+    "value": "04/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "04/2026\n04/2026\n03/2026\n02/2026\n01/2026\n12/2025\n11/2025\n10/2025\n09/2025\n08/2025\n07/2025\n06/2025\n05/2025\n04/2025\n03/2025\n02/2025\n01/2025\n12/2024\n11/2024\n10/2024\n09/2024\n08/2024\n07/2024\n06/2024\n05/2024\n04/2024\n03/2024\n02/2024\n01/2024\n12/2023\n11/2023\n10/2023\n09/2023\n08/2023\n07/2023\n06/2023\n05/2023\n04/2023\n03/2023\n02/2023\n01/2023\n12/2022\n11/2022\n10/2022\n09/2022\n08/2022\n07/2022\n06/2022\n05/2022\n04/2022\n03/2022\n02/2022\n01/2022\n12/2021\n11/2021\n10/2021\n09/2021\n08/2021\n07/2021\n06/2021\n05/2021\n04/2021\n03/2021\n02/2021\n01/2021\n12/2020\n11/2020\n10/2020\n09/2020\n08/2020\n07/2020\n06/2020\n05/2020\n04/2020\n03/2020\n02/2020\n01/2020\n12/2019\n11/2019\n10/2019\n09/2019\n08/2019\n07/2019\n06/2019\n05/2019\n04/2019\n03/2019\n02/2019\n01/2019\n12/2018\n11/2018\n10/2018\n09/2018\n08/2018\n07/2018\n06/2018\n05/2018\n04/2018\n03/2018\n02/2018\n01/2018\n12/2017\n11/2017\n10/2017\n09/2017\n08/2017\n07/2017\n06/2017\n05/2017\n04/2017\n03/2017\n02/2017\n01/2017\n12/2016\n11/2016\n10/2016\n09/2016\n08/2016\n07/2016\n06/2016\n05/2016\n04/2016\n03/2016\n02/2016\n01/2016\n12/2015\n11/2015\n10/2015\n09/2015\n08/2015\n07/2015\n06/2015\n05/2015\n04/2015\n03/2015\n02/2015\n01/2015\n12/2014\n11/2014"
+  },
+  {
+    "tag": "select",
+    "name": "SINAPI_rounding_option",
+    "id": "SINAPI_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "SBC_exibir_relatorio",
+    "id": "SBC_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SBC",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SBC_estado",
+    "id": "SBC_estado",
+    "type": "select-one",
+    "value": "VTA",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "RBO - Rio Branco - AC\nMCO - Maceió - AL\nMNS - Manaus - AM\nMPA - Macapá - AP\nSDR - Salvador - BA\nFLA - Fortaleza - CE\nBSA - Brasília - DF\nVTA - Vitória - ES\nGNA - Goiânia - GO\nSLS - São Luís - MA\nBHE - Belo Horizonte - MG\nJFA - Juiz de Fora - MG\nULA - Uberlândia - MG\nCPE - Campo Grande - MS\nCBA - Cuiabá\nBLM - Belém - PA\nJPA - João Pessoa - PB\nRCE - Recife - PE\nTSA - Teresina - PI\nCTA - Curitiba - PR\nRJO - Rio de Janeiro - RJ\nNTL - Natal - RN\nPVO - Porto Velho - RO\nBVA - Boa Vista - RR\nPAE - Porto Alegre - RS\nFNS - Florianópolis - SC\nAJU - Aracajú - SE\nRPO - Ribeirão Preto - SP\nSPO - São Paulo - SP\nPMG - Palmas - TO"
+  },
+  {
+    "tag": "select",
+    "name": "SBC_data",
+    "id": "SBC_data",
+    "type": "select-one",
+    "value": "05/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "05/2026\n05/2026\n04/2026\n03/2026\n02/2026\n01/2026\n12/2025\n11/2025\n10/2025\n09/2025\n08/2025\n07/2025\n06/2025\n05/2025\n04/2025\n03/2025\n02/2025\n01/2025\n12/2024\n11/2024\n10/2024\n09/2024\n08/2024\n07/2024\n06/2024\n05/2024\n04/2024\n03/2024\n02/2024\n01/2024\n12/2023\n11/2023\n10/2023\n09/2023\n08/2023\n07/2023\n06/2023\n05/2023\n04/2023\n03/2023\n02/2023\n01/2023\n12/2022\n11/2022\n10/2022\n09/2022\n08/2022\n07/2022\n06/2022\n05/2022\n04/2022\n03/2022\n02/2022\n01/2022\n12/2021\n11/2021\n10/2021\n09/2021\n08/2021\n07/2021\n06/2021\n05/2021\n04/2021\n03/2021\n02/2021\n01/2021\n12/2020\n11/2020\n10/2020\n09/2020\n08/2020\n07/2020\n06/2020\n05/2020\n04/2020\n03/2020\n02/2020\n01/2020\n12/2019\n11/2019\n10/2019\n09/2019\n08/2019\n07/2019\n06/2019\n05/2019\n04/2019\n03/2019\n02/2019\n01/2019\n12/2018\n11/2018\n10/2018\n09/2018\n08/2018\n07/2018\n06/2018\n05/2018\n04/2018\n03/2018\n02/2018\n01/2018\n12/2017\n11/2017\n10/2017\n09/2017\n08/2017\n07/2017\n06/2017\n05/2017\n04/2017\n03/2017\n02/2017\n01/2017\n12/2016"
+  },
+  {
+    "tag": "select",
+    "name": "SBC_rounding_option",
+    "id": "SBC_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "SICRO3_exibir_relatorio",
+    "id": "SICRO3_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SICRO3",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SICRO3_estado",
+    "id": "SICRO3_estado",
+    "type": "select-one",
+    "value": "ES",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Espírito Santo\nAcre\nAlagoas\nAmazonas\nAmapá\nBahia\nCeará\nDistrito Federal\nEspírito Santo\nGoiás\nMaranhão\nMato Grosso\nMato Grosso do Sul\nMinas Gerais\nPará\nParaíba\nParaná\nPernambuco\nPiauí\nRio de Janeiro\nRio Grande do Norte\nRio Grande do Sul\nRondônia\nRoraima\nSanta Catarina\nSão Paulo\nSergipe\nTocantins"
+  },
+  {
+    "tag": "select",
+    "name": "SICRO3_data",
+    "id": "SICRO3_data",
+    "type": "select-one",
+    "value": "01/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "01/2026\n01/2026\n10/2025\n07/2025\n04/2025\n01/2025\n10/2024\n07/2024\n04/2024\n01/2024\n10/2023\n07/2023\n04/2023\n01/2023\n10/2022\n07/2022\n04/2022\n01/2022\n10/2021\n07/2021\n04/2021\n01/2021\n10/2020\n07/2020\n04/2020\n01/2020\n10/2019\n07/2019\n04/2019\n01/2019\n10/2018\n07/2018\n05/2018\n03/2018\n01/2018\n11/2017\n09/2017\n07/2017\n05/2017\n03/2017\n01/2017"
+  },
+  {
+    "tag": "select",
+    "name": "SICRO3_rounding_option",
+    "id": "SICRO3_rounding_option",
+    "type": "select-one",
+    "value": "1000",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "-"
+  },
+  {
+    "tag": "input",
+    "name": "SIURB_exibir_relatorio",
+    "id": "SIURB_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SIURB",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SIURB_data",
+    "id": "SIURB_data",
+    "type": "select-one",
+    "value": "01/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "01/2026\n01/2026\n07/2025\n01/2025\n07/2024\n01/2024\n07/2023\n01/2023\n07/2022\n01/2022\n07/2021\n01/2021\n07/2020\n01/2020\n07/2019\n01/2019\n07/2018\n01/2018\n07/2017\n01/2017\n07/2016"
+  },
+  {
+    "tag": "select",
+    "name": "SIURB_rounding_option",
+    "id": "SIURB_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "SIURB INFRA_exibir_relatorio",
+    "id": "SIURB_INFRA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SIURB INFRA",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SIURB INFRA_data",
+    "id": "SIURB_INFRA_data",
+    "type": "select-one",
+    "value": "01/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "01/2026\n01/2026\n07/2025\n01/2025\n07/2024\n01/2024\n07/2023\n01/2023\n07/2022\n01/2022\n07/2021\n01/2021\n07/2020\n01/2020\n07/2019\n01/2019\n07/2018\n01/2018\n07/2017\n01/2017\n07/2016"
+  },
+  {
+    "tag": "select",
+    "name": "SIURB INFRA_rounding_option",
+    "id": "SIURB_INFRA_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "FDE_exibir_relatorio",
+    "id": "FDE_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "FDE",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "FDE_data",
+    "id": "FDE_data",
+    "type": "select-one",
+    "value": "04/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "04/2026\n04/2026\n01/2026\n10/2025\n07/2025\n04/2025\n01/2025\n10/2024\n07/2024\n04/2024\n01/2024\n10/2023\n07/2023\n04/2023\n01/2023\n10/2022\n07/2022\n04/2022\n01/2022\n10/2021\n07/2021\n04/2021\n01/2021\n10/2020\n07/2020\n04/2020\n01/2020\n10/2019\n07/2019\n04/2019\n01/2019\n10/2018\n07/2018\n04/2018\n01/2018\n10/2017\n07/2017\n04/2017\n01/2017\n10/2016"
+  },
+  {
+    "tag": "select",
+    "name": "FDE_rounding_option",
+    "id": "FDE_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "CPOS_exibir_relatorio",
+    "id": "CPOS_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "CPOS",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "CPOS_data",
+    "id": "CPOS_data",
+    "type": "select-one",
+    "value": "04/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "04/2026\n04/2026\n01/2026\n09/2025\n06/2025\n04/2025\n01/2025\n09/2024\n06/2024\n03/2024\n11/2023\n08/2023\n05/2023\n03/2023\n11/2022\n08/2022\n05/2022\n02/2022\n11/2021\n08/2021\n07/2021\n03/2021\n11/2020\n07/2020\n03/2020\n11/2019\n07/2019\n03/2019\n11/2018\n07/2018\n03/2018\n11/2017\n07/2017\n03/2017"
+  },
+  {
+    "tag": "select",
+    "name": "CPOS_rounding_option",
+    "id": "CPOS_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "EMOP_exibir_relatorio",
+    "id": "EMOP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "EMOP",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "EMOP_data",
+    "id": "EMOP_data",
+    "type": "select-one",
+    "value": "04/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "04/2026\n04/2026\n03/2026\n02/2026\n01/2026\n12/2025\n11/2025\n10/2025\n09/2025\n08/2025\n07/2025\n06/2025\n05/2025\n04/2025\n03/2025\n02/2025\n01/2025\n12/2024\n11/2024\n10/2024\n09/2024\n08/2024\n07/2024\n06/2024\n05/2024\n04/2024\n03/2024\n02/2024\n01/2024\n12/2023\n11/2023\n10/2023\n09/2023\n08/2023\n07/2023\n06/2023\n05/2023\n04/2023\n03/2023\n02/2023\n01/2023\n12/2022\n11/2022\n10/2022\n09/2022\n08/2022\n07/2022\n06/2022\n05/2022\n04/2022\n03/2022\n02/2022\n01/2022\n10/2021"
+  },
+  {
+    "tag": "select",
+    "name": "EMOP_rounding_option",
+    "id": "EMOP_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "SCO_exibir_relatorio",
+    "id": "SCO_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SCO",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SCO_data",
+    "id": "SCO_data",
+    "type": "select-one",
+    "value": "04/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "04/2026\n04/2026\n03/2026\n02/2026\n01/2026\n12/2025\n11/2025\n10/2025\n09/2025\n08/2025\n07/2025\n06/2025\n05/2025\n04/2025\n03/2025\n02/2025\n01/2025\n12/2024\n11/2024\n10/2024\n09/2024\n08/2024\n07/2024\n06/2024\n05/2024\n04/2024\n03/2024\n02/2024\n01/2024\n12/2023\n11/2023\n10/2023\n09/2023\n08/2023\n07/2023\n06/2023\n05/2023\n04/2023\n03/2023\n02/2023\n01/2023\n12/2022\n11/2022\n10/2022\n09/2022\n08/2022\n07/2022\n06/2022"
+  },
+  {
+    "tag": "select",
+    "name": "SCO_rounding_option",
+    "id": "SCO_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "SETOP_exibir_relatorio",
+    "id": "SETOP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SETOP",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SETOP_estado",
+    "id": "SETOP_estado",
+    "type": "select-one",
+    "value": "central",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "MG - Central\nMG - Central\nMG - Jequitinhonha e Mucuri\nMG - Leste\nMG - Norte\nMG - Sul\nMG - Triângulo e Alto Paranaíba"
+  },
+  {
+    "tag": "select",
+    "name": "SETOP_data",
+    "id": "SETOP_data",
+    "type": "select-one",
+    "value": "01/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "01/2026\n01/2026\n10/2025\n07/2025\n04/2025\n01/2025\n10/2024\n07/2024\n04/2024\n01/2024\n10/2023\n08/2023\n04/2023\n01/2023\n10/2022\n06/2022\n04/2022\n03/2022\n01/2022\n10/2021\n07/2021\n04/2021\n01/2021\n09/2020\n07/2020\n04/2020\n01/2020\n11/2019\n08/2019\n04/2019\n01/2019\n01/2018\n07/2017\n03/2017\n06/2016"
+  },
+  {
+    "tag": "select",
+    "name": "SETOP_rounding_option",
+    "id": "SETOP_rounding_option",
+    "type": "select-one",
+    "value": "1000",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "-"
+  },
+  {
+    "tag": "input",
+    "name": "SUDECAP_exibir_relatorio",
+    "id": "SUDECAP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SUDECAP",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SUDECAP_data",
+    "id": "SUDECAP_data",
+    "type": "select-one",
+    "value": "01/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "01/2026\n01/2026\n10/2025\n09/2025\n07/2025\n04/2025\n01/2025\n10/2024\n07/2024\n04/2024\n01/2024\n10/2023\n07/2023\n05/2023\n04/2023\n02/2023\n12/2022\n10/2022\n08/2022\n06/2022\n05/2022\n03/2022\n02/2022\n01/2022\n12/2021\n11/2021\n10/2021\n09/2021\n08/2021\n07/2021\n06/2021\n05/2021\n04/2021\n03/2021\n02/2021\n01/2021\n12/2020\n10/2020\n09/2020\n08/2020\n06/2020\n05/2020\n04/2020\n03/2020\n02/2020\n01/2020\n10/2019\n08/2019\n04/2019\n02/2019\n01/2019\n11/2018\n10/2018\n09/2018\n08/2018\n06/2018\n04/2018\n03/2018\n02/2018\n01/2018\n10/2017\n05/2017\n03/2017\n01/2017\n11/2016\n09/2016\n06/2016"
+  },
+  {
+    "tag": "select",
+    "name": "SUDECAP_rounding_option",
+    "id": "SUDECAP_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "IOPES_exibir_relatorio",
+    "id": "IOPES_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "IOPES",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "IOPES_data",
+    "id": "IOPES_data",
+    "type": "select-one",
+    "value": "03/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "03/2026\n03/2026\n02/2026\n01/2026\n12/2025\n11/2025\n10/2025\n09/2025\n08/2025\n07/2025\n06/2025\n05/2025\n04/2025\n03/2025\n02/2025\n01/2025\n12/2024\n11/2024\n10/2024\n09/2024\n08/2024\n07/2024\n06/2024\n05/2024\n04/2024\n03/2024\n02/2024\n01/2024\n12/2023\n11/2023\n10/2023\n09/2023\n08/2023\n07/2023\n06/2023\n05/2023\n04/2023\n03/2023\n02/2023\n01/2023\n12/2022\n11/2022\n10/2022\n09/2022\n08/2022\n07/2022\n06/2022\n05/2022\n04/2022\n03/2022\n02/2022\n01/2022\n12/2021\n11/2021\n10/2021\n09/2021\n08/2021\n07/2021\n06/2021\n05/2021\n04/2021\n03/2021\n02/2021\n01/2021\n12/2020\n11/2020\n10/2020\n09/2020\n08/2020\n07/2020\n06/2020\n05/2020\n04/2020\n03/2020\n02/2020\n01/2020\n12/2019\n11/2019\n10/2019\n09/2019\n08/2019\n07/2019\n06/2019\n05/2019\n04/2019\n03/2019\n09/2018\n08/2018\n07/2018\n06/2018\n05/2018\n04/2018\n03/2018\n02/2018\n01/2018\n12/2017\n11/2017\n10/2017\n09/2017\n08/2017\n07/2017\n06/2017\n05/2017\n04/2017\n03/2017\n02/2017\n01/2017\n12/2016\n11/2016\n10/2016\n09/2016\n08/2016\n07/2016"
+  },
+  {
+    "tag": "select",
+    "name": "IOPES_rounding_option",
+    "id": "IOPES_rounding_option",
+    "type": "select-one",
+    "value": "1000",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "-"
+  },
+  {
+    "tag": "input",
+    "name": "ORSE_exibir_relatorio",
+    "id": "ORSE_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "ORSE",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "ORSE_data",
+    "id": "ORSE_data",
+    "type": "select-one",
+    "value": "03/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "03/2026\n03/2026\n02/2026\n01/2026\n12/2025\n11/2025\n10/2025\n09/2025\n08/2025\n07/2025\n06/2025\n05/2025\n04/2025\n03/2025\n02/2025\n01/2025\n12/2024\n11/2024\n10/2024\n09/2024\n08/2024\n07/2024\n06/2024\n05/2024\n04/2024\n03/2024\n02/2024\n01/2024\n12/2023\n11/2023\n10/2023\n09/2023\n08/2023\n07/2023\n06/2023\n05/2023\n04/2023\n03/2023\n02/2023\n01/2023\n12/2022\n11/2022\n10/2022\n09/2022\n08/2022\n07/2022\n06/2022\n05/2022\n04/2022\n03/2022\n02/2022\n01/2022\n12/2021\n11/2021\n10/2021\n09/2021\n08/2021\n07/2021\n06/2021\n05/2021\n04/2021\n03/2021\n02/2021\n01/2021\n12/2020\n11/2020\n10/2020\n09/2020\n08/2020\n07/2020\n06/2020\n05/2020\n04/2020\n03/2020\n02/2020\n01/2020\n12/2019\n11/2019\n10/2019\n09/2019\n08/2019\n07/2019\n06/2019\n05/2019\n04/2019\n03/2019\n02/2019\n01/2019\n12/2018\n11/2018\n10/2018\n09/2018\n08/2018\n07/2018\n06/2018\n05/2018\n04/2018\n03/2018\n02/2018\n01/2018\n12/2017\n11/2017\n10/2017\n09/2017\n08/2017\n07/2017\n06/2017\n05/2017\n04/2017\n03/2017\n02/2017\n01/2017\n12/2016\n11/2016\n10/2016\n09/2016\n08/2016\n07/2016\n06/2016"
+  },
+  {
+    "tag": "select",
+    "name": "ORSE_rounding_option",
+    "id": "ORSE_rounding_option",
+    "type": "select-one",
+    "value": "1000",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "-"
+  },
+  {
+    "tag": "input",
+    "name": "SEINFRA_exibir_relatorio",
+    "id": "SEINFRA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SEINFRA",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SEINFRA_data",
+    "id": "SEINFRA_data",
+    "type": "select-one",
+    "value": "028",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "028\n028\n027\n026\n025\n023.1"
+  },
+  {
+    "tag": "select",
+    "name": "SEINFRA_rounding_option",
+    "id": "SEINFRA_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "CAEMA_exibir_relatorio",
+    "id": "CAEMA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "CAEMA",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "CAEMA_data",
+    "id": "CAEMA_data",
+    "type": "select-one",
+    "value": "12/2019",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "12/2019\n12/2019\n04/2019\n04/2018\n05/2016"
+  },
+  {
+    "tag": "select",
+    "name": "CAEMA_rounding_option",
+    "id": "CAEMA_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "EMBASA_exibir_relatorio",
+    "id": "EMBASA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "EMBASA",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "EMBASA_estado",
+    "id": "EMBASA_estado",
+    "type": "select-one",
+    "value": "sem_encargos",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "BA - sem encargos\nBA - H=149,71 M=112,11\nBA - H=172,95 M=135,35\nBA - H=181,77 M=144,16\nBA - H=155,19 M=117,59\nBA - H=156,83 M=119,23\nBA - H=173,71 M=131,45\nBA - H=196,95 M=154,69\nBA - H=205,76 M=163,50\nBA - H=179,19 M=136,93\nBA - H=180,83 M=138,57\nBA - H=183,07 M=145,47\nBA - H=206,31 M=168,71\nBA - H=215,13 M=177,52\nBA - H=188,55 M=150,95\nBA - H=145,62 M=108,02\nBA - H=190,19 M=152,59\nBA - H=223,13 M=185,52\nBA - H=158,07 M=120,47\nBA - H=181,31 M=143,71\nBA - H=190,13 M=152,52\nBA - H=163,55 M=125,95\nBA - H=120,62 M=83,02\nBA - H=165,19 M=127,59\nBA - H=198,13 M=160,52\nBA - H=239,94 M=191,33\nBA - H=263,18 M=214,57\nBA - H=271,99 M=223,38\nBA - H=245,42 M=196,80\nBA - H=202,49 M=153,87\nBA - H=247,06 M=198,45\nBA - H=214,94 M=166,33\nBA - H=238,18 M=189,57\nBA - H=246,99 M=198,38\nBA - H=220,42 M=171,80\nBA - H=177,49 M=128,87\nBA - H=222,06 M=173,45\nBA - H=207,07 M=164,81\nBA - H=230,31 M=188,05\nBA - H=239,12 M=196,86\nBA - H=212,55 M=170,29\nBA - H=169,62 M=127,36\nBA - H=214,19 M=171,93\nBA - H=247,12 M=204,86\nBA - H=182,07 M=139,81\nBA - H=205,31 M=163,05\nBA - H=214,12 M=171,86\nBA - H=187,55 M=145,29\nBA - H=144,62 M=102,36\nBA - H=189,19 M=146,93\nBA - H=222,12 M=179,86\nBA - H=270,95 M=216,32\nBA - H=294,19 M=239,56\nBA - H=303,01 M=248,38\nBA - H=276,43 M=221,80\nBA - H=233,50 M=178,87\nBA - H=278,07 M=223,44\nBA - H=245,95 M=191,32\nBA - H=269,19 M=214,56\nBA - H=278,01 M=223,38\nBA - H=251,43 M=196,80\nBA - H=208,50 M=153,87\nBA - H=253,07 M=198,44"
+  },
+  {
+    "tag": "select",
+    "name": "EMBASA_data",
+    "id": "EMBASA_data",
+    "type": "select-one",
+    "value": "06/2025",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "06/2025\n06/2025\n01/2025\n05/2024\n01/2024\n05/2023\n01/2023\n10/2022\n05/2022\n01/2022\n10/2021\n05/2021\n06/2017"
+  },
+  {
+    "tag": "select",
+    "name": "EMBASA_rounding_option",
+    "id": "EMBASA_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "CAERN_exibir_relatorio",
+    "id": "CAERN_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "CAERN",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "CAERN_data",
+    "id": "CAERN_data",
+    "type": "select-one",
+    "value": "01/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "01/2026\n01/2026\n07/2025\n01/2025\n05/2024\n11/2023\n05/2023\n11/2022\n05/2022\n11/2021\n05/2021\n11/2020\n05/2020\n01/2020\n11/2019\n05/2019\n11/2018\n05/2018\n11/2017\n05/2017"
+  },
+  {
+    "tag": "select",
+    "name": "CAERN_rounding_option",
+    "id": "CAERN_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "COMPESA_exibir_relatorio",
+    "id": "COMPESA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "COMPESA",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "COMPESA_data",
+    "id": "COMPESA_data",
+    "type": "select-one",
+    "value": "07/2024",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "07/2024\n07/2024\n07/2023\n01/2023\n07/2022\n01/2022\n10/2021"
+  },
+  {
+    "tag": "select",
+    "name": "COMPESA_rounding_option",
+    "id": "COMPESA_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "AGESUL_exibir_relatorio",
+    "id": "AGESUL_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "AGESUL",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "AGESUL_data",
+    "id": "AGESUL_data",
+    "type": "select-one",
+    "value": "01/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "01/2026\n01/2026\n06/2025\n01/2025\n06/2024\n01/2024\n06/2023\n01/2023\n06/2022\n01/2022\n06/2021\n01/2021\n06/2020\n01/2020\n06/2019"
+  },
+  {
+    "tag": "select",
+    "name": "AGESUL_rounding_option",
+    "id": "AGESUL_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "AGETOP CIVIL_exibir_relatorio",
+    "id": "AGETOP_CIVIL_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "AGETOP CIVIL",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP CIVIL_data",
+    "id": "AGETOP_CIVIL_data",
+    "type": "select-one",
+    "value": "02/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "02/2026\n02/2026\n12/2025\n10/2025\n08/2025\n06/2025\n04/2025\n02/2025\n12/2024\n10/2024\n08/2024\n06/2024\n04/2024\n02/2024\n12/2023\n10/2023\n08/2023\n07/2023\n06/2023\n05/2023\n03/2023\n01/2023\n11/2022\n09/2022\n07/2022\n05/2022\n04/2022\n01/2022\n10/2021\n07/2021\n11/2020\n04/2019\n12/2018\n11/2017\n10/2016\n02/202"
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP CIVIL_rounding_option",
+    "id": "AGETOP_CIVIL_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "AGETOP RODOVIARIA_exibir_relatorio",
+    "id": "AGETOP_RODOVIARIA_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "AGETOP RODOVIARIA",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP RODOVIARIA_data",
+    "id": "AGETOP_RODOVIARIA_data",
+    "type": "select-one",
+    "value": "12/2025",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "12/2025\n12/2025\n10/2025\n08/2025\n06/2025\n04/2025\n02/2025\n12/2024\n10/2024\n08/2024\n06/2024\n04/2024\n02/2024\n12/2023\n10/2023\n08/2023\n07/2023\n06/2023\n05/2023\n03/2023\n01/2023\n11/2022\n09/2022\n07/2022\n05/2022\n04/2022\n01/2022\n10/2021\n07/2021\n03/2018\n04/2017\n12/2015"
+  },
+  {
+    "tag": "select",
+    "name": "AGETOP RODOVIARIA_rounding_option",
+    "id": "AGETOP_RODOVIARIA_rounding_option",
+    "type": "select-one",
+    "value": "1000",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "-"
+  },
+  {
+    "tag": "input",
+    "name": "SEDOP_exibir_relatorio",
+    "id": "SEDOP_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "SEDOP",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "input",
+    "name": "SEDOP_ls",
+    "id": "SEDOP_ls",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "Com LS",
+    "class": "check_sedop",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "SEDOP_data",
+    "id": "SEDOP_data",
+    "type": "select-one",
+    "value": "03/2026",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "03/2026\n03/2026\n10/2025\n03/2025\n02/2025\n10/2024\n05/2024\n02/2024\n10/2023\n05/2023\n02/2023\n09/2022\n05/2022\n02/2022\n09/2021\n03/2021\n09/2020\n04/2020\n11/2019\n04/2019\n10/2018\n04/2018\n09/2017\n04/2017\n10/2016\n04/2016\n10/2015"
+  },
+  {
+    "tag": "select",
+    "name": "SEDOP_rounding_option",
+    "id": "SEDOP_rounding_option",
+    "type": "select-one",
+    "value": "999",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "Seguir a configuração do orçamento\nTruncar em 2 casas\nArredondar em 2 casas\nTruncar em 4 casas\nArredondar em 4 casas\nTruncar em 2 casas com subitems em 4 casas\nArredondar em 2 casas com subitems em 4 casas\nNão arredondar"
+  },
+  {
+    "tag": "input",
+    "name": "DERPR_exibir_relatorio",
+    "id": "DERPR_exibir_relatorio",
+    "type": "checkbox",
+    "value": "true",
+    "labelText": "DERPR",
+    "class": "",
+    "text": ""
+  },
+  {
+    "tag": "select",
+    "name": "DERPR_data",
+    "id": "DERPR_data",
+    "type": "select-one",
+    "value": "08/2025",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "08/2025\n08/2025\n03/2025\n10/2024\n04/2024\n09/2023\n02/2023\n08/2022"
+  },
+  {
+    "tag": "select",
+    "name": "DERPR_rounding_option",
+    "id": "DERPR_rounding_option",
+    "type": "select-one",
+    "value": "1000",
+    "labelText": "",
+    "class": "form-control pl-2 p-0",
+    "text": "-"
+  },
+  {
+    "tag": "input",
+    "name": "commit",
+    "id": "",
+    "type": "submit",
+    "value": "Salvar",
+    "labelText": "",
+    "class": "btn btn-primary mt-4 mr-2",
+    "text": ""
+  },
+  {
+    "tag": "button",
+    "name": "",
+    "id": "",
+    "type": "button",
+    "value": "",
+    "labelText": "",
+    "class": "close",
+    "text": "\n          ×\n        "
+  },
+  {
+    "tag": "button",
+    "name": "",
+    "id": "",
+    "type": "button",
+    "value": "",
+    "labelText": "",
+    "class": "close",
+    "text": "\n          ×\n        "
+  }
+]

@@ -1,0 +1,1483 @@
+home
+  Home
+  Orçamentos
+  Composições
+  Insumos
+  Planejamentos
+receipt_long
+  Diário de Obras
+  Medições
+shopping_cart
+  Compras
+  Cadastros
+  Integrações
+  Webinars
+Exibir
+Editar
+Ferramentas
+Relatórios
+fiber_new
+EDITAR BANCOS
+×
+Selecione quais bases que serão utilizada neste orçamento, suas respectivas datas e localidades.
+
+Ao trocar uma data ou estado, os insumos e composições serão alterados automaticamente.
+
+Selecione o tipo de estrutura que deseja aplicar.
+Atualizar somente os Preços dos insumos durante a troca de DATA ou ESTADO
+
+A atualização faz com que somente o valor unitário da composição sofra alteração, não atualizando a data da composição inserida, apenas o valor unitário de seus insumos.
+
+Atualizar somente Estrutura das Composições durante a troca de ESTADO ou DATA
+fiber_new
+
+A atualização irá afetar a data da versão da composição, itens auxiliares, coeficientes e manterá os preços dos insumos da última data selecionada
+
+Atualizar Estrutura das Composições e Preços dos insumos durante a troca de ESTADO ou DATA
+
+A atualização irá afetar a data da versão da composição, seus respectivos insumos, composições auxiliares, coeficientes e preços de insumos.
+
+
+
+Bases Nacionais
+Base
+Local
+Versão
+Arredondamento
+ SINAPI
+Espírito Santo
+Acre
+Alagoas
+Amazonas
+Amapá
+Bahia
+Ceará
+Distrito Federal
+Espírito Santo
+Goiás
+Maranhão
+Mato Grosso
+Mato Grosso do Sul
+Minas Gerais
+Pará
+Paraíba
+Paraná
+Pernambuco
+Piauí
+Rio de Janeiro
+Rio Grande do Norte
+Rio Grande do Sul
+Rondônia
+Roraima
+Santa Catarina
+São Paulo
+Sergipe
+Tocantins
+02/2026
+04/2026
+03/2026
+02/2026
+01/2026
+12/2025
+11/2025
+10/2025
+09/2025
+08/2025
+07/2025
+06/2025
+05/2025
+04/2025
+03/2025
+02/2025
+01/2025
+12/2024
+11/2024
+10/2024
+09/2024
+08/2024
+07/2024
+06/2024
+05/2024
+04/2024
+03/2024
+02/2024
+01/2024
+12/2023
+11/2023
+10/2023
+09/2023
+08/2023
+07/2023
+06/2023
+05/2023
+04/2023
+03/2023
+02/2023
+01/2023
+12/2022
+11/2022
+10/2022
+09/2022
+08/2022
+07/2022
+06/2022
+05/2022
+04/2022
+03/2022
+02/2022
+01/2022
+12/2021
+11/2021
+10/2021
+09/2021
+08/2021
+07/2021
+06/2021
+05/2021
+04/2021
+03/2021
+02/2021
+01/2021
+12/2020
+11/2020
+10/2020
+09/2020
+08/2020
+07/2020
+06/2020
+05/2020
+04/2020
+03/2020
+02/2020
+01/2020
+12/2019
+11/2019
+10/2019
+09/2019
+08/2019
+07/2019
+06/2019
+05/2019
+04/2019
+03/2019
+02/2019
+01/2019
+12/2018
+11/2018
+10/2018
+09/2018
+08/2018
+07/2018
+06/2018
+05/2018
+04/2018
+03/2018
+02/2018
+01/2018
+12/2017
+11/2017
+10/2017
+09/2017
+08/2017
+07/2017
+06/2017
+05/2017
+04/2017
+03/2017
+02/2017
+01/2017
+12/2016
+11/2016
+10/2016
+09/2016
+08/2016
+07/2016
+06/2016
+05/2016
+04/2016
+03/2016
+02/2016
+01/2016
+12/2015
+11/2015
+10/2015
+09/2015
+08/2015
+07/2015
+06/2015
+05/2015
+04/2015
+03/2015
+02/2015
+01/2015
+12/2014
+11/2014
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ SBC
+RBO - Rio Branco - AC
+MCO - Maceió - AL
+MNS - Manaus - AM
+MPA - Macapá - AP
+SDR - Salvador - BA
+FLA - Fortaleza - CE
+BSA - Brasília - DF
+VTA - Vitória - ES
+GNA - Goiânia - GO
+SLS - São Luís - MA
+BHE - Belo Horizonte - MG
+JFA - Juiz de Fora - MG
+ULA - Uberlândia - MG
+CPE - Campo Grande - MS
+CBA - Cuiabá
+BLM - Belém - PA
+JPA - João Pessoa - PB
+RCE - Recife - PE
+TSA - Teresina - PI
+CTA - Curitiba - PR
+RJO - Rio de Janeiro - RJ
+NTL - Natal - RN
+PVO - Porto Velho - RO
+BVA - Boa Vista - RR
+PAE - Porto Alegre - RS
+FNS - Florianópolis - SC
+AJU - Aracajú - SE
+RPO - Ribeirão Preto - SP
+SPO - São Paulo - SP
+PMG - Palmas - TO
+05/2026
+05/2026
+04/2026
+03/2026
+02/2026
+01/2026
+12/2025
+11/2025
+10/2025
+09/2025
+08/2025
+07/2025
+06/2025
+05/2025
+04/2025
+03/2025
+02/2025
+01/2025
+12/2024
+11/2024
+10/2024
+09/2024
+08/2024
+07/2024
+06/2024
+05/2024
+04/2024
+03/2024
+02/2024
+01/2024
+12/2023
+11/2023
+10/2023
+09/2023
+08/2023
+07/2023
+06/2023
+05/2023
+04/2023
+03/2023
+02/2023
+01/2023
+12/2022
+11/2022
+10/2022
+09/2022
+08/2022
+07/2022
+06/2022
+05/2022
+04/2022
+03/2022
+02/2022
+01/2022
+12/2021
+11/2021
+10/2021
+09/2021
+08/2021
+07/2021
+06/2021
+05/2021
+04/2021
+03/2021
+02/2021
+01/2021
+12/2020
+11/2020
+10/2020
+09/2020
+08/2020
+07/2020
+06/2020
+05/2020
+04/2020
+03/2020
+02/2020
+01/2020
+12/2019
+11/2019
+10/2019
+09/2019
+08/2019
+07/2019
+06/2019
+05/2019
+04/2019
+03/2019
+02/2019
+01/2019
+12/2018
+11/2018
+10/2018
+09/2018
+08/2018
+07/2018
+06/2018
+05/2018
+04/2018
+03/2018
+02/2018
+01/2018
+12/2017
+11/2017
+10/2017
+09/2017
+08/2017
+07/2017
+06/2017
+05/2017
+04/2017
+03/2017
+02/2017
+01/2017
+12/2016
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ SICRO3
+Espírito Santo
+Acre
+Alagoas
+Amazonas
+Amapá
+Bahia
+Ceará
+Distrito Federal
+Espírito Santo
+Goiás
+Maranhão
+Mato Grosso
+Mato Grosso do Sul
+Minas Gerais
+Pará
+Paraíba
+Paraná
+Pernambuco
+Piauí
+Rio de Janeiro
+Rio Grande do Norte
+Rio Grande do Sul
+Rondônia
+Roraima
+Santa Catarina
+São Paulo
+Sergipe
+Tocantins
+01/2026
+01/2026
+10/2025
+07/2025
+04/2025
+01/2025
+10/2024
+07/2024
+04/2024
+01/2024
+10/2023
+07/2023
+04/2023
+01/2023
+10/2022
+07/2022
+04/2022
+01/2022
+10/2021
+07/2021
+04/2021
+01/2021
+10/2020
+07/2020
+04/2020
+01/2020
+10/2019
+07/2019
+04/2019
+01/2019
+10/2018
+07/2018
+05/2018
+03/2018
+01/2018
+11/2017
+09/2017
+07/2017
+05/2017
+03/2017
+01/2017
+-
+
+
+Bases do Sudeste
+Base
+Local
+Versão
+Arredondamento
+ SIURB
+São Paulo
+01/2026
+01/2026
+07/2025
+01/2025
+07/2024
+01/2024
+07/2023
+01/2023
+07/2022
+01/2022
+07/2021
+01/2021
+07/2020
+01/2020
+07/2019
+01/2019
+07/2018
+01/2018
+07/2017
+01/2017
+07/2016
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ SIURB INFRA
+São Paulo
+01/2026
+01/2026
+07/2025
+01/2025
+07/2024
+01/2024
+07/2023
+01/2023
+07/2022
+01/2022
+07/2021
+01/2021
+07/2020
+01/2020
+07/2019
+01/2019
+07/2018
+01/2018
+07/2017
+01/2017
+07/2016
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ FDE
+São Paulo
+04/2026
+04/2026
+01/2026
+10/2025
+07/2025
+04/2025
+01/2025
+10/2024
+07/2024
+04/2024
+01/2024
+10/2023
+07/2023
+04/2023
+01/2023
+10/2022
+07/2022
+04/2022
+01/2022
+10/2021
+07/2021
+04/2021
+01/2021
+10/2020
+07/2020
+04/2020
+01/2020
+10/2019
+07/2019
+04/2019
+01/2019
+10/2018
+07/2018
+04/2018
+01/2018
+10/2017
+07/2017
+04/2017
+01/2017
+10/2016
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ CPOS
+São Paulo
+04/2026
+04/2026
+01/2026
+09/2025
+06/2025
+04/2025
+01/2025
+09/2024
+06/2024
+03/2024
+11/2023
+08/2023
+05/2023
+03/2023
+11/2022
+08/2022
+05/2022
+02/2022
+11/2021
+08/2021
+07/2021
+03/2021
+11/2020
+07/2020
+03/2020
+11/2019
+07/2019
+03/2019
+11/2018
+07/2018
+03/2018
+11/2017
+07/2017
+03/2017
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ EMOP
+Rio de Janeiro
+04/2026
+04/2026
+03/2026
+02/2026
+01/2026
+12/2025
+11/2025
+10/2025
+09/2025
+08/2025
+07/2025
+06/2025
+05/2025
+04/2025
+03/2025
+02/2025
+01/2025
+12/2024
+11/2024
+10/2024
+09/2024
+08/2024
+07/2024
+06/2024
+05/2024
+04/2024
+03/2024
+02/2024
+01/2024
+12/2023
+11/2023
+10/2023
+09/2023
+08/2023
+07/2023
+06/2023
+05/2023
+04/2023
+03/2023
+02/2023
+01/2023
+12/2022
+11/2022
+10/2022
+09/2022
+08/2022
+07/2022
+06/2022
+05/2022
+04/2022
+03/2022
+02/2022
+01/2022
+10/2021
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ SCO
+Rio de Janeiro
+04/2026
+04/2026
+03/2026
+02/2026
+01/2026
+12/2025
+11/2025
+10/2025
+09/2025
+08/2025
+07/2025
+06/2025
+05/2025
+04/2025
+03/2025
+02/2025
+01/2025
+12/2024
+11/2024
+10/2024
+09/2024
+08/2024
+07/2024
+06/2024
+05/2024
+04/2024
+03/2024
+02/2024
+01/2024
+12/2023
+11/2023
+10/2023
+09/2023
+08/2023
+07/2023
+06/2023
+05/2023
+04/2023
+03/2023
+02/2023
+01/2023
+12/2022
+11/2022
+10/2022
+09/2022
+08/2022
+07/2022
+06/2022
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ SETOP
+MG - Central
+MG - Central
+MG - Jequitinhonha e Mucuri
+MG - Leste
+MG - Norte
+MG - Sul
+MG - Triângulo e Alto Paranaíba
+01/2026
+01/2026
+10/2025
+07/2025
+04/2025
+01/2025
+10/2024
+07/2024
+04/2024
+01/2024
+10/2023
+08/2023
+04/2023
+01/2023
+10/2022
+06/2022
+04/2022
+03/2022
+01/2022
+10/2021
+07/2021
+04/2021
+01/2021
+09/2020
+07/2020
+04/2020
+01/2020
+11/2019
+08/2019
+04/2019
+01/2019
+01/2018
+07/2017
+03/2017
+06/2016
+-
+ SUDECAP
+Minas Gerais
+01/2026
+01/2026
+10/2025
+09/2025
+07/2025
+04/2025
+01/2025
+10/2024
+07/2024
+04/2024
+01/2024
+10/2023
+07/2023
+05/2023
+04/2023
+02/2023
+12/2022
+10/2022
+08/2022
+06/2022
+05/2022
+03/2022
+02/2022
+01/2022
+12/2021
+11/2021
+10/2021
+09/2021
+08/2021
+07/2021
+06/2021
+05/2021
+04/2021
+03/2021
+02/2021
+01/2021
+12/2020
+10/2020
+09/2020
+08/2020
+06/2020
+05/2020
+04/2020
+03/2020
+02/2020
+01/2020
+10/2019
+08/2019
+04/2019
+02/2019
+01/2019
+11/2018
+10/2018
+09/2018
+08/2018
+06/2018
+04/2018
+03/2018
+02/2018
+01/2018
+10/2017
+05/2017
+03/2017
+01/2017
+11/2016
+09/2016
+06/2016
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ IOPES
+Espírito Santo
+12/2025
+03/2026
+02/2026
+01/2026
+12/2025
+11/2025
+10/2025
+09/2025
+08/2025
+07/2025
+06/2025
+05/2025
+04/2025
+03/2025
+02/2025
+01/2025
+12/2024
+11/2024
+10/2024
+09/2024
+08/2024
+07/2024
+06/2024
+05/2024
+04/2024
+03/2024
+02/2024
+01/2024
+12/2023
+11/2023
+10/2023
+09/2023
+08/2023
+07/2023
+06/2023
+05/2023
+04/2023
+03/2023
+02/2023
+01/2023
+12/2022
+11/2022
+10/2022
+09/2022
+08/2022
+07/2022
+06/2022
+05/2022
+04/2022
+03/2022
+02/2022
+01/2022
+12/2021
+11/2021
+10/2021
+09/2021
+08/2021
+07/2021
+06/2021
+05/2021
+04/2021
+03/2021
+02/2021
+01/2021
+12/2020
+11/2020
+10/2020
+09/2020
+08/2020
+07/2020
+06/2020
+05/2020
+04/2020
+03/2020
+02/2020
+01/2020
+12/2019
+11/2019
+10/2019
+09/2019
+08/2019
+07/2019
+06/2019
+05/2019
+04/2019
+03/2019
+09/2018
+08/2018
+07/2018
+06/2018
+05/2018
+04/2018
+03/2018
+02/2018
+01/2018
+12/2017
+11/2017
+10/2017
+09/2017
+08/2017
+07/2017
+06/2017
+05/2017
+04/2017
+03/2017
+02/2017
+01/2017
+12/2016
+11/2016
+10/2016
+09/2016
+08/2016
+07/2016
+-
+
+
+Bases do Nordeste
+Base
+Local
+Versão
+Arredondamento
+ ORSE
+Sergipe
+03/2026
+03/2026
+02/2026
+01/2026
+12/2025
+11/2025
+10/2025
+09/2025
+08/2025
+07/2025
+06/2025
+05/2025
+04/2025
+03/2025
+02/2025
+01/2025
+12/2024
+11/2024
+10/2024
+09/2024
+08/2024
+07/2024
+06/2024
+05/2024
+04/2024
+03/2024
+02/2024
+01/2024
+12/2023
+11/2023
+10/2023
+09/2023
+08/2023
+07/2023
+06/2023
+05/2023
+04/2023
+03/2023
+02/2023
+01/2023
+12/2022
+11/2022
+10/2022
+09/2022
+08/2022
+07/2022
+06/2022
+05/2022
+04/2022
+03/2022
+02/2022
+01/2022
+12/2021
+11/2021
+10/2021
+09/2021
+08/2021
+07/2021
+06/2021
+05/2021
+04/2021
+03/2021
+02/2021
+01/2021
+12/2020
+11/2020
+10/2020
+09/2020
+08/2020
+07/2020
+06/2020
+05/2020
+04/2020
+03/2020
+02/2020
+01/2020
+12/2019
+11/2019
+10/2019
+09/2019
+08/2019
+07/2019
+06/2019
+05/2019
+04/2019
+03/2019
+02/2019
+01/2019
+12/2018
+11/2018
+10/2018
+09/2018
+08/2018
+07/2018
+06/2018
+05/2018
+04/2018
+03/2018
+02/2018
+01/2018
+12/2017
+11/2017
+10/2017
+09/2017
+08/2017
+07/2017
+06/2017
+05/2017
+04/2017
+03/2017
+02/2017
+01/2017
+12/2016
+11/2016
+10/2016
+09/2016
+08/2016
+07/2016
+06/2016
+-
+ SEINFRA
+Ceará
+028
+028
+027
+026
+025
+023.1
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ CAEMA
+Maranhão
+12/2019
+12/2019
+04/2019
+04/2018
+05/2016
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ EMBASA
+BA - sem encargos
+BA - H=149,71 M=112,11
+BA - H=172,95 M=135,35
+BA - H=181,77 M=144,16
+BA - H=155,19 M=117,59
+BA - H=156,83 M=119,23
+BA - H=173,71 M=131,45
+BA - H=196,95 M=154,69
+BA - H=205,76 M=163,50
+BA - H=179,19 M=136,93
+BA - H=180,83 M=138,57
+BA - H=183,07 M=145,47
+BA - H=206,31 M=168,71
+BA - H=215,13 M=177,52
+BA - H=188,55 M=150,95
+BA - H=145,62 M=108,02
+BA - H=190,19 M=152,59
+BA - H=223,13 M=185,52
+BA - H=158,07 M=120,47
+BA - H=181,31 M=143,71
+BA - H=190,13 M=152,52
+BA - H=163,55 M=125,95
+BA - H=120,62 M=83,02
+BA - H=165,19 M=127,59
+BA - H=198,13 M=160,52
+BA - H=239,94 M=191,33
+BA - H=263,18 M=214,57
+BA - H=271,99 M=223,38
+BA - H=245,42 M=196,80
+BA - H=202,49 M=153,87
+BA - H=247,06 M=198,45
+BA - H=214,94 M=166,33
+BA - H=238,18 M=189,57
+BA - H=246,99 M=198,38
+BA - H=220,42 M=171,80
+BA - H=177,49 M=128,87
+BA - H=222,06 M=173,45
+BA - H=207,07 M=164,81
+BA - H=230,31 M=188,05
+BA - H=239,12 M=196,86
+BA - H=212,55 M=170,29
+BA - H=169,62 M=127,36
+BA - H=214,19 M=171,93
+BA - H=247,12 M=204,86
+BA - H=182,07 M=139,81
+BA - H=205,31 M=163,05
+BA - H=214,12 M=171,86
+BA - H=187,55 M=145,29
+BA - H=144,62 M=102,36
+BA - H=189,19 M=146,93
+BA - H=222,12 M=179,86
+BA - H=270,95 M=216,32
+BA - H=294,19 M=239,56
+BA - H=303,01 M=248,38
+BA - H=276,43 M=221,80
+BA - H=233,50 M=178,87
+BA - H=278,07 M=223,44
+BA - H=245,95 M=191,32
+BA - H=269,19 M=214,56
+BA - H=278,01 M=223,38
+BA - H=251,43 M=196,80
+BA - H=208,50 M=153,87
+BA - H=253,07 M=198,44
+06/2025
+06/2025
+01/2025
+05/2024
+01/2024
+05/2023
+01/2023
+10/2022
+05/2022
+01/2022
+10/2021
+05/2021
+06/2017
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ CAERN
+Rio Grande do Norte
+01/2026
+01/2026
+07/2025
+01/2025
+05/2024
+11/2023
+05/2023
+11/2022
+05/2022
+11/2021
+05/2021
+11/2020
+05/2020
+01/2020
+11/2019
+05/2019
+11/2018
+05/2018
+11/2017
+05/2017
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ COMPESA
+Pernambuco
+07/2024
+07/2024
+07/2023
+01/2023
+07/2022
+01/2022
+10/2021
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+
+
+Bases do Centro-oeste
+Base
+Local
+Versão
+Arredondamento
+ AGESUL
+Mato Grosso do Sul
+01/2026
+01/2026
+06/2025
+01/2025
+06/2024
+01/2024
+06/2023
+01/2023
+06/2022
+01/2022
+06/2021
+01/2021
+06/2020
+01/2020
+06/2019
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ AGETOP CIVIL
+Goiás
+02/2026
+02/2026
+12/2025
+10/2025
+08/2025
+06/2025
+04/2025
+02/2025
+12/2024
+10/2024
+08/2024
+06/2024
+04/2024
+02/2024
+12/2023
+10/2023
+08/2023
+07/2023
+06/2023
+05/2023
+03/2023
+01/2023
+11/2022
+09/2022
+07/2022
+05/2022
+04/2022
+01/2022
+10/2021
+07/2021
+11/2020
+04/2019
+12/2018
+11/2017
+10/2016
+02/202
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+ AGETOP RODOVIARIA
+Goiás
+12/2025
+12/2025
+10/2025
+08/2025
+06/2025
+04/2025
+02/2025
+12/2024
+10/2024
+08/2024
+06/2024
+04/2024
+02/2024
+12/2023
+10/2023
+08/2023
+07/2023
+06/2023
+05/2023
+03/2023
+01/2023
+11/2022
+09/2022
+07/2022
+05/2022
+04/2022
+01/2022
+10/2021
+07/2021
+03/2018
+04/2017
+12/2015
+-
+
+
+Bases do Norte
+Base
+Local
+Versão
+Arredondamento
+ SEDOP
+Pará  Com LS
+03/2026
+03/2026
+10/2025
+03/2025
+02/2025
+10/2024
+05/2024
+02/2024
+10/2023
+05/2023
+02/2023
+09/2022
+05/2022
+02/2022
+09/2021
+03/2021
+09/2020
+04/2020
+11/2019
+04/2019
+10/2018
+04/2018
+09/2017
+04/2017
+10/2016
+04/2016
+10/2015
+Seguir a configuração do orçamento
+Truncar em 2 casas
+Arredondar em 2 casas
+Truncar em 4 casas
+Arredondar em 4 casas
+Truncar em 2 casas com subitems em 4 casas
+Arredondar em 2 casas com subitems em 4 casas
+Não arredondar
+
+
+Bases do Sul
+Base
+Local
+Versão
+Arredondamento
+ DERPR
+Paraná
+08/2025
+08/2025
+03/2025
+10/2024
+04/2024
+09/2023
+02/2023
+08/2022
+-
+
+
+Bases Próprias
+Base
+Local
+Versão
+Arredondamento
+
+
+Cancelar
+Salvar
+ Home
+ Orçamentos
+Orçamento
+Orçamento
+Não iniciado
+Pintura MGI/SRA-ES - Teste Reorganizado
+Adicionar
+Etapa
+Adicionar
+Composição
+Adicionar
+Insumo
+Bancos	
+SINAPI - 02/2026 - Espírito Santo
+IOPES - 12/2025 - Espírito Santo
+
+BDI	25,0%
+Total	
+R$ 0,00
+remove_circle_outline	ITEM	CÓDIGO	BASE	DESCRIÇÃO	UND	QUANT.	VALOR UNIT	VALOR COM BDI	TOTAL		
+Total sem BDI	R$ 0,00
+Total do BDI	R$ 0,00
+TOTAL	
+R$ 0,00
+
+
+
+
+
+
+
+
+
+Qual de vocês, se quiser construir uma torre, primeiro não se assenta e calcula o preço, para ver se tem dinheiro suficiente para completá-la? - Lucas 14:28
+Copyright © 2026 3f Ltda. Todos os direitos reservados.
+Suporte

@@ -1,0 +1,55 @@
+home
+  Home
+  Orçamentos
+  Composições
+  Insumos
+  Planejamentos
+receipt_long
+  Diário de Obras
+  Medições
+shopping_cart
+  Compras
+  Cadastros
+  Integrações
+  Webinars
+Exibir
+Editar
+Ferramentas
+Relatórios
+fiber_new
+ Home
+ Orçamentos
+Orçamento
+Orçamento
+Não iniciado
+Pintura MGI/SRA-ES - Teste Reorganizado
+Adicionar
+Etapa
+Adicionar
+Composição
+Adicionar
+Insumo
+Bancos	
+SINAPI - 02/2026 - Espírito Santo
+IOPES - 12/2025 - Espírito Santo
+
+BDI	25,0%
+Total	
+R$ 0,00
+remove_circle_outline	ITEM	CÓDIGO	BASE	DESCRIÇÃO	UND	QUANT.	VALOR UNIT	VALOR COM BDI	TOTAL		
+Total sem BDI	R$ 0,00
+Total do BDI	R$ 0,00
+TOTAL	
+R$ 0,00
+
+
+
+
+
+
+
+
+
+Qual de vocês, se quiser construir uma torre, primeiro não se assenta e calcula o preço, para ver se tem dinheiro suficiente para completá-la? - Lucas 14:28
+Copyright © 2026 3f Ltda. Todos os direitos reservados.
+Suporte
