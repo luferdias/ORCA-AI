@@ -1,0 +1,8 @@
+{
+  "meses_teste": 3,
+  "meses_validacao": 2,
+  "min_amostras_treino": 12,
+  "min_servicos": 3,
+  "min_amostras_validacao": 3,
+  "min_amostras_teste": 3
+}

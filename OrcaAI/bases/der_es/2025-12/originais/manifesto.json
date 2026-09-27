@@ -1,0 +1,17 @@
+{
+  "fonte": "DER-ES",
+  "competencia": "2025-12",
+  "regime": "sem_desoneracao",
+  "url_oficial_observada": "https://der.es.gov.br/media/Documentos/Tabela%20Referencial%20de%20Pre%C3%A7o/Referencial%20de%20Edifica%C3%A7%C3%B5es/OBRAS_2025/TABELA%20REFERENCIAL%20OBRAS%20-%20DER-ES%20-%202025-12%20-%20DEZ.zip",
+  "pagina_indice": "https://der.es.gov.br/referencial-de-precos-edificacoes",
+  "capturado_em_utc": "2026-09-27T17:50:25.426352+00:00",
+  "arquivo": "TABELA REFERENCIAL OBRAS - DER-ES - 2025-12 - DEZ.zip",
+  "bytes": 7557341,
+  "sha256": "cf2ae6d6af6081526a2c2c6a6446342c23099ac3a9c81f310e3a5da2680fb053",
+  "zip_crc_verificado": true,
+  "servicos_extraidos": 1341,
+  "bdi_planilha": 0,
+  "publicado_em": null,
+  "assinatura_tipo": "descricao_unidade",
+  "limite_assinatura": "Não verifica insumos, coeficientes nem subcomposições da CPU."
+}

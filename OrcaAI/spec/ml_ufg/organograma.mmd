@@ -1,0 +1,20 @@
+flowchart TD
+    H["Engenheiro Luis Fernando · orientação e validação humana"] --> O["A1 · OrcaMasterOrchestrator"]
+    O --> ENG["Engenharia de orçamento · existente"]
+    O --> ML["A11 · PesquisadorMLUFG · proposto"]
+    O --> AUD["A9 · AuditorConformidade · existente"]
+    O --> S5["Agente 5S · acervo e organização"]
+    O --> APO["Apoio existente · planejamento e documentação"]
+    ENG --> E2["A2 · Escopo e quantitativos"]
+    ENG --> E3["A3 · Operação no Orçafascio"]
+    ENG --> E45["A4 e A5 · Mercado e bases oficiais"]
+    ENG --> E67["A6 e A7 · Composições e especificações"]
+    ENG --> E810["A8 e A10 · Planejamento e instrução processual"]
+    ML --> D["SA-ML-01 · Dados e curadoria · proposto"]
+    ML --> K["SA-ML-02 · Conhecimento e busca · proposto"]
+    ML --> T["SA-ML-03 · Treinamento · proposto"]
+    ML --> API["SA-ML-04 · Integração e API · proposto"]
+    AUD --> V["SA-ML-05 · Avaliação experimental · proposto"]
+    T -. "modelos e experimentos" .-> V
+    K -. "resultados de recuperação" .-> V
+    V -. "parecer e métricas" .-> O

@@ -1,0 +1,222 @@
+{
+  "data_corte": "2026-09-27",
+  "escopo": "Catálogo declarativo de fontes referenciais para orçamento; não executa coleta nem valida a integridade de acervos completos.",
+  "fontes": [
+    {
+      "id": "sinapi",
+      "editor": "Caixa Econômica Federal e IBGE",
+      "uf": ["ES", "MG", "RJ", "SP"],
+      "uso": "Custos de insumos e composições de construção civil por UF.",
+      "portal": "https://www.caixa.gov.br/poder-publico/modernizacao-gestao/sinapi/Paginas/default.aspx",
+      "competencia_mais_recente_observada": "2026-08",
+      "tipo_data": "publicacao_exibida_no_portal",
+      "ultima_data": "2026-09-11",
+      "status_acesso": "ZIP XLSX de agosto/2026 baixado pelo Microsoft Edge a partir do portal oficial. As tentativas HTTP automatizadas anteriores falharam. ZIP PDF não baixado nesta etapa.",
+      "formatos": ["ZIP XLSX obtido, contendo quatro planilhas", "ZIP PDF listado; download não realizado"],
+      "verificacao": "Arquivo XLSX ZIP recebido com 15812023 bytes; assinatura ZIP e diretório central lidos, cópia conferida por SHA-256. Publicação em 11/09/2026 confirmada na página. Manifesto em sinapi/2026-08/originais/manifesto_download.json.",
+      "limitacao": "O pacote reúne todas as UFs. Nenhuma planilha foi extraída ou inspecionada internamente nesta etapa; recorte ES e CRC de cada entrada ainda não verificados. Download pelo navegador não comprova que a coleta HTTP automática esteja resolvida.",
+      "proxima_acao": "Na próxima etapa, descompactar o ZIP preservando o original, conferir as planilhas e selecionar o recorte ES. Manter SINAPI e DER-ES em datasets e experimentos separados antes de compará-los.",
+      "arquivos_amostra": [
+        "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-08-formato-xlsx.zip",
+        "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-08-formato-pdf.zip"
+      ]
+    },
+    {
+      "id": "sicro",
+      "editor": "Departamento Nacional de Infraestrutura de Transportes (DNIT)",
+      "uf": ["ES", "MG", "RJ", "SP"],
+      "uso": "Custos referenciais de obras de infraestrutura de transportes.",
+      "portal": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro",
+      "competencia_mais_recente_observada": "2026-07",
+      "tipo_data": "publicacao_da_pagina_da_edicao",
+      "ultima_data": "2026-09-25",
+      "status_acesso": "Arquivos 7z das quatro UFs acessíveis, com assinaturas válidas.",
+      "formatos": ["7z", "PDF", "XLSX"],
+      "verificacao": "Assinatura 7z conferida nas quatro UFs; amostra ES aberta com 24 arquivos PDF/XLSX.",
+      "limitacao": "A abertura foi amostral em ES; o conteúdo interno de MG, RJ e SP e a integridade total dos quatro acervos não foram validados.",
+      "proxima_acao": "Inventariar arquivos internos por UF e mapear códigos, unidades, preços e composições.",
+      "arquivos_amostra": [
+        "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/espirito-santo/2026/julho/es-07-2026.7z",
+        "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/minas-gerais/2026/julho/mg-07-2026.7z",
+        "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/rio-de-janeiro/2026/julho/rj-07-2026.7z",
+        "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/sao-paulo/2026/julho/sp-07-2026.7z"
+      ]
+    },
+    {
+      "id": "der_es_edificacoes",
+      "editor": "Departamento de Edificações e de Rodovias do Espírito Santo (DER-ES)",
+      "uf": ["ES"],
+      "uso": "Referencial de custos para obras de edificações.",
+      "portal": "https://der.es.gov.br/referencial-de-precos-edificacoes",
+      "competencia_mais_recente_observada": "2026-05",
+      "tipo_data": "atualizacao_do_portal",
+      "ultima_data": "2026-07-20",
+      "status_acesso": "ZIP respondeu 200 e foi aberto.",
+      "formatos": ["ZIP", "PDF", "XLSX"],
+      "verificacao": "Amostra aberta com serviços, insumos e composições de preços unitários em PDF/XLSX. SHA-256 do ZIP observado: 9d7efd575c10dc676bc49f5acb5630fa9b3cd2b98449be07612e1891e8d213f6.",
+      "limitacao": "A data de atualização do portal não é a competência. Hash e abertura da amostra não atestam a integridade de versões anteriores ou de todo o acervo.",
+      "proxima_acao": "Testar extração integral e esquema de cada planilha usada, com conferência dos cabeçalhos repetidos.",
+      "arquivos_amostra": [
+        "https://der.es.gov.br/media/Documentos/Tabela%20Referencial%20de%20Pre%C3%A7o/Referencial%20de%20Edifica%C3%A7%C3%B5es/OBRAS_2026/TABELA%20REFERENCIAL%20OBRAS%20-%20DER-ES%20-%202026-05%20-%20MAI.zip"
+      ]
+    },
+    {
+      "id": "der_es_projetos",
+      "editor": "Departamento de Edificações e de Rodovias do Espírito Santo (DER-ES)",
+      "uf": ["ES"],
+      "uso": "Referencial anual de serviços de projetos.",
+      "portal": "https://der.es.gov.br/GrupodeArquivos/tabela-referencial-de-servicos-projetos",
+      "competencia_mais_recente_observada": "2026-R0",
+      "tipo_data": "atualizacao_do_portal",
+      "ultima_data": "2026-03-23",
+      "status_acesso": "PDF da edição anual 2026 R0 aberto.",
+      "formatos": ["PDF"],
+      "verificacao": "Amostra de cinco páginas aberta.",
+      "limitacao": "2026 R0 é edição anual, não competência mensal; a conferência foi restrita ao PDF observado.",
+      "proxima_acao": "Extrair descrições, unidades, grupos e custos do PDF; só registrar códigos quando presentes na fonte.",
+      "arquivos_amostra": [
+        "https://der.es.gov.br/media/Documentos/Tabela%20Referencial%20de%20Pre%C3%A7o/Referencial%20de%20Edifica%C3%A7%C3%B5es/PROJETOS/TABELA%20REFERENCIAL%20DE%20PRE%C3%87OS%20DE%20PROJETOS%202026.pdf"
+      ]
+    },
+    {
+      "id": "der_es_rodovias",
+      "editor": "Departamento de Edificações e de Rodovias do Espírito Santo (DER-ES)",
+      "uf": ["ES"],
+      "uso": "Referencial de serviços para obras rodoviárias.",
+      "portal": "https://der.es.gov.br/referencial-de-precos-rodovias",
+      "competencia_mais_recente_observada": "2026-02",
+      "tipo_data": "atualizacao_do_portal",
+      "ultima_data": "2026-07-14",
+      "status_acesso": "PDF de serviços sem desoneração aberto.",
+      "formatos": ["PDF"],
+      "verificacao": "Amostra de 30 páginas aberta; nela, BDI de 23,32% incluído.",
+      "limitacao": "O BDI de 23,32% foi verificado somente no PDF amostrado. A atualização do portal não altera a competência fevereiro/2026.",
+      "proxima_acao": "Conferir separadamente outras condições tributárias e arquivos do índice; preservar a indicação de BDI incluído.",
+      "arquivos_amostra": [
+        "https://der.es.gov.br/media/Documentos/Tabela%20Referencial%20de%20Pre%C3%A7o/Referencial%20de%20Rodovias/2026/02_servicos-fev-26-sem-desoneracao.pdf"
+      ]
+    },
+    {
+      "id": "der_sp_tpu",
+      "editor": "Departamento de Estradas de Rodagem do Estado de São Paulo (DER-SP)",
+      "uf": ["SP"],
+      "uso": "Preços unitários e composições de obras e serviços de transportes.",
+      "portal": "http://200.144.30.103/tpu-internet/",
+      "competencia_mais_recente_observada": "2026-04-30",
+      "tipo_data": "data_de_referencia_da_tpu",
+      "ultima_data": "2026-04-30",
+      "status_acesso": "Índice acessível a partir de https://www.der.sp.gov.br/der/biblioteca/manuais_e_normas/tabelas; ZIPs públicos obtidos e abertos, sem login ou cobrança observados.",
+      "formatos": ["ZIP", "XLSX", "PDF"],
+      "verificacao": "TPU_04_2026.zip contém planilha XLSX e PDFs onerado/desonerado; planilha aberta com subitem, nome, unidade e preço. COMPOSICAO_04_2026.zip contém PDFs de composições de serviços e equipamentos.",
+      "limitacao": "Os dois ZIPs de abril/2026 foram verificados como amostras; a integridade de todas as referências históricas não foi conferida.",
+      "proxima_acao": "Mapear as composições dos PDFs aos subitens da planilha e registrar revisões posteriores quando publicadas.",
+      "arquivos_amostra": [
+        "http://200.144.30.103/tpu-internet/arquivos/TPU_04_2026.zip",
+        "http://200.144.30.103/tpu-internet/arquivos/COMPOSICAO_04_2026.zip"
+      ]
+    },
+    {
+      "id": "siurb_sp",
+      "editor": "Secretaria Municipal de Infraestrutura Urbana e Obras de São Paulo (SIURB)",
+      "uf": ["SP"],
+      "uso": "Custos de infraestrutura urbana e edificações do município de São Paulo.",
+      "portal": "https://prefeitura.sp.gov.br/web/obras/w/tabelas_de_custos/355179",
+      "competencia_mais_recente_observada": "2026-07",
+      "tipo_data": "publicacao",
+      "ultima_data": "2026-09-16",
+      "status_acesso": "Planilhas públicas; GET dos arquivos amostrados respondeu 200 com Referer do portal, sem login ou cobrança observados.",
+      "formatos": ["XLS", "XLSX", "DOCX"],
+      "verificacao": "XLSX de insumos aberto, com código, descrição, unidade e custo unitário; índice também lista custos unitários, composições auxiliares e analíticas, critérios de medição e versões onerada/desonerada.",
+      "limitacao": "O HEAD sem Referer retornou 403 em arquivo amostrado; a abertura do XLSX de insumos não valida todas as planilhas publicadas.",
+      "proxima_acao": "Testar individualmente as planilhas de custos e composições de infraestrutura e edificações.",
+      "arquivos_amostra": [
+        "https://prefeitura.sp.gov.br/documents/d/obras/onerada-sem-des-insumos-julho-2026-1-xlsx",
+        "https://prefeitura.sp.gov.br/documents/d/obras/onerada-sem-des-custos-unit-infra-julho-2026-1-xls"
+      ]
+    },
+    {
+      "id": "emop_rj",
+      "editor": "Empresa de Obras Públicas do Estado do Rio de Janeiro (EMOP-RJ)",
+      "uf": ["RJ"],
+      "uso": "Custos de serviços, insumos e composições para obras estaduais.",
+      "portal": "https://www.rj.gov.br/emop/catalogos-emop",
+      "competencia_mais_recente_observada": null,
+      "tipo_data": null,
+      "ultima_data": null,
+      "status_acesso": "Lista de substituições pública; boletim e catálogos completos dependem de cadastro, pagamento e login em https://catalogoweb.emop.rj.gov.br/view/index.php.",
+      "formatos": ["PDF da lista pública", "DBF ou DOC nos catálogos digitais, segundo o portal"],
+      "verificacao": "PDF público de ocorrências de julho/2026 respondeu 200. O portal descreve código, descrição, unidade e custo no catálogo de referência; composições analíticas e coeficientes no catálogo de composições.",
+      "limitacao": "Julho/2026 é o mês de ocorrências visível publicamente; a última competência do boletim completo continua desconhecida.",
+      "proxima_acao": "Obter acesso autorizado aos catálogos e confirmar a competência e o esquema dos arquivos integrais.",
+      "arquivos_amostra": [
+        "https://www.rj.gov.br/emop/sites/default/files/arquivos_pagina_basica/Relatorio_de_Ocorrencias___julho_2026_0.pdf"
+      ]
+    },
+    {
+      "id": "sco_rio",
+      "editor": "Controladoria Geral do Município do Rio de Janeiro (CGM-Rio)",
+      "uf": ["RJ"],
+      "uso": "Sistema de custos de obras e serviços de engenharia do município do Rio de Janeiro.",
+      "portal": "https://controladoria.prefeitura.rio/tabelas-do-sistema-de-custos-para-obras-e-servicos-de-engenharia-sco-rio/",
+      "competencia_mais_recente_observada": "2026-08",
+      "tipo_data": "publicacao",
+      "ultima_data": "2026-09-16",
+      "status_acesso": "ZIPs públicos em PDF e Excel; sem login ou cobrança observados. A AEERJ é associação intermediária, não editora oficial.",
+      "formatos": ["ZIP", "PDF", "XLS", "XLSX"],
+      "verificacao": "ZIP Excel onerado de agosto/2026 aberto: catálogo FGV06 com código, descrição, unidade e preço; também contém ocorrências, itens elementares e tabelas. Publicação em 16/09/2026 atestada pela CGM-Rio.",
+      "limitacao": "A validação de conteúdo cobriu o ZIP Excel onerado como amostra, não os quatro pacotes PDF/Excel, onerados/desonerados.",
+      "proxima_acao": "Validar os demais pacotes e relacionar os itens elementares às composições conforme seus arquivos.",
+      "arquivos_amostra": [
+        "https://controladoria.prefeitura.rio/wp-content/uploads/sites/29/2026/09/ARQUIVOS-COM-CATALOGO-DAS-COMPOSICOES-O-EXCEL.zip"
+      ]
+    },
+    {
+      "id": "sicor_mg",
+      "editor": "Departamento de Estradas de Rodagem de Minas Gerais (DER-MG) e Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias (SEINFRA-MG)",
+      "uf": ["MG"],
+      "uso": "Custos e composições de obras rodoviárias, edificações e consultoria em seis macrorregiões.",
+      "portal": "https://der.mg.gov.br/13-servicos/3010-consultar-o-sistema-de-custos-e-orcamentos-referenciais-de-obras",
+      "competencia_mais_recente_observada": null,
+      "tipo_data": null,
+      "ultima_data": null,
+      "status_acesso": "SICOR-MG atual exige cadastro gratuito com CPF/CNPJ e senha no Portal de Serviços do DER-MG; a antiga planilha Preço SEINFRA migrou para o SICOR.",
+      "formatos": ["PDF", "XLSX"],
+      "verificacao": "Serviço oficial e barreira de login confirmados; documentação do sistema descreve publicação de serviços e composições em PDF/XLSX.",
+      "limitacao": "Nenhuma competência atual foi confirmada sem login. O índice público antigo do DER-MG não representa a versão corrente.",
+      "proxima_acao": "Com acesso cadastrado, consultar a última data-base por natureza, região e condição tributária e validar amostras de arquivos.",
+      "arquivos_amostra": []
+    },
+    {
+      "id": "cub_es",
+      "editor": "Sindicato da Indústria da Construção Civil no Estado do Espírito Santo (Sinduscon-ES)",
+      "uf": ["ES"],
+      "uso": "Custo Unitário Básico da construção civil como indicador auxiliar.",
+      "portal": "https://www.sinduscon-es.com.br/v2/cgi-bin-mobile/principal.asp",
+      "competencia_mais_recente_observada": "2026-08",
+      "tipo_data": "divulgacao",
+      "ultima_data": "2026-09-03",
+      "status_acesso": "Página pública lida; download de tabela ou arquivo não validado.",
+      "formatos": ["HTML; arquivos não validados"],
+      "verificacao": "Notícia do Sinduscon-ES divulga em 03/09/2026 o CUB de agosto/2026.",
+      "limitacao": "CUB é indicador auxiliar e não substitui composições analíticas de preços. Estrutura de eventual arquivo não examinada.",
+      "proxima_acao": "Localizar a tabela oficial da competência e verificar as tipologias e o formato antes de importar valores.",
+      "arquivos_amostra": []
+    },
+    {
+      "id": "anp_combustiveis",
+      "editor": "Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP)",
+      "uf": ["ES", "MG", "RJ", "SP"],
+      "uso": "Preços de combustíveis como insumo auxiliar para análise de custos e atualização contextual.",
+      "portal": "https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/levantamento-de-precos-de-combustiveis-ultimas-semanas-pesquisadas",
+      "competencia_mais_recente_observada": "2026-09-20/2026-09-26",
+      "tipo_data": "atualizacao_do_portal",
+      "ultima_data": "2026-09-25",
+      "status_acesso": "Página oficial de últimas semanas lida; downloads não validados.",
+      "formatos": ["HTML; arquivos vinculados não validados"],
+      "verificacao": "O portal lista a semana de 20 a 26/09/2026 e preços médios semanais por Brasil, regiões, estados e municípios.",
+      "limitacao": "A data de atualização do portal é distinta da semana pesquisada e da publicação de cada arquivo. Nenhum arquivo da semana foi aberto.",
+      "proxima_acao": "Validar o arquivo da semana e a granularidade por UF/produto antes de usar como variável auxiliar.",
+      "arquivos_amostra": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "competencia": "2026-05",
+  "execucao_origem": "/Users/luisfdias/.codex/worktrees/11e7/ORCA-AI/OrcaAI/ml/outputs/entrega_ufg_acabamentos_2026-09-27",
+  "arquivos_entrada_sha256": {
+    "sinapi_es/dados/dataset_acabamentos.csv": "6727816b97792324c2b203673b5ad6b373990f55e4fc5025c4229400969c61a5",
+    "sinapi_es/dados/populacoes_tarefas.csv": "69f76abf365ad2e242aaa5a1230f0e2c01604b8dc670b5b11f62f8cbb27cb1cb",
+    "sinapi_es/regressao/previsoes_pareadas.csv": "e69dfeabec488a76bffdb30a7a396d4585ca777ff3a6c8d51fddf7dc4aa97a7f",
+    "sinapi_es/regressao/estatisticas_nichos.csv": "eeefea8f15299dd406171966453b7863285f6003c8e66b7c6e068074419d837d",
+    "sinapi_es/classificacao/metricas_teste.csv": "66f47797b963e43bee427f94c64d87b86b439cf1ef9d385f1c25de97db40c6ee",
+    "sinapi_es/classificacao/previsoes.csv": "51b18e00269ccd447fb3c1e2f4d9cc3e0a295ddde0a7b71e7fb465c7c2cd80d9",
+    "sinapi_es/classificacao/particoes.csv": "d42e72021b4396c04b2ea8e732f9daf4bd6926e643a81ee761132c1b2fe7e2d4",
+    "sinapi_es/classificacao/confusao.csv": "4159be88fd8a95c097315bc1fa0e19d8ffada4158c4ba2c565db34b3274c4826",
+    "sinapi_es/classificacao/metricas_cv.csv": "61617e73d2b6e2d23f12f64bcc2b81f1799a0a74d643af6180cdc2a125120418",
+    "sinapi_es/agrupamento/candidatos_k.csv": "56c2bfab0254f7c513692255d41d4d5aee9c965ddc4c26622057b18eb94e4839",
+    "sinapi_es/agrupamento/atribuicoes.csv": "c629d533db7797fb8ca97afd42b92fa039a2d10bf563d3deb8ef67dca3107a72",
+    "sinapi_es/agrupamento/coordenadas_pca.csv": "c204f0526c9435d6cbb3b65a7edf04ae1b40b175a3bb293d3234508b1d238a62",
+    "sinapi_es/agrupamento/centroides.csv": "67224273a125d97562ab1d6c580112a23d0b3198f5c619c01999ad498c5b07d5",
+    "der_es/dados/dataset_acabamentos.csv": "ba51ab01a7aa5b545e6f6745e9d7533cb77b52cee4134e92661922986f228a3c",
+    "der_es/dados/populacoes_tarefas.csv": "10bc6fef89dbe54e4d76e3ecc669b2fabee0b0524f732e51203547145b44c825",
+    "der_es/regressao/previsoes_pareadas.csv": "8e5a177d649bcff768032537ea99476101dd9173ce171c1785d419f51b0a556e",
+    "der_es/regressao/estatisticas_nichos.csv": "04ff5a2f6aae2a8c3aec6a4d2d6ddeca4c60d9565632028106d36b4a6e937538",
+    "der_es/classificacao/metricas_teste.csv": "9ed26777f38260dd00985bcd0ec0512608de823e466a50d2694c7ed18eb600a0",
+    "der_es/classificacao/previsoes.csv": "c94198c64625729331417aca2d94808e50ae413620fa24671e97d9a8c1c072ae",
+    "der_es/classificacao/particoes.csv": "e8671cafd9e0d992ff4a2a819f66e8ecaa70996bd48326e7e2d587269c916500",
+    "der_es/classificacao/confusao.csv": "1d344d7bd5dc9fd374a1d98566f9a2e01d9d8f2ded7be93ffee5e728261cfd34",
+    "der_es/classificacao/metricas_cv.csv": "6a054af37c7b70ed8034dcf418a7ada836d2ac4036061a925ae02c5ed2f59515",
+    "der_es/agrupamento/candidatos_k.csv": "01b2897745bcbae804e171e5bcd4f5385528c9e8366324903003f20120468067",
+    "der_es/agrupamento/atribuicoes.csv": "98e38c1a16cafb34bd5548fc76090e1edcd91cc202c3f593b7246f8c180b8ca5",
+    "der_es/agrupamento/coordenadas_pca.csv": "ba7d0499860b6b1a691aa0ca9eb82c149fe6fa95d59275578c899c64fb5a6a5e",
+    "der_es/agrupamento/centroides.csv": "29b6c585b9bd0bcff73c5af9a1e2b1c7e4a1b02beeface9f15a8735acda3938d"
+  },
+  "bases": {
+    "sinapi_es": {
+      "n_catalogo": 514,
+      "n_previsoes_regressao": 1494,
+      "classificador_selecionado": "arvore_decisao",
+      "f1_macro_selecionado": 0.7913003663003663,
+      "k_selecionado": 3,
+      "k_diagnostico": null,
+      "status_agrupamento": "concluido",
+      "codigo_exemplo_pintura": "96130"
+    },
+    "der_es": {
+      "n_catalogo": 70,
+      "n_previsoes_regressao": 180,
+      "classificador_selecionado": "arvore_decisao",
+      "f1_macro_selecionado": 0.5622710622710623,
+      "k_selecionado": null,
+      "k_diagnostico": 2,
+      "status_agrupamento": "sem_candidato_valido",
+      "codigo_exemplo_pintura": "190115"
+    }
+  },
+  "arquivos_saida_sha256": {
+    "relatorio.html": "ad6801ef3547d794546847d62bb6d6d4315c5fa11dbbb5dbac9e786fbd2eb55c",
+    "relatorio.pdf": "6934a73b0b218212f02329be4e50c6e5738b37842bd8587e9ad63569911e92b1",
+    "RELATORIO.md": "94c54cc889ad29a56bb6d9a603dd652b3034bebfd9b0e1026dd522d5c4fda869"
+  }
+}

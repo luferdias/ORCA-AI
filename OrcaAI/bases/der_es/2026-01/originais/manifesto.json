@@ -1,0 +1,17 @@
+{
+  "fonte": "DER-ES",
+  "competencia": "2026-01",
+  "regime": "sem_desoneracao",
+  "url_oficial_observada": "https://der.es.gov.br/media/Documentos/Tabela%20Referencial%20de%20Pre%C3%A7o/Referencial%20de%20Edifica%C3%A7%C3%B5es/OBRAS_2026/TABELA%20REFERENCIAL%20OBRAS%20-%20DER-ES%20-%202026-01%20-%20JAN.zip",
+  "pagina_indice": "https://der.es.gov.br/referencial-de-precos-edificacoes",
+  "capturado_em_utc": "2026-09-27T17:50:29.212506+00:00",
+  "arquivo": "TABELA REFERENCIAL OBRAS - DER-ES - 2026-01 - JAN.zip",
+  "bytes": 7545848,
+  "sha256": "4feebcbe8c47058cf57314347405d833cdfb5d2340951f005ab53d27ae84fd84",
+  "zip_crc_verificado": true,
+  "servicos_extraidos": 1341,
+  "bdi_planilha": 0,
+  "publicado_em": null,
+  "assinatura_tipo": "descricao_unidade",
+  "limite_assinatura": "Não verifica insumos, coeficientes nem subcomposições da CPU."
+}

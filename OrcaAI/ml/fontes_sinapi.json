@@ -1,0 +1,463 @@
+{
+  "schema_version": 1,
+  "fonte": "SINAPI / CAIXA",
+  "escopo": "URLs públicas dos ZIPs XLSX nacionais de janeiro/2025 a agosto/2026; o recorte Espírito Santo deve ser selecionado no conteúdo.",
+  "verificado_em": "2026-09-27",
+  "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+  "portal_principal": "https://www.caixa.gov.br/poder-publico/modernizacao-gestao/sinapi/Paginas/default.aspx",
+  "notas_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf",
+  "quantidade_entries": 20,
+  "significado_datas": {
+    "competencia": "Mês de referência dos dados.",
+    "publicado_em": "Data exibida como PUBLICADO para o arquivo visível no portal na consulta; pode representar republicação. Não comprova a primeira divulgação da competência.",
+    "observado_em": "Data de consulta da equipe; não substitui competência nem publicação."
+  },
+  "evidencias": {
+    "urls_e_datas": "As 20 URLs e os 20 rótulos de publicação foram observados pelo agente orquestrador na categoria 888 do portal oficial por Microsoft Edge nativo e repassados a este catálogo.",
+    "notas": "Resumos das notas oficiais encontrados na indexação do PDF da CAIXA; o acesso HTTP direto ao PDF apresentou redirecionamento circular nesta verificação.",
+    "formato": "O portal oficial distingue relatórios nacionais a partir de 2025 dos arquivos por UF até 2024. O ZIP XLSX a partir de 2025 contém relatórios de todas as UFs.",
+    "limite": "A confirmação da listagem não comprova download, integridade ZIP/CRC, completude de preços ou adequação de cada registro ao treinamento."
+  },
+  "padrao_url": {
+    "ordinario": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-YYYY-MM-formato-xlsx.zip",
+    "excecoes_observadas": [
+      "2026-01",
+      "2026-02"
+    ],
+    "sufixo_excecoes": "_Retificacao01.zip",
+    "orientacao": "Usar as URLs confirmadas em entries. Não inferir outras competências ou nomes históricos pelo padrão."
+  },
+  "notas": [
+    {
+      "id": "nota_07_2025_01",
+      "competencias": [
+        "2025-06"
+      ],
+      "tipo": "retificacao",
+      "republicado_em": "2025-07-11",
+      "resumo": "Junho/2025 foi republicado após correção dos encargos sociais.",
+      "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf",
+      "pagina_pdf_observada": 11
+    },
+    {
+      "id": "nota_12_2025_02",
+      "competencias": [
+        "2025-10",
+        "2025-11"
+      ],
+      "tipo": "retificacao",
+      "republicado_em": "2025-12-22",
+      "resumo": "Após receber os preços do IBGE, a CAIXA republicou outubro e novembro/2025 com valores. Os arquivos anteriores continham zeros.",
+      "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf",
+      "pagina_pdf_observada": 7
+    },
+    {
+      "id": "nota_03_2026_01",
+      "competencias": [
+        "2026-01",
+        "2026-02"
+      ],
+      "tipo": "retificacao",
+      "republicado_em": "2026-03-25",
+      "data_fonte": "Listagem oficial no Edge; a nota confirma a republicação, sem data exata no trecho consultado.",
+      "resumo": "Reinclusão de mão de obra omitida nas composições 102274/102275 de martelo demolidor; composições dependentes também foram afetadas.",
+      "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf",
+      "paginas_pdf_observadas": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "nota_03_2026_02",
+      "competencias": [
+        "2026-03"
+      ],
+      "tipo": "manutencao",
+      "resumo": "Correção de insumos de cobre nas composições 97339/97340 prevista para a referência março/2026.",
+      "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf",
+      "pagina_pdf_observada": 6
+    },
+    {
+      "id": "nota_03_2026_03",
+      "competencias": [
+        "2026-03"
+      ],
+      "tipo": "suspensao_grupo",
+      "resumo": "Grupo de eletrocalhas suspenso a partir de março/2026 para manutenção. Retorno não confirmado neste catálogo.",
+      "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf",
+      "pagina_pdf_observada": 6
+    },
+    {
+      "id": "nota_02_2025_01",
+      "competencias": [
+        "2025-01"
+      ],
+      "tipo": "mudanca_formato",
+      "resumo": "A referência janeiro/2025 adotou somente o novo formato e passou a incluir referências sem preço/custo. Ausência de preço não equivale a custo zero.",
+      "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf",
+      "pagina_pdf_observada": 13
+    }
+  ],
+  "verificacao_http": {
+    "metodo": "GET com Range bytes=0-15 e cabeçalho Referer público; redirecionamentos desativados para inspecionar a resposta.",
+    "resultado": "HTTP 302 com Location igual à própria URL nos três ZIPs testados e no PDF de notas; a API Downloads também apresentou loop de redirecionamento.",
+    "competencias_testadas": [
+      "2025-01",
+      "2025-06",
+      "2026-08"
+    ],
+    "download_concluido_por_este_subagente": false,
+    "crc_verificado_por_este_subagente": false,
+    "interpretacao": "Limitação do canal HTTP desta sessão, não evidência de inexistência dos arquivos. A listagem foi confirmada pelo navegador nativo.",
+    "tentativas_encerradas": "Sem repetição prolongada; coleta pelo navegador conduzida pelo agente orquestrador."
+  },
+  "regras_uso": [
+    "Guardar URL, competência, publicação observada, revisão, hash e resultado de CRC no manifesto de cada download efetivamente concluído.",
+    "Selecionar ES e separar regimes após ler cabeçalhos e abas; não tratar o ZIP nacional inteiro como dados do Espírito Santo.",
+    "Na avaliação temporal, uma versão republicada só pode ser considerada disponível a partir da sua publicação observada; não retroagir a correção.",
+    "Verificar preços ausentes/zerados, mudanças de composição e suspensões antes de construir séries históricas.",
+    "A ausência de retificação identificada neste catálogo não prova que a competência nunca tenha sido alterada."
+  ],
+  "entries": [
+    {
+      "competencia": "2025-01",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-01-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-03-10",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-02",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-02-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-03-13",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-03",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-03-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-04-11",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-04",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-04-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-05-09",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-05",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-05-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-06-10",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-06",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-06-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-07-11",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "confirmada",
+        "identificador_no_arquivo": null,
+        "nota_id": "nota_07_2025_01",
+        "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf"
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-07",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-07-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-08-12",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-08",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-08-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-09-10",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-09",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-09-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-10-10",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-10",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-10-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-12-22",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "confirmada",
+        "identificador_no_arquivo": null,
+        "nota_id": "nota_12_2025_02",
+        "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf"
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-11",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-11-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2025-12-22",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "confirmada",
+        "identificador_no_arquivo": null,
+        "nota_id": "nota_12_2025_02",
+        "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf"
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2025-12",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-12-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-01-09",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-01",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-01-formato-xlsx_Retificacao01.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-03-25",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "confirmada",
+        "identificador_no_arquivo": "Retificacao01",
+        "nota_id": "nota_03_2026_01",
+        "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf"
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-02",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-02-formato-xlsx_Retificacao01.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-03-25",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "confirmada",
+        "identificador_no_arquivo": "Retificacao01",
+        "nota_id": "nota_03_2026_01",
+        "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf"
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-03",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-03-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-04-10",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-04",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-04-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-05-12",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-05",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-05-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-06-12",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-06",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-06-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-07-10",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-07",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-07-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-08-11",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    },
+    {
+      "competencia": "2026-08",
+      "url": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-08-formato-xlsx.zip",
+      "url_publica_confirmada": true,
+      "publicado_em": "2026-09-11",
+      "publicado_em_fonte": "Rótulo PUBLICADO na listagem oficial, observado pela equipe no Microsoft Edge nativo.",
+      "source_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+      "metodo_observacao": "microsoft_edge_nativo_agente_orquestrador",
+      "observado_em": "2026-09-27",
+      "retificacao": {
+        "status": "nao_identificada_nesta_verificacao",
+        "identificador_no_arquivo": null,
+        "nota_id": null,
+        "source_portal": null
+      },
+      "integridade_arquivo": "consultar_manifesto_de_coleta; nao_auditada_neste_catalogo"
+    }
+  ]
+}

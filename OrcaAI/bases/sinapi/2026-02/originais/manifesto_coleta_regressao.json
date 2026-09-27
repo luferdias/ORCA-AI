@@ -1,0 +1,28 @@
+{
+  "fonte": "SINAPI / CAIXA",
+  "competencia": "2026-02",
+  "publicacao_exibida_no_portal": "2026-03-25",
+  "capturado_em": "2026-09-27T17:46:16.688598+00:00",
+  "url_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+  "url_arquivo": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2026-02-formato-xlsx_Retificacao01.zip",
+  "metodo_download": "Navegador CAIXA (Edge e navegador do Codex)",
+  "arquivo": "SINAPI-2026-02-formato-xlsx_Retificacao01.zip",
+  "tamanho_bytes": 15537310,
+  "sha256": "7dc89b8e7cb6e645d4c3af542be2b33d60503553ebdb2ec77fcb38815c67b3fa",
+  "crc_de_todos_os_arquivos_verificado": true,
+  "extraido": false,
+  "arquivos_no_zip": [
+    "SINAPI-2026-02-formato-xlsx/",
+    "SINAPI-2026-02-formato-xlsx/SINAPI_familias_e_coeficientes_2026_02.xlsx",
+    "SINAPI-2026-02-formato-xlsx/SINAPI_Manutenções_2026_02.xlsx",
+    "SINAPI-2026-02-formato-xlsx/SINAPI_mao_de_obra_2026_02.xlsx",
+    "SINAPI-2026-02-formato-xlsx/SINAPI_Referência_2026_02.xlsx"
+  ],
+  "retificacao": {
+    "status": "confirmada",
+    "identificador_no_arquivo": "Retificacao01",
+    "nota_id": "nota_03_2026_01",
+    "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf"
+  },
+  "abrangencia": "nacional; recorte ES na extração"
+}

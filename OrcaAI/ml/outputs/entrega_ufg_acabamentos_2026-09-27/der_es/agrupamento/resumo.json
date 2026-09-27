@@ -1,0 +1,94 @@
+{
+  "fonte": "der_es",
+  "competencia": "2026-05",
+  "n": 70,
+  "n_grupos": 52,
+  "atributos": [
+    "fracao_mao_obra",
+    "fracao_material",
+    "fracao_equipamento",
+    "fracao_outros",
+    "n_mao_obra",
+    "n_material",
+    "n_equipamento",
+    "n_outros",
+    "horas_mao_obra",
+    "horas_equipamento"
+  ],
+  "dataset_sha256": "ccff547296ed985ef19dcf7092f097a41c4bd9e41a095b3a55140f6af1ef9934",
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.9.1"
+  },
+  "status": "sem_candidato_valido",
+  "tarefa": "agrupamento",
+  "algoritmo": "kmeans",
+  "k_selecionado": null,
+  "k_diagnostico": 2,
+  "diagnostico": true,
+  "criterio_selecao": "maior_silhouette_com_tamanho_minimo",
+  "criterio_diagnostico": "menor_k_calculavel",
+  "motivo": "Nenhum k satisfaz o tamanho mínimo e as métricas finitas",
+  "arquivo_modelo": "modelo_diagnostico.joblib",
+  "desempate": "menor k",
+  "min_servicos_cluster": 4,
+  "n_vetores_distintos": 66,
+  "n_init": 30,
+  "semente": 42,
+  "metricas": null,
+  "metricas_diagnostico": {
+    "k": 2,
+    "elegivel": false,
+    "motivo": "Grupo menor que 4 serviços ou métrica indefinida",
+    "silhouette": 0.670916007918471,
+    "davies_bouldin": 0.6092124186702699,
+    "calinski_harabasz": 33.27042291561814,
+    "inercia": 329.0200538390495,
+    "min_tamanho": 3,
+    "tamanhos": "67;3"
+  },
+  "estabilidade": {
+    "semente": {
+      "n_calculado": 3,
+      "n_total": 3,
+      "ari_medio": 1.0,
+      "ari_mediano": 1.0,
+      "ari_minimo": 1.0
+    },
+    "subamostra_80pct": {
+      "n_calculado": 20,
+      "n_total": 20,
+      "ari_medio": 1.0,
+      "ari_mediano": 1.0,
+      "ari_minimo": 1.0
+    },
+    "subamostra_grupos_80pct": {
+      "n_calculado": 20,
+      "n_total": 20,
+      "ari_medio": 0.9527696644261061,
+      "ari_mediano": 1.0,
+      "ari_minimo": 0.05539328852212288
+    }
+  },
+  "pca_variancia_explicada": [
+    0.4323633364347168,
+    0.28993998637644713
+  ],
+  "pca_variancia_explicada_total": 0.7223033228111639,
+  "tamanhos_clusters": {
+    "0": 67,
+    "1": 3
+  },
+  "limites": [
+    "Agrupamento exploratório ajustado ao catálogo inteiro, sem rótulos de classe.",
+    "Cada fonte usa sua própria padronização; silhouette não é ranking de tabelas oficiais.",
+    "PCA exibe duas dimensões; a distância do KMeans é calculada em todos os atributos.",
+    "Estabilidade compara atribuições do catálogo após reajustes; não mede generalização preditiva.",
+    "Subamostras por linhas podem manter variantes da mesma família; a análise por grupos retira famílias inteiras usando 80% dos grupos, com quantidade variável de serviços.",
+    "Tamanhos contam serviços do catálogo, incluindo variantes; não representam frequência em obras.",
+    "Identificadores de cluster são arbitrários e não demonstram equivalência técnica.",
+    "Nenhum k foi aceito. Gráficos, centros, representantes e estabilidade descrevem somente o diagnóstico do menor k calculável."
+  ]
+}

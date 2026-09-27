@@ -1,0 +1,27 @@
+{
+  "fonte": "SINAPI / CAIXA",
+  "competencia": "2025-10",
+  "publicacao_exibida_no_portal": "2025-12-22",
+  "capturado_em": "2026-09-27T17:48:03.773645+00:00",
+  "url_portal": "https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_888",
+  "url_arquivo": "https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-2025-10-formato-xlsx.zip",
+  "metodo_download": "Navegador CAIXA (Edge e navegador do Codex)",
+  "arquivo": "SINAPI-2025-10-formato-xlsx.zip",
+  "tamanho_bytes": 14934554,
+  "sha256": "8d83b15b7e8c5f3b3069738ee3132511f6038b3f5b0cc6356cbb9836017ca079",
+  "crc_de_todos_os_arquivos_verificado": true,
+  "extraido": false,
+  "arquivos_no_zip": [
+    "SINAPI_familias_e_coeficientes_2025_10.xlsx",
+    "SINAPI_Manutenções_2025_10.xlsx",
+    "SINAPI_mao_de_obra_2025_10.xlsx",
+    "SINAPI_Referência_2025_10.xlsx"
+  ],
+  "retificacao": {
+    "status": "confirmada",
+    "identificador_no_arquivo": null,
+    "nota_id": "nota_12_2025_02",
+    "source_portal": "https://www.caixa.gov.br/Downloads/sinapi-historico-de-encargos-e-notas/Notas_SINAPI.pdf"
+  },
+  "abrangencia": "nacional; recorte ES na extração"
+}
