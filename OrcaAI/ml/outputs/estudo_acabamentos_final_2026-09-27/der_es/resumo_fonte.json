@@ -1,0 +1,585 @@
+{
+  "fonte": "der_es",
+  "competencia": "2026-05",
+  "n_catalogo": 70,
+  "n_validos": 70,
+  "n_excluidos": 0,
+  "n_grupos_variantes": 52,
+  "classes": {
+    "pintura": 29,
+    "pisos": 24,
+    "revestimentos_forros": 17
+  },
+  "n_servicos_preco_sp": 0,
+  "max_diferenca_folhas_pct": 0.45762711864405503,
+  "dataset_sha256": "7d6a15dd421b5fc80524752d290a4a975091dd258d4db7cd454cf0530d349ca4",
+  "arquivo_dataset": "knowledge/datasets/ml_ufg/der_es/custos_historicos.csv",
+  "zip_sha256": "9d7efd575c10dc676bc49f5acb5630fa9b3cd2b98449be07612e1891e8d213f6",
+  "arquivo_zip": "bases/der_es/2026-05/originais/TABELA REFERENCIAL OBRAS - DER-ES - 2026-05 - MAI.zip",
+  "atributos": [
+    "fracao_mao_obra",
+    "fracao_material",
+    "fracao_equipamento",
+    "fracao_outros",
+    "n_mao_obra",
+    "n_material",
+    "n_equipamento",
+    "n_outros",
+    "horas_mao_obra",
+    "horas_equipamento"
+  ],
+  "classificacao": {
+    "fonte": "der_es",
+    "competencia": "2026-05",
+    "n": 70,
+    "n_grupos": 52,
+    "atributos": [
+      "fracao_mao_obra",
+      "fracao_material",
+      "fracao_equipamento",
+      "fracao_outros",
+      "n_mao_obra",
+      "n_material",
+      "n_equipamento",
+      "n_outros",
+      "horas_mao_obra",
+      "horas_equipamento"
+    ],
+    "dataset_sha256": "ccff547296ed985ef19dcf7092f097a41c4bd9e41a095b3a55140f6af1ef9934",
+    "versoes": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "sklearn": "1.9.1"
+    },
+    "status": "concluido",
+    "tarefa": "classificacao",
+    "algoritmo_principal": "random_forest",
+    "algoritmo_selecionado": "arvore_decisao",
+    "criterio_selecao": "f1_macro_validacao",
+    "desempate": "ordem fixa: random_forest, arvore_decisao, knn; primeiro candidato",
+    "sementes": {
+      "teste": 42,
+      "cv": 43,
+      "modelos": 42
+    },
+    "n_treino": 56,
+    "n_teste": 14,
+    "n_grupos_treino": 43,
+    "n_grupos_teste": 9,
+    "classes": [
+      "pintura",
+      "pisos",
+      "revestimentos_forros"
+    ],
+    "contagem_classes": {
+      "pintura": 29,
+      "pisos": 24,
+      "revestimentos_forros": 17
+    },
+    "grupos_por_classe": {
+      "pintura": 23,
+      "pisos": 18,
+      "revestimentos_forros": 12
+    },
+    "vencedores_cv": {
+      "random_forest": {
+        "candidato": 1,
+        "f1_macro_media": 0.5904243178752981,
+        "parametros": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "class_weight": null,
+          "criterion": "gini",
+          "max_depth": null,
+          "max_features": "sqrt",
+          "max_leaf_nodes": null,
+          "max_samples": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "n_estimators": 200,
+          "n_jobs": 1,
+          "oob_score": false,
+          "random_state": 42,
+          "verbose": 0,
+          "warm_start": false
+        }
+      },
+      "arvore_decisao": {
+        "candidato": 1,
+        "f1_macro_media": 0.6317119155354449,
+        "parametros": {
+          "ccp_alpha": 0.0,
+          "class_weight": null,
+          "criterion": "gini",
+          "max_depth": 5,
+          "max_features": null,
+          "max_leaf_nodes": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "random_state": 42,
+          "splitter": "best"
+        }
+      },
+      "knn": {
+        "candidato": 2,
+        "f1_macro_media": 0.5131228248875307,
+        "parametros": {
+          "algorithm": "auto",
+          "leaf_size": 30,
+          "metric": "minkowski",
+          "metric_params": null,
+          "n_jobs": null,
+          "n_neighbors": 7,
+          "p": 2,
+          "weights": "distance"
+        }
+      }
+    },
+    "metricas_teste": [
+      {
+        "algoritmo": "random_forest",
+        "selecionado_cv": false,
+        "f1_macro": 0.626984126984127,
+        "acuracia_balanceada": 0.6333333333333333,
+        "acuracia": 0.6428571428571429,
+        "n": 14
+      },
+      {
+        "algoritmo": "arvore_decisao",
+        "selecionado_cv": true,
+        "f1_macro": 0.5622710622710623,
+        "acuracia_balanceada": 0.5666666666666668,
+        "acuracia": 0.5714285714285714,
+        "n": 14
+      },
+      {
+        "algoritmo": "knn",
+        "selecionado_cv": false,
+        "f1_macro": 0.42735042735042733,
+        "acuracia_balanceada": 0.5166666666666667,
+        "acuracia": 0.5,
+        "n": 14
+      },
+      {
+        "algoritmo": "dummy_maioria",
+        "selecionado_cv": false,
+        "f1_macro": 0.17543859649122806,
+        "acuracia_balanceada": 0.3333333333333333,
+        "acuracia": 0.35714285714285715,
+        "n": 14
+      }
+    ],
+    "limites": [
+      "Classes derivadas dos grupos oficiais; revisão humana não presumida.",
+      "Grupos de variantes são aproximações conservadoras, não equivalências técnicas homologadas.",
+      "Teste único por grupos; amostra pequena limita generalização.",
+      "Métricas de teste não participam da seleção. Não são probabilidades calibradas."
+    ]
+  },
+  "agrupamento": {
+    "fonte": "der_es",
+    "competencia": "2026-05",
+    "n": 70,
+    "n_grupos": 52,
+    "atributos": [
+      "fracao_mao_obra",
+      "fracao_material",
+      "fracao_equipamento",
+      "fracao_outros",
+      "n_mao_obra",
+      "n_material",
+      "n_equipamento",
+      "n_outros",
+      "horas_mao_obra",
+      "horas_equipamento"
+    ],
+    "dataset_sha256": "ccff547296ed985ef19dcf7092f097a41c4bd9e41a095b3a55140f6af1ef9934",
+    "versoes": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "sklearn": "1.9.1"
+    },
+    "status": "sem_candidato_valido",
+    "tarefa": "agrupamento",
+    "algoritmo": "kmeans",
+    "k_selecionado": null,
+    "k_diagnostico": 2,
+    "diagnostico": true,
+    "criterio_selecao": "maior_silhouette_com_tamanho_minimo",
+    "criterio_diagnostico": "menor_k_calculavel",
+    "motivo": "Nenhum k satisfaz o tamanho mínimo e as métricas finitas",
+    "arquivo_modelo": "modelo_diagnostico.joblib",
+    "desempate": "menor k",
+    "min_servicos_cluster": 4,
+    "n_vetores_distintos": 66,
+    "n_init": 30,
+    "semente": 42,
+    "metricas": null,
+    "metricas_diagnostico": {
+      "k": 2,
+      "elegivel": false,
+      "motivo": "Grupo menor que 4 serviços ou métrica indefinida",
+      "silhouette": 0.670916007918471,
+      "davies_bouldin": 0.6092124186702699,
+      "calinski_harabasz": 33.27042291561814,
+      "inercia": 329.0200538390495,
+      "min_tamanho": 3,
+      "tamanhos": "67;3"
+    },
+    "estabilidade": {
+      "semente": {
+        "n_calculado": 3,
+        "n_total": 3,
+        "ari_medio": 1.0,
+        "ari_mediano": 1.0,
+        "ari_minimo": 1.0
+      },
+      "subamostra_80pct": {
+        "n_calculado": 20,
+        "n_total": 20,
+        "ari_medio": 1.0,
+        "ari_mediano": 1.0,
+        "ari_minimo": 1.0
+      },
+      "subamostra_grupos_80pct": {
+        "n_calculado": 20,
+        "n_total": 20,
+        "ari_medio": 0.9527696644261061,
+        "ari_mediano": 1.0,
+        "ari_minimo": 0.05539328852212288
+      }
+    },
+    "pca_variancia_explicada": [
+      0.4323633364347168,
+      0.28993998637644713
+    ],
+    "pca_variancia_explicada_total": 0.7223033228111639,
+    "tamanhos_clusters": {
+      "0": 67,
+      "1": 3
+    },
+    "limites": [
+      "Agrupamento exploratório ajustado ao catálogo inteiro, sem rótulos de classe.",
+      "Cada fonte usa sua própria padronização; silhouette não é ranking de tabelas oficiais.",
+      "PCA exibe duas dimensões; a distância do KMeans é calculada em todos os atributos.",
+      "Estabilidade compara atribuições do catálogo após reajustes; não mede generalização preditiva.",
+      "Subamostras por linhas podem manter variantes da mesma família; a análise por grupos retira famílias inteiras usando 80% dos grupos, com quantidade variável de serviços.",
+      "Tamanhos contam serviços do catálogo, incluindo variantes; não representam frequência em obras.",
+      "Identificadores de cluster são arbitrários e não demonstram equivalência técnica.",
+      "Nenhum k foi aceito. Gráficos, centros, representantes e estabilidade descrevem somente o diagnóstico do menor k calculável."
+    ]
+  },
+  "regressao": {
+    "status": "parcial",
+    "fonte": "der_es",
+    "regime": "sem_desoneracao",
+    "modo_avaliacao": "retrospectivo_historico_revisado",
+    "previsao_prospectiva_comprovada": false,
+    "limites": [
+      "Backtest retrospectivo com as revisões fornecidas; não comprova uma previsão emitida no passado.",
+      "Publicação ausente/inválida em parte do histórico: disponibilidade real no passado não comprovada; datas não foram inferidas.",
+      "Assinatura técnica parcial ou não documentada: estabilidade da composição analítica não comprovada.",
+      "Mudanças técnicas no alvo são mantidas e identificadas. Mudanças de unidade no alvo são excluídas da comparação monetária e registradas nas partições; a avaliação requer alvo publicado com custo positivo."
+    ],
+    "tipos_assinatura": [
+      "descricao_unidade"
+    ],
+    "config": {
+      "meses_teste": 3,
+      "meses_validacao": 2,
+      "min_amostras_treino": 12,
+      "min_servicos": 3,
+      "min_amostras_validacao": 3,
+      "min_amostras_teste": 3
+    },
+    "competencias_validacao": [
+      "2026-01",
+      "2026-02"
+    ],
+    "competencias_teste": [
+      "2026-03",
+      "2026-04",
+      "2026-05"
+    ],
+    "linhas_origem": 1187,
+    "janelas_modelaveis": 975,
+    "janelas_excluidas_publicacao": 0,
+    "janelas_excluidas_unidade_alvo": 0,
+    "janelas_com_mudanca_tecnica_alvo": 4,
+    "unidades_metricas": {
+      "mae_rmse": "R$/unidade do recorte",
+      "mse": "(R$/unidade do recorte)^2",
+      "r2": "adimensional"
+    },
+    "dataset_sha256": "ab8d97cc1409e86e5c0f21d8e2a7758141c53b714c1a4646f99711cea4ff4ccb",
+    "arquivos_sha256": [
+      "1a7537f06fa9b2a1aff5982ae95ae6bf2ec16498e28430445e55584fbcce9a3c",
+      "22734abdbfefadc850a2608b6f454b5f7c18b5e3c19f87c396d85d1e76c75234",
+      "25f27b5ef0ad1c6c63d22be1ab543e5a65d73aa17c4d0463109a84f7209c8fa3",
+      "2bf6c2c7e6a976b4518fe548f59e259ac8091a61f440b44f17701ff9a0f00926",
+      "2c593d40ed71760bdf0349be50b6b34ab1c4188ca11bacf73f39d6a394b64468",
+      "2dd7e7c15552e8663b500f12008e09dc39c3816602e826e994d7dc8922d7ac8f",
+      "3009034ef99c8768c57e2d3fb765f337385dc7e4d8e4aceda785f86bc140f054",
+      "4feebcbe8c47058cf57314347405d833cdfb5d2340951f005ab53d27ae84fd84",
+      "7b1be34ee7d5dd82bcaeb75a32037ae0f2eea1e439205f05e57077b8a3567875",
+      "9d7efd575c10dc676bc49f5acb5630fa9b3cd2b98449be07612e1891e8d213f6",
+      "9f2d3bc52e35d3a9c0317f2bbd34359ce4b9eb726cfdad03719dc91ab8a6eb52",
+      "b07a6f7cd81d76e43925b8f994875b35e8468c5a37790367db80f72665fc0b2b",
+      "c9a408180051aaa4e38fe277afd37500d913d617b22cb55cd61158248094d761",
+      "cf2ae6d6af6081526a2c2c6a6446342c23099ac3a9c81f310e3a5da2680fb053",
+      "d2087ecf8affe6feb21bd38f6045155bdc7d4b18356273e8e54c68d96e73dbd4",
+      "d856141d8d195b8bf3114dd64686b80db08318d557f9eb5f279d84fffec1a86e",
+      "f4e1c72d0bc82c19d0327a48458bea46cf1a06c556062fe2206e7955be9a14b1"
+    ],
+    "versoes": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit_learn": "1.9.1"
+    },
+    "recortes": [
+      {
+        "grupo": "PINTURA / SOBRE CONCRETO OU BLOCOS CERÂMICOS APARENTES",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 54,
+        "n_validacao": 12,
+        "n_treino_teste": 66,
+        "n_teste": 18,
+        "servicos_treino": 6,
+        "modelo_selecionado": "linear_simples",
+        "mse_validacao": {
+          "linear_simples": 0.07298492937549793,
+          "linear_multipla": 0.2202862820426236
+        },
+        "mse_persistencia_validacao": 0.0,
+        "supera_persistencia_validacao": false
+      },
+      {
+        "grupo": "PINTURA / SOBRE MADEIRA",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 45,
+        "n_validacao": 10,
+        "n_treino_teste": 55,
+        "n_teste": 15,
+        "servicos_treino": 5,
+        "modelo_selecionado": "linear_simples",
+        "mse_validacao": {
+          "linear_simples": 0.013620592796240888,
+          "linear_multipla": 0.025965395503131723
+        },
+        "mse_persistencia_validacao": 0.0,
+        "supera_persistencia_validacao": false
+      },
+      {
+        "grupo": "PINTURA / SOBRE METAL",
+        "unidade": "m2",
+        "status": "dados_insuficientes",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 18,
+        "n_validacao": 4,
+        "n_treino_teste": 22,
+        "n_teste": 6,
+        "servicos_treino": 2,
+        "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+      },
+      {
+        "grupo": "PINTURA / SOBRE PAREDES E FORROS",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 117,
+        "n_validacao": 26,
+        "n_treino_teste": 143,
+        "n_teste": 39,
+        "servicos_treino": 13,
+        "modelo_selecionado": "linear_simples",
+        "mse_validacao": {
+          "linear_simples": 0.06999037409587182,
+          "linear_multipla": 0.20931952388127562
+        },
+        "mse_persistencia_validacao": 6.153846153846164e-05,
+        "supera_persistencia_validacao": false
+      },
+      {
+        "grupo": "PINTURA / SOBRE PISOS",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 27,
+        "n_validacao": 6,
+        "n_treino_teste": 33,
+        "n_teste": 9,
+        "servicos_treino": 3,
+        "modelo_selecionado": "linear_simples",
+        "mse_validacao": {
+          "linear_simples": 0.23154162099877276,
+          "linear_multipla": 0.46691388519289784
+        },
+        "mse_persistencia_validacao": 0.0,
+        "supera_persistencia_validacao": false
+      },
+      {
+        "grupo": "PISOS INTERNOS E EXTERNOS / ACABAMENTOS",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 144,
+        "n_validacao": 32,
+        "n_treino_teste": 176,
+        "n_teste": 48,
+        "servicos_treino": 16,
+        "modelo_selecionado": "linear_simples",
+        "mse_validacao": {
+          "linear_simples": 21.408415614641022,
+          "linear_multipla": 21.441863364329325
+        },
+        "mse_persistencia_validacao": 20.813131250000016,
+        "supera_persistencia_validacao": false
+      },
+      {
+        "grupo": "PISOS INTERNOS E EXTERNOS / LASTRO DE CONTRAPISO",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 63,
+        "n_validacao": 14,
+        "n_treino_teste": 77,
+        "n_teste": 21,
+        "servicos_treino": 7,
+        "modelo_selecionado": "linear_multipla",
+        "mse_validacao": {
+          "linear_simples": 0.37964778708138697,
+          "linear_multipla": 0.3746243189010861
+        },
+        "mse_persistencia_validacao": 0.0619428571428573,
+        "supera_persistencia_validacao": false
+      },
+      {
+        "grupo": "PISOS INTERNOS E EXTERNOS / REVISÕES E REPAROS",
+        "unidade": "m2",
+        "status": "dados_insuficientes",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 9,
+        "n_validacao": 2,
+        "n_treino_teste": 11,
+        "n_teste": 3,
+        "servicos_treino": 1,
+        "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+      },
+      {
+        "grupo": "REVESTIMENTO DE PAREDES / ACABAMENTOS",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 42,
+        "n_validacao": 10,
+        "n_treino_teste": 52,
+        "n_teste": 15,
+        "servicos_treino": 5,
+        "modelo_selecionado": "linear_simples",
+        "mse_validacao": {
+          "linear_simples": 9.030333910964925,
+          "linear_multipla": 9.87321448848669
+        },
+        "mse_persistencia_validacao": 9.111909999999973,
+        "supera_persistencia_validacao": true
+      },
+      {
+        "grupo": "REVESTIMENTO DE PAREDES / REVESTIMENTO COM ARGAMASSA",
+        "unidade": "m2",
+        "status": "dados_insuficientes",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 9,
+        "n_validacao": 2,
+        "n_treino_teste": 11,
+        "n_teste": 3,
+        "servicos_treino": 1,
+        "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+      },
+      {
+        "grupo": "REVESTIMENTO DE PAREDES / REVESTIMENTO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+        "unidade": "m2",
+        "status": "avaliado",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 45,
+        "n_validacao": 10,
+        "n_treino_teste": 55,
+        "n_teste": 15,
+        "servicos_treino": 5,
+        "modelo_selecionado": "linear_simples",
+        "mse_validacao": {
+          "linear_simples": 0.23079055366111473,
+          "linear_multipla": 0.2935050153433247
+        },
+        "mse_persistencia_validacao": 0.008620000000000563,
+        "supera_persistencia_validacao": false
+      },
+      {
+        "grupo": "TETOS E FORROS / REBAIXAMENTOS",
+        "unidade": "m2",
+        "status": "dados_insuficientes",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 18,
+        "n_validacao": 4,
+        "n_treino_teste": 22,
+        "n_teste": 6,
+        "servicos_treino": 2,
+        "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+      },
+      {
+        "grupo": "TETOS E FORROS / REVESTIMENTO COM ARGAMASSA",
+        "unidade": "m2",
+        "status": "dados_insuficientes",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 9,
+        "n_validacao": 2,
+        "n_treino_teste": 11,
+        "n_teste": 3,
+        "servicos_treino": 1,
+        "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+      },
+      {
+        "grupo": "TETOS E FORROS / REVESTIMENTO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+        "unidade": "m2",
+        "status": "dados_insuficientes",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 18,
+        "n_validacao": 4,
+        "n_treino_teste": 22,
+        "n_teste": 6,
+        "servicos_treino": 2,
+        "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+      },
+      {
+        "grupo": "TETOS E FORROS / REVISÕES E REPAROS",
+        "unidade": "m2",
+        "status": "dados_insuficientes",
+        "n_validacao_excluida_publicacao_tardia": 0,
+        "n_treino": 7,
+        "n_validacao": 2,
+        "n_treino_teste": 9,
+        "n_teste": 3,
+        "servicos_treino": 1,
+        "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+      }
+    ],
+    "previsoes_futuras": 120
+  },
+  "populacoes": {
+    "catalogo_e_regressao": 60,
+    "somente_catalogo": 10,
+    "somente_regressao": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "fonte": "der_es",
+  "competencia": "2026-05",
+  "uf": "ES",
+  "regime": "sem_desoneracao",
+  "arquivo": "/Users/luisfdias/.codex/worktrees/11e7/ORCA-AI/OrcaAI/bases/der_es/2026-05/originais/TABELA REFERENCIAL OBRAS - DER-ES - 2026-05 - MAI.zip",
+  "arquivo_sha256": "9d7efd575c10dc676bc49f5acb5630fa9b3cd2b98449be07612e1891e8d213f6",
+  "planilhas": [
+    {
+      "membro": "TABELA REFERENCIAL OBRAS - DER-ES - 2026-05 - MAI/XLS/tab_DER-EDIFICAÇÕES_2026_05_composicoes.xlsx",
+      "aba": "relatorio(163)",
+      "sha256": "e3ff2da264e2aa6adb27b59d09a3dcbef39248217899e8a665db2830f496fa41"
+    },
+    {
+      "membro": "TABELA REFERENCIAL OBRAS - DER-ES - 2026-05 - MAI/XLS/tab_DER-EDIFICAÇÕES_2026_05_insumos.xlsx",
+      "aba": "relatorio(165)",
+      "sha256": "ebd020700c1a72e9b8b600cbb35b73ba179cadef29832a366862c455b2895a89"
+    }
+  ],
+  "composicoes_no_catalogo": 1363,
+  "insumos_no_catalogo": 1268,
+  "servicos_selecionados": 70,
+  "servicos_ok": 70,
+  "servicos_excluidos": 0,
+  "linhas_recursos_folha": 336,
+  "recursos_distintos": 83,
+  "tolerancia_reconciliacao_reais": 0,
+  "convencoes": [
+    "Subcomposição resolve pelo Código Base LABOR, não pelo item do orçamento.",
+    "Na seção Serviços, H=coeficiente e I=custo, apesar dos cabeçalhos invertidos.",
+    "Equipamento: F=quantidade; K=preço ponderado, conferido com G*I + H*J.",
+    "Mão de obra usa preço com encargos da coluna H, sem aplicar encargos novamente.",
+    "ROUND_DOWN a centavos por item e em cada nível; totais de A..H, CPU e snapshot conferidos.",
+    "Coeficientes de equipe divididos pela produção D; material e serviços não são divididos por D.",
+    "Custos de recursos-folha preservam coeficiente*preço sem truncamento; suas participações são aproximadas e devem ser normalizadas pela própria soma, sem rateio do residual.",
+    "Horas somadas somente para recursos cuja unidade é H, dentro da categoria correspondente.",
+    "uf_preco=ES identifica a tabela estadual; não comprova coleta local individual de cada insumo."
+  ],
+  "exclusoes": []
+}

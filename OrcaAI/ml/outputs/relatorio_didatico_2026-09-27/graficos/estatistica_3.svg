@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="979.2pt" height="669.6pt" viewBox="0 0 979.2 669.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T16:26:26.073483</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 669.6 
+L 979.2 669.6 
+L 979.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="text_1">
+   <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1765ad" x="44.064" y="32.372856" transform="rotate(-0 44.064 32.372856)">ORCA-AI  /  UFG</text>
+  </g>
+  <g id="text_2">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #163047" x="44.064" y="71.964406" transform="rotate(-0 44.064 71.964406)">Entender a estatística</text>
+  </g>
+  <g id="text_3">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526677" x="44.064" y="99.7185" transform="rotate(-0 44.064 99.7185)">Definições, interpretação e limites do experimento</text>
+  </g>
+  <g id="text_4">
+   <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1765ad" x="53.856" y="152.012484" transform="rotate(-0 53.856 152.012484)">Como comparar SINAPI e IOPES?</text>
+  </g>
+  <g id="text_5">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 179.28165)">O período de teste é comum e as fontes permanecem separadas. Os nichos organizam assuntos semelhantes, mas não provam</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 197.28165)">equivalência técnica entre composições. Diferenças de catálogo e de cobertura impedem concluir que uma fonte é mais barata ou</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 215.04165)">superior apenas pelos erros.</text>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1765ad" x="53.856" y="266.208056" transform="rotate(-0 53.856 266.208056)">Qual é o alcance da evidência?</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 292.87605)">O teste contém poucas competências e várias observações compartilham o mesmo serviço e as mesmas variações mensais. Não foram</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 310.87605)">calculados p-valores nem intervalos de confiança que tratem todas as linhas como independentes. O resultado é descritivo deste</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 330.03855)">histórico.</text>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1765ad" x="53.856" y="379.202456" transform="rotate(-0 53.856 379.202456)">Quais limites dos dados permanecem?</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 406.47045)">As tabelas atuais incluem revisões históricas. SINAPI tem controle das datas conhecidas; DER tem publicação desconhecida e</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 424.47045)">assinatura técnica parcial de descrição/unidade. Mudanças técnicas no alvo são mantidas; mudanças de unidade são registradas e</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 442.47045)">excluídas da comparação monetária.</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526677" x="44.064" y="640.605844" transform="rotate(-0 44.064 640.605844)">Referência: scikit-learn.org/stable/modules/model_evaluation.html · Registros e critérios no manifesto do relatório</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526677" x="936.1152" y="656.208" transform="rotate(-0 936.1152 656.208)">28</text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "fonte": "sinapi_es",
+  "competencia": "2026-05",
+  "regime": "sem_desoneracao",
+  "arquivo": "/Users/luisfdias/.codex/worktrees/11e7/ORCA-AI/OrcaAI/bases/sinapi/2026-05/originais/SINAPI-2026-05-formato-xlsx.zip",
+  "arquivo_sha256": "928df42a952625eb12d41baf2b5ab17e1207af6e7881cb9f1c7fcac4708400e3",
+  "arquivo_bytes": 15707000,
+  "membro_xlsx": "SINAPI_Referência_2026_05.xlsx",
+  "zip_crc_verificado": true,
+  "composicoes_analitico": 10413,
+  "insumos_isd": 4876,
+  "servicos_selecionados": 514,
+  "servicos_validos": 514,
+  "servicos_excluidos": 0,
+  "recursos_expandidos": 7169,
+  "servicos_com_fallback_sp": 54,
+  "exclusoes": [],
+  "excluidos_por_motivo": {},
+  "diferenca_folhas_pct_min": 0.0017322886428864288,
+  "diferenca_folhas_pct_max": 0.7810955868544601,
+  "convencoes": {
+    "reconciliacao": "Decimal; cada coeficiente × preço truncado em duas casas (ROUND_DOWN), em cada nível; diferença exigida zero.",
+    "perfil_monetario": "Soma de folhas sem truncamento. Participações derivadas são aproximadas; não há rateio para forçar igualdade ao custo CSD.",
+    "fallback_sp": "Somente se preço ES ausente e SP disponível; preço ES continua ausente. Indicador oficial %AS conferido quanto à existência de contribuição positiva SP, sem equiparar sua fração ao perfil aproximado.",
+    "mao_obra": "MAO DE OBRA e ENCARGOS COMPLEMENTARES; horas físicas somente da primeira categoria com unidade H.",
+    "horas_equipamento": "Coeficientes de folhas EQUIPAMENTO com unidade H; aquisições em UN não são convertidas em horas.",
+    "exclusoes": "Todo serviço selecionado é preservado. Serviço excluído não produz linhas de recursos parciais."
+  }
+}

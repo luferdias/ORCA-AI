@@ -1,0 +1,155 @@
+{
+  "fonte": "sinapi_es",
+  "competencia": "2026-05",
+  "n": 514,
+  "n_grupos": 110,
+  "atributos": [
+    "fracao_mao_obra",
+    "fracao_material",
+    "fracao_equipamento",
+    "fracao_outros",
+    "n_mao_obra",
+    "n_material",
+    "n_equipamento",
+    "n_outros",
+    "horas_mao_obra",
+    "horas_equipamento"
+  ],
+  "dataset_sha256": "7fab5e314422a3ba6dc50286a117d42057139f4cc1d4227f6456648f424b2f30",
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.9.1"
+  },
+  "status": "concluido",
+  "tarefa": "classificacao",
+  "algoritmo_principal": "random_forest",
+  "algoritmo_selecionado": "arvore_decisao",
+  "criterio_selecao": "f1_macro_validacao",
+  "desempate": "ordem fixa: random_forest, arvore_decisao, knn; primeiro candidato",
+  "sementes": {
+    "teste": 42,
+    "cv": 43,
+    "modelos": 42
+  },
+  "n_treino": 412,
+  "n_teste": 102,
+  "n_grupos_treino": 89,
+  "n_grupos_teste": 21,
+  "classes": [
+    "pintura",
+    "pisos",
+    "revestimentos_forros"
+  ],
+  "contagem_classes": {
+    "pintura": 121,
+    "pisos": 87,
+    "revestimentos_forros": 306
+  },
+  "grupos_por_classe": {
+    "pintura": 33,
+    "pisos": 36,
+    "revestimentos_forros": 42
+  },
+  "vencedores_cv": {
+    "random_forest": {
+      "candidato": 2,
+      "f1_macro_media": 0.7130437040838502,
+      "parametros": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 4,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 200,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "arvore_decisao": {
+      "candidato": 2,
+      "f1_macro_media": 0.7310544334331598,
+      "parametros": {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 42,
+        "splitter": "best"
+      }
+    },
+    "knn": {
+      "candidato": 0,
+      "f1_macro_media": 0.6572284332974111,
+      "parametros": {
+        "algorithm": "auto",
+        "leaf_size": 30,
+        "metric": "minkowski",
+        "metric_params": null,
+        "n_jobs": null,
+        "n_neighbors": 3,
+        "p": 2,
+        "weights": "distance"
+      }
+    }
+  },
+  "metricas_teste": [
+    {
+      "algoritmo": "random_forest",
+      "selecionado_cv": false,
+      "f1_macro": 0.833770416379112,
+      "acuracia_balanceada": 0.861459337833494,
+      "acuracia": 0.8529411764705882,
+      "n": 102
+    },
+    {
+      "algoritmo": "arvore_decisao",
+      "selecionado_cv": true,
+      "f1_macro": 0.7913003663003663,
+      "acuracia_balanceada": 0.8311770063216543,
+      "acuracia": 0.8137254901960784,
+      "n": 102
+    },
+    {
+      "algoritmo": "knn",
+      "selecionado_cv": false,
+      "f1_macro": 0.6449659863945577,
+      "acuracia_balanceada": 0.7154585878067073,
+      "acuracia": 0.6568627450980392,
+      "n": 102
+    },
+    {
+      "algoritmo": "dummy_maioria",
+      "selecionado_cv": false,
+      "f1_macro": 0.24948875255623723,
+      "acuracia_balanceada": 0.3333333333333333,
+      "acuracia": 0.5980392156862745,
+      "n": 102
+    }
+  ],
+  "limites": [
+    "Classes derivadas dos grupos oficiais; revisão humana não presumida.",
+    "Grupos de variantes são aproximações conservadoras, não equivalências técnicas homologadas.",
+    "Teste único por grupos; amostra pequena limita generalização.",
+    "Métricas de teste não participam da seleção. Não são probabilidades calibradas."
+  ]
+}

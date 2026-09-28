@@ -1,0 +1,28 @@
+{
+  "fonte": "der_es",
+  "competencia": "2026-05",
+  "n": 70,
+  "n_grupos": 52,
+  "atributos": [
+    "fracao_mao_obra",
+    "fracao_material",
+    "fracao_equipamento",
+    "fracao_outros",
+    "n_mao_obra",
+    "n_material",
+    "n_equipamento",
+    "n_outros",
+    "horas_mao_obra",
+    "horas_equipamento"
+  ],
+  "dataset_sha256": "ccff547296ed985ef19dcf7092f097a41c4bd9e41a095b3a55140f6af1ef9934",
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.9.1"
+  },
+  "status": "sem_candidato_valido",
+  "min_servicos_cluster": 4,
+  "motivo": "Nenhum k satisfaz o tamanho mínimo e as métricas finitas"
+}

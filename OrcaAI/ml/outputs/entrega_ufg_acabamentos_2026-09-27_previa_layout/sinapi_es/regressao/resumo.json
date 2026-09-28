@@ -1,0 +1,358 @@
+{
+  "status": "concluido",
+  "fonte": "sinapi_es",
+  "regime": "sem_desoneracao",
+  "modo_avaliacao": "retrospectivo_com_controle_publicacao",
+  "previsao_prospectiva_comprovada": false,
+  "limites": [
+    "Backtest retrospectivo com as revisões fornecidas; não comprova uma previsão emitida no passado.",
+    "Mudanças técnicas no alvo são mantidas e identificadas. Mudanças de unidade no alvo são excluídas da comparação monetária e registradas nas partições; a avaliação requer alvo publicado com custo positivo."
+  ],
+  "tipos_assinatura": [
+    "cpu_hierarquica_v1"
+  ],
+  "config": {
+    "meses_teste": 3,
+    "meses_validacao": 2,
+    "min_amostras_treino": 12,
+    "min_servicos": 3,
+    "min_amostras_validacao": 3,
+    "min_amostras_teste": 3
+  },
+  "competencias_validacao": [
+    "2026-01",
+    "2026-02"
+  ],
+  "competencias_teste": [
+    "2026-03",
+    "2026-04",
+    "2026-05"
+  ],
+  "linhas_origem": 8806,
+  "janelas_modelaveis": 6847,
+  "janelas_excluidas_publicacao": 1030,
+  "janelas_excluidas_unidade_alvo": 0,
+  "janelas_com_mudanca_tecnica_alvo": 211,
+  "unidades_metricas": {
+    "mae_rmse": "R$/unidade do recorte",
+    "mse": "(R$/unidade do recorte)^2",
+    "r2": "adimensional"
+  },
+  "dataset_sha256": "7b4bc08b19ada86fc17bcdd336fc488aa71badd090b90a8d98cb10055d49def8",
+  "arquivos_sha256": [
+    "3e152484e05ebbd4bd2aee51e29d4696472229db83a3dc31650046a1b9f8977d",
+    "3f38528ef6a0a9add1d5b575a9401a07203c32177636bcc7696b345956a092a2",
+    "4761d3acef046f1cd31592f5301bd59cb3291d9e135e0e4e05daacfb7be8e8ee",
+    "59d6b0a4817316d6fa6585596b51be7efad47419d8ff4d1d4dc452762eeaa05e",
+    "5b28a6ac3f127efe0d8e8bfcd3578f859715c55b4aa092ecabd9119fcb28e873",
+    "615f995fd9dfa4099c5751ca94c608b7f0cd1be7937a99dfe4c5f1f0921a1dff",
+    "7dc89b8e7cb6e645d4c3af542be2b33d60503553ebdb2ec77fcb38815c67b3fa",
+    "8d83b15b7e8c5f3b3069738ee3132511f6038b3f5b0cc6356cbb9836017ca079",
+    "928df42a952625eb12d41baf2b5ab17e1207af6e7881cb9f1c7fcac4708400e3",
+    "aeb74337285a33598cc4b764708a18a64445c23a1da57aca00f8c61aff8171b1",
+    "c1ebb365954a5eb9ff82b3e13191a7275ae604843028e93aeb7078a1728f04d5",
+    "c2d1f5ef818045377cef10d5c3859e693897c63119f346a9f30707ab5f9cbec3",
+    "c9d836e88d7a523d96ca1043a4ec7a77581d56fff938846be7c6541978f96e7b",
+    "d1651f842bd24c6d66052e41b4c661fd9e7ce9cb4367fe468aab84dcaca210bc",
+    "d51c933ee26a55191538e90c5fb6d2e3b4739da5e2988546cf4562f40cb084b6",
+    "f612504c95ad758842090db9da2e90ae517c9ea88c821503a450a3b7aa5938bc",
+    "fc22e71603ab37be6eaf9559484d0a11741f502beb9b4402c5dfa8f0399b75c4"
+  ],
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.9.1"
+  },
+  "recortes": [
+    {
+      "grupo": "Chapisco",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 207,
+      "n_validacao": 28,
+      "n_treino_teste": 235,
+      "n_teste": 84,
+      "servicos_treino": 28,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.23290297485208517,
+        "linear_multipla": 0.23129474467276134
+      },
+      "mse_persistencia_validacao": 0.21691071428571446,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "Contrapiso",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 446,
+      "n_validacao": 59,
+      "n_treino_teste": 505,
+      "n_teste": 177,
+      "servicos_treino": 59,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 7.022175978941804,
+        "linear_multipla": 7.64675598533256
+      },
+      "mse_persistencia_validacao": 6.194920338983052,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "Forros",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 76,
+      "n_validacao": 12,
+      "n_treino_teste": 88,
+      "n_teste": 36,
+      "servicos_treino": 11,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 8.708335955513483,
+        "linear_multipla": 7.986584764922377
+      },
+      "mse_persistencia_validacao": 10.911524999999974,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Gesso",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 192,
+      "n_validacao": 24,
+      "n_treino_teste": 216,
+      "n_teste": 72,
+      "servicos_treino": 24,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 3.733988543306639,
+        "linear_multipla": 3.7348719062679456
+      },
+      "mse_persistencia_validacao": 3.842637500000001,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Massa Única Externa",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 720,
+      "n_validacao": 103,
+      "n_treino_teste": 823,
+      "n_teste": 309,
+      "servicos_treino": 103,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 21.59544795507649,
+        "linear_multipla": 20.813857037128763
+      },
+      "mse_persistencia_validacao": 24.155876699029136,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Massa Única Interna",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 352,
+      "n_validacao": 50,
+      "n_treino_teste": 402,
+      "n_teste": 150,
+      "servicos_treino": 50,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 4.17204763638566,
+        "linear_multipla": 3.9903033803605594
+      },
+      "mse_persistencia_validacao": 4.904325999999998,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Monocapa",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 96,
+      "n_validacao": 12,
+      "n_treino_teste": 108,
+      "n_teste": 36,
+      "servicos_treino": 12,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 6.179226376385215,
+        "linear_multipla": 11.558380078493265
+      },
+      "mse_persistencia_validacao": 4.003941666666676,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "Paredes de Concreto - Estucamento",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 234,
+      "n_validacao": 31,
+      "n_treino_teste": 265,
+      "n_teste": 93,
+      "servicos_treino": 31,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.2525923315698027,
+        "linear_multipla": 0.21907740899735453
+      },
+      "mse_persistencia_validacao": 0.2828225806451616,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Pintura Externa",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 248,
+      "n_validacao": 31,
+      "n_treino_teste": 279,
+      "n_teste": 93,
+      "servicos_treino": 31,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.7532324987884211,
+        "linear_multipla": 0.37250914479371416
+      },
+      "mse_persistencia_validacao": 1.2366709677419359,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Pintura Interna",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 112,
+      "n_validacao": 14,
+      "n_treino_teste": 126,
+      "n_teste": 42,
+      "servicos_treino": 14,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.4415334491793325,
+        "linear_multipla": 0.26378322809069293
+      },
+      "mse_persistencia_validacao": 0.6957214285714272,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Pintura em Madeira",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 232,
+      "n_validacao": 29,
+      "n_treino_teste": 261,
+      "n_teste": 87,
+      "servicos_treino": 29,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.4062339994775569,
+        "linear_multipla": 0.2843810402335375
+      },
+      "mse_persistencia_validacao": 0.6677586206896557,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Pintura em Superfícies Metálicas",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 318,
+      "n_validacao": 40,
+      "n_treino_teste": 358,
+      "n_teste": 120,
+      "servicos_treino": 40,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.7715553476514077,
+        "linear_multipla": 0.46731824399221644
+      },
+      "mse_persistencia_validacao": 1.388630000000002,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Pintura para Pisos e para Sinalização Horizontal e Vertical",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 88,
+      "n_validacao": 11,
+      "n_treino_teste": 99,
+      "n_teste": 29,
+      "servicos_treino": 11,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 2.2205667671747524,
+        "linear_multipla": 1.6484816564861384
+      },
+      "mse_persistencia_validacao": 3.5490363636363664,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Pisos",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 208,
+      "n_validacao": 28,
+      "n_treino_teste": 236,
+      "n_teste": 28,
+      "servicos_treino": 29,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 62.8418563411683,
+        "linear_multipla": 64.90739860484867
+      },
+      "mse_persistencia_validacao": 65.16069999999995,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "Revestimentos Cerâmicos Externos",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 48,
+      "n_validacao": 8,
+      "n_treino_teste": 56,
+      "n_teste": 24,
+      "servicos_treino": 8,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 3.3472135832466368,
+        "linear_multipla": 3.5487716553200035
+      },
+      "mse_persistencia_validacao": 1.5134750000000077,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "Revestimentos Cerâmicos Internos",
+      "unidade": "M2",
+      "status": "avaliado",
+      "n_validacao_excluida_publicacao_tardia": 0,
+      "n_treino": 228,
+      "n_validacao": 38,
+      "n_treino_teste": 266,
+      "n_teste": 114,
+      "servicos_treino": 38,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 2.5806949652120763,
+        "linear_multipla": 2.0970765148365262
+      },
+      "mse_persistencia_validacao": 1.9702026315789511,
+      "supera_persistencia_validacao": false
+    }
+  ],
+  "previsoes_futuras": 992
+}

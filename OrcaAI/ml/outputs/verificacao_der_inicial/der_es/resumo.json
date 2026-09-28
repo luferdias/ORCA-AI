@@ -1,0 +1,2917 @@
+{
+  "status": "parcial",
+  "fonte": "der_es",
+  "regime": "sem_desoneracao",
+  "modo_avaliacao": "retrospectivo_historico_revisado",
+  "previsao_prospectiva_comprovada": false,
+  "limites": [
+    "Backtest retrospectivo com as revisões fornecidas; não comprova uma previsão emitida no passado.",
+    "Publicação ausente/inválida em parte do histórico: disponibilidade real no passado não comprovada; datas não foram inferidas.",
+    "Assinatura técnica parcial ou não documentada: estabilidade da composição analítica não comprovada."
+  ],
+  "tipos_assinatura": [
+    "descricao_unidade"
+  ],
+  "config": {
+    "meses_teste": 3,
+    "meses_validacao": 2,
+    "min_amostras_treino": 12,
+    "min_servicos": 3,
+    "min_amostras_validacao": 3,
+    "min_amostras_teste": 3
+  },
+  "competencias_validacao": [
+    "2026-01",
+    "2026-02"
+  ],
+  "competencias_teste": [
+    "2026-03",
+    "2026-04",
+    "2026-05"
+  ],
+  "linhas_origem": 22796,
+  "janelas_modelaveis": 17555,
+  "janelas_excluidas_publicacao": 0,
+  "dataset_sha256": "14be89b1cce04f1dd41c20ccb2517b8be5c9b19395a31f08bc35ddf1e7bb8d16",
+  "arquivos_sha256": [
+    "1a7537f06fa9b2a1aff5982ae95ae6bf2ec16498e28430445e55584fbcce9a3c",
+    "22734abdbfefadc850a2608b6f454b5f7c18b5e3c19f87c396d85d1e76c75234",
+    "25f27b5ef0ad1c6c63d22be1ab543e5a65d73aa17c4d0463109a84f7209c8fa3",
+    "2bf6c2c7e6a976b4518fe548f59e259ac8091a61f440b44f17701ff9a0f00926",
+    "2c593d40ed71760bdf0349be50b6b34ab1c4188ca11bacf73f39d6a394b64468",
+    "2dd7e7c15552e8663b500f12008e09dc39c3816602e826e994d7dc8922d7ac8f",
+    "3009034ef99c8768c57e2d3fb765f337385dc7e4d8e4aceda785f86bc140f054",
+    "4feebcbe8c47058cf57314347405d833cdfb5d2340951f005ab53d27ae84fd84",
+    "7b1be34ee7d5dd82bcaeb75a32037ae0f2eea1e439205f05e57077b8a3567875",
+    "9d7efd575c10dc676bc49f5acb5630fa9b3cd2b98449be07612e1891e8d213f6",
+    "9f2d3bc52e35d3a9c0317f2bbd34359ce4b9eb726cfdad03719dc91ab8a6eb52",
+    "b07a6f7cd81d76e43925b8f994875b35e8468c5a37790367db80f72665fc0b2b",
+    "c9a408180051aaa4e38fe277afd37500d913d617b22cb55cd61158248094d761",
+    "cf2ae6d6af6081526a2c2c6a6446342c23099ac3a9c81f310e3a5da2680fb053",
+    "d2087ecf8affe6feb21bd38f6045155bdc7d4b18356273e8e54c68d96e73dbd4",
+    "d856141d8d195b8bf3114dd64686b80db08318d557f9eb5f279d84fffec1a86e",
+    "f4e1c72d0bc82c19d0327a48458bea46cf1a06c556062fe2206e7955be9a14b1"
+  ],
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.9.1"
+  },
+  "recortes": [
+    {
+      "grupo": "APARELHOS ELÉTRICOS / AR REFRIGERADO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 48,
+      "n_validacao": 16,
+      "n_treino_teste": 64,
+      "n_teste": 24,
+      "servicos_treino": 8,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 544271.3493785681,
+        "linear_multipla": 549578.822082898
+      },
+      "mse_persistencia_validacao": 503389.1820500005,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS ELÉTRICOS / BOMBAS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 6955.5994465007725,
+        "linear_multipla": 19194.682856347416
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS ELÉTRICOS / INTERRUPTORES E TOMADAS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 126,
+      "n_validacao": 28,
+      "n_treino_teste": 154,
+      "n_teste": 42,
+      "servicos_treino": 14,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.07808859438181351,
+        "linear_multipla": 0.094454907676662
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS ELÉTRICOS / LUMINARIAS PARA LÂMPADAS LED",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1.4526710357552102,
+        "linear_multipla": 2.9242695703849715
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS ELÉTRICOS / LUMINÁRIAS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 26,
+      "n_validacao": 6,
+      "n_treino_teste": 32,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 4.102192207836921,
+        "linear_multipla": 4.072640059803999
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS ELÉTRICOS / OUTROS APARELHOS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 367.79641266825246,
+        "linear_multipla": 1306.645974689983
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS ELÉTRICOS / POSTES",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "APARELHOS ELÉTRICOS / VENTILADORES",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "APARELHOS HIDRO-SANITÁRIOS / ACESSIBILIDADE - NBR 9050",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 83,
+      "n_validacao": 22,
+      "n_treino_teste": 105,
+      "n_teste": 33,
+      "servicos_treino": 11,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 31.78538105557183,
+        "linear_multipla": 45.424236649481834
+      },
+      "mse_persistencia_validacao": 0.021640909090912513,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS HIDRO-SANITÁRIOS / BANCADAS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 21,
+      "n_validacao": 6,
+      "n_treino_teste": 27,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 73.3073044169418,
+        "linear_multipla": 225.27873667876972
+      },
+      "mse_persistencia_validacao": 0.0037999999999990563,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS HIDRO-SANITÁRIOS / BANCADAS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 6,
+      "n_validacao": 2,
+      "n_treino_teste": 8,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "APARELHOS HIDRO-SANITÁRIOS / LOUÇAS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 198,
+      "n_validacao": 44,
+      "n_treino_teste": 242,
+      "n_teste": 66,
+      "servicos_treino": 22,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 142.14330395560336,
+        "linear_multipla": 243.3870471074797
+      },
+      "mse_persistencia_validacao": 1.8181818181823867e-05,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS HIDRO-SANITÁRIOS / OUTROS APARELHOS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 147.75087992270443,
+        "linear_multipla": 389.24213808122556
+      },
+      "mse_persistencia_validacao": 14.090512499999239,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS HIDRO-SANITÁRIOS / OUTROS APARELHOS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 259,
+      "n_validacao": 62,
+      "n_treino_teste": 321,
+      "n_teste": 93,
+      "servicos_treino": 31,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 569.3132904107898,
+        "linear_multipla": 665.9847320901688
+      },
+      "mse_persistencia_validacao": 0.6259983870964791,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APARELHOS HIDRO-SANITÁRIOS / TORNEIRAS, REGISTROS, VÁLVULAS E METAIS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 450,
+      "n_validacao": 100,
+      "n_treino_teste": 550,
+      "n_teste": 150,
+      "servicos_treino": 50,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 3.307428678316265,
+        "linear_multipla": 3.39444075095846
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "APOIO / Locação de veículo tipo Gol 1.000 a gasolina ou equivalente, com até 1 (um) ano de uso, em bom estado de conservação com:",
+      "unidade": "mês",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "COBERTURA / ESTRUTURA PARA TELHADO",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 11,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1.3456188428754026,
+        "linear_multipla": 1.8911001182223486
+      },
+      "mse_persistencia_validacao": 9.99999999998181e-06,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "COBERTURA / PLATIBANDA",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "COBERTURA / REVISÕES E REPAROS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 43,
+      "n_validacao": 10,
+      "n_treino_teste": 53,
+      "n_teste": 11,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.26960861998488195,
+        "linear_multipla": 0.45684515749768356
+      },
+      "mse_persistencia_validacao": 9.999999999996021e-06,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "COBERTURA / REVISÕES E REPAROS",
+      "unidade": "m3",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 2,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "COBERTURA / RUFOS E CALHAS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 43,
+      "n_validacao": 10,
+      "n_treino_teste": 53,
+      "n_teste": 12,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 4.361583730558206,
+        "linear_multipla": 7.180456903665086
+      },
+      "mse_persistencia_validacao": 0.1226899999999996,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "COBERTURA / TELHADO",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 4,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "COBERTURA / TELHADO",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 60,
+      "n_validacao": 14,
+      "n_treino_teste": 74,
+      "n_teste": 15,
+      "servicos_treino": 7,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 24.778988966187075,
+        "linear_multipla": 24.713413853536757
+      },
+      "mse_persistencia_validacao": 28.898750000000028,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / FERRAGENS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 72,
+      "n_validacao": 16,
+      "n_treino_teste": 88,
+      "n_teste": 24,
+      "servicos_treino": 8,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 2.60977429607564,
+        "linear_multipla": 4.004380570471676
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / MARCOS E ALIZARES",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.3582669759960992,
+        "linear_multipla": 0.39366417124653286
+      },
+      "mse_persistencia_validacao": 2.499999999999005e-05,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / MARCOS E ALIZARES",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 30.249333551941483,
+        "linear_multipla": 34.33101891980929
+      },
+      "mse_persistencia_validacao": 0.0018000000000001363,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI COM ENCHIMENTO EM MADEIRA DE 1ª QUALIDADE, ESP. 30MM, PARA PINTURA, INCL. ALIZARES, DOBRADIÇAS, FECHADURA TIPO \"LIVRE/OCUPADO\" EXCLUSIVE MARCO",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA OU EQUIV. C/ ENCHIMENTO EM MADEIRA DE 1ª QUALIDADE ESP 30MM, COM VISOR DE VIDRO, INCL. ALIZARES, DOBRADIÇAS E FECHADURAS EXT EM LATÃO CROMADO LAFONTE/EQUIV , EXCL. MARCO, NAS DIMENSÕES:",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 180.94871815034594,
+        "linear_multipla": 681.5050945901784
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA OU EQUIV.,ESP. 30 MM, MACIÇA C/ FRISO P/ VERNIZ, PADRÃO SEDU, COM VISOR, INCLUSIVE ALIZARES, DOBRADIÇAS E FECHADURA DE BOLA EXTERNA, EXCLUSIVE MARCO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 33.562376080890026,
+        "linear_multipla": 35.224963259621695
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA OU EQUIV.C/ENCHIMENTO EM MADEIRA 1A.QUALIDADE ESP. 30MM P/ PINTURA, INCLUSIVE ALIZARES, DOBRADIÇAS E FECHADURA EXTERNA, EXCLUSIVE MARCO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 239.2369142952151,
+        "linear_multipla": 227.42347623881244
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA/EQUIV, ESP. 30MM C/ ACAB. LISO P/ PINTURA, INCL. FECHADURA TIPO \"LIVRE/OCUPADO\" E FERRAGENS P/ FIXAÇÃO EM GRANITO, EXCLUSIVE MARCO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 2.0198535353454394,
+        "linear_multipla": 2002.0127090321564
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / PORTA EM VENEZIANA, EM MADEIRA DE LEI, ESP. 30MM, INCL. DOBRADIÇAS, EXCLUSIVE ALIZAR, MARCO E FECHADURA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 41.33241062160311,
+        "linear_multipla": 249.75871526558637
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / REVISÕES E REPAROS",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESQUADRIAS DE MADEIRA / REVISÕES E REPAROS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 72,
+      "n_validacao": 16,
+      "n_treino_teste": 88,
+      "n_teste": 24,
+      "servicos_treino": 8,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.12029614860761186,
+        "linear_multipla": 0.11757299826911065
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS METÁLICAS / ESQUADRIAS METÁLICAS (M2)",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 234.62294071436386,
+        "linear_multipla": 246.0199002993201
+      },
+      "mse_persistencia_validacao": 122.15281000000031,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS METÁLICAS / GRADES E PORTÕES",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 158.20138961689256,
+        "linear_multipla": 187.7301780013714
+      },
+      "mse_persistencia_validacao": 102.03318333333372,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESQUADRIAS METÁLICAS / REVISÕES E REPAROS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESTRUTURAS / DIVERSOS",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESTRUTURAS / ESTRUTURAS DE CONCRETO APARENTE",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESTRUTURAS / INFRA-ESTRUTURA (FUNDAÇÃO)",
+      "unidade": "kg",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.012586888159943098,
+        "linear_multipla": 0.01894831951923633
+      },
+      "mse_persistencia_validacao": 0.007800000000000081,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESTRUTURAS / INFRA-ESTRUTURA (FUNDAÇÃO)",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1.2929275528067898,
+        "linear_multipla": 3.632736128158452
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESTRUTURAS / INFRA-ESTRUTURA (FUNDAÇÃO)",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 81,
+      "n_validacao": 18,
+      "n_treino_teste": 99,
+      "n_teste": 27,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 54.652630949934945,
+        "linear_multipla": 50.85611521561394
+      },
+      "mse_persistencia_validacao": 27.535327777777702,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESTRUTURAS / LAJES PRÉ-MOLDADAS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESTRUTURAS / MURO DE ARRIMO (Conc. ciclópico 15MPa c/ 30% de pedra de mão, c/ forn., preparo e aplicação de concreto, forma de tábua pinho-reap.5 vezes, exclusive escav. e reaterro) seções tipicas nas seguintes dimensões:",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1212.506988488341,
+        "linear_multipla": 1887.114796824577
+      },
+      "mse_persistencia_validacao": 68.1999500000009,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESTRUTURAS / RECUPERAÇÃO DE ESTRUTURAS",
+      "unidade": "kg",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESTRUTURAS / RECUPERAÇÃO DE ESTRUTURAS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 63,
+      "n_validacao": 14,
+      "n_treino_teste": 77,
+      "n_teste": 21,
+      "servicos_treino": 7,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 16.90918903582821,
+        "linear_multipla": 16.34975912698733
+      },
+      "mse_persistencia_validacao": 12.396614285714278,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESTRUTURAS / RECUPERAÇÃO DE ESTRUTURAS",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 4854.760940646625,
+        "linear_multipla": 4543.813425152096
+      },
+      "mse_persistencia_validacao": 388.0156999999884,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESTRUTURAS / SUPER-ESTRUTURA",
+      "unidade": "kg",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.012586888159943098,
+        "linear_multipla": 0.01894831951923633
+      },
+      "mse_persistencia_validacao": 0.007800000000000081,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ESTRUTURAS / SUPER-ESTRUTURA",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ESTRUTURAS / SUPER-ESTRUTURA",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 63,
+      "n_validacao": 14,
+      "n_treino_teste": 77,
+      "n_teste": 21,
+      "servicos_treino": 7,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 108.82247218856917,
+        "linear_multipla": 103.64302109926062
+      },
+      "mse_persistencia_validacao": 28.609685714285778,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "IMPERMEABILIZAÇÃO / IMPERMEABILIZAÇÃO CALHAS, LAJES DESCOBERTAS, BALDRAMES, PAREDES E JARDINEIRAS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 44.14519237195215,
+        "linear_multipla": 134.39923832469384
+      },
+      "mse_persistencia_validacao": 0.5747749999999953,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "IMPERMEABILIZAÇÃO / IMPERMEABILIZAÇÃO DE CAIXAS DE ÁGUA",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "IMPERMEABILIZAÇÃO / IMPERMEABILIZAÇÃO DE FOSSAS E FILTROS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 1 VEZ), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO SUPERIOR A 12 MESES)",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 3.547691426156838,
+        "linear_multipla": 3.0783756558983524
+      },
+      "mse_persistencia_validacao": 0.006150000000001508,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 1 VEZ), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO SUPERIOR A 12 MESES)",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 6.45081106995996,
+        "linear_multipla": 7.1757799917458165
+      },
+      "mse_persistencia_validacao": 0.1494166666666739,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 1 VEZ), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO SUPERIOR A 12 MESES)",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 12822.056969744706,
+        "linear_multipla": 35615.299878693375
+      },
+      "mse_persistencia_validacao": 87.79604000000246,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 2 VEZES), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO DE 6 A 12 MESES)",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 2 VEZES), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO DE 6 A 12 MESES)",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 5.549999278989624,
+        "linear_multipla": 9.466148067835308
+      },
+      "mse_persistencia_validacao": 0.09833333333333466,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 2 VEZES), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO DE 6 A 12 MESES)",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 8784.49469870567,
+        "linear_multipla": 25526.794463337646
+      },
+      "mse_persistencia_validacao": 61.16510000000712,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / TAPUMES, BARRACÕES E COBERTURAS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 47.20143616965047,
+        "linear_multipla": 47.30062828893987
+      },
+      "mse_persistencia_validacao": 47.02936666666665,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / TAPUMES, BARRACÕES E COBERTURAS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.8955948833037229,
+        "linear_multipla": 0.9082409552338735
+      },
+      "mse_persistencia_validacao": 1.0909833333333323,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / TAPUMES, BARRACÕES E COBERTURAS",
+      "unidade": "ms",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 10,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 5.90007701544491,
+        "linear_multipla": 5.903068163224338
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / TAPUMES, BARRACÕES E COBERTURAS",
+      "unidade": "mês",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÃO DO CANTEIRO DE OBRAS / TAPUMES, BARRACÕES E COBERTURAS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / (COMPOSIÇÃO REPRESENTATIVA) - MONTAGEM MECANICA E ELETRICA, TESTE DE ACEITAÇÃO DE QUADROS DE FABRICAÇÃO ESPECIAL COM ATESTADOS TTA/PTTA",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.060796373847130575,
+        "linear_multipla": 0.10193866262512111
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / (COMPOSIÇÃO REPRESENTATIVA) - MONTAGEM MECANICA E ELETRICA, TESTE DE ACEITAÇÃO DE QUADROS DE FABRICAÇÃO ESPECIAL COM ATESTADOS TTA/PTTA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 297,
+      "n_validacao": 66,
+      "n_treino_teste": 363,
+      "n_teste": 100,
+      "servicos_treino": 33,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 4.770874744003986,
+        "linear_multipla": 8.012336558362845
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / ABERTURA E FECHAMENTO DE RASGOS (inclusive preparo e aplicação de argamassa)",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.08199082076155494,
+        "linear_multipla": 0.13460141738912204
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / CAIXAS DE PASSAGEM",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 126,
+      "n_validacao": 28,
+      "n_treino_teste": 154,
+      "n_teste": 29,
+      "servicos_treino": 14,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 32.317400210601164,
+        "linear_multipla": 61.18568000170844
+      },
+      "mse_persistencia_validacao": 0.6439392857142796,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / CAIXAS DE PASSAGEM EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 12,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 9.788377842427886,
+        "linear_multipla": 11.647258081397865
+      },
+      "mse_persistencia_validacao": 14.73854999999997,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / CHAVES, FUSIVEIS E DISJUNTORES",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 405,
+      "n_validacao": 90,
+      "n_treino_teste": 495,
+      "n_teste": 135,
+      "servicos_treino": 45,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 2.3019202113702035,
+        "linear_multipla": 2.6864297686331624
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / COMPOSIÇÕES INTERMEDIÁRIAS P/ ELETRICA",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / COMPOSIÇÕES INTERMEDIÁRIAS P/ ELETRICA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 63,
+      "n_validacao": 14,
+      "n_treino_teste": 77,
+      "n_teste": 21,
+      "servicos_treino": 7,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.02983821995707205,
+        "linear_multipla": 0.03128295855510946
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / ELETRODUTOS E CONEXÕES",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 153,
+      "n_validacao": 34,
+      "n_treino_teste": 187,
+      "n_teste": 51,
+      "servicos_treino": 17,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1.3500522416194758,
+        "linear_multipla": 1.6482459578535131
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / ENVELOPAMENTO DE ELETRODUTOS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 4.342187008278545,
+        "linear_multipla": 4.746769991369768
+      },
+      "mse_persistencia_validacao": 0.7440625000000026,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / FIOS E CABOS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 324,
+      "n_validacao": 72,
+      "n_treino_teste": 396,
+      "n_teste": 108,
+      "servicos_treino": 36,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.4848166056613332,
+        "linear_multipla": 0.5248662052710559
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / INSTALAÇÕES APARENTES",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 95,
+      "n_validacao": 22,
+      "n_treino_teste": 117,
+      "n_teste": 33,
+      "servicos_treino": 11,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.24542248060441574,
+        "linear_multipla": 0.2929850918500697
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / INSTALAÇÕES APARENTES",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 207,
+      "n_validacao": 46,
+      "n_treino_teste": 253,
+      "n_teste": 69,
+      "servicos_treino": 23,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1.8712909183611488,
+        "linear_multipla": 4.639765857020248
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / PADRAO DE ENTRADA DE ENERGIA - NORTEC-01 - ESCELSA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 117,
+      "n_validacao": 26,
+      "n_treino_teste": 143,
+      "n_teste": 39,
+      "servicos_treino": 13,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 17230.14169303188,
+        "linear_multipla": 30035.776672906006
+      },
+      "mse_persistencia_validacao": 1396.630446153868,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / PADRÃO DE ENTRADA",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / PONTOS ELETRICOS REVISAO NR-10",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 153,
+      "n_validacao": 34,
+      "n_treino_teste": 187,
+      "n_teste": 51,
+      "servicos_treino": 17,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 6.956053905146355,
+        "linear_multipla": 7.125504051296429
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / QUADRO DE DISTRIBUIÇÃO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 90,
+      "n_validacao": 20,
+      "n_treino_teste": 110,
+      "n_teste": 20,
+      "servicos_treino": 10,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 66.44023364454924,
+        "linear_multipla": 86.02872826894534
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / QUADROS DE DISTRIBUIÇÃO COM BARRAMENTO, TRINCO E FECHADURA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 15.355911990860486,
+        "linear_multipla": 15.056906388150646
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / SERVIÇOS DIVERSOS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 81,
+      "n_validacao": 2,
+      "n_treino_teste": 83,
+      "n_teste": 30,
+      "servicos_treino": 10,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÕES ELÉTRICAS / TERMINAIS, CONECTORES E ABRAÇADEIRAS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 216,
+      "n_validacao": 48,
+      "n_treino_teste": 264,
+      "n_teste": 72,
+      "servicos_treino": 24,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 2.3675500067765545,
+        "linear_multipla": 3.464687689337042
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / ABERTURA E FECHAMENTO DE RASGOS (inclusive preparo e aplicação de argamassa)",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.08199197939381568,
+        "linear_multipla": 0.13460338201134
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / CAIXAS DE PVC / EQUIPAMENTOS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 140,
+      "n_validacao": 8,
+      "n_treino_teste": 148,
+      "n_teste": 48,
+      "servicos_treino": 17,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.08149778024826201,
+        "linear_multipla": 0.0838932558610074
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / CAIXAS EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / CAIXAS EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 117,
+      "n_validacao": 26,
+      "n_treino_teste": 143,
+      "n_teste": 39,
+      "servicos_treino": 13,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 23.716436941530656,
+        "linear_multipla": 30.329133166338423
+      },
+      "mse_persistencia_validacao": 16.704119230769262,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / ENTRADA DE ÁGUA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 62.9700652359807,
+        "linear_multipla": 100.00665945879086
+      },
+      "mse_persistencia_validacao": 32.89417499999992,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / FURO EM CONCRETO",
+      "unidade": "cm",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.0014893891147492722,
+        "linear_multipla": 0.0037081210591222726
+      },
+      "mse_persistencia_validacao": 0.0019333333333333457,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / PONTOS HIDRO-SANITÁRIOS",
+      "unidade": "pt",
+      "status": "avaliado",
+      "n_treino": 81,
+      "n_validacao": 18,
+      "n_treino_teste": 99,
+      "n_teste": 27,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.7023733353604391,
+        "linear_multipla": 0.8616339980936303
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / PONTOS HIDRO-SANITÁRIOS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 14.16225043569774,
+        "linear_multipla": 18.791574786534227
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ESGOTO - TUBOS DE PVC",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.04695913898426041,
+        "linear_multipla": 0.06256620345166732
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ÁGUA FRIA - CONEXÕES SOLDÁVEIS DE PVC",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 63,
+      "n_validacao": 14,
+      "n_treino_teste": 77,
+      "n_teste": 21,
+      "servicos_treino": 7,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.2734648189995306,
+        "linear_multipla": 0.31739151397966836
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ÁGUA FRIA - TUBOS METÁLICOS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 81,
+      "n_validacao": 18,
+      "n_treino_teste": 99,
+      "n_teste": 27,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 25.319020006497468,
+        "linear_multipla": 29.479963311746346
+      },
+      "mse_persistencia_validacao": 14.44866666666664,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ÁGUA FRIA - TUBOS SOLDÁVEIS DE PVC",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 72,
+      "n_validacao": 16,
+      "n_treino_teste": 88,
+      "n_teste": 24,
+      "servicos_treino": 8,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.3312598764692201,
+        "linear_multipla": 0.41108736609695234
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / REVISÕES E REPAROS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 34,
+      "n_validacao": 4,
+      "n_treino_teste": 38,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.03275478681152559,
+        "linear_multipla": 0.04232335235714198
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / SUMIDOUROS, FOSSAS SÉPTICAS E FILTROS ANAERÓBIOS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 482.7343192209157,
+        "linear_multipla": 466.9205522995652
+      },
+      "mse_persistencia_validacao": 115.99782499999802,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "INSTALAÇÕES HIDRO-SANITÁRIAS / TUBULAÇÃO DE LIGAÇÃO DE CAIXAS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 3.628393717996749,
+        "linear_multipla": 3.6658445727530764
+      },
+      "mse_persistencia_validacao": 3.684150000000009,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 01",
+      "unidade": "cj",
+      "status": "dados_insuficientes",
+      "n_treino": 1,
+      "n_validacao": 2,
+      "n_treino_teste": 3,
+      "n_teste": 1,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 01",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 22,
+      "n_validacao": 26,
+      "n_treino_teste": 48,
+      "n_teste": 13,
+      "servicos_treino": 13,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.030555140699673695,
+        "linear_multipla": 0.030935948953591436
+      },
+      "mse_persistencia_validacao": 0.029161538461538485,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 01",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 43,
+      "n_validacao": 34,
+      "n_treino_teste": 77,
+      "n_teste": 19,
+      "servicos_treino": 18,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.0343044338223503,
+        "linear_multipla": 0.035612023414267835
+      },
+      "mse_persistencia_validacao": 0.009941176470588176,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 01",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 28,
+      "n_validacao": 10,
+      "n_treino_teste": 38,
+      "n_teste": 9,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 93.12150080456051,
+        "linear_multipla": 58.83667092521016
+      },
+      "mse_persistencia_validacao": 46.403920000000014,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 01",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 15,
+      "n_validacao": 30,
+      "n_treino_teste": 45,
+      "n_teste": 15,
+      "servicos_treino": 15,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 3.75638109770261,
+        "linear_multipla": 56.80981456337203
+      },
+      "mse_persistencia_validacao": 0.2203100000000064,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 02",
+      "unidade": "chi",
+      "status": "avaliado",
+      "n_treino": 35,
+      "n_validacao": 10,
+      "n_treino_teste": 45,
+      "n_teste": 10,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.3853991488540077,
+        "linear_multipla": 0.3160080696949929
+      },
+      "mse_persistencia_validacao": 0.41618999999999867,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 02",
+      "unidade": "chp",
+      "status": "avaliado",
+      "n_treino": 100,
+      "n_validacao": 24,
+      "n_treino_teste": 124,
+      "n_teste": 31,
+      "servicos_treino": 12,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 2.4031495591435217,
+        "linear_multipla": 3.8852433330427836
+      },
+      "mse_persistencia_validacao": 1.7355541666666854,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 02",
+      "unidade": "h",
+      "status": "avaliado",
+      "n_treino": 364,
+      "n_validacao": 104,
+      "n_treino_teste": 468,
+      "n_teste": 104,
+      "servicos_treino": 52,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.26391060771756086,
+        "linear_multipla": 0.16289217102982834
+      },
+      "mse_persistencia_validacao": 0.25674615384615235,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "MOVIMENTO DE TERRA / ESCAVAÇÕES",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "MOVIMENTO DE TERRA / ESCAVAÇÕES",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.4006479254021635,
+        "linear_multipla": 0.6558839270696979
+      },
+      "mse_persistencia_validacao": 0.06223749999999981,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "MOVIMENTO DE TERRA / REATERRO E COMPACTAÇÃO",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 81,
+      "n_validacao": 18,
+      "n_treino_teste": 99,
+      "n_teste": 27,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 3.978919942465275,
+        "linear_multipla": 4.201881797085714
+      },
+      "mse_persistencia_validacao": 4.224588888888861,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "MOVIMENTO DE TERRA / TRANSPORTES",
+      "unidade": "m3",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "MOVIMENTO DE TERRA / TRANSPORTES",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / DEPÓSITO DE GÁS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 99,
+      "n_validacao": 21,
+      "n_treino_teste": 120,
+      "n_teste": 30,
+      "servicos_treino": 11,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 29.012037946589874,
+        "linear_multipla": 43.26010252526314
+      },
+      "mse_persistencia_validacao": 0.23679047619047805,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / DEPÓSITO DE GÁS",
+      "unidade": "m3",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DE GÁS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 16,
+      "n_validacao": 4,
+      "n_treino_teste": 20,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DE INCÊNDIO",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 32,
+      "n_validacao": 8,
+      "n_treino_teste": 40,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 57.76127842792228,
+        "linear_multipla": 105.99081839394904
+      },
+      "mse_persistencia_validacao": 15.506312500000076,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DE INCÊNDIO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 414,
+      "n_validacao": 95,
+      "n_treino_teste": 509,
+      "n_teste": 137,
+      "servicos_treino": 50,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 6.604668293780617,
+        "linear_multipla": 6.701063926323012
+      },
+      "mse_persistencia_validacao": 0.001392631578947851,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DE PÁRA-RAIO",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 81,
+      "n_validacao": 18,
+      "n_treino_teste": 99,
+      "n_teste": 27,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.30393457316529127,
+        "linear_multipla": 0.40016090956692096
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DE PÁRA-RAIO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 189,
+      "n_validacao": 42,
+      "n_treino_teste": 231,
+      "n_teste": 63,
+      "servicos_treino": 21,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1.8377990633871792,
+        "linear_multipla": 2.792967403477099
+      },
+      "mse_persistencia_validacao": 0.00046190476190476087,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DE TELEFONE",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.0898169959852362,
+        "linear_multipla": 0.1105706981720928
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DE TELEFONE",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 81,
+      "n_validacao": 18,
+      "n_treino_teste": 99,
+      "n_teste": 27,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 1711.8823875033968,
+        "linear_multipla": 4758.828095785087
+      },
+      "mse_persistencia_validacao": 0.49098888888889786,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DO SISTEMA DE CLIMATIZAÇÃO",
+      "unidade": "kg",
+      "status": "avaliado",
+      "n_treino": 18,
+      "n_validacao": 6,
+      "n_treino_teste": 24,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 12.192541730002512,
+        "linear_multipla": 27.76916132408843
+      },
+      "mse_persistencia_validacao": 0.6612499999999956,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DO SISTEMA DE CLIMATIZAÇÃO",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 60,
+      "n_validacao": 20,
+      "n_treino_teste": 80,
+      "n_teste": 30,
+      "servicos_treino": 10,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 2.075369473633632,
+        "linear_multipla": 2.1849531650026726
+      },
+      "mse_persistencia_validacao": 0.10997499999999952,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DO SISTEMA DE CLIMATIZAÇÃO",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 137.5391643315401,
+        "linear_multipla": 178.62671020279757
+      },
+      "mse_persistencia_validacao": 107.89734999999985,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÃO DO SISTEMA DE CLIMATIZAÇÃO",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 18,
+      "n_validacao": 6,
+      "n_treino_teste": 24,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.049814206954486184,
+        "linear_multipla": 0.20215466463219003
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÕES DE REDE LOGICA",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.0012659335935787201,
+        "linear_multipla": 0.0020043949630594022
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "OUTRAS INSTALAÇÕES / INSTALAÇÕES DE REDE LOGICA",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 388,
+      "n_validacao": 72,
+      "n_treino_teste": 460,
+      "n_teste": 132,
+      "servicos_treino": 44,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 67.46732254941564,
+        "linear_multipla": 79.12658980253998
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PAREDES E PAINÉIS / ALVENARIA DE VEDAÇÃO",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PAREDES E PAINÉIS / ALVENARIA DE VEDAÇÃO",
+      "unidade": "m3",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PAREDES E PAINÉIS / ALVENARIA DE VEDAÇÃO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 63,
+      "n_validacao": 14,
+      "n_treino_teste": 77,
+      "n_teste": 21,
+      "servicos_treino": 7,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 15.317927048487999,
+        "linear_multipla": 15.281534542464737
+      },
+      "mse_persistencia_validacao": 16.216449999999995,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "PAREDES E PAINÉIS / ALVENARIA ESTRUTURAL",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 21.975419867372228,
+        "linear_multipla": 22.687753496053418
+      },
+      "mse_persistencia_validacao": 23.349166666666648,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "PAREDES E PAINÉIS / PLACAS E PAINÉIS DIVISÓRIOS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 55.26080916584316,
+        "linear_multipla": 65.5606777040476
+      },
+      "mse_persistencia_validacao": 38.15156249999999,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PAREDES E PAINÉIS / PLACAS E PAINÉIS DIVISÓRIOS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PAREDES E PAINÉIS / VERGAS/CONTRAVERGA",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PINTURA / SOBRE CONCRETO OU BLOCOS CERÂMICOS APARENTES",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 54,
+      "n_validacao": 12,
+      "n_treino_teste": 66,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.07298492937549793,
+        "linear_multipla": 0.2202862820426236
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PINTURA / SOBRE ELEMENTOS ESPECIAIS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PINTURA / SOBRE MADEIRA",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.013620592796240888,
+        "linear_multipla": 0.025965395503131723
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PINTURA / SOBRE METAL",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PINTURA / SOBRE PAREDES E FORROS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 117,
+      "n_validacao": 26,
+      "n_treino_teste": 143,
+      "n_teste": 39,
+      "servicos_treino": 13,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.06999037409587182,
+        "linear_multipla": 0.20931952388127562
+      },
+      "mse_persistencia_validacao": 6.153846153846164e-05,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PINTURA / SOBRE PAREDES E FORROS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PINTURA / SOBRE PISOS",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PINTURA / SOBRE PISOS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.23154162099877276,
+        "linear_multipla": 0.46691388519289784
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PISOS INTERNOS E EXTERNOS / ACABAMENTOS",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "PISOS INTERNOS E EXTERNOS / ACABAMENTOS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 144,
+      "n_validacao": 32,
+      "n_treino_teste": 176,
+      "n_teste": 48,
+      "servicos_treino": 16,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 21.408415614641022,
+        "linear_multipla": 21.441863364329325
+      },
+      "mse_persistencia_validacao": 20.813131250000016,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PISOS INTERNOS E EXTERNOS / DEGRAUS, RODAPÉS, SOLEIRAS E PEITORIS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 108,
+      "n_validacao": 24,
+      "n_treino_teste": 132,
+      "n_teste": 36,
+      "servicos_treino": 12,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 2.8965667386608236,
+        "linear_multipla": 5.150888787084207
+      },
+      "mse_persistencia_validacao": 0.017633333333333515,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PISOS INTERNOS E EXTERNOS / LASTRO DE CONTRAPISO",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 63,
+      "n_validacao": 14,
+      "n_treino_teste": 77,
+      "n_teste": 21,
+      "servicos_treino": 7,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.37964778708138697,
+        "linear_multipla": 0.3746243189010861
+      },
+      "mse_persistencia_validacao": 0.0619428571428573,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "PISOS INTERNOS E EXTERNOS / REVISÕES E REPAROS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "REVESTIMENTO DE PAREDES / ACABAMENTOS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.015223313930745963,
+        "linear_multipla": 0.01275429809143685
+      },
+      "mse_persistencia_validacao": 0.0002700000000000418,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "REVESTIMENTO DE PAREDES / ACABAMENTOS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 42,
+      "n_validacao": 10,
+      "n_treino_teste": 52,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 9.030333910964925,
+        "linear_multipla": 9.87321448848669
+      },
+      "mse_persistencia_validacao": 9.111909999999973,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "REVESTIMENTO DE PAREDES / REVESTIMENTO COM ARGAMASSA",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 2,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "REVESTIMENTO DE PAREDES / REVESTIMENTO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 45,
+      "n_validacao": 10,
+      "n_treino_teste": 55,
+      "n_teste": 15,
+      "servicos_treino": 5,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.23079055366111473,
+        "linear_multipla": 0.2935050153433247
+      },
+      "mse_persistencia_validacao": 0.008620000000000563,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / DIVERSOS EXTERNOS",
+      "unidade": "m",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 5,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / DIVERSOS EXTERNOS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 68,
+      "n_validacao": 16,
+      "n_treino_teste": 84,
+      "n_teste": 20,
+      "servicos_treino": 8,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 378.983507068,
+        "linear_multipla": 376.25066320156844
+      },
+      "mse_persistencia_validacao": 351.3440499999987,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / MUROS E FECHAMENTOS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 72,
+      "n_validacao": 17,
+      "n_treino_teste": 89,
+      "n_teste": 25,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 77.38509614026536,
+        "linear_multipla": 77.56473367067497
+      },
+      "mse_persistencia_validacao": 122.55933529411702,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / MUROS E FECHAMENTOS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 15,
+      "n_validacao": 4,
+      "n_treino_teste": 19,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / MUROS E FECHAMENTOS",
+      "unidade": "m3",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / MUROS E FECHAMENTOS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / PAISAGISMO",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / PAISAGISMO",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 13.907113031537058,
+        "linear_multipla": 23.113320218864896
+      },
+      "mse_persistencia_validacao": 12.206912499999994,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / PAVIMENTAÇÃO",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 25,
+      "n_validacao": 6,
+      "n_treino_teste": 31,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 15.620897763409888,
+        "linear_multipla": 14.748603685998704
+      },
+      "mse_persistencia_validacao": 20.73481666666661,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / PAVIMENTAÇÃO",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 48,
+      "n_validacao": 12,
+      "n_treino_teste": 60,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 148.93886053908048,
+        "linear_multipla": 155.28127305457306
+      },
+      "mse_persistencia_validacao": 130.2656916666667,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / PAVIMENTAÇÃO",
+      "unidade": "m3",
+      "status": "dados_insuficientes",
+      "n_treino": 8,
+      "n_validacao": 2,
+      "n_treino_teste": 10,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / QUADRA DE ESPORTES (Ver nota 9 da planilha)",
+      "unidade": "kg",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / QUADRA DE ESPORTES (Ver nota 9 da planilha)",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.002124307508979899,
+        "linear_multipla": 0.004156121965493358
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / QUADRA DE ESPORTES (Ver nota 9 da planilha)",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 86,
+      "n_validacao": 12,
+      "n_treino_teste": 98,
+      "n_teste": 30,
+      "servicos_treino": 10,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 5.557358967845455,
+        "linear_multipla": 5.934692734983458
+      },
+      "mse_persistencia_validacao": 1.5152833333333307,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / QUADRA DE ESPORTES (Ver nota 9 da planilha)",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 50,
+      "n_validacao": 4,
+      "n_treino_teste": 54,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 238.6878552506323,
+        "linear_multipla": 290.7332756790547
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES EXTERNOS / TRATAMENTO, CONSERVAÇÃO E LIMPEZA",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 25,
+      "n_validacao": 6,
+      "n_treino_teste": 31,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.0022420160116834475,
+        "linear_multipla": 0.0004556780693769686
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES INTERNOS / ARMÁRIOS E PRATELEIRAS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 6,
+      "n_validacao": 2,
+      "n_treino_teste": 8,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES INTERNOS / DIVERSOS INTERNOS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 8,
+      "n_treino_teste": 44,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 176.54445743735934,
+        "linear_multipla": 195.72226137881958
+      },
+      "mse_persistencia_validacao": 68.66785000000009,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES INTERNOS / DIVERSOS INTERNOS",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES INTERNOS / QUADROS DE GIZ / AVISO",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS COMPLEMENTARES INTERNOS / QUADROS DE GIZ / AVISO",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS GERAIS / ENCARGOS COMPLEMENTARES - EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 81,
+      "n_validacao": 18,
+      "n_treino_teste": 99,
+      "n_teste": 27,
+      "servicos_treino": 9,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.037330661196038624,
+        "linear_multipla": 0.03733815168500651
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS GERAIS / ENCARGOS COMPLEMENTARES - FERRAMENTAS MANUAIS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 126,
+      "n_validacao": 28,
+      "n_treino_teste": 154,
+      "n_teste": 42,
+      "servicos_treino": 14,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 3.575798755696139,
+        "linear_multipla": 3.87848146021746
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / DEMOLIÇÕES E RETIRADAS",
+      "unidade": "m",
+      "status": "avaliado",
+      "n_treino": 36,
+      "n_validacao": 12,
+      "n_treino_teste": 48,
+      "n_teste": 18,
+      "servicos_treino": 6,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 0.01700361856379029,
+        "linear_multipla": 0.017003618563790287
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / DEMOLIÇÕES E RETIRADAS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 245,
+      "n_validacao": 78,
+      "n_treino_teste": 323,
+      "n_teste": 119,
+      "servicos_treino": 41,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 0.2675625034757954,
+        "linear_multipla": 0.26755503376437
+      },
+      "mse_persistencia_validacao": 0.051775641025640994,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / DEMOLIÇÕES E RETIRADAS",
+      "unidade": "m3",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 8,
+      "n_treino_teste": 35,
+      "n_teste": 12,
+      "servicos_treino": 4,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 13.837754977129702,
+        "linear_multipla": 13.9172449285072
+      },
+      "mse_persistencia_validacao": 0.2346124999999967,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / DEMOLIÇÕES E RETIRADAS",
+      "unidade": "und",
+      "status": "avaliado",
+      "n_treino": 60,
+      "n_validacao": 20,
+      "n_treino_teste": 80,
+      "n_teste": 30,
+      "servicos_treino": 10,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 6.421817245620157,
+        "linear_multipla": 6.421817245620157
+      },
+      "mse_persistencia_validacao": 5.676005000000006,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / LIMPEZA DO TERRENO",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 12,
+      "n_validacao": 4,
+      "n_treino_teste": 16,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / LIMPEZA DO TERRENO",
+      "unidade": "und",
+      "status": "dados_insuficientes",
+      "n_treino": 12,
+      "n_validacao": 4,
+      "n_treino_teste": 16,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / LOCAÇÃO",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / LOCAÇÃO",
+      "unidade": "mês",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "SERVIÇOS PRELIMINARES / SERVIÇOS ADMINISTRATIVOS E TÉCNICOS - MENSALISTAS",
+      "unidade": "mês",
+      "status": "avaliado",
+      "n_treino": 135,
+      "n_validacao": 30,
+      "n_treino_teste": 165,
+      "n_teste": 45,
+      "servicos_treino": 15,
+      "modelo_selecionado": "linear_multipla",
+      "mse_validacao": {
+        "linear_simples": 594012.4332155494,
+        "linear_multipla": 593060.588160903
+      },
+      "mse_persistencia_validacao": 622614.4065166658,
+      "supera_persistencia_validacao": true
+    },
+    {
+      "grupo": "TETOS E FORROS / REBAIXAMENTOS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 5,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "TETOS E FORROS / REVESTIMENTO COM ARGAMASSA",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 9,
+      "n_validacao": 2,
+      "n_treino_teste": 11,
+      "n_teste": 2,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "TETOS E FORROS / REVESTIMENTO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 18,
+      "n_validacao": 4,
+      "n_treino_teste": 22,
+      "n_teste": 6,
+      "servicos_treino": 2,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "TETOS E FORROS / REVISÕES E REPAROS",
+      "unidade": "m2",
+      "status": "dados_insuficientes",
+      "n_treino": 6,
+      "n_validacao": 2,
+      "n_treino_teste": 8,
+      "n_teste": 3,
+      "servicos_treino": 1,
+      "motivo": "Recorte sem amostras/serviços suficientes nos cortes globais"
+    },
+    {
+      "grupo": "VIDROS E ESPELHOS / ESPELHOS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 113.96301771911658,
+        "linear_multipla": 138.7928454690409
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    },
+    {
+      "grupo": "VIDROS E ESPELHOS / VIDROS PARA ESQUADRIAS",
+      "unidade": "m2",
+      "status": "avaliado",
+      "n_treino": 27,
+      "n_validacao": 6,
+      "n_treino_teste": 33,
+      "n_teste": 9,
+      "servicos_treino": 3,
+      "modelo_selecionado": "linear_simples",
+      "mse_validacao": {
+        "linear_simples": 228.56770653043841,
+        "linear_multipla": 240.7790209733365
+      },
+      "mse_persistencia_validacao": 0.0,
+      "supera_persistencia_validacao": false
+    }
+  ],
+  "previsoes_futuras": 2158
+}

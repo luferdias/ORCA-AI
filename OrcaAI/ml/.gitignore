@@ -3,10 +3,4 @@
 __pycache__/
 *.pyc
 
-# Publicar as execuções documentadas; manter ensaios e novas rodadas locais.
-outputs/*
-!outputs/apresentacao_2026-09-27/
-!outputs/entrega_ufg_acabamentos_2026-09-27/
-!outputs/janela_comum_2026-05/
-!outputs/regressao_validada_2026-09-27/
-!outputs/relatorio_final_2026-09-27/
+# Todas as execuções são preservadas, com seus manifestos e status originais.

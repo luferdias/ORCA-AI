@@ -1,0 +1,57 @@
+﻿fonte,codigo,descricao,classe,grupo_particao,algoritmo,classe_prevista,selecionado_cv
+der_es,110301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,random_forest,pintura,False
+der_es,110302,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,random_forest,revestimentos_forros,False
+der_es,120301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,random_forest,pintura,False
+der_es,120302,"Reboco de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 5mm",revestimentos_forros,v_4c59f65b4cddf39b,random_forest,pintura,False
+der_es,120303,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,random_forest,revestimentos_forros,False
+der_es,130110,"Lastro regularizado de concreto não estrutural, espessura de 8 cm",pisos,v_7374736633a4f48d,random_forest,pisos,False
+der_es,130112,"Lastro de concreto não estrutural, espessura de 6 cm",pisos,v_7374736633a4f48d,random_forest,pintura,False
+der_es,130209,"Piso de cimentado camurçado executado com argamassa de cimento e areia no traço 1:3, esp. 3.0cm",pisos,v_4084768b50e6b216,random_forest,pisos,False
+der_es,130236,"Piso cerâmico esmaltado, PEI 5, acabamento semibrilho, dim. 45x45cm, ref. de cor CARGO PLUS WHITE Eliane/equiv. assentado com argamassa de cimento colante, inclusive rejuntamento",pisos,v_41d7784f76cc4bf7,random_forest,revestimentos_forros,False
+der_es,190101,"Emassamento de paredes e forros, com duas demãos de massa corrida, referência Suvinil, Coral, Metalatex ou equivalente, inclusive uma demão de liquido selador PVA, referência Suvinil, Coral ou Metalatex ou equivalente",pintura,v_757a95c8a3cb40b3,random_forest,pintura,False
+der_es,190205,"Pintura a cal de meio-fio (tipo a caiação), aplicação manual, a três demãos",pintura,v_595768cdbb1e50d7,random_forest,pintura,False
+der_es,190303,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demão de verniz brilhante incolor, linha Premium Copal, referência Suvinil, Eucatex, Montana ou equivalente",pintura,v_0cc70a5c3843afef,random_forest,pintura,False
+der_es,190306,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demãos de verniz fosco incolor, linha Tripla Proteção Premium, referência Suvinil, Coral, Metalatex ou equivalente",pintura,v_e9bc00073fb6ee06,random_forest,pintura,False
+der_es,190603,"Pintura sobre pisos, marcas de referência Novacor, Coral ou Suvinil, a duas demãos, Linha Premium",pintura,v_275690d2e0c703e6,random_forest,pintura,False
+der_es,110301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,arvore_decisao,pintura,True
+der_es,110302,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,arvore_decisao,revestimentos_forros,True
+der_es,120301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,arvore_decisao,pintura,True
+der_es,120302,"Reboco de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 5mm",revestimentos_forros,v_4c59f65b4cddf39b,arvore_decisao,pintura,True
+der_es,120303,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,arvore_decisao,revestimentos_forros,True
+der_es,130110,"Lastro regularizado de concreto não estrutural, espessura de 8 cm",pisos,v_7374736633a4f48d,arvore_decisao,pisos,True
+der_es,130112,"Lastro de concreto não estrutural, espessura de 6 cm",pisos,v_7374736633a4f48d,arvore_decisao,pintura,True
+der_es,130209,"Piso de cimentado camurçado executado com argamassa de cimento e areia no traço 1:3, esp. 3.0cm",pisos,v_4084768b50e6b216,arvore_decisao,pisos,True
+der_es,130236,"Piso cerâmico esmaltado, PEI 5, acabamento semibrilho, dim. 45x45cm, ref. de cor CARGO PLUS WHITE Eliane/equiv. assentado com argamassa de cimento colante, inclusive rejuntamento",pisos,v_41d7784f76cc4bf7,arvore_decisao,revestimentos_forros,True
+der_es,190101,"Emassamento de paredes e forros, com duas demãos de massa corrida, referência Suvinil, Coral, Metalatex ou equivalente, inclusive uma demão de liquido selador PVA, referência Suvinil, Coral ou Metalatex ou equivalente",pintura,v_757a95c8a3cb40b3,arvore_decisao,pintura,True
+der_es,190205,"Pintura a cal de meio-fio (tipo a caiação), aplicação manual, a três demãos",pintura,v_595768cdbb1e50d7,arvore_decisao,pintura,True
+der_es,190303,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demão de verniz brilhante incolor, linha Premium Copal, referência Suvinil, Eucatex, Montana ou equivalente",pintura,v_0cc70a5c3843afef,arvore_decisao,pintura,True
+der_es,190306,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demãos de verniz fosco incolor, linha Tripla Proteção Premium, referência Suvinil, Coral, Metalatex ou equivalente",pintura,v_e9bc00073fb6ee06,arvore_decisao,pintura,True
+der_es,190603,"Pintura sobre pisos, marcas de referência Novacor, Coral ou Suvinil, a duas demãos, Linha Premium",pintura,v_275690d2e0c703e6,arvore_decisao,pisos,True
+der_es,110301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,knn,pintura,False
+der_es,110302,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,knn,pisos,False
+der_es,120301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,knn,pintura,False
+der_es,120302,"Reboco de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 5mm",revestimentos_forros,v_4c59f65b4cddf39b,knn,pintura,False
+der_es,120303,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,knn,pintura,False
+der_es,130110,"Lastro regularizado de concreto não estrutural, espessura de 8 cm",pisos,v_7374736633a4f48d,knn,pisos,False
+der_es,130112,"Lastro de concreto não estrutural, espessura de 6 cm",pisos,v_7374736633a4f48d,knn,pisos,False
+der_es,130209,"Piso de cimentado camurçado executado com argamassa de cimento e areia no traço 1:3, esp. 3.0cm",pisos,v_4084768b50e6b216,knn,pisos,False
+der_es,130236,"Piso cerâmico esmaltado, PEI 5, acabamento semibrilho, dim. 45x45cm, ref. de cor CARGO PLUS WHITE Eliane/equiv. assentado com argamassa de cimento colante, inclusive rejuntamento",pisos,v_41d7784f76cc4bf7,knn,revestimentos_forros,False
+der_es,190101,"Emassamento de paredes e forros, com duas demãos de massa corrida, referência Suvinil, Coral, Metalatex ou equivalente, inclusive uma demão de liquido selador PVA, referência Suvinil, Coral ou Metalatex ou equivalente",pintura,v_757a95c8a3cb40b3,knn,pintura,False
+der_es,190205,"Pintura a cal de meio-fio (tipo a caiação), aplicação manual, a três demãos",pintura,v_595768cdbb1e50d7,knn,pintura,False
+der_es,190303,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demão de verniz brilhante incolor, linha Premium Copal, referência Suvinil, Eucatex, Montana ou equivalente",pintura,v_0cc70a5c3843afef,knn,pintura,False
+der_es,190306,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demãos de verniz fosco incolor, linha Tripla Proteção Premium, referência Suvinil, Coral, Metalatex ou equivalente",pintura,v_e9bc00073fb6ee06,knn,pintura,False
+der_es,190603,"Pintura sobre pisos, marcas de referência Novacor, Coral ou Suvinil, a duas demãos, Linha Premium",pintura,v_275690d2e0c703e6,knn,pisos,False
+der_es,110301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,dummy_maioria,pintura,False
+der_es,110302,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia lavada traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,dummy_maioria,pintura,False
+der_es,120301,"Emboço de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 20 mm",revestimentos_forros,v_4c59f65b4cddf39b,dummy_maioria,pintura,False
+der_es,120302,"Reboco de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 5mm",revestimentos_forros,v_4c59f65b4cddf39b,dummy_maioria,pintura,False
+der_es,120303,"Reboco tipo paulista de argamassa de cimento, cal hidratada CH1 e areia média ou grossa lavada no traço 1:0.5:6, espessura 25 mm",revestimentos_forros,v_4c59f65b4cddf39b,dummy_maioria,pintura,False
+der_es,130110,"Lastro regularizado de concreto não estrutural, espessura de 8 cm",pisos,v_7374736633a4f48d,dummy_maioria,pintura,False
+der_es,130112,"Lastro de concreto não estrutural, espessura de 6 cm",pisos,v_7374736633a4f48d,dummy_maioria,pintura,False
+der_es,130209,"Piso de cimentado camurçado executado com argamassa de cimento e areia no traço 1:3, esp. 3.0cm",pisos,v_4084768b50e6b216,dummy_maioria,pintura,False
+der_es,130236,"Piso cerâmico esmaltado, PEI 5, acabamento semibrilho, dim. 45x45cm, ref. de cor CARGO PLUS WHITE Eliane/equiv. assentado com argamassa de cimento colante, inclusive rejuntamento",pisos,v_41d7784f76cc4bf7,dummy_maioria,pintura,False
+der_es,190101,"Emassamento de paredes e forros, com duas demãos de massa corrida, referência Suvinil, Coral, Metalatex ou equivalente, inclusive uma demão de liquido selador PVA, referência Suvinil, Coral ou Metalatex ou equivalente",pintura,v_757a95c8a3cb40b3,dummy_maioria,pintura,False
+der_es,190205,"Pintura a cal de meio-fio (tipo a caiação), aplicação manual, a três demãos",pintura,v_595768cdbb1e50d7,dummy_maioria,pintura,False
+der_es,190303,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demão de verniz brilhante incolor, linha Premium Copal, referência Suvinil, Eucatex, Montana ou equivalente",pintura,v_0cc70a5c3843afef,dummy_maioria,pintura,False
+der_es,190306,"Pintura de esquadrias e elementos de madeira, aplicação manual, com três demãos de verniz fosco incolor, linha Tripla Proteção Premium, referência Suvinil, Coral, Metalatex ou equivalente",pintura,v_e9bc00073fb6ee06,dummy_maioria,pintura,False
+der_es,190603,"Pintura sobre pisos, marcas de referência Novacor, Coral ou Suvinil, a duas demãos, Linha Premium",pintura,v_275690d2e0c703e6,dummy_maioria,pintura,False

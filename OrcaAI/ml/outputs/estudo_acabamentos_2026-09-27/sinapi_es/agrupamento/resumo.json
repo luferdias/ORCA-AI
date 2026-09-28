@@ -1,0 +1,80 @@
+{
+  "fonte": "sinapi_es",
+  "competencia": "2026-05",
+  "n": 514,
+  "n_grupos": 110,
+  "atributos": [
+    "fracao_mao_obra",
+    "fracao_material",
+    "fracao_equipamento",
+    "fracao_outros",
+    "n_mao_obra",
+    "n_material",
+    "n_equipamento",
+    "n_outros",
+    "horas_mao_obra",
+    "horas_equipamento"
+  ],
+  "dataset_sha256": "7fab5e314422a3ba6dc50286a117d42057139f4cc1d4227f6456648f424b2f30",
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.9.1"
+  },
+  "status": "concluido",
+  "tarefa": "agrupamento",
+  "algoritmo": "kmeans",
+  "k_selecionado": 3,
+  "criterio_selecao": "maior_silhouette_com_tamanho_minimo",
+  "desempate": "menor k",
+  "min_servicos_cluster": 26,
+  "n_vetores_distintos": 514,
+  "n_init": 30,
+  "semente": 42,
+  "metricas": {
+    "k": 3,
+    "elegivel": true,
+    "motivo": "elegível",
+    "silhouette": 0.3878520433519167,
+    "davies_bouldin": 1.0707835075389924,
+    "calinski_harabasz": 203.18860500265188,
+    "inercia": 2576.787360987888,
+    "min_tamanho": 32,
+    "tamanhos": "155;327;32"
+  },
+  "estabilidade": {
+    "semente": {
+      "n_calculado": 3,
+      "n_total": 3,
+      "ari_medio": 1.0,
+      "ari_mediano": 1.0,
+      "ari_minimo": 1.0
+    },
+    "subamostra_80pct": {
+      "n_calculado": 20,
+      "n_total": 20,
+      "ari_medio": 1.0,
+      "ari_mediano": 1.0,
+      "ari_minimo": 1.0
+    }
+  },
+  "pca_variancia_explicada": [
+    0.3753575523599591,
+    0.22391453541575143
+  ],
+  "pca_variancia_explicada_total": 0.5992720877757105,
+  "tamanhos_clusters": {
+    "0": 155,
+    "1": 327,
+    "2": 32
+  },
+  "limites": [
+    "Agrupamento exploratório ajustado ao catálogo inteiro, sem rótulos de classe.",
+    "Cada fonte usa sua própria padronização; silhouette não é ranking de tabelas oficiais.",
+    "PCA exibe duas dimensões; a distância do KMeans é calculada em todos os atributos.",
+    "Estabilidade compara atribuições do catálogo após reajustes; não mede generalização preditiva.",
+    "Tamanhos contam serviços do catálogo, incluindo variantes; não representam frequência em obras.",
+    "Identificadores de cluster são arbitrários e não demonstram equivalência técnica."
+  ]
+}

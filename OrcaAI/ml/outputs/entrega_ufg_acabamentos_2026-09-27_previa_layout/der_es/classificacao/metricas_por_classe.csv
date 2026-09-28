@@ -1,0 +1,13 @@
+﻿algoritmo,classe,precisao,recall,f1,suporte
+random_forest,pintura,0.5555555555555556,1.0,0.7142857142857143,5
+random_forest,pisos,1.0,0.5,0.6666666666666666,4
+random_forest,revestimentos_forros,0.6666666666666666,0.4,0.5,5
+arvore_decisao,pintura,0.5,0.8,0.6153846153846154,5
+arvore_decisao,pisos,0.6666666666666666,0.5,0.5714285714285714,4
+arvore_decisao,revestimentos_forros,0.6666666666666666,0.4,0.5,5
+knn,pintura,0.5,0.8,0.6153846153846154,5
+knn,pisos,0.6,0.75,0.6666666666666666,4
+knn,revestimentos_forros,0.0,0.0,0.0,5
+dummy_maioria,pintura,0.35714285714285715,1.0,0.5263157894736842,5
+dummy_maioria,pisos,0.0,0.0,0.0,4
+dummy_maioria,revestimentos_forros,0.0,0.0,0.0,5

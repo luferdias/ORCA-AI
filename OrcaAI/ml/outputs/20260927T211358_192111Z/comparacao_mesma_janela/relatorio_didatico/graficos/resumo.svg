@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="979.2pt" height="669.6pt" viewBox="0 0 979.2 669.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T18:14:31.056320</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 669.6 
+L 979.2 669.6 
+L 979.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="text_1">
+   <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1765ad" x="44.064" y="32.372856" transform="rotate(-0 44.064 32.372856)">ORCA-AI  /  UFG</text>
+  </g>
+  <g id="text_2">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #163047" x="44.064" y="71.964406" transform="rotate(-0 44.064 71.964406)">Quanto a regressão erra ao estimar o próximo mês?</text>
+  </g>
+  <g id="text_3">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526677" x="44.064" y="99.514125" transform="rotate(-0 44.064 99.514125)">Engenheiro Luis Fernando · SINAPI-ES e DER-ES / IOPES · Teste comum: 03/2026 a 05/2026</text>
+  </g>
+  <g id="text_4">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #163047" x="53.856" y="140.616" transform="rotate(-0 53.856 140.616)">DER-ES / IOPES</text>
+  </g>
+  <g id="text_5">
+   <text style="font-weight: 700; font-size: 35px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1765ad" x="53.856" y="190.836" transform="rotate(-0 53.856 190.836)">77,3%</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #163047" x="254.592" y="180.792" transform="rotate(-0 254.592 180.792)">das previsões tiveram erro até 5%</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526677" x="254.592" y="206.9064" transform="rotate(-0 254.592 206.9064)">3.642 previsões · 1.245 serviços · 3 meses</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="53.856" y="241.7256" transform="rotate(-0 53.856 241.7256)">Erro típico (mediana): 1,67%  |  P90: 11,02%  |  Média: 122,44%</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ae6414" x="53.856" y="267.84" transform="rotate(-0 53.856 267.84)">Persistência: mediana 0,66% e média 118,33%</text>
+  </g>
+  <g id="text_10">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #163047" x="53.856" y="321.408" transform="rotate(-0 53.856 321.408)">SINAPI-ES</text>
+  </g>
+  <g id="text_11">
+   <text style="font-weight: 700; font-size: 35px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1765ad" x="53.856" y="371.628" transform="rotate(-0 53.856 371.628)">87,3%</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #163047" x="254.592" y="361.584" transform="rotate(-0 254.592 361.584)">das previsões tiveram erro até 5%</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526677" x="254.592" y="387.6984" transform="rotate(-0 254.592 387.6984)">21.890 previsões · 7.955 serviços · 3 meses</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="53.856" y="422.5176" transform="rotate(-0 53.856 422.5176)">Erro típico (mediana): 1,20%  |  P90: 6,19%  |  Média: 6,34%</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ae6414" x="53.856" y="448.632" transform="rotate(-0 53.856 448.632)">Persistência: mediana 0,35% e média 1,28%</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 534.83925)">Leitura: erro pequeno é uma medida de aproximação. O ganho do aprendizado só aparece quando ele também supera a persistência,</text>
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 552.83925)">que repete o último preço. O limite de 5% é didático; não representa tolerância oficial.</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 597.928281)">A média é sensível a poucos custos próximos de zero. Por isso mostramos também mediana, P90, erros por mês e os casos extremos,</text>
+   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; fill: #163047" transform="translate(53.856 615.133359)">mantendo todas as observações.</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526677" x="44.064" y="640.605844" transform="rotate(-0 44.064 640.605844)">Teste 03/2026 a 05/2026 · Mesmas observações para regressão e persistência · Estatística descritiva</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #526677" x="936.1152" y="656.208" transform="rotate(-0 936.1152 656.208)">01</text>
+  </g>
+ </g>
+</svg>

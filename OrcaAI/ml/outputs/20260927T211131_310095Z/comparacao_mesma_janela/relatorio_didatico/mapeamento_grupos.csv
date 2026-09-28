@@ -1,0 +1,283 @@
+﻿fonte,grupo,nicho_id,nicho,presente_no_historico
+sinapi_es,Acessibilidade,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Alvenaria Estrutural - Blocos Cerâmicos,estruturas,Estruturas,True
+sinapi_es,Alvenaria Estrutural - Blocos de Concreto,estruturas,Estruturas,True
+sinapi_es,Alvenaria de Vedação,alvenaria_vedacoes,Alvenaria e vedações,True
+sinapi_es,Alvenarias Diversas,alvenaria_vedacoes,Alvenaria e vedações,True
+sinapi_es,Argamassas,apoio_producao,Apoio e produção,True
+sinapi_es,Armação de Estacas,fundacoes,Fundações,True
+sinapi_es,Armação para Estruturas de Concreto Armado,estruturas,Estruturas,True
+sinapi_es,Arrasamento de Estacas,fundacoes,Fundações,True
+sinapi_es,Asfalto,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Assentamento de Tubos de Esgoto em PVC e PEAD,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Assentamento de Tubos de PVC e Metálicos em Redes de Água,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Assentamento de tubos de esgoto ou drenagem pluvial em concreto,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Aterro e Reaterro de Valas,terra_contencao,Terra e contenções,True
+sinapi_es,"Aterros, Bases, Sub bases e Imprimações",urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Bocas para Bueiros,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,"Bombas Hidráulicas - Centrífugas, Horizontais e Submersíveis",hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Caixas Enterradas,apoio_producao,Apoio e produção,True
+sinapi_es,Caixas de Água para Edificações,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,"Canaletas, Grelhas e Caixas com Grelha para Drenagem",urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,"Cercas, Protetores e Alambrados",urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Chapisco,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Concretagem para Estruturas de Concreto Armado,estruturas,Estruturas,True
+sinapi_es,Concreto Projetado,terra_contencao,Terra e contenções,True
+sinapi_es,Contrapiso,pisos,Pisos e acabamentos de borda,True
+sinapi_es,Custos Horários Produtivo e Improdutivo dos Equipamentos,apoio_producao,Apoio e produção,True
+sinapi_es,Demolições e Remoções,preliminares,Serviços preliminares,True
+sinapi_es,"Depreciação, Juros, Impostos e Seguros, Manutenção e Materiais na Operação dos Equipamentos",apoio_producao,Apoio e produção,True
+sinapi_es,Dissipadores de Energia,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Dragagem,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Drenagem com geocompostos,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Drenagem de ar condicionado,climatizacao,Climatização e ventilação,True
+sinapi_es,Drenos,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Dutos para ar condicionado,climatizacao,Climatização e ventilação,True
+sinapi_es,Eletrocalhas,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Energia Solar para Edificações,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Equipamentos de Proteção Coletiva,preliminares,Serviços preliminares,True
+sinapi_es,Escadas,estruturas,Estruturas,True
+sinapi_es,Escavação Horizontal,terra_contencao,Terra e contenções,True
+sinapi_es,Escavação Vertical a Céu Aberto,terra_contencao,Terra e contenções,True
+sinapi_es,Escavação de Valas,terra_contencao,Terra e contenções,True
+sinapi_es,Escavação em Material de 3ª Categoria,terra_contencao,Terra e contenções,True
+sinapi_es,Escoramento e Preparo de Fundo de Valas,terra_contencao,Terra e contenções,True
+sinapi_es,Esgotamento de Vala e Rebaixamento do Lençol Freático,terra_contencao,Terra e contenções,True
+sinapi_es,Esquadrias - Janelas,esquadrias_vidros,Esquadrias e vidros,True
+sinapi_es,Esquadrias - Portas,esquadrias_vidros,Esquadrias e vidros,True
+sinapi_es,"Estacas Broca, Strauss e Escavada com Fluido Estabilizante",fundacoes,Fundações,True
+sinapi_es,Estacas Escavadas Sem Fluido Estabilizante,fundacoes,Fundações,True
+sinapi_es,Estacas Metálicas,fundacoes,Fundações,True
+sinapi_es,Estacas Pré-Moldadas,fundacoes,Fundações,True
+sinapi_es,Estacas Raiz,fundacoes,Fundações,True
+sinapi_es,Estacas em Hélice Contínua,fundacoes,Fundações,True
+sinapi_es,Estrutura e Trama para Cobertura,coberturas,Coberturas,True
+sinapi_es,Estruturas Pré-Fabricadas e Pré-Moldadas,estruturas,Estruturas,True
+sinapi_es,"Estruturas de Contenção - Estacas, Paredes Diafragma e Mureta Guia",terra_contencao,Terra e contenções,True
+sinapi_es,"Estruturas de Contenção - Perfis Pranchados, Cortinas e Muros de Arrimo",terra_contencao,Terra e contenções,True
+sinapi_es,Estruturas de Madeira,estruturas,Estruturas,True
+sinapi_es,Execução de Grampo para Solo Grampeado,terra_contencao,Terra e contenções,True
+sinapi_es,Execução de Tirantes,terra_contencao,Terra e contenções,True
+sinapi_es,Forros,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Fossas e Sumidouros,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,"Fundações Rasas (Blocos, Sapatas, Vigas Baldrame)",fundacoes,Fundações,True
+sinapi_es,Fôrmas para Estruturas de Concreto Armado,estruturas,Estruturas,True
+sinapi_es,Fôrmas para Pilares Circulares,estruturas,Estruturas,True
+sinapi_es,Gabiões - Execução de Muro e Proteção Superficial,terra_contencao,Terra e contenções,True
+sinapi_es,Galerias com Aduelas de Concreto,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Geodrenos Verticais,terra_contencao,Terra e contenções,True
+sinapi_es,Gesso,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Graute e Armação,estruturas,Estruturas,True
+sinapi_es,"Guarda-Corpo, Corrimão e Grade para Esquadrias",esquadrias_vidros,Esquadrias e vidros,True
+sinapi_es,Guias e sarjetas,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Iluminação Predial e Monitoramento,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,"Impermeabilização, Proteção Mecânica e Tratamento de Junta",impermeabilizacao,Impermeabilização,True
+sinapi_es,"Instalações Elétricas - Eletrodutos Embutidos, Cabos, Caixas, Tomadas e Interruptores",eletricas,Instalações elétricas e comunicação,True
+sinapi_es,"Instalações Elétricas - Eletrodutos, Conexões e Conduletes Aparentes",eletricas,Instalações elétricas e comunicação,True
+sinapi_es,"Instalações Elétricas - Quadros, Cabos, Disjuntores, Contatores e Barramentos Blindados",eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Instalações Elétricas - Rede de Distribuição,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Instalações Hidráulicas - Reservação e Bombas de Recalque,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Instalações Hidráulicas em PEX,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Instalações Hidráulicas em PPR,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Instalações Prediais de Esgoto - Caixas e Ralos,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Instalações Prediais de Esgoto - Tubos e Conexões,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Instalações Prediais de Água Fria em PVC,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Instalações Prediais de Água Quente em CPVC,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,"Instalações Prediais de Águas Pluviais - Tubos, Conexões, Caixas e Ralos",hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Instalações de Divisórias Diversas,alvenaria_vedacoes,Alvenaria e vedações,True
+sinapi_es,Instalações de Gás e Incêndio em Aço e Ferro Galvanizado,gas_incendio,Gás e combate a incêndio,True
+sinapi_es,Instalações de Gás em PEX Multicamadas,gas_incendio,Gás e combate a incêndio,True
+sinapi_es,Instalações de ar condicionado,climatizacao,Climatização e ventilação,True
+sinapi_es,Instalações de ar condicionado em cobre,climatizacao,Climatização e ventilação,True
+sinapi_es,Instalações em Cobre,apoio_producao,Apoio e produção,True
+sinapi_es,Instalações para Canteiros de Obras,preliminares,Serviços preliminares,True
+sinapi_es,Lajes Pré-Moldadas,estruturas,Estruturas,True
+sinapi_es,Lastro,apoio_producao,Apoio e produção,True
+sinapi_es,Ligações Prediais de Água e Esgoto,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Limpeza de Obra,preliminares,Serviços preliminares,True
+sinapi_es,Livro SINAPI: Cálculos e Parâmetros,apoio_producao,Apoio e produção,True
+sinapi_es,Locação de Obras,preliminares,Serviços preliminares,True
+sinapi_es,Louças e Metais,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Luminárias Externas,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Massa Única Externa,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Massa Única Interna,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Mobiliário Urbano,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Monocapa,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Montagem de gruas e cremalheiras,preliminares,Serviços preliminares,True
+sinapi_es,Paisagismo - Plantio,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Paredes de Concreto - Armação,estruturas,Estruturas,True
+sinapi_es,Paredes de Concreto - Concretagem,estruturas,Estruturas,True
+sinapi_es,Paredes de Concreto - Estucamento,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Paredes em Drywall,alvenaria_vedacoes,Alvenaria e vedações,True
+sinapi_es,Parquinhos e Equipamentos de Ginástica ao Ar Livre,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Passeios de Concreto,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Pavimentações Diversas - Paralelepípedos e Pedras Poliédricas,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Pavimento Intertravado,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Pavimento Rígido de Concreto,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Peitoris e Chapins,pisos,Pisos e acabamentos de borda,True
+sinapi_es,Peneiramento e Ensacamento de Areia em Obra,apoio_producao,Apoio e produção,True
+sinapi_es,Pintura Externa,pintura,Pintura,True
+sinapi_es,Pintura Interna,pintura,Pintura,True
+sinapi_es,Pintura em Madeira,pintura,Pintura,True
+sinapi_es,Pintura em Superfícies Metálicas,pintura,Pintura,True
+sinapi_es,Pintura para Pisos,pintura,Pintura,True
+sinapi_es,Pintura para Pisos e para Sinalização Horizontal e Vertical,pintura,Pintura,True
+sinapi_es,Pisos,pisos,Pisos e acabamentos de borda,True
+sinapi_es,Postes de Concreto e Metálicos,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Poços de Visita e Caixas para Bocas de Lobo,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Produção de Concreto,apoio_producao,Apoio e produção,True
+sinapi_es,Quadras e seus Equipamentos,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Quadros de automação de bombas,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,"Radier, Piso de Concreto e Laje sobre Solo",fundacoes,Fundações,True
+sinapi_es,Rasgos e Fixações,apoio_producao,Apoio e produção,True
+sinapi_es,Recomposição de Pavimentos,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Redes Enterradas de Distribuição Elétrica,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,"Redes de Lógica, Telefonia e Imagem",eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Redes de Água e Esgoto em PEAD Liso (Tubos e Conexões),urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Remoção de Entulho e Descarte,preliminares,Serviços preliminares,True
+sinapi_es,Reservatórios de Concreto e Metálicos,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Revestimentos Cerâmicos Externos,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Revestimentos Cerâmicos Internos,revestimentos_forros,Revestimentos e forros,True
+sinapi_es,Sinalização Horizontal Viária,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Sinalização Vertical Viária,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Sistema de Proteção contra Descargas Atmosféricas - SPDA,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Sistemas de Medição,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+sinapi_es,Sistemas de Medição de Gás,gas_incendio,Gás e combate a incêndio,False
+sinapi_es,Solda de Topo em Elementos de Aço,estruturas,Estruturas,True
+sinapi_es,Supressão Vegetal,preliminares,Serviços preliminares,True
+sinapi_es,Telhamento para Cobertura,coberturas,Coberturas,True
+sinapi_es,Transformadores,eletricas,Instalações elétricas e comunicação,True
+sinapi_es,Transporte de Materiais dentro do Canteiro de Obras,apoio_producao,Apoio e produção,True
+sinapi_es,"Transporte, Carga e Descarga de Materiais",apoio_producao,Apoio e produção,True
+sinapi_es,Tubulação Flangeada para Redes de Água,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Tubulões,fundacoes,Fundações,True
+sinapi_es,Tunnel Liner,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+sinapi_es,Usinagens,apoio_producao,Apoio e produção,True
+sinapi_es,"Vergas, contravergas e fixação de alvenaria",alvenaria_vedacoes,Alvenaria e vedações,True
+sinapi_es,Vidros e Espelhos,esquadrias_vidros,Esquadrias e vidros,True
+sinapi_es,Válvulas e Registros para Sistemas Prediais,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,APARELHOS ELÉTRICOS / AR REFRIGERADO,climatizacao,Climatização e ventilação,True
+der_es,APARELHOS ELÉTRICOS / BOMBAS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,APARELHOS ELÉTRICOS / INTERRUPTORES E TOMADAS,eletricas,Instalações elétricas e comunicação,True
+der_es,APARELHOS ELÉTRICOS / LUMINARIAS PARA LÂMPADAS LED,eletricas,Instalações elétricas e comunicação,True
+der_es,APARELHOS ELÉTRICOS / LUMINÁRIAS,eletricas,Instalações elétricas e comunicação,True
+der_es,APARELHOS ELÉTRICOS / OUTROS APARELHOS,eletricas,Instalações elétricas e comunicação,True
+der_es,APARELHOS ELÉTRICOS / POSTES,eletricas,Instalações elétricas e comunicação,True
+der_es,APARELHOS ELÉTRICOS / VENTILADORES,climatizacao,Climatização e ventilação,True
+der_es,APARELHOS HIDRO-SANITÁRIOS / ACESSIBILIDADE - NBR 9050,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,APARELHOS HIDRO-SANITÁRIOS / BANCADAS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,APARELHOS HIDRO-SANITÁRIOS / LOUÇAS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,APARELHOS HIDRO-SANITÁRIOS / OUTROS APARELHOS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,"APARELHOS HIDRO-SANITÁRIOS / TORNEIRAS, REGISTROS, VÁLVULAS E METAIS",hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,"APOIO / Locação de veículo tipo Gol 1.000 a gasolina ou equivalente, com até 1 (um) ano de uso, em bom estado de conservação com:",apoio_producao,Apoio e produção,True
+der_es,COBERTURA / ESTRUTURA PARA TELHADO,coberturas,Coberturas,True
+der_es,COBERTURA / PLATIBANDA,coberturas,Coberturas,True
+der_es,COBERTURA / REVISÕES E REPAROS,coberturas,Coberturas,True
+der_es,COBERTURA / RUFOS E CALHAS,coberturas,Coberturas,True
+der_es,COBERTURA / TELHADO,coberturas,Coberturas,True
+der_es,ESQUADRIAS DE MADEIRA / FERRAGENS,esquadrias_vidros,Esquadrias e vidros,True
+der_es,ESQUADRIAS DE MADEIRA / MARCOS E ALIZARES,esquadrias_vidros,Esquadrias e vidros,True
+der_es,"ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI COM ENCHIMENTO EM MADEIRA DE 1ª QUALIDADE, ESP. 30MM, PARA PINTURA, INCL. ALIZARES, DOBRADIÇAS, FECHADURA TIPO ""LIVRE/OCUPADO"" EXCLUSIVE MARCO",esquadrias_vidros,Esquadrias e vidros,True
+der_es,"ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA OU EQUIV. C/ ENCHIMENTO EM MADEIRA DE 1ª QUALIDADE ESP 30MM, COM VISOR DE VIDRO, INCL. ALIZARES, DOBRADIÇAS E FECHADURAS EXT EM LATÃO CROMADO LAFONTE/EQUIV , EXCL. MARCO, NAS DIMENSÕES:",esquadrias_vidros,Esquadrias e vidros,True
+der_es,"ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA OU EQUIV.,ESP. 30 MM, MACIÇA C/ FRISO P/ VERNIZ, PADRÃO SEDU, COM VISOR, INCLUSIVE ALIZARES, DOBRADIÇAS E FECHADURA DE BOLA EXTERNA, EXCLUSIVE MARCO",esquadrias_vidros,Esquadrias e vidros,True
+der_es,"ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA OU EQUIV.C/ENCHIMENTO EM MADEIRA 1A.QUALIDADE ESP. 30MM P/ PINTURA, INCLUSIVE ALIZARES, DOBRADIÇAS E FECHADURA EXTERNA, EXCLUSIVE MARCO",esquadrias_vidros,Esquadrias e vidros,True
+der_es,"ESQUADRIAS DE MADEIRA / PORTA EM MADEIRA DE LEI TIPO ANGELIM PEDRA/EQUIV, ESP. 30MM C/ ACAB. LISO P/ PINTURA, INCL. FECHADURA TIPO ""LIVRE/OCUPADO"" E FERRAGENS P/ FIXAÇÃO EM GRANITO, EXCLUSIVE MARCO",esquadrias_vidros,Esquadrias e vidros,True
+der_es,"ESQUADRIAS DE MADEIRA / PORTA EM VENEZIANA, EM MADEIRA DE LEI, ESP. 30MM, INCL. DOBRADIÇAS, EXCLUSIVE ALIZAR, MARCO E FECHADURA",esquadrias_vidros,Esquadrias e vidros,True
+der_es,ESQUADRIAS DE MADEIRA / REVISÕES E REPAROS,esquadrias_vidros,Esquadrias e vidros,True
+der_es,ESQUADRIAS METÁLICAS / ESQUADRIAS METÁLICAS (M2),esquadrias_vidros,Esquadrias e vidros,True
+der_es,ESQUADRIAS METÁLICAS / GRADES E PORTÕES,esquadrias_vidros,Esquadrias e vidros,True
+der_es,ESQUADRIAS METÁLICAS / REVISÕES E REPAROS,esquadrias_vidros,Esquadrias e vidros,True
+der_es,ESTRUTURAS / DIVERSOS,estruturas,Estruturas,True
+der_es,ESTRUTURAS / ESTRUTURAS DE CONCRETO APARENTE,estruturas,Estruturas,True
+der_es,ESTRUTURAS / INFRA-ESTRUTURA (FUNDAÇÃO),fundacoes,Fundações,True
+der_es,ESTRUTURAS / LAJES PRÉ-MOLDADAS,estruturas,Estruturas,True
+der_es,"ESTRUTURAS / MURO DE ARRIMO (Conc. ciclópico 15MPa c/ 30% de pedra de mão, c/ forn., preparo e aplicação de concreto, forma de tábua pinho-reap.5 vezes, exclusive escav. e reaterro) seções tipicas nas seguintes dimensões:",terra_contencao,Terra e contenções,True
+der_es,ESTRUTURAS / RECUPERAÇÃO DE ESTRUTURAS,estruturas,Estruturas,True
+der_es,ESTRUTURAS / SUPER-ESTRUTURA,estruturas,Estruturas,True
+der_es,"IMPERMEABILIZAÇÃO / IMPERMEABILIZAÇÃO CALHAS, LAJES DESCOBERTAS, BALDRAMES, PAREDES E JARDINEIRAS",impermeabilizacao,Impermeabilização,True
+der_es,IMPERMEABILIZAÇÃO / IMPERMEABILIZAÇÃO DE CAIXAS DE ÁGUA,impermeabilizacao,Impermeabilização,True
+der_es,IMPERMEABILIZAÇÃO / IMPERMEABILIZAÇÃO DE FOSSAS E FILTROS,impermeabilizacao,Impermeabilização,True
+der_es,"INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 1 VEZ), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO SUPERIOR A 12 MESES)",preliminares,Serviços preliminares,True
+der_es,"INSTALAÇÃO DO CANTEIRO DE OBRAS / INSTALAÇÃO DO CANTEIRO DE OBRAS (UTILIZAÇÃO 2 VEZES), PROJETO PADRÃO LABOR - NR.18 (OBRAS COM PRAZO DE EXECUÇÃO DE 6 A 12 MESES)",preliminares,Serviços preliminares,True
+der_es,"INSTALAÇÃO DO CANTEIRO DE OBRAS / TAPUMES, BARRACÕES E COBERTURAS",preliminares,Serviços preliminares,True
+der_es,"INSTALAÇÕES ELÉTRICAS / (COMPOSIÇÃO REPRESENTATIVA) - MONTAGEM MECANICA E ELETRICA, TESTE DE ACEITAÇÃO DE QUADROS DE FABRICAÇÃO ESPECIAL COM ATESTADOS TTA/PTTA",eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / ABERTURA E FECHAMENTO DE RASGOS (inclusive preparo e aplicação de argamassa),eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / CAIXAS DE PASSAGEM,eletricas,Instalações elétricas e comunicação,True
+der_es,"INSTALAÇÕES ELÉTRICAS / CAIXAS DE PASSAGEM EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",eletricas,Instalações elétricas e comunicação,True
+der_es,"INSTALAÇÕES ELÉTRICAS / CHAVES, FUSIVEIS E DISJUNTORES",eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / COMPOSIÇÕES INTERMEDIÁRIAS P/ ELETRICA,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / ELETRODUTOS E CONEXÕES,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / ENVELOPAMENTO DE ELETRODUTOS,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / FIOS E CABOS,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / INSTALAÇÕES APARENTES,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / PADRAO DE ENTRADA DE ENERGIA - NORTEC-01 - ESCELSA,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / PADRÃO DE ENTRADA,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / PONTOS ELETRICOS REVISAO NR-10,eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / QUADRO DE DISTRIBUIÇÃO,eletricas,Instalações elétricas e comunicação,True
+der_es,"INSTALAÇÕES ELÉTRICAS / QUADROS DE DISTRIBUIÇÃO COM BARRAMENTO, TRINCO E FECHADURA",eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES ELÉTRICAS / SERVIÇOS DIVERSOS,eletricas,Instalações elétricas e comunicação,True
+der_es,"INSTALAÇÕES ELÉTRICAS / TERMINAIS, CONECTORES E ABRAÇADEIRAS",eletricas,Instalações elétricas e comunicação,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / ABERTURA E FECHAMENTO DE RASGOS (inclusive preparo e aplicação de argamassa),hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / CAIXAS DE PVC / EQUIPAMENTOS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,"INSTALAÇÕES HIDRO-SANITÁRIAS / CAIXAS EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / ENTRADA DE ÁGUA,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / FURO EM CONCRETO,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / PONTOS HIDRO-SANITÁRIOS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ESGOTO - TUBOS DE PVC,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ÁGUA FRIA - CONEXÕES SOLDÁVEIS DE PVC,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ÁGUA FRIA - TUBOS METÁLICOS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / REDE DE ÁGUA FRIA - TUBOS SOLDÁVEIS DE PVC,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / REVISÕES E REPAROS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,"INSTALAÇÕES HIDRO-SANITÁRIAS / SUMIDOUROS, FOSSAS SÉPTICAS E FILTROS ANAERÓBIOS",hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,INSTALAÇÕES HIDRO-SANITÁRIAS / TUBULAÇÃO DE LIGAÇÃO DE CAIXAS,hidrossanitarias,Instalações hidráulicas e sanitárias,True
+der_es,ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 01,apoio_producao,Apoio e produção,True
+der_es,ITENS DE SERVIÇOS AUXILIARES / SERVIÇOS AUXILIARES 02,apoio_producao,Apoio e produção,True
+der_es,MOVIMENTO DE TERRA / ESCAVAÇÕES,terra_contencao,Terra e contenções,True
+der_es,MOVIMENTO DE TERRA / REATERRO E COMPACTAÇÃO,terra_contencao,Terra e contenções,True
+der_es,MOVIMENTO DE TERRA / TRANSPORTES,terra_contencao,Terra e contenções,True
+der_es,OUTRAS INSTALAÇÕES / DEPÓSITO DE GÁS,gas_incendio,Gás e combate a incêndio,True
+der_es,OUTRAS INSTALAÇÕES / INSTALAÇÃO DE GÁS,gas_incendio,Gás e combate a incêndio,True
+der_es,OUTRAS INSTALAÇÕES / INSTALAÇÃO DE INCÊNDIO,gas_incendio,Gás e combate a incêndio,True
+der_es,OUTRAS INSTALAÇÕES / INSTALAÇÃO DE PÁRA-RAIO,eletricas,Instalações elétricas e comunicação,True
+der_es,OUTRAS INSTALAÇÕES / INSTALAÇÃO DE TELEFONE,eletricas,Instalações elétricas e comunicação,True
+der_es,OUTRAS INSTALAÇÕES / INSTALAÇÃO DO SISTEMA DE CLIMATIZAÇÃO,climatizacao,Climatização e ventilação,True
+der_es,OUTRAS INSTALAÇÕES / INSTALAÇÕES DE REDE LOGICA,eletricas,Instalações elétricas e comunicação,True
+der_es,PAREDES E PAINÉIS / ALVENARIA DE VEDAÇÃO,alvenaria_vedacoes,Alvenaria e vedações,True
+der_es,"PAREDES E PAINÉIS / ALVENARIA DE VEDAÇÃO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",alvenaria_vedacoes,Alvenaria e vedações,True
+der_es,PAREDES E PAINÉIS / ALVENARIA ESTRUTURAL,estruturas,Estruturas,True
+der_es,PAREDES E PAINÉIS / PLACAS E PAINÉIS DIVISÓRIOS,alvenaria_vedacoes,Alvenaria e vedações,True
+der_es,PAREDES E PAINÉIS / VERGAS/CONTRAVERGA,alvenaria_vedacoes,Alvenaria e vedações,True
+der_es,PINTURA / SOBRE CONCRETO OU BLOCOS CERÂMICOS APARENTES,pintura,Pintura,True
+der_es,PINTURA / SOBRE ELEMENTOS ESPECIAIS,pintura,Pintura,True
+der_es,PINTURA / SOBRE MADEIRA,pintura,Pintura,True
+der_es,PINTURA / SOBRE METAL,pintura,Pintura,True
+der_es,PINTURA / SOBRE PAREDES E FORROS,pintura,Pintura,True
+der_es,PINTURA / SOBRE PISOS,pintura,Pintura,True
+der_es,PISOS INTERNOS E EXTERNOS / ACABAMENTOS,pisos,Pisos e acabamentos de borda,True
+der_es,"PISOS INTERNOS E EXTERNOS / DEGRAUS, RODAPÉS, SOLEIRAS E PEITORIS",pisos,Pisos e acabamentos de borda,True
+der_es,PISOS INTERNOS E EXTERNOS / LASTRO DE CONTRAPISO,pisos,Pisos e acabamentos de borda,True
+der_es,PISOS INTERNOS E EXTERNOS / REVISÕES E REPAROS,pisos,Pisos e acabamentos de borda,True
+der_es,REVESTIMENTO DE PAREDES / ACABAMENTOS,revestimentos_forros,Revestimentos e forros,True
+der_es,REVESTIMENTO DE PAREDES / REVESTIMENTO COM ARGAMASSA,revestimentos_forros,Revestimentos e forros,True
+der_es,"REVESTIMENTO DE PAREDES / REVESTIMENTO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",revestimentos_forros,Revestimentos e forros,True
+der_es,SERVIÇOS COMPLEMENTARES EXTERNOS / DIVERSOS EXTERNOS,outros_complementares,Outros serviços complementares,True
+der_es,SERVIÇOS COMPLEMENTARES EXTERNOS / MUROS E FECHAMENTOS,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+der_es,SERVIÇOS COMPLEMENTARES EXTERNOS / PAISAGISMO,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+der_es,SERVIÇOS COMPLEMENTARES EXTERNOS / PAVIMENTAÇÃO,urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+der_es,SERVIÇOS COMPLEMENTARES EXTERNOS / QUADRA DE ESPORTES (Ver nota 9 da planilha),urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+der_es,"SERVIÇOS COMPLEMENTARES EXTERNOS / TRATAMENTO, CONSERVAÇÃO E LIMPEZA",urbanizacao_infraestrutura,Urbanização e infraestrutura externa,True
+der_es,SERVIÇOS COMPLEMENTARES INTERNOS / ARMÁRIOS E PRATELEIRAS,outros_complementares,Outros serviços complementares,True
+der_es,SERVIÇOS COMPLEMENTARES INTERNOS / DIVERSOS INTERNOS,outros_complementares,Outros serviços complementares,True
+der_es,SERVIÇOS COMPLEMENTARES INTERNOS / QUADROS DE GIZ / AVISO,outros_complementares,Outros serviços complementares,True
+der_es,SERVIÇOS GERAIS / ENCARGOS COMPLEMENTARES - EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL,apoio_producao,Apoio e produção,True
+der_es,SERVIÇOS GERAIS / ENCARGOS COMPLEMENTARES - FERRAMENTAS MANUAIS,apoio_producao,Apoio e produção,True
+der_es,SERVIÇOS PRELIMINARES / DEMOLIÇÕES E RETIRADAS,preliminares,Serviços preliminares,True
+der_es,SERVIÇOS PRELIMINARES / LIMPEZA DO TERRENO,preliminares,Serviços preliminares,True
+der_es,SERVIÇOS PRELIMINARES / LOCAÇÃO,preliminares,Serviços preliminares,True
+der_es,SERVIÇOS PRELIMINARES / SERVIÇOS ADMINISTRATIVOS E TÉCNICOS - MENSALISTAS,apoio_producao,Apoio e produção,True
+der_es,TETOS E FORROS / REBAIXAMENTOS,revestimentos_forros,Revestimentos e forros,True
+der_es,TETOS E FORROS / REVESTIMENTO COM ARGAMASSA,revestimentos_forros,Revestimentos e forros,True
+der_es,"TETOS E FORROS / REVESTIMENTO EMPREGANDO ARGAMASSA DE CIMENTO, CAL E AREIA",revestimentos_forros,Revestimentos e forros,True
+der_es,TETOS E FORROS / REVISÕES E REPAROS,revestimentos_forros,Revestimentos e forros,True
+der_es,VIDROS E ESPELHOS / ESPELHOS,esquadrias_vidros,Esquadrias e vidros,True
+der_es,VIDROS E ESPELHOS / VIDROS PARA ESQUADRIAS,esquadrias_vidros,Esquadrias e vidros,True

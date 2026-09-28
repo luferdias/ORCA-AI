@@ -1,0 +1,5 @@
+﻿k,elegivel,motivo,silhouette,davies_bouldin,calinski_harabasz,inercia,min_tamanho,tamanhos
+2,False,Grupo menor que 4 serviços ou métrica indefinida,0.670916007918471,0.6092124186702699,33.27042291561814,329.0200538390495,3,67;3
+3,False,Grupo menor que 4 serviços ou métrica indefinida,0.39424415788426403,0.9685836709513612,39.85103545884127,223.78688858742535,3,21;3;46
+4,False,Grupo menor que 4 serviços ou métrica indefinida,0.40404065807692735,0.7604804019509537,43.99522001219571,163.34516345286656,3,44;20;3;3
+5,False,Grupo menor que 4 serviços ou métrica indefinida,0.3225492412828593,0.9042094514339505,41.75034446138888,137.28366743236631,3,27;3;17;3;20
