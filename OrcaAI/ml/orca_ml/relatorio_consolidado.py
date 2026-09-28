@@ -226,12 +226,20 @@ def _pdf(path,sections):
     doc.build(story,onFirstPage=footer,onLaterPages=footer)
 
 
-def gerar_relatorio_consolidado(execucao_dir:Path,run:dict,saida:Path|None=None)->dict:
+def gerar_relatorio_consolidado(execucao_dir:Path,run:dict,saida:Path|None=None,*,edicao:dict|None=None)->dict:
     root=Path(execucao_dir).resolve();out=Path(saida).resolve() if saida is not None else root/'relatorio_consolidado'
     if out.exists() and (not out.is_dir() or any(out.iterdir())):raise ValueError(f'A pasta de relatório já contém arquivos: {out}')
+    if edicao is not None:
+        from .edicao_professor import conferir_execucao
+        if edicao != conferir_execucao(root/'execucao_estudo.json'):
+            raise ValueError('Edição divergente da execução publicada')
     bases,hashes=_ler_bases(root,run)
     out.mkdir(parents=True,exist_ok=True)
     graphs=gerar_graficos_consolidacao(bases,out/'graficos');sections=_secoes(run,bases,graphs)
+    if edicao is not None:
+        from .edicao_professor import aplicar_edicao
+        sections=aplicar_edicao(sections,edicao)
+        hashes['execucao_estudo.json']=hashlib.sha256((root/'execucao_estudo.json').read_bytes()).hexdigest()
     paths={'html':out/'relatorio.html','pdf':out/'relatorio.pdf','markdown':out/'RELATORIO.md'}
     parts=['<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ORCA-AI | UFG | três tarefas de ML</title><style>body{font:17px/1.65 system-ui,sans-serif;color:#203746;background:#eef3f6;margin:0}main{max-width:980px;margin:auto;padding:24px}section{background:white;padding:32px;margin:24px 0;border-radius:12px}h1,h2{color:#174b6c;line-height:1.3}img{width:100%;height:auto}table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}th{background:#17618b;color:white}td,th{padding:9px;border:1px solid #d7e1e6;text-align:left}tbody tr:nth-child(even){background:#f0f5f8}a{color:#17618b}.table{overflow:auto}nav{background:#fff;padding:18px;border-radius:12px}nav a{display:inline-block;margin-right:12px}@media print{section{break-before:page}nav{display:none}}</style><main><nav><a href="relatorio.pdf">PDF para entrega</a><a href="RELATORIO.md">Texto em Markdown</a>']
     parts.extend(f'<a href="#sec{i}">{html.escape(s["titulo"])}</a>' for i,s in enumerate(sections));parts.append('</nav>');md=[]
@@ -248,6 +256,11 @@ def gerar_relatorio_consolidado(execucao_dir:Path,run:dict,saida:Path|None=None)
         parts.append('</section>')
     parts.append('</main></html>');paths['html'].write_text('\n'.join(parts),encoding='utf-8');paths['markdown'].write_text('\n'.join(md),encoding='utf-8');_pdf(paths['pdf'],sections)
     manifest={'competencia':run['competencia'],'execucao_origem':str(root),'arquivos_entrada_sha256':hashes,'bases':{}}
+    if edicao is not None:
+        manifest['edicao']=edicao
+        manifest['links_github']=sorted({url for s in sections for _,url in s['links'] if url.startswith('https://github.com/')})
+        ml=Path(__file__).resolve().parent.parent
+        manifest['codigo_editorial_sha256']={str(p.relative_to(ml)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [ml/'gerar_entrega_professor.py',Path(__file__).resolve(),ml/'orca_ml/edicao_professor.py',ml/'orca_ml/graficos_consolidacao.py']}
     for source,b in bases.items():
         c=b['resumo']['classificacao'];a=b['resumo']['agrupamento'];row=b['metricas_class'].set_index('algoritmo').loc[c['algoritmo_selecionado']]
         manifest['bases'][source]={'n_catalogo':len(b['dados']),'n_previsoes_regressao':len(b['pares']),'classificador_selecionado':c['algoritmo_selecionado'],'f1_macro_selecionado':float(row.f1_macro),'k_selecionado':a.get('k_selecionado'),'k_diagnostico':a.get('k_diagnostico'),'status_agrupamento':a['status'],'codigo_exemplo_pintura':b['exemplo']['codigo']}

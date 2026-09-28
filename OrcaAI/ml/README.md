@@ -2,7 +2,7 @@
 
 ## Estudo consolidado: pintura e acabamentos
 
-**Comece pelo [guia da entrega UFG](ENTREGA_UFG.md), com relatório de 16 páginas, resultados e instruções para o VS Code.**
+**Comece pelo [guia da entrega UFG](ENTREGA_UFG.md), com o PDF para o professor Ronaldo, links públicos do GitHub, resultados e instruções para o VS Code.**
 
 O novo estudo reúne **regressão, classificação supervisionada e agrupamento não supervisionado**, usando pintura, revestimentos e forros, e pisos em m². SINAPI-ES e DER-ES/IOPES são processados separadamente. As composições analíticas usam maio/2026; a regressão usa o histórico até essa competência, com teste em março-maio/2026.
 

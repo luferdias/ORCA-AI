@@ -2,11 +2,21 @@
 
 **Autor:** engenheiro Luis Fernando  
 **Instituição:** Universidade Federal de Goiás (UFG)  
+**Professor:** Ronaldo  
 **Disciplina:** Aprendizado de máquina aplicado a dados estruturados  
 **Projeto aplicado:** ORCA-AI  
 **Recorte:** pintura, revestimentos e forros, e pisos em m²
 
 ## Arquivos para leitura
+
+- **[PDF para o professor Ronaldo, com links clicáveis no GitHub](entregas/professor_ronaldo_2026-09-28/relatorio.pdf).**
+- [Edição para o professor em HTML](entregas/professor_ronaldo_2026-09-28/relatorio.html) e [Markdown](entregas/professor_ronaldo_2026-09-28/RELATORIO.md).
+- [Desenvolvimento público no GitHub, na versão avaliada](https://github.com/luferdias/ORCA-AI/tree/e20741b0214dff489147fa04739bb2a1ed44bc07/OrcaAI/ml).
+- [Dados e resultados da execução no GitHub](https://github.com/luferdias/ORCA-AI/tree/e20741b0214dff489147fa04739bb2a1ed44bc07/OrcaAI/ml/outputs/entrega_ufg_acabamentos_2026-09-27).
+
+Em 28/09/2026, o engenheiro Luis Fernando autorizou tornar o repositório público para consulta e download. A escrita permanece restrita às contas autorizadas. Os links do PDF fixam o commit `e20741b0214dff489147fa04739bb2a1ed44bc07`, que contém o código experimental e os resultados avaliados. A edição acrescenta navegação para o professor e preserva as métricas de 27/09/2026.
+
+### Versão anterior, preservada
 
 - [Relatório acadêmico em PDF](outputs/entrega_ufg_acabamentos_2026-09-27/relatorio_consolidado/relatorio.pdf).
 - [Relatório navegável, com gráficos e tabelas](outputs/entrega_ufg_acabamentos_2026-09-27/relatorio_consolidado/relatorio.html).
@@ -37,6 +47,14 @@ Para refazer somente o relatório, sem treinar de novo:
 ```bash
 python gerar_relatorio_estudo.py --execucao outputs/entrega_ufg_acabamentos_2026-09-27 --saida outputs/relatorio_ufg_revisado
 ```
+
+Para reproduzir a edição com os links do GitHub em uma pasta nova:
+
+```bash
+python gerar_entrega_professor.py --saida entregas/professor_ronaldo_revisao
+```
+
+Esse gerador confere o manifesto da execução publicada e os hashes dos resultados antes de associar os links às evidências. Os links podem ser abertos sem login no GitHub.
 
 ## Como apresentar a comparação
 
