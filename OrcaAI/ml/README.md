@@ -185,6 +185,24 @@ python -m pytest
 
 Os testes verificam leitura de códigos, coluna ES, regime e competência, integridade dos arquivos, revisões duplicadas, consecutividade das janelas, mudanças técnicas, partições cronológicas e referência de persistência. A integração do relatório verifica também a janela comum, a preservação da última competência por fonte, a execução individual, a regeneração sem treinamento e a conservação das métricas quando a apresentação falha. Os dados artificiais dos testes ficam em diretórios temporários; as execuções entregues usam os arquivos oficiais coletados.
 
+## Qualidade de código
+
+O lint e a formatação usam o [ruff](https://docs.astral.sh/ruff/), instalado junto com os testes por [requirements-dev.txt](requirements-dev.txt). A configuração fica no [pyproject.toml](../../pyproject.toml) da raiz do repositório e vale para toda a árvore, então os comandos podem ser executados a partir desta pasta:
+
+```bash
+ruff check .          # verifica
+ruff check . --fix    # corrige o que é seguro
+ruff format .         # formata
+```
+
+Um hook de pre-commit versionado em [.githooks/pre-commit](../../.githooks/pre-commit) bloqueia commits com erro de lint ou formatação nos arquivos Python preparados. Ele precisa ser ativado uma vez por clone, a partir da raiz do repositório:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+O hook usa o ruff deste `.venv`, do PATH ou, na falta deles, `uvx ruff@0.14.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.
+
 ## Relação com a disciplina
 
 [Proposta aprovada para implementação](../spec/ml_ufg/proposta_projeto_ml_es.md) · [Mapa das aulas](../spec/ml_ufg/mapa_materiais_disciplina.md) · [Registro de implementação](IMPLEMENTACAO.md).
