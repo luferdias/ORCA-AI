@@ -107,3 +107,21 @@ Os 12 projetos de orçamento permanecem em `OrcaAI/projetos/`. A API Knowledge e
 A [auditoria de bases oficiais de 27/09/2026](OrcaAI/docs/auditoria_bases_referenciais_2026-09-27.md) registra competências localizadas, arquivos amostrados e pendências de acesso. O [catálogo de fontes](OrcaAI/bases/catalogo_fontes_referenciais.json) e o [protocolo de atualização por projeto](OrcaAI/spec/ml_ufg/bases_servicos_e_atualizacao.md) orientam a pesquisa com prioridade no Espírito Santo.
 
 O [relatório preliminar de viabilidade](OrcaAI/docs/viabilidade_ml_dados_estruturados_es_2026-09-27.md) registra a análise anterior à leitura das aulas. A seleção de modelos e o escopo vigente estão na proposta atual.
+
+## 5. Qualidade de código
+
+O lint e a formatação dos arquivos Python usam o [ruff](https://docs.astral.sh/ruff/), configurado em [pyproject.toml](pyproject.toml). A versão fica pinada em [requirements-dev.txt](OrcaAI/ml/requirements-dev.txt).
+
+```bash
+ruff check .          # verifica
+ruff check . --fix    # corrige o que é seguro
+ruff format .         # formata
+```
+
+Um hook de pre-commit versionado em [.githooks/pre-commit](.githooks/pre-commit) bloqueia commits com erro de lint ou formatação. Ele precisa ser ativado uma vez por clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+O hook usa o ruff do `OrcaAI/ml/.venv`, do PATH ou, na falta deles, `uvx ruff@0.14.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.
