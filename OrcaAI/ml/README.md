@@ -201,7 +201,7 @@ Um hook de pre-commit versionado em [.githooks/pre-commit](../../.githooks/pre-c
 git config core.hooksPath .githooks
 ```
 
-O hook usa o ruff deste `.venv`, do PATH ou, na falta deles, `uvx ruff@0.14.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.
+O hook usa o ruff deste `.venv`, do PATH ou, na falta deles, `uvx ruff@0.17.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.
 
 ## Relação com a disciplina
 

@@ -26,7 +26,7 @@
 
 ## Qualidade de código
 
-- Lint e formatação com **ruff 0.14.3**, configurado em `pyproject.toml` na raiz (regras padrão E4, E7, E9, F; Python 3.12; largura 88). Versão pinada em `OrcaAI/ml/requirements-dev.txt` e instalada no `OrcaAI/ml/.venv`.
+- Lint e formatação com **ruff 0.17.3**, configurado em `pyproject.toml` na raiz (regras padrão E4, E7, E9, F; Python 3.12; largura 88). Versão pinada em `OrcaAI/ml/requirements-dev.txt` e instalada no `OrcaAI/ml/.venv`.
 - Rodar `ruff check .` e `ruff format .` a partir da raiz antes de commitar. Em 29/10/2026 todo o repositório passou a estar limpo e formatado.
 - Hook versionado em `.githooks/pre-commit` roda `ruff check` e `ruff format --check` nos arquivos Python preparados e bloqueia o commit em caso de erro. Ativado neste clone com `git config core.hooksPath .githooks`; em outro clone é preciso repetir o comando.
 - `core.fileMode false` está ativo neste clone porque o OneDrive altera permissões dos arquivos. O OneDrive também não preserva links simbólicos: não criar symlinks no repositório.

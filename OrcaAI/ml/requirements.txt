@@ -7,4 +7,4 @@ openpyxl==3.1.5
 matplotlib==3.11.2
 joblib==1.6.0
 requests==2.34.2
-reportlab==5.0.1
+reportlab==5.1.0
