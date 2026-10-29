@@ -1,0 +1,28 @@
+# Configuração de lint e formatação do ORCA-AI.
+# Executar na raiz do repositório:
+#   ruff check .      # verifica
+#   ruff check . --fix
+#   ruff format .     # formata
+# Sem ruff instalado: uvx ruff@0.14.3 check .
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+extend-exclude = [
+    ".venv",
+    ".temp_ag_kit",
+    ".agent",
+    ".sixth",
+    "Projetos",
+    "OrcaAI/bases",
+    "OrcaAI/ml/outputs",
+    "OrcaAI/projetos",
+]
+
+[tool.ruff.lint]
+# Conjunto padrão do ruff: erros de sintaxe/estilo essenciais (E4, E7, E9)
+# e pyflakes (F): imports e variáveis não usados, nomes indefinidos.
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.format]
+quote-style = "double"
