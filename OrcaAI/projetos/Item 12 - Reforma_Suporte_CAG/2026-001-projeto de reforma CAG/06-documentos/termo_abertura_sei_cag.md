@@ -5,7 +5,7 @@
 
 ### **TERMO DE ABERTURA DE PROCESSO / DESPACHO DE INSTAURAÇÃO SEI**
 
-**PROCESSO SEI N.º:** 10783.001114/2026-15  
+**PROCESSO SEI N.º:** 10783.001114/2026-16  
 **UNIDADE DEMANDANTE:** Serviço de Engenharia e Arquitetura / Divisão de Recursos Logísticos (SRA/ES)  
 **TIPO DE PROCESSO SEI:** Licitações: Obras e Serviços de Engenharia / Contratação Direta  
 **ASSUNTO:** Abertura de Processo de Contratação para Reforma e Adequação Estrutural da Central de Água Gelada (CAG) do Edifício-Sede MGI/ES  

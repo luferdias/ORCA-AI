@@ -1,6 +1,6 @@
 # DESPACHO DE SOLICITAÇÃO DE AUTORIZAÇÃO E TRAMITAÇÃO
 
-**PROCESSO SEI N.º:** 10783.001114/2026-15  
+**PROCESSO SEI N.º:** 10783.001114/2026-16  
 **UNIDADE DE ORIGEM:** Serviço de Engenharia e Arquitetura (MGI-SRA-ES-SEAL-SERL)  
 **UNIDADE DE DESTINO:** Divisão de Compras e Licitações / Administração (DCD-SRA-ES / SRA-ES)  
 **ASSUNTO:** Solicitação de Autorização para Prosseguimento da Contratação e Tramitação (Reforma da CAG)  
@@ -9,7 +9,7 @@
 
 ### **1. CONTEXTO E OBJETO**
 
-1.1. Submete-se à apreciação desta Superintendência o presente processo administrativo (Processo SEI n.º **10783.001114/2026-15**), autuado na unidade `MGI-SRA-ES-SEAL-SERL`, que visa à contratação de empresa especializada em engenharia civil e mecânica para a execução de **obras e serviços de reforma, modernização e adequação estrutural da Central de Água Gelada (CAG)** do Edifício-Sede do MGI/ES.
+1.1. Submete-se à apreciação desta Superintendência o presente processo administrativo (Processo SEI n.º **10783.001114/2026-16**), autuado na unidade `MGI-SRA-ES-SEAL-SERL`, que visa à contratação de empresa especializada em engenharia civil e mecânica para a execução de **obras e serviços de reforma, modernização e adequação estrutural da Central de Água Gelada (CAG)** do Edifício-Sede do MGI/ES.
 
 1.2. O escopo abrange a substituição de vigamentos e suportes metálicos oxidados dos compressores e chillers, instalação de mantas antivibratórias, reforma estrutural integral da grua/guindaste rotativo, fabricação de carrinho metálico sobre trilhos para manutenção pesada, adequação de passarelas, guarda-corpos e escadas técnicas de segurança (atendimento às NRs 11, 12, 18 e 35), além de caixas de isolamento térmico e cobertura de proteção.
 
