@@ -23,3 +23,11 @@
 - Preservar os 12 projetos existentes e os arquivos originais. Trabalhar com dados derivados e versões identificadas.
 - Materiais da disciplina: `/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/Machine Learning/`.
 - ZIP SINAPI agosto/2026 obtido no site da CAIXA: `OrcaAI/bases/sinapi/2026-08/originais/`; conferir o manifesto antes de usar.
+
+## Qualidade de código
+
+- Lint e formatação com **ruff 0.14.3**, configurado em `pyproject.toml` na raiz (regras padrão E4, E7, E9, F; Python 3.12; largura 88). Versão pinada em `OrcaAI/ml/requirements-dev.txt` e instalada no `OrcaAI/ml/.venv`.
+- Rodar `ruff check .` e `ruff format .` a partir da raiz antes de commitar. Em 29/10/2026 todo o repositório passou a estar limpo e formatado.
+- Hook versionado em `.githooks/pre-commit` roda `ruff check` e `ruff format --check` nos arquivos Python preparados e bloqueia o commit em caso de erro. Ativado neste clone com `git config core.hooksPath .githooks`; em outro clone é preciso repetir o comando.
+- `core.fileMode false` está ativo neste clone porque o OneDrive altera permissões dos arquivos. O OneDrive também não preserva links simbólicos: não criar symlinks no repositório.
+- Documentação para o usuário: seção 5 do `README.md` da raiz e seção "Qualidade de código" de `OrcaAI/ml/README.md`.
