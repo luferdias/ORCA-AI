@@ -1,12 +1,10 @@
 import os
-import sys
-import docx
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
-from docx.oxml import OxmlElement, parse_xml
-from docx.oxml.ns import nsdecls, qn
+from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.oxml import parse_xml
+from docx.oxml.ns import nsdecls
 
 def set_cell_background(cell, fill_hex):
     tcPr = cell._tc.get_or_add_tcPr()
@@ -399,7 +397,7 @@ def build_docx():
         r_k1 = p_k.add_run("✔ " + k_title)
         r_k1.bold = True
         r_k1.font.color.rgb = RGBColor(0x1B, 0x36, 0x5D)
-        r_k2 = p_k.add_run(k_desc)
+        p_k.add_run(k_desc)
 
     p_warn = doc.add_paragraph()
     p_warn.paragraph_format.space_before = Pt(6)

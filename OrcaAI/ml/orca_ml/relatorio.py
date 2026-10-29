@@ -5,7 +5,6 @@ import base64
 import hashlib
 import html
 import json
-import textwrap
 from datetime import datetime, timezone
 from pathlib import Path
 

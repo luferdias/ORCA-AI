@@ -1,7 +1,6 @@
 """Taxonomia de apresentação: cobertura integral e nenhuma equivalência implícita."""
 
 import copy
-import json
 from pathlib import Path
 
 import pandas as pd

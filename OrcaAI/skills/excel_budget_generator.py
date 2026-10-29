@@ -48,7 +48,7 @@ def criar_planilha_orcamentaria_excel(
     # Cabeçalho do Projeto
     ws1["A1"] = "MINISTÉRIO DA GESTÃO E DA INOVAÇÃO EM SERVIÇOS PÚBLICOS - MGI"
     ws1["A1"].font = title_font
-    ws1["A2"] = f"SUPERINTENDÊNCIA REGIONAL DE ADMINISTRAÇÃO NO ESPÍRITO SANTO (SRA-ES)"
+    ws1["A2"] = "SUPERINTENDÊNCIA REGIONAL DE ADMINISTRAÇÃO NO ESPÍRITO SANTO (SRA-ES)"
     ws1["A2"].font = bold_font
     ws1["A3"] = f"OBRA: {nome_obra} | LOCAL: {local} | DATA-BASE: {data_base}"
     ws1["A3"].font = subtitle_font

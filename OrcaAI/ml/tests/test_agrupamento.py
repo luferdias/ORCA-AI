@@ -1,4 +1,5 @@
 """Agrupamento ignora rótulos; valida estabilidade e dimensões reais."""
+
 import json
 
 import joblib
@@ -9,18 +10,30 @@ import pytest
 
 def dados():
     rng = np.random.default_rng(80)
-    x = np.vstack([rng.normal(loc=[-5, -5], scale=.2, size=(20, 2)),
-                   rng.normal(loc=[5, 5], scale=.2, size=(20, 2))])
-    return pd.DataFrame({"fonte": "exemplo", "competencia": "2026-05",
-                         "codigo": [f"{i:04}" for i in range(40)],
-                         "descricao": "serviço sintético", "grupo_particao": [f"g{i}" for i in range(40)],
-                         "classe": ["pintura"]*20 + ["pisos"]*20,
-                         "material": x[:, 0], "horas": x[:, 1]})
+    x = np.vstack(
+        [
+            rng.normal(loc=[-5, -5], scale=0.2, size=(20, 2)),
+            rng.normal(loc=[5, 5], scale=0.2, size=(20, 2)),
+        ]
+    )
+    return pd.DataFrame(
+        {
+            "fonte": "exemplo",
+            "competencia": "2026-05",
+            "codigo": [f"{i:04}" for i in range(40)],
+            "descricao": "serviço sintético",
+            "grupo_particao": [f"g{i}" for i in range(40)],
+            "classe": ["pintura"] * 20 + ["pisos"] * 20,
+            "material": x[:, 0],
+            "horas": x[:, 1],
+        }
+    )
 
 
 @pytest.fixture(scope="module")
 def execucao(tmp_path_factory):
     from orca_ml.agrupamento import executar_agrupamento
+
     out = tmp_path_factory.mktemp("agrupamento")
     summary = executar_agrupamento(dados(), ["material", "horas"], out)
     return out, summary
@@ -36,15 +49,16 @@ def test_separa_dois_perfis_e_exporta_dados_interpretaveis(execucao):
     assert centers.material.min() < -4.5 and centers.material.max() > 4.5
     reps = pd.read_csv(out / "representantes.csv")
     assert len(reps) == 2
-    assert summary["pca_variancia_explicada_total"] > .99
+    assert summary["pca_variancia_explicada_total"] > 0.99
     stability = pd.read_csv(out / "estabilidade.csv")
     assert len(stability) == 43
-    assert stability.ari.min() > .95
+    assert stability.ari.min() > 0.95
     assert len(pd.read_csv(out / "candidatos_k.csv")) == 4
 
 
 def test_rotulos_e_ordem_das_linhas_nao_mudam_agrupamento(tmp_path, execucao):
     from orca_ml.agrupamento import executar_agrupamento
+
     old_out, _ = execucao
     df = dados().sample(frac=1, random_state=1)
     df["classe"] = "rótulo deliberadamente arbitrário"
@@ -59,11 +73,14 @@ def test_modelo_salvo_reproduz_particao(execucao):
     out, _ = execucao
     model = joblib.load(out / "modelo.joblib")
     attrs = pd.read_csv(out / "atribuicoes.csv")
-    np.testing.assert_array_equal(model.predict(dados()[["material", "horas"]]), attrs.cluster)
+    np.testing.assert_array_equal(
+        model.predict(dados()[["material", "horas"]]), attrs.cluster
+    )
 
 
 def test_estabilidade_por_grupos_nunca_retira_so_uma_variante(tmp_path):
     from orca_ml.agrupamento import executar_agrupamento
+
     df = dados()
     df["grupo_particao"] = [f"familia-{i // 2:02}" for i in range(len(df))]
     summary = executar_agrupamento(df, ["material", "horas"], tmp_path)
@@ -82,24 +99,37 @@ def test_estabilidade_por_grupos_nunca_retira_so_uma_variante(tmp_path):
     assert summary["estabilidade"]["subamostra_grupos_80pct"]["n_total"] == 20
 
 
-@pytest.mark.parametrize("problema,match", [("constante", "constante"), ("poucos", "insuficiente"),
-                                            ("infinito", "finit"), ("fonte", "fonte")])
+@pytest.mark.parametrize(
+    "problema,match",
+    [
+        ("constante", "constante"),
+        ("poucos", "insuficiente"),
+        ("infinito", "finit"),
+        ("fonte", "fonte"),
+    ],
+)
 def test_rejeita_dados_sem_agrupamento_valido(tmp_path, problema, match):
     from orca_ml.agrupamento import executar_agrupamento
+
     df = dados()
-    if problema == "constante": df[["material", "horas"]] = 1
-    if problema == "poucos": df = df.head(4)
-    if problema == "infinito": df.loc[1, "material"] = np.inf
-    if problema == "fonte": df.loc[1, "fonte"] = "outra"
+    if problema == "constante":
+        df[["material", "horas"]] = 1
+    if problema == "poucos":
+        df = df.head(4)
+    if problema == "infinito":
+        df.loc[1, "material"] = np.inf
+    if problema == "fonte":
+        df.loc[1, "fonte"] = "outra"
     with pytest.raises(ValueError, match=match):
         executar_agrupamento(df, ["material", "horas"], tmp_path)
 
 
 def test_nao_esconde_candidato_com_cluster_minimo_invalido(tmp_path):
     from orca_ml.agrupamento import executar_agrupamento
+
     df = dados()
-    df[["material", "horas"]] = 0.
-    df.loc[0, ["material", "horas"]] = 100.
+    df[["material", "horas"]] = 0.0
+    df.loc[0, ["material", "horas"]] = 100.0
     result = executar_agrupamento(df, ["material", "horas"], tmp_path)
     candidates = pd.read_csv(tmp_path / "candidatos_k.csv")
     assert len(candidates) == 4
@@ -115,5 +145,11 @@ def test_nao_esconde_candidato_com_cluster_minimo_invalido(tmp_path):
     assert result["min_servicos_cluster"] == 3
     assert not (tmp_path / "modelo.joblib").exists()
     assert (tmp_path / "modelo_diagnostico.joblib").is_file()
-    for filename in ["atribuicoes", "centroides", "representantes", "coordenadas_pca", "estabilidade"]:
+    for filename in [
+        "atribuicoes",
+        "centroides",
+        "representantes",
+        "coordenadas_pca",
+        "estabilidade",
+    ]:
         assert pd.read_csv(tmp_path / f"{filename}.csv").diagnostico.eq(True).all()
