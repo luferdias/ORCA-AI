@@ -13,19 +13,40 @@ from orca_ml.estatisticas_relatorio import (
 
 def previsoes():
     linhas = []
-    for fase, origem, alvo in (("validacao", "2026-01", "2026-02"), ("teste", "2026-02", "2026-03")):
-        for codigo, observado, ultimo, previsto in (("001", 100.0, 90.0, 105.0), ("002", 200.0, 240.0, 180.0)):
-            for modelo, valor in (("persistencia", ultimo), ("linear_simples", previsto), ("linear_multipla", observado)):
-                linhas.append({
-                    "fonte": "sinapi_es", "grupo": "Pintura", "unidade": "M2",
-                    "regime": "sem_desoneracao", "codigo": codigo,
-                    "fase": fase, "modelo": modelo,
-                    "modelo_selecionado": modelo == "linear_simples",
-                    "competencia_t": origem, "competencia_alvo": alvo,
-                    "custo_t": ultimo, "custo_observado": observado, "custo_previsto": valor,
-                    "treino_ate": "2025-12", "data_corte": None,
-                    "treino_publicado_ate": None, "publicado_alvo": None,
-                })
+    for fase, origem, alvo in (
+        ("validacao", "2026-01", "2026-02"),
+        ("teste", "2026-02", "2026-03"),
+    ):
+        for codigo, observado, ultimo, previsto in (
+            ("001", 100.0, 90.0, 105.0),
+            ("002", 200.0, 240.0, 180.0),
+        ):
+            for modelo, valor in (
+                ("persistencia", ultimo),
+                ("linear_simples", previsto),
+                ("linear_multipla", observado),
+            ):
+                linhas.append(
+                    {
+                        "fonte": "sinapi_es",
+                        "grupo": "Pintura",
+                        "unidade": "M2",
+                        "regime": "sem_desoneracao",
+                        "codigo": codigo,
+                        "fase": fase,
+                        "modelo": modelo,
+                        "modelo_selecionado": modelo == "linear_simples",
+                        "competencia_t": origem,
+                        "competencia_alvo": alvo,
+                        "custo_t": ultimo,
+                        "custo_observado": observado,
+                        "custo_previsto": valor,
+                        "treino_ate": "2025-12",
+                        "data_corte": None,
+                        "treino_publicado_ate": None,
+                        "publicado_alvo": None,
+                    }
+                )
     return pd.DataFrame(linhas)
 
 
@@ -51,7 +72,9 @@ def test_rejeita_flags_que_nao_sao_booleanos(valor):
 def test_rejeita_modelo_trocado_depois_da_validacao():
     dados = previsoes()
     teste = dados.fase.eq("teste")
-    dados.loc[teste, "modelo_selecionado"] = dados.loc[teste, "modelo"].eq("linear_multipla")
+    dados.loc[teste, "modelo_selecionado"] = dados.loc[teste, "modelo"].eq(
+        "linear_multipla"
+    )
     with pytest.raises(ValueError, match="valida"):
         preparar_avaliacao(dados)
 
@@ -72,17 +95,22 @@ def test_rejeita_duplicata_antes_do_pareamento():
 @pytest.mark.parametrize("modelo", ["persistencia", "linear_simples"])
 def test_rejeita_par_ausente_nos_dois_sentidos(modelo):
     dados = previsoes()
-    dados = dados[~(dados.fase.eq("teste") & dados.codigo.eq("001") & dados.modelo.eq(modelo))]
+    dados = dados[
+        ~(dados.fase.eq("teste") & dados.codigo.eq("001") & dados.modelo.eq(modelo))
+    ]
     with pytest.raises(ValueError, match="pares|pareamento"):
         preparar_avaliacao(dados)
 
 
-@pytest.mark.parametrize("coluna,valor", [
-    ("custo_observado", 100.1),
-    ("competencia_t", "2026-01"),
-    ("data_corte", "2026-03-11"),
-    ("treino_ate", "2026-01"),
-])
+@pytest.mark.parametrize(
+    "coluna,valor",
+    [
+        ("custo_observado", 100.1),
+        ("competencia_t", "2026-01"),
+        ("data_corte", "2026-03-11"),
+        ("treino_ate", "2026-01"),
+    ],
+)
 def test_rejeita_pares_com_janelas_ou_observado_diferentes(coluna, valor):
     dados = previsoes()
     dados.loc[6, coluna] = valor

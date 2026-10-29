@@ -26,23 +26,44 @@ from .der import MESES
 _ZERO = Decimal("0")
 _CENT = Decimal("0.01")
 _CATEGORIES = {
-    "Mão-de-obra": "mao_obra", "Material": "material",
-    "Equipamento": "equipamento", "Serv.Terceiro": "outros",
+    "Mão-de-obra": "mao_obra",
+    "Material": "material",
+    "Equipamento": "equipamento",
+    "Serv.Terceiro": "outros",
 }
 _SECTIONS = {
-    "Equipamento": "A", "Mão-de-obra": "B", "Itens de incidência": "C",
-    "Material": "F", "Serviços": "G", "Itens de transporte": "H",
+    "Equipamento": "A",
+    "Mão-de-obra": "B",
+    "Itens de incidência": "C",
+    "Material": "F",
+    "Serviços": "G",
+    "Itens de transporte": "H",
 }
 _RESOURCE_COLUMNS = [
-    "fonte", "competencia", "codigo_servico", "codigo_recurso",
-    "categoria_nativa", "categoria", "descricao_recurso", "unidade_recurso",
-    "coeficiente", "preco_efetivo", "uf_preco", "custo_folha_sem_truncamento",
-    "horas_mao_obra", "horas_equipamento", "localizador",
+    "fonte",
+    "competencia",
+    "codigo_servico",
+    "codigo_recurso",
+    "categoria_nativa",
+    "categoria",
+    "descricao_recurso",
+    "unidade_recurso",
+    "coeficiente",
+    "preco_efetivo",
+    "uf_preco",
+    "custo_folha_sem_truncamento",
+    "horas_mao_obra",
+    "horas_equipamento",
+    "localizador",
 ]
 
 
 def _text(value) -> str:
-    return unicodedata.normalize("NFC", str(value if value is not None else "")).replace("\xa0", " ").strip()
+    return (
+        unicodedata.normalize("NFC", str(value if value is not None else ""))
+        .replace("\xa0", " ")
+        .strip()
+    )
 
 
 def _code(value) -> str:
@@ -60,7 +81,9 @@ def _num(value, where: str, *, positive=False) -> Decimal:
     try:
         number = Decimal(text)
     except InvalidOperation as exc:
-        raise ValueError(f"Preço/coeficiente ausente ou inválido em {where}: {value!r}") from exc
+        raise ValueError(
+            f"Preço/coeficiente ausente ou inválido em {where}: {value!r}"
+        ) from exc
     if not number.is_finite() or number < 0 or (positive and number <= 0):
         raise ValueError(f"Valor não finito, negativo ou nulo em {where}: {value!r}")
     return number
@@ -72,12 +95,16 @@ def _trunc(value: Decimal) -> Decimal:
 
 def _check_equal(actual: Decimal, expected, where: str) -> None:
     if actual != _num(expected, where):
-        raise ValueError(f"Divergência de reconciliação em {where}: calculado={actual}, publicado={expected}")
+        raise ValueError(
+            f"Divergência de reconciliação em {where}: calculado={actual}, publicado={expected}"
+        )
 
 
 def _validate_header(rows, competence: str, member: str) -> None:
     header = " ".join(_text(v) for row in rows[:7] for v in row)
-    normal = unicodedata.normalize("NFKD", header).encode("ascii", "ignore").decode().lower()
+    normal = (
+        unicodedata.normalize("NFKD", header).encode("ascii", "ignore").decode().lower()
+    )
     if not re.search(r"\bnao\s+desonerados\b", normal):
         raise ValueError(f"regime sem desoneração não confirmado em {member}")
     dates = re.findall(r"\b([a-z]+)\s*/\s*(20\d\d)\b", normal)
@@ -90,7 +117,11 @@ def _validate_header(rows, competence: str, member: str) -> None:
 
 
 def _read_rows(archive, suffix: str, competence: str):
-    names = [n for n in archive.namelist() if re.search(rf"/XLS/[^/]*_{suffix}\.xlsx$", n, re.I)]
+    names = [
+        n
+        for n in archive.namelist()
+        if re.search(rf"/XLS/[^/]*_{suffix}\.xlsx$", n, re.I)
+    ]
     if len(names) != 1:
         raise ValueError(f"Esperado um XLSX de {suffix}; encontrados {len(names)}")
     member = names[0]
@@ -119,9 +150,12 @@ def _parse_resources(rows, member):
             if code in resources:
                 raise ValueError(f"Insumo duplicado {code} em {member}")
             resources[code] = {
-                "categoria_nativa": category, "categoria": _CATEGORIES.get(category),
-                "descricao": _text(row[1]), "unidade": _unit(row[2]),
-                "preco": row[3], "localizador": f"{member}!A{number}",
+                "categoria_nativa": category,
+                "categoria": _CATEGORIES.get(category),
+                "descricao": _text(row[1]),
+                "unidade": _unit(row[2]),
+                "preco": row[3],
+                "localizador": f"{member}!A{number}",
             }
     return resources
 
@@ -137,8 +171,15 @@ def _parse_blocks(rows, member):
             code, description = _text(row[1]).split(" - ", 1)
             if code in blocks:
                 raise ValueError(f"Serviço duplicado {code} em {location}")
-            block = dict(codigo=code, descricao=description, unidade=_unit(row[11]),
-                         localizador=location, items=[], totals={}, issues=[])
+            block = dict(
+                codigo=code,
+                descricao=description,
+                unidade=_unit(row[11]),
+                localizador=location,
+                items=[],
+                totals={},
+                issues=[],
+            )
             blocks[code] = block
             section = None
         elif block is None:
@@ -164,7 +205,9 @@ def _parse_blocks(rows, member):
             if _code(row[code_col]).isdigit():
                 block["items"].append((section, row, location))
             else:
-                block["issues"].append(f"Linha de recurso não reconhecida em {location}")
+                block["issues"].append(
+                    f"Linha de recurso não reconhecida em {location}"
+                )
     return blocks, bases
 
 
@@ -191,35 +234,49 @@ def _expand(code, blocks, bases, resources, ancestry=()):
             child_base = _code(row[5])
             matches = bases.get(child_base, [])
             if len(matches) != 1:
-                raise ValueError(f"Subcomposição ausente ou ambígua {child_base} em {location}")
+                raise ValueError(
+                    f"Subcomposição ausente ou ambígua {child_base} em {location}"
+                )
             child_code = matches[0]
             if _unit(row[6]) != blocks[child_code]["unidade"]:
                 raise ValueError(f"Unidade de subcomposição divergente em {location}")
             coefficient = _num(row[7], f"coeficiente {location}")
-            child_total, child_leaves = _expand(child_code, blocks, bases, resources, ancestry + (code,))
+            child_total, child_leaves = _expand(
+                child_code, blocks, bases, resources, ancestry + (code,)
+            )
             _check_equal(child_total, row[8], f"preço da subcomposição {location}")
             cost = _trunc(coefficient * child_total)
             _check_equal(cost, row[10], f"subtotal {location}")
             sums[section] += cost
             for leaf in child_leaves:
-                leaves.append({**leaf, "coeficiente": leaf["coeficiente"] * coefficient,
-                               "localizador": f"{location} > {leaf['localizador']}"})
+                leaves.append(
+                    {
+                        **leaf,
+                        "coeficiente": leaf["coeficiente"] * coefficient,
+                        "localizador": f"{location} > {leaf['localizador']}",
+                    }
+                )
             continue
 
         resource_code = _code(row[3] if section in {"A", "B"} else row[5])
         if resource_code not in resources:
-            raise ValueError(f"Insumo ausente no catálogo: {resource_code} em {location}")
+            raise ValueError(
+                f"Insumo ausente no catálogo: {resource_code} em {location}"
+            )
         resource = resources[resource_code]
         if resource["categoria"] is None:
-            raise ValueError(f"Categoria de recurso desconhecida em {resource['localizador']}")
+            raise ValueError(
+                f"Categoria de recurso desconhecida em {resource['localizador']}"
+            )
         unit = _unit(row[4] if section in {"A", "B"} else row[6])
         if unit != resource["unidade"]:
             raise ValueError(f"Unidade do insumo divergente em {location}")
         _num(resource["preco"], resource["localizador"])
         if section == "A":
             coefficient = _num(row[5], f"quantidade {location}")
-            price = (_num(row[6], location) * _num(row[8], location)
-                     + _num(row[7], location) * _num(row[9], location))
+            price = _num(row[6], location) * _num(row[8], location) + _num(
+                row[7], location
+            ) * _num(row[9], location)
             _check_equal(price, row[10], f"preço ponderado do equipamento {location}")
             cost = _trunc(coefficient * price)
         else:
@@ -231,9 +288,17 @@ def _expand(code, blocks, bases, resources, ancestry=()):
         if expected and resource["categoria"] != expected:
             raise ValueError(f"Categoria da CPU diverge do catálogo em {location}")
         sums[section] += cost
-        leaves.append({"codigo_recurso": resource_code, **resource,
-                       "coeficiente": coefficient / production if section in {"A", "B"} else coefficient,
-                       "preco_efetivo": price, "localizador": location})
+        leaves.append(
+            {
+                "codigo_recurso": resource_code,
+                **resource,
+                "coeficiente": coefficient / production
+                if section in {"A", "B"}
+                else coefficient,
+                "preco_efetivo": price,
+                "localizador": location,
+            }
+        )
 
     for section, calculated in sums.items():
         _check_equal(calculated, totals.get(section), f"total ({section}) {where}")
@@ -259,17 +324,29 @@ def _aggregate(leaves, service_code, competence):
         # Zero de consumo é ausência, sem inventar preço efetivo por divisão.
         price = cost / coefficient if coefficient else first["preco_efetivo"]
         hours = coefficient if first["unidade"] == "H" else _ZERO
-        result.append({
-            "fonte": "der_es", "competencia": competence, "codigo_servico": service_code,
-            "codigo_recurso": code, "categoria_nativa": first["categoria_nativa"],
-            "categoria": first["categoria"], "descricao_recurso": first["descricao"],
-            "unidade_recurso": first["unidade"], "coeficiente": float(coefficient),
-            "preco_efetivo": float(price), "uf_preco": "ES",
-            "custo_folha_sem_truncamento": float(cost),
-            "horas_mao_obra": float(hours if first["categoria"] == "mao_obra" else _ZERO),
-            "horas_equipamento": float(hours if first["categoria"] == "equipamento" else _ZERO),
-            "localizador": " | ".join(sorted({r["localizador"] for r in group})),
-        })
+        result.append(
+            {
+                "fonte": "der_es",
+                "competencia": competence,
+                "codigo_servico": service_code,
+                "codigo_recurso": code,
+                "categoria_nativa": first["categoria_nativa"],
+                "categoria": first["categoria"],
+                "descricao_recurso": first["descricao"],
+                "unidade_recurso": first["unidade"],
+                "coeficiente": float(coefficient),
+                "preco_efetivo": float(price),
+                "uf_preco": "ES",
+                "custo_folha_sem_truncamento": float(cost),
+                "horas_mao_obra": float(
+                    hours if first["categoria"] == "mao_obra" else _ZERO
+                ),
+                "horas_equipamento": float(
+                    hours if first["categoria"] == "equipamento" else _ZERO
+                ),
+                "localizador": " | ".join(sorted({r["localizador"] for r in group})),
+            }
+        )
     return result
 
 
@@ -289,38 +366,67 @@ def ler_composicoes_der(path, competencia: str, servicos: pd.DataFrame):
     selected["codigo"] = selected["codigo"].map(_code)
     if selected["codigo"].duplicated().any():
         raise ValueError("Serviço duplicado no snapshot")
-    for column, expected in [("competencia", competencia), ("fonte", "der_es"), ("regime", "sem_desoneracao")]:
+    for column, expected in [
+        ("competencia", competencia),
+        ("fonte", "der_es"),
+        ("regime", "sem_desoneracao"),
+    ]:
         if column in selected and not selected[column].eq(expected).all():
-            raise ValueError(f"Snapshot contém {column}/competência incompatível: esperado {expected}")
+            raise ValueError(
+                f"Snapshot contém {column}/competência incompatível: esperado {expected}"
+            )
     path = Path(path)
     archive_sha = hashlib.sha256(path.read_bytes()).hexdigest()
     with zipfile.ZipFile(path) as archive:
         if archive.testzip() is not None:
             raise ValueError("ZIP DER corrompido")
-        cpu_rows, cpu_member, cpu_sheet, cpu_sha = _read_rows(archive, "composicoes", competencia)
-        resource_rows, resource_member, resource_sheet, resource_sha = _read_rows(archive, "insumos", competencia)
+        cpu_rows, cpu_member, cpu_sheet, cpu_sha = _read_rows(
+            archive, "composicoes", competencia
+        )
+        resource_rows, resource_member, resource_sheet, resource_sha = _read_rows(
+            archive, "insumos", competencia
+        )
     resources = _parse_resources(resource_rows, resource_member)
     blocks, bases = _parse_blocks(cpu_rows, cpu_member)
     records, all_resources = [], []
     for service in selected.to_dict("records"):
         code = service["codigo"]
-        out = {**service, "status_composicao": "excluido", "motivo_exclusao": "",
-               "custo_recalculado_hierarquia": float("nan"), "diferenca_reconciliacao": float("nan")}
+        out = {
+            **service,
+            "status_composicao": "excluido",
+            "motivo_exclusao": "",
+            "custo_recalculado_hierarquia": float("nan"),
+            "diferenca_reconciliacao": float("nan"),
+        }
         try:
             if code not in blocks:
                 raise ValueError(f"Composição ausente: {code}")
-            if "arquivo_sha256" in service and _text(service["arquivo_sha256"]) != archive_sha:
-                raise ValueError(f"SHA256 do snapshot diverge do ZIP de composições: {code}")
-            if "descricao" in service and _text(service["descricao"]) != blocks[code]["descricao"]:
+            if (
+                "arquivo_sha256" in service
+                and _text(service["arquivo_sha256"]) != archive_sha
+            ):
+                raise ValueError(
+                    f"SHA256 do snapshot diverge do ZIP de composições: {code}"
+                )
+            if (
+                "descricao" in service
+                and _text(service["descricao"]) != blocks[code]["descricao"]
+            ):
                 raise ValueError(f"Descrição do serviço diverge da CPU: {code}")
             if _unit(service["unidade"]) != blocks[code]["unidade"]:
                 raise ValueError(f"Unidade do serviço diverge da CPU: {code}")
             total, leaves = _expand(code, blocks, bases, resources)
             out["custo_recalculado_hierarquia"] = float(total)
-            difference = total - _num(service["custo"], f"custo do snapshot {code}", positive=True)
+            difference = total - _num(
+                service["custo"], f"custo do snapshot {code}", positive=True
+            )
             out["diferenca_reconciliacao"] = float(difference)
             _check_equal(total, service["custo"], f"CPU versus snapshot {code}")
-            if not leaves or sum((x["coeficiente"] * x["preco_efetivo"] for x in leaves), _ZERO) <= 0:
+            if (
+                not leaves
+                or sum((x["coeficiente"] * x["preco_efetivo"] for x in leaves), _ZERO)
+                <= 0
+            ):
                 raise ValueError(f"Composição sem recursos com custo positivo: {code}")
             flat = _aggregate(leaves, code, competencia)
             all_resources.extend(flat)
@@ -328,18 +434,35 @@ def ler_composicoes_der(path, competencia: str, servicos: pd.DataFrame):
         except ValueError as exc:
             out["motivo_exclusao"] = str(exc)
         records.append(out)
-    services_df = pd.DataFrame(records, columns=list(selected.columns) + [
-        "status_composicao", "motivo_exclusao", "custo_recalculado_hierarquia", "diferenca_reconciliacao"])
+    services_df = pd.DataFrame(
+        records,
+        columns=list(selected.columns)
+        + [
+            "status_composicao",
+            "motivo_exclusao",
+            "custo_recalculado_hierarquia",
+            "diferenca_reconciliacao",
+        ],
+    )
     resources_df = pd.DataFrame(all_resources, columns=_RESOURCE_COLUMNS)
     counts = Counter(services_df.status_composicao)
     audit = {
-        "fonte": "der_es", "competencia": competencia, "uf": "ES", "regime": "sem_desoneracao",
-        "arquivo": str(path.resolve()), "arquivo_sha256": archive_sha,
-        "planilhas": [{"membro": cpu_member, "aba": cpu_sheet, "sha256": cpu_sha},
-                      {"membro": resource_member, "aba": resource_sheet, "sha256": resource_sha}],
-        "composicoes_no_catalogo": len(blocks), "insumos_no_catalogo": len(resources),
-        "servicos_selecionados": len(selected), "servicos_ok": counts["ok"],
-        "servicos_excluidos": counts["excluido"], "linhas_recursos_folha": len(resources_df),
+        "fonte": "der_es",
+        "competencia": competencia,
+        "uf": "ES",
+        "regime": "sem_desoneracao",
+        "arquivo": str(path.resolve()),
+        "arquivo_sha256": archive_sha,
+        "planilhas": [
+            {"membro": cpu_member, "aba": cpu_sheet, "sha256": cpu_sha},
+            {"membro": resource_member, "aba": resource_sheet, "sha256": resource_sha},
+        ],
+        "composicoes_no_catalogo": len(blocks),
+        "insumos_no_catalogo": len(resources),
+        "servicos_selecionados": len(selected),
+        "servicos_ok": counts["ok"],
+        "servicos_excluidos": counts["excluido"],
+        "linhas_recursos_folha": len(resources_df),
         "recursos_distintos": int(resources_df.codigo_recurso.nunique()),
         "tolerancia_reconciliacao_reais": 0,
         "convencoes": [
@@ -353,7 +476,10 @@ def ler_composicoes_der(path, competencia: str, servicos: pd.DataFrame):
             "Horas somadas somente para recursos cuja unidade é H, dentro da categoria correspondente.",
             "uf_preco=ES identifica a tabela estadual; não comprova coleta local individual de cada insumo.",
         ],
-        "exclusoes": [{"codigo": r["codigo"], "motivo": r["motivo_exclusao"]}
-                      for r in records if r["status_composicao"] != "ok"],
+        "exclusoes": [
+            {"codigo": r["codigo"], "motivo": r["motivo_exclusao"]}
+            for r in records
+            if r["status_composicao"] != "ok"
+        ],
     }
     return services_df, resources_df, audit

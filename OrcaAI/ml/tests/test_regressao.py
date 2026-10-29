@@ -17,15 +17,24 @@ def painel(meses=16, servicos=4, publicado=False):
     rows = []
     for n, mes in enumerate(pd.period_range("2025-01", periods=meses, freq="M")):
         for s in range(servicos):
-            rows.append({
-                "fonte": "SINAPI", "competencia": str(mes), "codigo": f"00{s}",
-                "descricao": f"Servico {s}", "unidade": "M2", "grupo": "PINTURA",
-                "custo": 30.0 + 7 * s + 0.7 * n,
-                "regime": "sem_desoneracao",
-                "publicado_em": str((mes + 1).start_time.date()) if publicado else "",
-                "arquivo_sha256": f"arquivo-{mes}", "localizador": f"A{s+1}",
-                "assinatura_tecnica": f"estavel-{s}",
-            })
+            rows.append(
+                {
+                    "fonte": "SINAPI",
+                    "competencia": str(mes),
+                    "codigo": f"00{s}",
+                    "descricao": f"Servico {s}",
+                    "unidade": "M2",
+                    "grupo": "PINTURA",
+                    "custo": 30.0 + 7 * s + 0.7 * n,
+                    "regime": "sem_desoneracao",
+                    "publicado_em": str((mes + 1).start_time.date())
+                    if publicado
+                    else "",
+                    "arquivo_sha256": f"arquivo-{mes}",
+                    "localizador": f"A{s + 1}",
+                    "assinatura_tecnica": f"estavel-{s}",
+                }
+            )
     return pd.DataFrame(rows)
 
 
@@ -42,13 +51,22 @@ class RegressaoTest(unittest.TestCase):
         self.assertEqual(row["codigo"], "000")
         self.assertEqual(row["competencia_t"], "2025-03")
         self.assertEqual(row["competencia_alvo"], "2025-04")
-        np.testing.assert_allclose(row[["custo_t", "custo_t_1", "custo_t_2"]].astype(float), [31.4, 30.7, 30.0])
+        np.testing.assert_allclose(
+            row[["custo_t", "custo_t_1", "custo_t_2"]].astype(float), [31.4, 30.7, 30.0]
+        )
         self.assertAlmostEqual(row["custo_alvo"], 32.1)
 
     def test_lacuna_assinatura_unidade_ou_custo_invalido_impedem_janela(self):
         original = painel(meses=4, servicos=1)
         cases = [original.drop(index=1)]
-        for coluna, valor in [("assinatura_tecnica", "outra"), ("unidade", "M"), ("grupo", "OUTRO"), ("custo", 0), ("custo", np.nan), ("custo", np.inf)]:
+        for coluna, valor in [
+            ("assinatura_tecnica", "outra"),
+            ("unidade", "M"),
+            ("grupo", "OUTRO"),
+            ("custo", 0),
+            ("custo", np.nan),
+            ("custo", np.inf),
+        ]:
             altered = original.copy()
             altered.loc[1, coluna] = valor
             cases.append(altered)
@@ -70,12 +88,17 @@ class RegressaoTest(unittest.TestCase):
         row = self.mod.construir_supervisionado(painel(meses=4, servicos=1)).iloc[0]
         self.assertTrue(pd.isna(row["data_corte"]))
         self.assertFalse(row["publicacao_completa"])
-        row = self.mod.construir_supervisionado(painel(meses=4, servicos=1, publicado=True)).iloc[0]
+        row = self.mod.construir_supervisionado(
+            painel(meses=4, servicos=1, publicado=True)
+        ).iloc[0]
         self.assertEqual(str(pd.Timestamp(row["data_corte"]).date()), "2025-04-01")
         self.assertEqual(str(pd.Timestamp(row["publicado_alvo"]).date()), "2025-05-01")
 
     def executar(self, df, **config):
-        self.assertTrue(hasattr(self.mod, "executar_experimento"), "Falta executar o experimento real")
+        self.assertTrue(
+            hasattr(self.mod, "executar_experimento"),
+            "Falta executar o experimento real",
+        )
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)
         path = Path(temporary.name)
@@ -84,7 +107,9 @@ class RegressaoTest(unittest.TestCase):
 
     def test_cortes_globais_e_predicoes_sem_treino_futuro(self):
         summary, path = self.executar(painel())
-        self.assertEqual(summary["competencias_teste"], ["2026-02", "2026-03", "2026-04"])
+        self.assertEqual(
+            summary["competencias_teste"], ["2026-02", "2026-03", "2026-04"]
+        )
         self.assertEqual(summary["competencias_validacao"], ["2025-12", "2026-01"])
         pred = pd.read_csv(path / "previsoes_avaliacao.csv")
         for fase, limite in [("validacao", "2025-12"), ("teste", "2026-02")]:
@@ -103,9 +128,14 @@ class RegressaoTest(unittest.TestCase):
         alterado = original.copy()
         alterado.loc[alterado.competencia == "2026-04", "custo"] += 5000
         summary2, path2 = self.executar(alterado)
-        self.assertEqual(summary1["recortes"][0]["modelo_selecionado"], summary2["recortes"][0]["modelo_selecionado"])
+        self.assertEqual(
+            summary1["recortes"][0]["modelo_selecionado"],
+            summary2["recortes"][0]["modelo_selecionado"],
+        )
         p1, p2 = [pd.read_csv(p / "previsoes_avaliacao.csv") for p in [path1, path2]]
-        pd.testing.assert_frame_equal(p1[p1.fase == "validacao"], p2[p2.fase == "validacao"])
+        pd.testing.assert_frame_equal(
+            p1[p1.fase == "validacao"], p2[p2.fase == "validacao"]
+        )
         p1 = p1[(p1.fase == "teste") & (p1.modelo != "persistencia")]
         p2 = p2[(p2.fase == "teste") & (p2.modelo != "persistencia")]
         np.testing.assert_allclose(p1.custo_previsto, p2.custo_previsto)
@@ -134,12 +164,23 @@ class RegressaoTest(unittest.TestCase):
 
     def test_publicacao_futura_exclui_janelas_inadmissiveis(self):
         df = painel(publicado=True)
-        df.loc[df.competencia.isin(["2025-08", "2025-09"]), "publicado_em"] = "2025-11-01"
+        df.loc[df.competencia.isin(["2025-08", "2025-09"]), "publicado_em"] = (
+            "2025-11-01"
+        )
         summary, path = self.executar(df)
         self.assertGreater(summary["janelas_excluidas_publicacao"], 0)
         pred = pd.read_csv(path / "previsoes_avaliacao.csv")
-        self.assertTrue((pd.to_datetime(pred.publicado_alvo) > pd.to_datetime(pred.data_corte)).all())
-        self.assertTrue((pd.to_datetime(pred.treino_publicado_ate) <= pd.to_datetime(pred.data_corte)).all())
+        self.assertTrue(
+            (
+                pd.to_datetime(pred.publicado_alvo) > pd.to_datetime(pred.data_corte)
+            ).all()
+        )
+        self.assertTrue(
+            (
+                pd.to_datetime(pred.treino_publicado_ate)
+                <= pd.to_datetime(pred.data_corte)
+            ).all()
+        )
 
     def test_historico_insuficiente_produz_relatorio_sem_metricas_inventadas(self):
         summary, path = self.executar(painel(meses=4))
@@ -179,12 +220,18 @@ class RegressaoTest(unittest.TestCase):
         # Serviço ausente no primeiro mês de teste: sua validação tardia
         # não altera a origem inicial de teste dos demais serviços.
         df = df[~((df.codigo == "000") & (df.competencia >= "2026-02"))].copy()
-        df.loc[(df.codigo == "000") & (df.competencia == "2026-01"), "publicado_em"] = "2026-04-15"
+        df.loc[(df.codigo == "000") & (df.competencia == "2026-01"), "publicado_em"] = (
+            "2026-04-15"
+        )
         summary, path = self.executar(df)
         pred = pd.read_csv(path / "previsoes_avaliacao.csv")
-        val = pred[(pred.fase == "validacao") & (pred.codigo.astype(str).str.zfill(3) == "000")]
+        val = pred[
+            (pred.fase == "validacao") & (pred.codigo.astype(str).str.zfill(3) == "000")
+        ]
         self.assertNotIn("2026-01", set(val.competencia_alvo))
-        self.assertEqual(summary["recortes"][0]["n_validacao_excluida_publicacao_tardia"], 1)
+        self.assertEqual(
+            summary["recortes"][0]["n_validacao_excluida_publicacao_tardia"], 1
+        )
 
 
 if __name__ == "__main__":

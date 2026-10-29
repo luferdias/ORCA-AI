@@ -6,7 +6,9 @@ from pathlib import Path
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Gera indice simples de dossie para um projeto Orca.")
+    parser = argparse.ArgumentParser(
+        description="Gera indice simples de dossie para um projeto Orca."
+    )
     parser.add_argument("projeto", help="Slug do projeto dentro de projetos/")
     args = parser.parse_args()
 
@@ -41,4 +43,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -12,8 +12,15 @@ import pytest
 from openpyxl import Workbook, load_workbook
 
 
-def relatorio_zip(path, *, competencia="2026-08", es_col=19,
-                  custos=(188.15, 22.0), editar=None, situacao=True):
+def relatorio_zip(
+    path,
+    *,
+    competencia="2026-08",
+    es_col=19,
+    custos=(188.15, 22.0),
+    editar=None,
+    situacao=True,
+):
     """Fixture real de XLSX, inclusive cache zero nas fórmulas HYPERLINK."""
     wb = Workbook()
     csd = wb.active
@@ -27,9 +34,19 @@ def relatorio_zip(path, *, competencia="2026-08", es_col=19,
     csd.cell(9, es_col, "ES")
     csd.cell(10, es_col, "Custo (R$)")
     csd.cell(10, es_col + 1, "%AS")
-    for col, value in enumerate(["Grupo", "Código da\nComposição", "Descrição", "Unidade"], 1):
+    for col, value in enumerate(
+        ["Grupo", "Código da\nComposição", "Descrição", "Unidade"], 1
+    ):
         csd.cell(10, col, value)
-    headers = ["Grupo", "Código da\nComposição", "Tipo Item", "Código do\nItem", "Descrição", "Unidade", "Coeficiente"]
+    headers = [
+        "Grupo",
+        "Código da\nComposição",
+        "Tipo Item",
+        "Código do\nItem",
+        "Descrição",
+        "Unidade",
+        "Coeficiente",
+    ]
     if situacao:
         headers.append("Situação")
     for col, value in enumerate(headers, 1):
@@ -40,7 +57,12 @@ def relatorio_zip(path, *, competencia="2026-08", es_col=19,
     row = 11
     for index, ((code, desc, unit), cost) in enumerate(zip(comps, custos)):
         cr = 11 + index
-        values = ["Acessibilidade", f'=HYPERLINK("#"&CELL("address",OFFSET(Analítico!$B$1,MATCH({code},Analítico!$B:$B,0)-1,3)),{code})', desc, unit]
+        values = [
+            "Acessibilidade",
+            f'=HYPERLINK("#"&CELL("address",OFFSET(Analítico!$B$1,MATCH({code},Analítico!$B:$B,0)-1,3)),{code})',
+            desc,
+            unit,
+        ]
         for col, value in enumerate(values, 1):
             csd.cell(cr, col, value)
         csd.cell(cr, es_col, cost)
@@ -50,8 +72,15 @@ def relatorio_zip(path, *, competencia="2026-08", es_col=19,
             main.append("COM CUSTO")
         for col, value in enumerate(main, 1):
             ana.cell(row, col, value)
-        child = ["Acessibilidade", code, "COMPOSICAO" if index == 0 else "INSUMO",
-                 88316 if index == 0 else 6111, "Servente com encargos" if index == 0 else "Mão de obra", "H", 1.279 if index == 0 else 1.0]
+        child = [
+            "Acessibilidade",
+            code,
+            "COMPOSICAO" if index == 0 else "INSUMO",
+            88316 if index == 0 else 6111,
+            "Servente com encargos" if index == 0 else "Mão de obra",
+            "H",
+            1.279 if index == 0 else 1.0,
+        ]
         if situacao:
             child.append("COM CUSTO" if index == 0 else "COM PREÇO")
         for col, value in enumerate(child, 1):
@@ -79,13 +108,21 @@ def relatorio_zip(path, *, competencia="2026-08", es_col=19,
 
 
 def ler(path, competencia="2026-08", publicado_em="2026-09-11"):
-    return importlib.import_module("orca_ml.sinapi").ler_zip_sinapi(path, competencia, publicado_em)
+    return importlib.import_module("orca_ml.sinapi").ler_zip_sinapi(
+        path, competencia, publicado_em
+    )
 
 
-def manifesto_zip(path, competencia="2026-08", publicado="2026-09-11",
-                  nome="manifesto_coleta_regressao.json", alteracoes=None):
+def manifesto_zip(
+    path,
+    competencia="2026-08",
+    publicado="2026-09-11",
+    nome="manifesto_coleta_regressao.json",
+    alteracoes=None,
+):
     data = {
-        "competencia": competencia, "arquivo": path.name,
+        "competencia": competencia,
+        "arquivo": path.name,
         "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
         "tamanho_bytes": path.stat().st_size,
         "publicacao_exibida_no_portal": publicado,
@@ -99,7 +136,9 @@ def test_recupera_codigo_formula_com_cache_zero_e_valida_analitico(tmp_path):
     path = relatorio_zip(tmp_path / "sinapi.zip")
     before = hashlib.sha256(path.read_bytes()).hexdigest()
     with zipfile.ZipFile(path) as archive:
-        wb = load_workbook(io.BytesIO(archive.read(archive.namelist()[0])), data_only=True)
+        wb = load_workbook(
+            io.BytesIO(archive.read(archive.namelist()[0])), data_only=True
+        )
         assert wb["CSD"]["B11"].value == 0
         wb.close()
     df = ler(path)
@@ -120,19 +159,25 @@ def test_recupera_codigo_formula_com_cache_zero_e_valida_analitico(tmp_path):
 def test_descobre_coluna_es_pelos_cabecalhos_sem_posicao_fixa(tmp_path):
     def editar(wb):
         wb["CSD"]["S11"] = 9999
+
     df = ler(relatorio_zip(tmp_path / "outra_coluna.zip", es_col=7, editar=editar))
     assert df.iloc[0]["custo"] == 188.15
     assert "CSD!G11" in df.iloc[0]["localizador"]
 
 
-@pytest.mark.parametrize("mutacao", [
-    lambda w: setattr(w["CSD"]["S9"], "value", "SP"),
-    lambda w: setattr(w["CSD"]["S10"], "value", "Preço errado"),
-    lambda w: setattr(w["CSD"]["B3"], "value", "07/2026"),
-    lambda w: setattr(w["CSD"]["A2"], "value", "RELATÓRIO COM DESONERAÇÃO"),
-    lambda w: setattr(w["Analítico"]["G10"], "value", "Quantidade desconhecida"),
-])
-def test_falha_explicitamente_em_esquema_regime_ou_competencia_incompativel(tmp_path, mutacao):
+@pytest.mark.parametrize(
+    "mutacao",
+    [
+        lambda w: setattr(w["CSD"]["S9"], "value", "SP"),
+        lambda w: setattr(w["CSD"]["S10"], "value", "Preço errado"),
+        lambda w: setattr(w["CSD"]["B3"], "value", "07/2026"),
+        lambda w: setattr(w["CSD"]["A2"], "value", "RELATÓRIO COM DESONERAÇÃO"),
+        lambda w: setattr(w["Analítico"]["G10"], "value", "Quantidade desconhecida"),
+    ],
+)
+def test_falha_explicitamente_em_esquema_regime_ou_competencia_incompativel(
+    tmp_path, mutacao
+):
     with pytest.raises(ValueError):
         ler(relatorio_zip(tmp_path / "schema.zip", editar=mutacao))
 
@@ -150,21 +195,33 @@ def test_exclui_hifen_zero_e_ausencia_com_relatorio_contavel(tmp_path):
 
 def test_assinatura_estavel_quando_so_preco_status_ou_grupo_muda(tmp_path):
     original = ler(relatorio_zip(tmp_path / "a.zip"))
+
     def editar(wb):
         for row in wb["Analítico"].iter_rows(min_row=11):
             row[0].value = "Outro grupo"
             row[7].value = "SEM CUSTO"
         wb["CSD"]["A11"] = "Outro grupo"
         wb["CSD"]["A12"] = "Outro grupo"
+
     atualizado = ler(relatorio_zip(tmp_path / "b.zip", custos=(200, 28), editar=editar))
-    assert original["assinatura_tecnica"].tolist() == atualizado["assinatura_tecnica"].tolist()
+    assert (
+        original["assinatura_tecnica"].tolist()
+        == atualizado["assinatura_tecnica"].tolist()
+    )
 
 
-@pytest.mark.parametrize("celula,novo", [("G12", 1.5), ("G14", 2.0), ("D14", 7777), ("E14", "Outra mão de obra")])
-def test_assinatura_propaga_coeficiente_ou_item_alterado_no_auxiliar(tmp_path, celula, novo):
+@pytest.mark.parametrize(
+    "celula,novo",
+    [("G12", 1.5), ("G14", 2.0), ("D14", 7777), ("E14", "Outra mão de obra")],
+)
+def test_assinatura_propaga_coeficiente_ou_item_alterado_no_auxiliar(
+    tmp_path, celula, novo
+):
     a = ler(relatorio_zip(tmp_path / "a.zip"))
+
     def editar(wb):
         wb["Analítico"][celula] = novo
+
     b = ler(relatorio_zip(tmp_path / "b.zip", editar=editar))
     assert a.iloc[0]["assinatura_tecnica"] != b.iloc[0]["assinatura_tecnica"]
 
@@ -180,15 +237,23 @@ def test_rejeita_codigos_duplicados_antes_de_filtrar_custos(tmp_path, aba):
     def editar(wb):
         sheet = wb[aba]
         sheet.append([cell.value for cell in sheet[11]])
+
     with pytest.raises(ValueError, match="duplicad"):
         ler(relatorio_zip(tmp_path / "duplicados.zip", editar=editar))
 
 
-@pytest.mark.parametrize("mutacao", [
-    lambda w: setattr(w["CSD"]["B11"], "value", '=HYPERLINK("#",999999)'),
-    lambda w: setattr(w["CSD"]["B11"], "value", '=HYPERLINK("#"&MATCH(88316,Analítico!$B:$B,0),104658)'),
-    lambda w: setattr(w["CSD"]["C11"], "value", "Descrição sem correspondência"),
-])
+@pytest.mark.parametrize(
+    "mutacao",
+    [
+        lambda w: setattr(w["CSD"]["B11"], "value", '=HYPERLINK("#",999999)'),
+        lambda w: setattr(
+            w["CSD"]["B11"],
+            "value",
+            '=HYPERLINK("#"&MATCH(88316,Analítico!$B:$B,0),104658)',
+        ),
+        lambda w: setattr(w["CSD"]["C11"], "value", "Descrição sem correspondência"),
+    ],
+)
 def test_rejeita_formula_codigo_ou_correspondencia_incorreta(tmp_path, mutacao):
     with pytest.raises(ValueError):
         ler(relatorio_zip(tmp_path / "id_errado.zip", editar=mutacao))
@@ -198,6 +263,7 @@ def test_rejeita_ciclo_de_composicoes(tmp_path):
     def editar(wb):
         wb["Analítico"]["C14"] = "COMPOSICAO"
         wb["Analítico"]["D14"] = 104658
+
     with pytest.raises(ValueError, match="[Cc]iclo"):
         ler(relatorio_zip(tmp_path / "ciclo.zip", editar=editar))
 
@@ -205,16 +271,23 @@ def test_rejeita_ciclo_de_composicoes(tmp_path):
 def test_rejeita_auxiliar_ausente_na_hierarquia(tmp_path):
     def editar(wb):
         wb["Analítico"]["D12"] = 999999
+
     with pytest.raises(ValueError, match="ausente"):
         ler(relatorio_zip(tmp_path / "auxiliar.zip", editar=editar))
 
 
 def test_historico_grava_csv_e_relatorio_sem_alterar_originais(tmp_path):
     source = tmp_path / "fontes"
-    for competencia, publicado in [("2026-07", "2026-08-11"), ("2026-08", "2026-09-11")]:
+    for competencia, publicado in [
+        ("2026-07", "2026-08-11"),
+        ("2026-08", "2026-09-11"),
+    ]:
         originais = source / competencia / "originais"
         originais.mkdir(parents=True)
-        path = relatorio_zip(originais / f"SINAPI-{competencia}-formato-xlsx.zip", competencia=competencia)
+        path = relatorio_zip(
+            originais / f"SINAPI-{competencia}-formato-xlsx.zip",
+            competencia=competencia,
+        )
         manifesto_zip(path, competencia, publicado)
     output = tmp_path / "resultado" / "sinapi.csv"
     module = importlib.import_module("orca_ml.sinapi")
@@ -265,15 +338,18 @@ def test_historico_rejeita_zip_trocado_mesmo_com_crc_valido(tmp_path):
     assert not output.with_suffix(".relatorio.json").exists()
 
 
-@pytest.mark.parametrize("alteracoes", [
-    {"arquivo": "SINAPI-2026-08-formato-xlsx_Retificacao01.zip"},
-    {"sha256": "0" * 64},
-    {"sha256": None},
-    {"tamanho_bytes": 1},
-    {"tamanho_bytes": None},
-    {"competencia": "2026-07"},
-    {"competencia": None},
-])
+@pytest.mark.parametrize(
+    "alteracoes",
+    [
+        {"arquivo": "SINAPI-2026-08-formato-xlsx_Retificacao01.zip"},
+        {"sha256": "0" * 64},
+        {"sha256": None},
+        {"tamanho_bytes": 1},
+        {"tamanho_bytes": None},
+        {"competencia": "2026-07"},
+        {"competencia": None},
+    ],
+)
 def test_historico_rejeita_metadados_de_identidade_divergentes(tmp_path, alteracoes):
     originais = tmp_path / "fontes" / "2026-08" / "originais"
     originais.mkdir(parents=True)
@@ -293,11 +369,18 @@ def test_catalogo_de_datas_nao_substitui_manifesto_de_download(tmp_path):
         module.preparar_historico_sinapi(tmp_path / "fontes", tmp_path / "saida.csv")
 
 
-@pytest.mark.parametrize("alteracoes", [
-    {"arquivo": "outra_revisao.zip"}, {"sha256": "0" * 64},
-    {"competencia": "2026-07"}, {"publicacao_exibida_no_portal": "2026-09-12"},
-])
-def test_confere_todos_os_manifestos_presentes_sem_ocultar_divergencia(tmp_path, alteracoes):
+@pytest.mark.parametrize(
+    "alteracoes",
+    [
+        {"arquivo": "outra_revisao.zip"},
+        {"sha256": "0" * 64},
+        {"competencia": "2026-07"},
+        {"publicacao_exibida_no_portal": "2026-09-12"},
+    ],
+)
+def test_confere_todos_os_manifestos_presentes_sem_ocultar_divergencia(
+    tmp_path, alteracoes
+):
     originais = tmp_path / "fontes" / "2026-08" / "originais"
     originais.mkdir(parents=True)
     path = relatorio_zip(originais / "SINAPI-2026-08-formato-xlsx.zip")

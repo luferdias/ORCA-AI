@@ -25,14 +25,34 @@ from openpyxl import load_workbook
 
 PAGINA = "https://der.es.gov.br/referencial-de-precos-edificacoes"
 COLUNAS = [
-    "fonte", "competencia", "codigo", "descricao", "unidade", "grupo", "custo",
-    "regime", "publicado_em", "arquivo_sha256", "localizador", "assinatura_tecnica",
+    "fonte",
+    "competencia",
+    "codigo",
+    "descricao",
+    "unidade",
+    "grupo",
+    "custo",
+    "regime",
+    "publicado_em",
+    "arquivo_sha256",
+    "localizador",
+    "assinatura_tecnica",
     "assinatura_tipo",
 ]
 MESES = {
-    "janeiro": 1, "fevereiro": 2, "março": 3, "marco": 3, "abril": 4,
-    "maio": 5, "junho": 6, "julho": 7, "agosto": 8, "setembro": 9,
-    "outubro": 10, "novembro": 11, "dezembro": 12,
+    "janeiro": 1,
+    "fevereiro": 2,
+    "março": 3,
+    "marco": 3,
+    "abril": 4,
+    "maio": 5,
+    "junho": 6,
+    "julho": 7,
+    "agosto": 8,
+    "setembro": 9,
+    "outubro": 10,
+    "novembro": 11,
+    "dezembro": 12,
 }
 
 
@@ -59,13 +79,21 @@ def extrair_links_oficiais(html: str) -> dict[str, str]:
         path = unquote(parsed.path)
         if parsed.scheme != "https" or parsed.netloc != "der.es.gov.br":
             continue
-        if "Referencial de Edificações/OBRAS_" not in path or not path.lower().endswith(".zip"):
+        if "Referencial de Edificações/OBRAS_" not in path or not path.lower().endswith(
+            ".zip"
+        ):
             continue
-        found = re.search(r"TABELA REFERENCIAL OBRAS - DER-ES - (20\d\d-(?:0[1-9]|1[0-2])) - ", path, re.I)
+        found = re.search(
+            r"TABELA REFERENCIAL OBRAS - DER-ES - (20\d\d-(?:0[1-9]|1[0-2])) - ",
+            path,
+            re.I,
+        )
         if found:
             competencia = found.group(1)
             if competencia in links and links[competencia] != url:
-                raise ValueError(f"Múltiplas edições para {competencia}; seleção manual necessária")
+                raise ValueError(
+                    f"Múltiplas edições para {competencia}; seleção manual necessária"
+                )
             links[competencia] = url
     return dict(sorted(links.items()))
 
@@ -85,7 +113,12 @@ def _numero(value) -> float:
 
 def _validar_cabecalho(rows: list[tuple], competencia: str) -> None:
     cabecalho = " ".join(_texto(v) for row in rows[:12] for v in row)
-    norm = unicodedata.normalize("NFKD", cabecalho).encode("ascii", "ignore").decode().lower()
+    norm = (
+        unicodedata.normalize("NFKD", cabecalho)
+        .encode("ascii", "ignore")
+        .decode()
+        .lower()
+    )
     if not re.search(r"\bnao\s+desonerados\b", norm):
         raise ValueError("regime sem desoneração não confirmado no relatório")
     ano, mes = map(int, competencia.split("-"))
@@ -96,12 +129,22 @@ def _validar_cabecalho(rows: list[tuple], competencia: str) -> None:
     if not bdis or any(_numero(bdi) != 0 for bdi in bdis):
         raise ValueError("BDI zero não confirmado no relatório")
     header = [_texto(v).lower() for v in rows[11][:7]]
-    expected = ["item", "fonte/código", "especificação do serviço", "und.", "quant.", "preço unitário", "preço total"]
+    expected = [
+        "item",
+        "fonte/código",
+        "especificação do serviço",
+        "und.",
+        "quant.",
+        "preço unitário",
+        "preço total",
+    ]
     if header != expected:
         raise ValueError(f"Cabeçalho de serviços inesperado: {header}")
 
 
-def parse_der_zip(arquivo: Path, competencia: str, publicado_em: str = "") -> list[dict]:
+def parse_der_zip(
+    arquivo: Path, competencia: str, publicado_em: str = ""
+) -> list[dict]:
     """Leia serviços no ZIP, verifique regime/data/BDI e preserve localização."""
     arquivo = Path(arquivo)
     if not re.fullmatch(r"20\d\d-(?:0[1-9]|1[0-2])", competencia):
@@ -112,14 +155,24 @@ def parse_der_zip(arquivo: Path, competencia: str, publicado_em: str = "") -> li
     with zipfile.ZipFile(arquivo) as archive:
         if archive.testzip() is not None:
             raise ValueError(f"ZIP inválido: {arquivo}")
-        names = [n for n in archive.namelist() if re.search(r"/XLS/[^/]*_servicos\.xlsx$", n, re.I)]
+        names = [
+            n
+            for n in archive.namelist()
+            if re.search(r"/XLS/[^/]*_servicos\.xlsx$", n, re.I)
+        ]
         if len(names) != 1:
-            raise ValueError(f"Esperado um relatório XLSX de serviços; encontrados {len(names)}")
+            raise ValueError(
+                f"Esperado um relatório XLSX de serviços; encontrados {len(names)}"
+            )
         member = names[0]
-        workbook = load_workbook(io.BytesIO(archive.read(member)), read_only=True, data_only=True)
+        workbook = load_workbook(
+            io.BytesIO(archive.read(member)), read_only=True, data_only=True
+        )
         try:
             if len(workbook.sheetnames) != 1:
-                raise ValueError("Quantidade inesperada de abas no relatório de serviços")
+                raise ValueError(
+                    "Quantidade inesperada de abas no relatório de serviços"
+                )
             sheet = workbook.active
             iterator = sheet.iter_rows(values_only=True)
             first = [next(iterator) for _ in range(12)]
@@ -151,15 +204,25 @@ def parse_der_zip(arquivo: Path, competencia: str, publicado_em: str = "") -> li
                     unicodedata.normalize("NFC", value).casefold().strip()
                     for value in (descricao, unidade)
                 )
-                rows.append({
-                    "fonte": "der_es", "competencia": competencia, "codigo": codigo,
-                    "descricao": descricao, "unidade": unidade,
-                    "grupo": " / ".join(g[1] for g in grupos), "custo": custo,
-                    "regime": "sem_desoneracao", "publicado_em": publicado_em,
-                    "arquivo_sha256": sha, "localizador": f"{member}!A{row_no}",
-                    "assinatura_tecnica": hashlib.sha256(assinatura_base.encode()).hexdigest(),
-                    "assinatura_tipo": "descricao_unidade",
-                })
+                rows.append(
+                    {
+                        "fonte": "der_es",
+                        "competencia": competencia,
+                        "codigo": codigo,
+                        "descricao": descricao,
+                        "unidade": unidade,
+                        "grupo": " / ".join(g[1] for g in grupos),
+                        "custo": custo,
+                        "regime": "sem_desoneracao",
+                        "publicado_em": publicado_em,
+                        "arquivo_sha256": sha,
+                        "localizador": f"{member}!A{row_no}",
+                        "assinatura_tecnica": hashlib.sha256(
+                            assinatura_base.encode()
+                        ).hexdigest(),
+                        "assinatura_tipo": "descricao_unidade",
+                    }
+                )
         finally:
             workbook.close()
     if not rows:
@@ -173,12 +236,16 @@ def preparar_csv(rows: list[dict], destino: Path) -> None:
         raise ValueError("Nenhum serviço para preparar")
     keys = [(r["fonte"], r["competencia"], r["codigo"], r["regime"]) for r in rows]
     if len(keys) != len(set(keys)):
-        raise ValueError("Código/competência duplicado; revisão exige seleção explícita")
+        raise ValueError(
+            "Código/competência duplicado; revisão exige seleção explícita"
+        )
     if any(set(r) != set(COLUNAS) for r in rows):
         raise ValueError("Esquema canônico incompleto ou com colunas extras")
     destino = Path(destino)
     destino.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile("w", encoding="utf-8", newline="", dir=destino.parent, delete=False) as stream:
+    with tempfile.NamedTemporaryFile(
+        "w", encoding="utf-8", newline="", dir=destino.parent, delete=False
+    ) as stream:
         tmp = Path(stream.name)
         writer = csv.DictWriter(stream, fieldnames=COLUNAS)
         writer.writeheader()
@@ -187,19 +254,40 @@ def preparar_csv(rows: list[dict], destino: Path) -> None:
 
 
 def _curl(url: str, output: Path | None = None) -> str | None:
-    command = ["curl", "--fail", "--location", "--silent", "--show-error", "--retry", "2", "--max-time", "180", "--proto", "=https", "--proto-redir", "=https"]
+    command = [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--retry",
+        "2",
+        "--max-time",
+        "180",
+        "--proto",
+        "=https",
+        "--proto-redir",
+        "=https",
+    ]
     if output is not None:
         subprocess.run(command + ["--output", str(output), url], check=True)
         return None
-    return subprocess.run(command + [url], check=True, capture_output=True).stdout.decode("utf-8")
+    return subprocess.run(
+        command + [url], check=True, capture_output=True
+    ).stdout.decode("utf-8")
 
 
 def coletar_historico(
-    base_dir: Path, csv_destino: Path, inicio: str = "2025-01", fim: str | None = None,
+    base_dir: Path,
+    csv_destino: Path,
+    inicio: str = "2025-01",
+    fim: str | None = None,
 ) -> dict[str, int]:
     """Baixe as edições observadas no portal e gere a série de serviços."""
     links = extrair_links_oficiais(_curl(PAGINA))
-    selected = {c: u for c, u in links.items() if c >= inicio and (fim is None or c <= fim)}
+    selected = {
+        c: u for c, u in links.items() if c >= inicio and (fim is None or c <= fim)
+    }
     if not selected:
         raise ValueError("Nenhuma competência no intervalo no índice oficial")
     all_rows = []
@@ -223,17 +311,28 @@ def coletar_historico(
         counts[competencia] = len(rows)
         all_rows.extend(rows)
         manifest = {
-            "fonte": "DER-ES", "competencia": competencia, "regime": "sem_desoneracao",
-            "url_oficial_observada": url, "pagina_indice": PAGINA,
+            "fonte": "DER-ES",
+            "competencia": competencia,
+            "regime": "sem_desoneracao",
+            "url_oficial_observada": url,
+            "pagina_indice": PAGINA,
             "capturado_em_utc": datetime.now(timezone.utc).isoformat(),
-            "arquivo": name, "bytes": target.stat().st_size,
-            "sha256": rows[0]["arquivo_sha256"], "zip_crc_verificado": True,
-            "servicos_extraidos": len(rows), "bdi_planilha": 0,
+            "arquivo": name,
+            "bytes": target.stat().st_size,
+            "sha256": rows[0]["arquivo_sha256"],
+            "zip_crc_verificado": True,
+            "servicos_extraidos": len(rows),
+            "bdi_planilha": 0,
             "publicado_em": None,
             "assinatura_tipo": "descricao_unidade",
             "limite_assinatura": "Não verifica insumos, coeficientes nem subcomposições da CPU.",
         }
-        (directory / "manifesto.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"{competencia}: {len(rows)} serviços, SHA-256 {manifest['sha256']}", flush=True)
+        (directory / "manifesto.json").write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        print(
+            f"{competencia}: {len(rows)} serviços, SHA-256 {manifest['sha256']}",
+            flush=True,
+        )
     preparar_csv(all_rows, csv_destino)
     return counts

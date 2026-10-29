@@ -10,15 +10,15 @@ from typing import Dict, Any
 @dataclass
 class ParametrosBDI:
     ac: float = 0.0400  # Administração Central (4,00%)
-    s: float = 0.0080   # Seguros (0,80%)
-    r: float = 0.0120   # Riscos (1,20%)
-    g: float = 0.0080   # Garantias (0,80%)
+    s: float = 0.0080  # Seguros (0,80%)
+    r: float = 0.0120  # Riscos (1,20%)
+    g: float = 0.0080  # Garantias (0,80%)
     df: float = 0.0120  # Despesas Financeiras (1,20%)
     lucro: float = 0.0740  # Lucro Operacional (7,40%)
-    pis: float = 0.0065    # PIS (0,65%)
-    cofins: float = 0.0300 # COFINS (3,00%)
-    iss: float = 0.0500    # ISS Vitória/ES (5,00%)
-    cprb: float = 0.0000   # CPRB se desonerado (0,00% se não desonerado)
+    pis: float = 0.0065  # PIS (0,65%)
+    cofins: float = 0.0300  # COFINS (3,00%)
+    iss: float = 0.0500  # ISS Vitória/ES (5,00%)
+    cprb: float = 0.0000  # CPRB se desonerado (0,00% se não desonerado)
 
 
 def calcular_bdi(params: ParametrosBDI) -> Dict[str, Any]:
@@ -28,14 +28,18 @@ def calcular_bdi(params: ParametrosBDI) -> Dict[str, Any]:
     """
     taxa_tributos = params.pis + params.cofins + params.iss + params.cprb
     denominador = 1.0 - taxa_tributos
-    
+
     if denominador <= 0:
         raise ValueError("A soma dos tributos não pode ser maior ou igual a 100%.")
-    
-    numerador = (1.0 + params.ac + params.s + params.r + params.g) * (1.0 + params.df) * (1.0 + params.lucro)
+
+    numerador = (
+        (1.0 + params.ac + params.s + params.r + params.g)
+        * (1.0 + params.df)
+        * (1.0 + params.lucro)
+    )
     bdi_decimal = (numerador / denominador) - 1.0
     bdi_percentual = bdi_decimal * 100.0
-    
+
     return {
         "bdi_decimal": round(bdi_decimal, 6),
         "bdi_percentual": round(bdi_percentual, 2),
@@ -57,8 +61,15 @@ def obter_bdi_padrao_mgi(tipo: str = "servico") -> Dict[str, Any]:
     if tipo == "servico":
         # Calibrado para atingir exatamente 25.00%
         params = ParametrosBDI(
-            ac=0.0400, s=0.0080, r=0.0120, g=0.0080,
-            df=0.0123, lucro=0.0740, pis=0.0065, cofins=0.0300, iss=0.0500
+            ac=0.0400,
+            s=0.0080,
+            r=0.0120,
+            g=0.0080,
+            df=0.0123,
+            lucro=0.0740,
+            pis=0.0065,
+            cofins=0.0300,
+            iss=0.0500,
         )
         res = calcular_bdi(params)
         res["tipo"] = "Serviços de Engenharia e Manutenção (BDI 25%)"
@@ -66,8 +77,15 @@ def obter_bdi_padrao_mgi(tipo: str = "servico") -> Dict[str, Any]:
     elif tipo == "fornecimento":
         # Faixa média do Acórdão TCU 2.622/2013 para Fornecimento de Bens
         params = ParametrosBDI(
-            ac=0.0345, s=0.0048, r=0.0085, g=0.0048,
-            df=0.0085, lucro=0.0511, pis=0.0065, cofins=0.0300, iss=0.0000
+            ac=0.0345,
+            s=0.0048,
+            r=0.0085,
+            g=0.0048,
+            df=0.0085,
+            lucro=0.0511,
+            pis=0.0065,
+            cofins=0.0300,
+            iss=0.0000,
         )
         res = calcular_bdi(params)
         res["tipo"] = "Fornecimento de Bens e Equipamentos (BDI Diferenciado Reduzido)"

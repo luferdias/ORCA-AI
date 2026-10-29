@@ -27,7 +27,11 @@ def test_adiciona_nicho_sem_alterar_grupo_unidade_codigo_ordem_ou_indice(mapa_mi
     frame = pd.DataFrame(
         {
             "fonte": ["der_es", "sinapi_es", "der_es"],
-            "grupo": ["PINTURA / SOBRE PAREDES E FORROS", "Pintura Interna", "PINTURA / SOBRE PAREDES E FORROS"],
+            "grupo": [
+                "PINTURA / SOBRE PAREDES E FORROS",
+                "Pintura Interna",
+                "PINTURA / SOBRE PAREDES E FORROS",
+            ],
             "unidade": ["m2", "M2", "und"],
             "codigo": ["001", "002", "003"],
             "custo": [9.5, 20.0, 1.5],
@@ -43,15 +47,27 @@ def test_adiciona_nicho_sem_alterar_grupo_unidade_codigo_ordem_ou_indice(mapa_mi
 
 
 def test_grupo_igual_em_fontes_distintas_pode_ter_mapeamento_diferente(mapa_minimo):
-    mapa_minimo["mapeamento"] = {"sinapi_es": {"Comum": "pintura"}, "der_es": {"Comum": "pisos"}}
-    frame = pd.DataFrame({"fonte": ["sinapi_es", "der_es"], "grupo": ["Comum", "Comum"]})
-    assert adicionar_nichos(frame, mapa_minimo).nicho_id.tolist() == ["pintura", "pisos"]
+    mapa_minimo["mapeamento"] = {
+        "sinapi_es": {"Comum": "pintura"},
+        "der_es": {"Comum": "pisos"},
+    }
+    frame = pd.DataFrame(
+        {"fonte": ["sinapi_es", "der_es"], "grupo": ["Comum", "Comum"]}
+    )
+    assert adicionar_nichos(frame, mapa_minimo).nicho_id.tolist() == [
+        "pintura",
+        "pisos",
+    ]
 
 
-@pytest.mark.parametrize("fonte,grupo", [("sinapi_es", "Grupo novo"), ("outra_fonte", "Pintura Interna")])
+@pytest.mark.parametrize(
+    "fonte,grupo", [("sinapi_es", "Grupo novo"), ("outra_fonte", "Pintura Interna")]
+)
 def test_grupo_novo_ou_fonte_nova_falham_sem_cair_em_outros(mapa_minimo, fonte, grupo):
     with pytest.raises(ValueError, match="não mapeados") as erro:
-        adicionar_nichos(pd.DataFrame({"fonte": [fonte], "grupo": [grupo]}), mapa_minimo)
+        adicionar_nichos(
+            pd.DataFrame({"fonte": [fonte], "grupo": [grupo]}), mapa_minimo
+        )
     assert fonte in str(erro.value)
     assert grupo in str(erro.value)
 
@@ -78,15 +94,26 @@ def test_ids_de_nicho_duplicados_falham(mapa_minimo):
 
 def test_json_nao_permite_duas_categorias_para_o_mesmo_grupo(tmp_path):
     arquivo = tmp_path / "mapa.json"
-    arquivo.write_text('{"mapeamento":{"sinapi_es":{"Pintura Interna":"pintura","Pintura Interna":"pisos"}}}', encoding="utf-8")
+    arquivo.write_text(
+        '{"mapeamento":{"sinapi_es":{"Pintura Interna":"pintura","Pintura Interna":"pisos"}}}',
+        encoding="utf-8",
+    )
     with pytest.raises(ValueError, match="Chave JSON duplicada.*Pintura Interna"):
         carregar_mapa(arquivo)
 
 
 def test_frame_vazio_com_schema_preservado(mapa_minimo):
-    resultado = adicionar_nichos(pd.DataFrame(columns=["fonte", "grupo", "codigo"]), mapa_minimo)
+    resultado = adicionar_nichos(
+        pd.DataFrame(columns=["fonte", "grupo", "codigo"]), mapa_minimo
+    )
     assert resultado.empty
-    assert resultado.columns.tolist() == ["fonte", "grupo", "codigo", "nicho_id", "nicho"]
+    assert resultado.columns.tolist() == [
+        "fonte",
+        "grupo",
+        "codigo",
+        "nicho_id",
+        "nicho",
+    ]
 
 
 def test_colunas_obrigatorias_faltantes(mapa_minimo):
@@ -97,8 +124,13 @@ def test_colunas_obrigatorias_faltantes(mapa_minimo):
 def test_mapeamento_padrao_independente_do_diretorio_corrente(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     config = carregar_mapa()
-    assert config["mapeamento"]["sinapi_es"]["Energia Solar para Edificações"] == "hidrossanitarias"
-    assert config["mapeamento"]["sinapi_es"]["Sistemas de Medição"] == "hidrossanitarias"
+    assert (
+        config["mapeamento"]["sinapi_es"]["Energia Solar para Edificações"]
+        == "hidrossanitarias"
+    )
+    assert (
+        config["mapeamento"]["sinapi_es"]["Sistemas de Medição"] == "hidrossanitarias"
+    )
     assert "limitações" in config or "limitacoes" in config
 
 
@@ -117,6 +149,20 @@ def test_totalidade_dos_grupos_nativos_dos_datasets_reais():
         assert resultado[["nicho_id", "nicho"]].notna().all().all()
 
 
-@pytest.mark.parametrize("entrada,esperada", [("M2", "m²"), ("m3", "m³"), ("und", "un"), ("UN", "un"), ("KG", "kg"), ("MES", "mês"), ("Mês", "mês"), ("TXKM", "t·km"), ("ms", "ms"), ("unidade desconhecida", "unidade desconhecida")])
+@pytest.mark.parametrize(
+    "entrada,esperada",
+    [
+        ("M2", "m²"),
+        ("m3", "m³"),
+        ("und", "un"),
+        ("UN", "un"),
+        ("KG", "kg"),
+        ("MES", "mês"),
+        ("Mês", "mês"),
+        ("TXKM", "t·km"),
+        ("ms", "ms"),
+        ("unidade desconhecida", "unidade desconhecida"),
+    ],
+)
 def test_unidade_legivel_apenas_formata_sem_inventar_conversao(entrada, esperada):
     assert unidade_legivel(entrada) == esperada

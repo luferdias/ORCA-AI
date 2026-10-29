@@ -12,23 +12,48 @@ from openpyxl import Workbook
 from orca_ml.der import COLUNAS, extrair_links_oficiais, parse_der_zip, preparar_csv
 
 
-def zip_relatorio(path, *, titulo="SERVIÇOS NÃO DESONERADOS MAIO/2026", mes="Maio/2026", preco=18.12):
+def zip_relatorio(
+    path, *, titulo="SERVIÇOS NÃO DESONERADOS MAIO/2026", mes="Maio/2026", preco=18.12
+):
     wb = Workbook()
     ws = wb.active
     ws.title = "relatorio(166)"
     ws["A6"] = titulo
     ws["A7"] = "BDI: 0,00%"
     ws["A9"] = f"Data Base: {mes}"
-    for col, value in enumerate(["Item", "Fonte/Código", "Especificação do Serviço", "Und.", "Quant.", "Preço Unitário", "Preço Total"], 1):
+    for col, value in enumerate(
+        [
+            "Item",
+            "Fonte/Código",
+            "Especificação do Serviço",
+            "Und.",
+            "Quant.",
+            "Preço Unitário",
+            "Preço Total",
+        ],
+        1,
+    ):
         ws.cell(12, col, value)
     ws.append(["'01", None, "SERVIÇOS PRELIMINARES", None, None, None, None])
     ws.append(["'0102", None, "DEMOLIÇÕES E RETIRADAS", None, None, None, None])
-    ws.append(["'010201", "LABOR - 2024 - 010201 - 2", "Demolição manual de piso", "m2", 1, preco, preco])
+    ws.append(
+        [
+            "'010201",
+            "LABOR - 2024 - 010201 - 2",
+            "Demolição manual de piso",
+            "m2",
+            1,
+            preco,
+            preco,
+        ]
+    )
     ws.append([None, None, "TOTAL", None, None, 9999, None])
     buffer = io.BytesIO()
     wb.save(buffer)
     with zipfile.ZipFile(path, "w") as archive:
-        archive.writestr("pasta/XLS/tab_DER-EDIFICAÇÕES_2026_05_servicos.xlsx", buffer.getvalue())
+        archive.writestr(
+            "pasta/XLS/tab_DER-EDIFICAÇÕES_2026_05_servicos.xlsx", buffer.getvalue()
+        )
 
 
 class TestDer(unittest.TestCase):
@@ -41,7 +66,9 @@ class TestDer(unittest.TestCase):
             outra = parse_der_zip(segundo, "2026-05")[0]
             self.assertEqual(len(parse_der_zip(primeiro, "2026-05")), 1)
             self.assertEqual(linha["codigo"], "010201")
-            self.assertEqual(linha["grupo"], "SERVIÇOS PRELIMINARES / DEMOLIÇÕES E RETIRADAS")
+            self.assertEqual(
+                linha["grupo"], "SERVIÇOS PRELIMINARES / DEMOLIÇÕES E RETIRADAS"
+            )
             self.assertEqual(linha["custo"], 18.12)
             self.assertEqual(linha["regime"], "sem_desoneracao")
             self.assertEqual(linha["assinatura_tipo"], "descricao_unidade")
@@ -66,8 +93,8 @@ class TestDer(unittest.TestCase):
             self.assertEqual(len(parse_der_zip(path, "2026-05")), 1)
 
     def test_links_do_portal_vem_de_href_observado(self):
-        html = '''<a href="/media/Documentos/Tabela%20Referencial%20de%20Pre%C3%A7o/Referencial%20de%20Edifica%C3%A7%C3%B5es/OBRAS_2026/TABELA%20REFERENCIAL%20OBRAS%20-%20DER-ES%20-%202026-05%20-%20MAI.zip">MAI/2026</a>
-        <a href="/media/Documentos/rodovias/2026-05.zip">rodovias</a>'''
+        html = """<a href="/media/Documentos/Tabela%20Referencial%20de%20Pre%C3%A7o/Referencial%20de%20Edifica%C3%A7%C3%B5es/OBRAS_2026/TABELA%20REFERENCIAL%20OBRAS%20-%20DER-ES%20-%202026-05%20-%20MAI.zip">MAI/2026</a>
+        <a href="/media/Documentos/rodovias/2026-05.zip">rodovias</a>"""
         links = extrair_links_oficiais(html)
         self.assertEqual(list(links), ["2026-05"])
         self.assertTrue(links["2026-05"].startswith("https://der.es.gov.br/media/"))

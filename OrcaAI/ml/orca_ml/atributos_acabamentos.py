@@ -3,6 +3,7 @@
 As classes vêm dos grupos oficiais. O agrupamento de variantes é uma proteção
 experimental, não uma certificação de equivalência técnica entre serviços.
 """
+
 from __future__ import annotations
 
 import hashlib
@@ -16,9 +17,11 @@ from .grupos import adicionar_nichos
 
 NICHOS = ("pintura", "revestimentos_forros", "pisos")
 CATEGORIAS = ("mao_obra", "material", "equipamento", "outros")
-ATRIBUTOS = ([f"fracao_{c}" for c in CATEGORIAS]
-             + [f"n_{c}" for c in CATEGORIAS]
-             + ["horas_mao_obra", "horas_equipamento"])
+ATRIBUTOS = (
+    [f"fracao_{c}" for c in CATEGORIAS]
+    + [f"n_{c}" for c in CATEGORIAS]
+    + ["horas_mao_obra", "horas_equipamento"]
+)
 
 
 def _exigir(frame, columns):
@@ -28,16 +31,31 @@ def _exigir(frame, columns):
 
 
 def _texto(value):
-    return " ".join(unicodedata.normalize("NFKD", str(value)).encode("ascii", "ignore").decode().lower().split())
+    return " ".join(
+        unicodedata.normalize("NFKD", str(value))
+        .encode("ascii", "ignore")
+        .decode()
+        .lower()
+        .split()
+    )
 
 
-def selecionar_recorte(historico: pd.DataFrame, competencia: str | None = None) -> pd.DataFrame:
+def selecionar_recorte(
+    historico: pd.DataFrame, competencia: str | None = None
+) -> pd.DataFrame:
     """Filtre cada linha por seu próprio nicho/unidade; não selecione sobreviventes."""
     _exigir(historico, ["fonte", "competencia", "codigo", "grupo", "unidade"])
     if historico.duplicated(["fonte", "competencia", "codigo"]).any():
         raise ValueError("Serviço/competência duplicado no histórico")
-    dados = adicionar_nichos(historico.drop(columns=["nicho", "nicho_id", "classe"], errors="ignore"))
-    unidades = dados.unidade.astype(str).str.strip().str.lower().str.replace("²", "2", regex=False)
+    dados = adicionar_nichos(
+        historico.drop(columns=["nicho", "nicho_id", "classe"], errors="ignore")
+    )
+    unidades = (
+        dados.unidade.astype(str)
+        .str.strip()
+        .str.lower()
+        .str.replace("²", "2", regex=False)
+    )
     mask = dados.nicho_id.isin(NICHOS) & unidades.eq("m2")
     if competencia is not None:
         if not re.fullmatch(r"\d{4}-(0[1-9]|1[0-2])", competencia):
@@ -59,7 +77,9 @@ def _normalizar_descricao(value: str) -> str:
 def agrupar_variantes(servicos: pd.DataFrame, recursos: pd.DataFrame) -> pd.DataFrame:
     """Una suportes de folhas iguais OU descrições sem medidas/demãos, transitivamente."""
     _exigir(servicos, ["codigo", "descricao"])
-    _exigir(recursos, ["codigo_servico", "codigo_recurso", "categoria", "unidade_recurso"])
+    _exigir(
+        recursos, ["codigo_servico", "codigo_recurso", "categoria", "unidade_recurso"]
+    )
     data = servicos.copy()
     data["codigo"] = data.codigo.astype(str)
     if data.codigo.duplicated().any():
@@ -82,7 +102,14 @@ def agrupar_variantes(servicos: pd.DataFrame, recursos: pd.DataFrame) -> pd.Data
         code = str(code)
         if code not in parent:
             continue
-        leaves = sorted(set(tuple(map(str, row)) for row in group[["categoria", "codigo_recurso", "unidade_recurso"]].itertuples(index=False, name=None)))
+        leaves = sorted(
+            set(
+                tuple(map(str, row))
+                for row in group[
+                    ["categoria", "codigo_recurso", "unidade_recurso"]
+                ].itertuples(index=False, name=None)
+            )
+        )
         fingerprints[code] = hashlib.sha256(repr(leaves).encode()).hexdigest()
     if set(fingerprints) != set(codes):
         raise ValueError("Serviço sem recursos não pode formar um grupo de variantes")
@@ -98,8 +125,10 @@ def agrupar_variantes(servicos: pd.DataFrame, recursos: pd.DataFrame) -> pd.Data
     components = {}
     for code in codes:
         components.setdefault(find(code), []).append(code)
-    names = {root: "v_" + hashlib.sha256("|".join(members).encode()).hexdigest()[:16]
-             for root, members in components.items()}
+    names = {
+        root: "v_" + hashlib.sha256("|".join(members).encode()).hexdigest()[:16]
+        for root, members in components.items()
+    }
     data["grupo_particao"] = data.codigo.map(lambda code: names[find(code)])
     return data
 
@@ -110,8 +139,23 @@ def preparar_atributos(servicos: pd.DataFrame, recursos: pd.DataFrame) -> pd.Dat
     Frações calculadas sobre custos-folha antes dos truncamentos hierárquicos;
     não são porcentagens publicadas na tabela. O total oficial fica como metadata.
     """
-    _exigir(servicos, ["fonte", "competencia", "codigo", "descricao", "custo", "status_composicao"])
-    _exigir(recursos, ["codigo_servico", "codigo_recurso", "categoria", "unidade_recurso", "coeficiente", "custo_folha_sem_truncamento", "horas_mao_obra", "horas_equipamento"])
+    _exigir(
+        servicos,
+        ["fonte", "competencia", "codigo", "descricao", "custo", "status_composicao"],
+    )
+    _exigir(
+        recursos,
+        [
+            "codigo_servico",
+            "codigo_recurso",
+            "categoria",
+            "unidade_recurso",
+            "coeficiente",
+            "custo_folha_sem_truncamento",
+            "horas_mao_obra",
+            "horas_equipamento",
+        ],
+    )
     if servicos.fonte.nunique() != 1 or servicos.competencia.nunique() != 1:
         raise ValueError("Prepare uma fonte e uma competência por vez")
     if not servicos.status_composicao.isin(["ok", "excluido"]).all():
@@ -127,11 +171,18 @@ def preparar_atributos(servicos: pd.DataFrame, recursos: pd.DataFrame) -> pd.Dat
         raise ValueError("Recurso ligado a serviço desconhecido")
     if not rows.categoria.isin(CATEGORIAS).all():
         raise ValueError("Categoria desconhecida de recurso")
-    numeric = ["coeficiente", "custo_folha_sem_truncamento", "horas_mao_obra", "horas_equipamento"]
+    numeric = [
+        "coeficiente",
+        "custo_folha_sem_truncamento",
+        "horas_mao_obra",
+        "horas_equipamento",
+    ]
     rows[numeric] = rows[numeric].apply(pd.to_numeric, errors="raise")
     values = rows[numeric].to_numpy(dtype=float)
     if not np.isfinite(values).all() or (values < 0).any():
-        raise ValueError("Coeficientes, custos e horas devem ser finitos e não negativos")
+        raise ValueError(
+            "Coeficientes, custos e horas devem ser finitos e não negativos"
+        )
     data = selecionar_recorte(servicos)
     data = data.loc[data.status_composicao.eq("ok")].copy()
     if data.empty:
@@ -146,17 +197,23 @@ def preparar_atributos(servicos: pd.DataFrame, recursos: pd.DataFrame) -> pd.Dat
         record = {"codigo": code, "custo_folhas_sem_truncamento": total}
         for category in CATEGORIAS:
             sub = group.loc[group.categoria.eq(category)]
-            record[f"fracao_{category}"] = float(sub.custo_folha_sem_truncamento.sum() / total)
+            record[f"fracao_{category}"] = float(
+                sub.custo_folha_sem_truncamento.sum() / total
+            )
             record[f"n_{category}"] = int(sub.codigo_recurso.nunique())
         record["horas_mao_obra"] = float(group.horas_mao_obra.sum())
         record["horas_equipamento"] = float(group.horas_equipamento.sum())
         record["n_recursos"] = int(group.codigo_recurso.nunique())
-        record["n_recursos_preco_sp"] = int(group.uf_preco.eq("SP").sum()) if "uf_preco" in group else 0
+        record["n_recursos_preco_sp"] = (
+            int(group.uf_preco.eq("SP").sum()) if "uf_preco" in group else 0
+        )
         records.append(record)
     if set(data.codigo) != set(record["codigo"] for record in records):
         raise ValueError("Composição conciliada sem recursos-folha")
     data = data.merge(pd.DataFrame(records), on="codigo", validate="one_to_one")
     if not np.isfinite(data.custo.astype(float)).all() or data.custo.le(0).any():
         raise ValueError("Custo oficial deve ser positivo e finito")
-    data["diferenca_folhas_pct"] = 100 * (data.custo_folhas_sem_truncamento - data.custo) / data.custo
+    data["diferenca_folhas_pct"] = (
+        100 * (data.custo_folhas_sem_truncamento - data.custo) / data.custo
+    )
     return agrupar_variantes(data, rows).sort_values("codigo").reset_index(drop=True)
