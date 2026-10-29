@@ -31,3 +31,4 @@
 - Hook versionado em `.githooks/pre-commit` roda `ruff check` e `ruff format --check` nos arquivos Python preparados e bloqueia o commit em caso de erro. Ativado neste clone com `git config core.hooksPath .githooks`; em outro clone é preciso repetir o comando.
 - `core.fileMode false` está ativo neste clone porque o OneDrive altera permissões dos arquivos. O OneDrive também não preserva links simbólicos: não criar symlinks no repositório.
 - Documentação para o usuário: seção 5 do `README.md` da raiz e seção "Qualidade de código" de `OrcaAI/ml/README.md`.
+- Em 29/10/2026 o venv do ml subiu para pandas 3.1.0, numpy 2.5.4, reportlab 5.1.0 e pytest 9.2.0. O estudo de acabamentos e a regressão dos 18 nichos foram reexecutados e reproduziram as métricas, seleções e previsões de 27/09/2026; as únicas diferenças são no último dígito de ponto flutuante. As pastas em `OrcaAI/ml/outputs` não foram regeneradas e continuam sendo a referência entregue.

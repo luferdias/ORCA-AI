@@ -389,15 +389,20 @@ def executar_experimento(
             )
         report["n_validacao_excluida_publicacao_tardia"] = int(late_validation.sum())
         validation = validation.loc[~late_validation].copy()
+
         # Com datas conhecidas, o ajuste fixo de cada fase só vê alvos publicados
         # até a primeira origem de previsão daquela fase.
-        for training, forecast in [(train, validation), (final_train, test)]:
+        def _sem_publicacao_tardia(training, forecast):
             first_origin = forecast.data_corte.min()
-            if pd.notna(first_origin):
-                invalid = training.publicado_alvo.notna() & training.publicado_alvo.gt(
-                    first_origin
-                )
-                training.drop(index=training.index[invalid], inplace=True)
+            if pd.isna(first_origin):
+                return training
+            invalid = training.publicado_alvo.notna() & training.publicado_alvo.gt(
+                first_origin
+            )
+            return training.loc[~invalid].copy()
+
+        train = _sem_publicacao_tardia(train, validation)
+        final_train = _sem_publicacao_tardia(final_train, test)
         report.update(
             {
                 "n_treino": len(train),
