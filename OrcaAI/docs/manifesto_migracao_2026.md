@@ -145,3 +145,24 @@ Documentos da CAG que estavam em `docs/` (`projeto.md`, `plano_de_execucao.md`, 
 | Guardrail G-01 refinado | `orca_tools/code_guardrail_validator.py` | Bancos oficiais da cascata completa, comparação por palavra inteira sem acento; séries próprias históricas (`SRAES-ELEV-`, `SRAES-LIMP-`, `SRAES-GER-`, `SRAES-SUB-`, `SRA-ES-`, `COMP-HVAC-`, `COMP-CAG-`) viram ressalva com pedido de mapeamento para `SRAES-CP` |
 | Achados do acervo | `projetos/*/05-validacoes/` | Todos os doze itens passam sem bloqueio; dez ficam em RESSALVAS pelas séries próprias históricas; itens 05 e 08 APROVADOS em G-01 e G-02. Validação de códigos: Item 07 com 12 códigos consistentes e 5 descrições reescritas pelo engenheiro (a conferir pelo A4); Item 05 com 2 códigos não encontrados no índice de 2026-02 (a investigar). A planilha analítica do Orçafascio não tem valores em cache e fica para leitura futura |
 | API Knowledge | — | Não iniciada; depende de Qdrant (fase posterior) |
+
+## F5 — Aprendizado por demonstração, preparação (29/10/2026)
+
+| Entrega | Onde |
+| --- | --- |
+| Formato das trilhas (JSONL por sessão) e utilitários de registro, leitura e resumo | `orca_tools/trilhas_lfd.py` (com testes) |
+| Pastas e regras | `OrcaAI/knowledge/demonstracoes/README.md`, `OrcaAI/knowledge/padroes/README.md` |
+| Primeiro padrão, derivado das doze planilhas e dos memoriais do acervo | `OrcaAI/knowledge/padroes/orcafascio-exportacao-e-enquadramento.md` |
+| Comandos `/observar-orcafascio` e `/orcafascio` | gerados em `.agent/workflows/` a partir do catálogo |
+
+Pendente do engenheiro: gravar as primeiras sessões reais no Antigravity (login manual), a partir das quais o A3 escreve padrões por atividade e o A4 os valida.
+
+## F6 — Shitsuke, preparação (29/10/2026)
+
+| Entrega | Onde |
+| --- | --- |
+| CI no GitHub Actions: ruff, varredura de segredos, estrutura dos doze itens, projeções sincronizadas, testes das ferramentas e do módulo de ML | `.github/workflows/ci.yml` |
+| Hook de pre-commit com segredos e lint (ignora `docs/historico` e o próprio CI) | `.githooks/pre-commit` |
+| Especificação atualizada para a versão 0.3 com o estado de execução | `OrcaAI/spec/orca_ai_2_0_estrutura_e_agentes.md` e PDF |
+
+Pendentes: relatório 5S mensal (`/auditar-5s`) e decisões D2 (cópia e release das execuções de ML) e D3 (reescrita do histórico).

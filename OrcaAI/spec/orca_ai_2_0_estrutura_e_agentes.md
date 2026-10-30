@@ -2,7 +2,7 @@
 title: "ORCA-AI 2.0 — Especificação técnica consolidada"
 subtitle: "Estrutura, agentes, plataformas, aprendizado por demonstração e roteiro de migração"
 author: "Engenheiro Luis Fernando · MGI / SRA-ES · com apoio do Claude Code"
-date: "Versão 0.2 · 29/10/2026 · rascunho para decisão"
+date: "Versão 0.3 · 29/10/2026 · em execução"
 lang: pt-BR
 ---
 
@@ -11,7 +11,7 @@ lang: pt-BR
 **Projeto:** ORCA-AI, Inteligência Artificial para Engenharia de Custos e Gestão Processual de Obras e Serviços de Engenharia.
 **Órgão:** Ministério da Gestão e da Inovação em Serviços Públicos, Superintendência Regional de Administração no Espírito Santo (MGI / SRA-ES), Edifício Sede e Anexo, Vitória/ES.
 **Responsável técnico:** engenheiro Luis Fernando.
-**Versão:** 0.2, de 29/10/2026. Substitui a versão 0.1 do mesmo dia. **Status: rascunho para decisão.** Nada descrito aqui foi executado, exceto o que a seção 3.1 registra como concluído.
+**Versão:** 0.3, de 29/10/2026. Substitui as versões 0.1 e 0.2 do mesmo dia. **Status: em execução.** O engenheiro aprovou a proposta em 29/10/2026 e autorizou a execução contínua; o estado de cada fase está na seção 13.1.
 
 ---
 
@@ -574,6 +574,18 @@ Nenhuma fase apaga arquivo sem registrar hash e destino em `docs/manifesto_migra
 | **F6** | Shitsuke | A2 | CI no GitHub (hook, `validar_estrutura`, testes); relatório 5S mensal; `/auditar-5s` | CI verde no `main`; relatório sem violação crítica |
 
 Ordem: F0 hoje; F1 e F2 só com Claude Code; F3 antes de F4; F5 depois de F3.
+
+### 13.1 Estado de execução em 29/10/2026
+
+| Fase | Estado | Commits | O que foi feito | O que falta |
+| --- | --- | --- | --- | --- |
+| F0 | parcial | `3354d3f` | Senha removida de 23 arquivos; login manual como regra; varredura de segredos no hook e na CI | Troca da senha no Orçafascio, só o engenheiro pode fazer |
+| F1 | concluída | `f1db3ed`, `4fa127b`, `5ff4efc` | Conteúdo do `Orca.zip` recuperado e arquivado; `node_modules`, logs, backup, zip duplicado e `Projetos/` removidos; `ml/outputs` fora do Git com manifestos | Cópia externa e release das execuções entregues (D2) |
+| F2 | concluída | `3e6c752`, `0f4557a` | Doze itens na estrutura única; `tools/orca_tools` com testes; fichas e docs corrigidos; BDI do acervo reproduzido pela fórmula | — |
+| F3 | concluída | `734687d` | `catalogo.yaml` como fonte única; gerador e verificador das três projeções; skills canônicas; kit genérico arquivado | — |
+| F4 | concluída, exceto API | `3853cca` | Índices de bases, normalizador, renderizador, validação de ponta a ponta nos doze itens | API Knowledge (depende de Qdrant); leitura da planilha analítica do Orçafascio |
+| F5 | preparada | este commit | Formato e utilitários das trilhas; primeiro padrão derivado do acervo; comandos `/observar-orcafascio` e `/orcafascio` gerados | Sessões reais gravadas pelo engenheiro no Antigravity; padrões a partir de trilhas |
+| F6 | preparada | este commit | CI no GitHub: ruff, segredos, estrutura dos itens, projeções, testes de ferramentas e de ML | Relatório 5S mensal; reescrita do histórico (D3) |
 
 ---
 

@@ -1,0 +1,52 @@
+name: ORCA-AI — qualidade e estrutura
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            OrcaAI/ml/requirements.txt
+            OrcaAI/ml/requirements-dev.txt
+
+      - name: Dependências
+        run: python -m pip install -r OrcaAI/ml/requirements-dev.txt
+
+      - name: Lint e formatação (ruff)
+        run: |
+          ruff check .
+          ruff format --check .
+
+      - name: Varredura de segredos (mesma regra do hook)
+        run: |
+          padrao="(senha|password|passwd|api[_-]?key|secret[_-]?key|access[_-]?token|private[_-]?key)[[:space:]]*[:=][[:space:]]*[\"'\`]?[^[:space:]\"'\`<\$]{6,}"
+          if git ls-files -z | grep -zv 'docs/historico/' | xargs -0 grep -nIiE "$padrao" 2>/dev/null \
+             | grep -viE 'REMOVID|EXEMPLO|EXAMPLE|PLACEHOLDER|YOUR_|\$\{|os\.environ|getenv|process\.env|keyring|\.githooks/pre-commit|ci\.yml'; then
+            echo "possível segredo versionado"; exit 1
+          fi
+          echo "sem segredos"
+
+      - name: Estrutura dos itens do acervo
+        run: python OrcaAI/tools/cli/validar_estrutura.py
+
+      - name: Projeções do catálogo sincronizadas
+        run: python OrcaAI/tools/cli/gerar_projecoes.py --verificar
+
+      - name: Testes das ferramentas
+        working-directory: OrcaAI/tools
+        run: python -m pytest -q
+
+      - name: Testes do módulo de ML
+        working-directory: OrcaAI/ml
+        run: python -m pytest -q
