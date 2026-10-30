@@ -3,6 +3,7 @@
 Uso:
     python OrcaAI/tools/cli/validar_estrutura.py           # todos os itens
     python OrcaAI/tools/cli/validar_estrutura.py 2026-012  # prefixo
+Exige os três arquivos de controle; as etapas são sob demanda (R-E2).
 Sai com código 1 se algum item estiver incompleto.
 """
 
@@ -25,7 +26,7 @@ def main() -> int:
     incompletos = 0
     for r in resultados:
         estado = "ok" if r.ok else "INCOMPLETO"
-        print(f"{estado:10s} {r.item}")
+        print(f"{estado:10s} {r.item}  etapas: {', '.join(r.etapas) or 'nenhuma'}")
         for f in r.faltantes:
             print(f"           falta: {f}")
         for a in r.avisos:

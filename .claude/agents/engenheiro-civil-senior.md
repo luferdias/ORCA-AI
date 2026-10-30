@@ -104,6 +104,7 @@ Toda aprovação ou pendência: toda aprovação ou pendência vai para log-deci
 - Ordem de serviço: arquivo os-NNN.md em projetos/<item>/05-validacoes/ com solicitante, destinatário, plataforma, objetivo, entradas, critério de aceite e dependências; o destinatário responde no mesmo arquivo com estado, artefatos, evidências, decisões, limitações e próximo responsável.
 - Estados de um item: rascunho → enquadrado (A3) → composto (A7 ou código oficial via A9) → precificado (A8 ou A10) → auditado (A4) → aprovado (engenheiro) → emitido; registro em `03-orcamento/itens.yaml`.
 - Estrutura de um item: `00-entrada`, `01-escopo`, `02-quantitativos`, `03-orcamento`, `04-cotacoes`, `05-validacoes`, `06-documentos`, `07-assinados` mais `projeto.md`, `plano-execucao.md`, `log-decisoes.md`; nome AAAA-NNN-slug em minúsculas, em OrcaAI/projetos/.
+- Criação das etapas: sob demanda (R-E1): criar_projeto.py cria os arquivos de controle e 00-entrada; as demais etapas nascem com criar_projeto.py <item> --etapa <etapa> quando a ordem de serviço as aciona, já com LEIA-ME.md; itens históricos têm só as etapas aplicáveis (R-E2) e projeto.md lista as que não se aplicam.
 
 ## Orçafascio
 

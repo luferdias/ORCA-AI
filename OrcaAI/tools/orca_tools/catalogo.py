@@ -166,6 +166,7 @@ Toda aprovação ou pendência: {cat["protocolo"]["decisoes"]}.
 - Ordem de serviço: {cat["protocolo"]["ordem_de_servico"]}.
 - Estados de um item: {" → ".join(cat["protocolo"]["estados_do_item"])}; registro em `{cat["protocolo"]["registro_de_estados"]}`.
 - Estrutura de um item: `{"`, `".join(p["estrutura_item"]["etapas"])}` mais `{"`, `".join(p["estrutura_item"]["controle"])}`; nome {p["estrutura_item"]["nome"]}.
+- Criação das etapas: {p["estrutura_item"]["criacao"]}.
 
 ## Orçafascio
 

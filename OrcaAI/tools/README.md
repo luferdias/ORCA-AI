@@ -16,6 +16,7 @@ cd OrcaAI/tools
 ../ml/.venv/bin/python -m pytest -q
 ../ml/.venv/bin/python cli/validar_estrutura.py
 ../ml/.venv/bin/python cli/criar_projeto.py 2026-013-nome-do-servico
+../ml/.venv/bin/python cli/criar_projeto.py 2026-013-nome-do-servico --etapa 03-orcamento
 ../ml/.venv/bin/python cli/gerar_projecoes.py --verificar
 ../ml/.venv/bin/python cli/indexar_bases.py --todas 2026-04
 ../ml/.venv/bin/python cli/validar_item.py 2026-007-pintura-externa

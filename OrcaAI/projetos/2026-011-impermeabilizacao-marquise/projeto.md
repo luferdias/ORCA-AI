@@ -41,3 +41,9 @@
 | Pendência | Responsável | Status |
 | --- | --- | --- |
 | Preencher finalidade e data de abertura a partir do processo SEI | Eng.º Luis Fernando | pendente |
+
+## Etapas
+
+- Presentes: `00-entrada`, `03-orcamento`, `05-validacoes`, `06-documentos`, `07-assinados`
+- Não aplicáveis (removidas em 30/10/2026, regra R-E2 da entrevista de maturidade): `01-escopo`, `02-quantitativos`, `04-cotacoes`
+- Etapas novas nascem sob demanda com `criar_projeto.py <item> --etapa <etapa>`.

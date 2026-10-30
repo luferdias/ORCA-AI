@@ -49,6 +49,7 @@ parametros_fixos:
     etapas: ["00-entrada", "01-escopo", "02-quantitativos", "03-orcamento", "04-cotacoes", "05-validacoes", "06-documentos", "07-assinados"]
     controle: ["projeto.md", "plano-execucao.md", "log-decisoes.md"]
     nome: "AAAA-NNN-slug em minúsculas, em OrcaAI/projetos/"
+    criacao: "sob demanda (R-E1): criar_projeto.py cria os arquivos de controle e 00-entrada; as demais etapas nascem com criar_projeto.py <item> --etapa <etapa> quando a ordem de serviço as aciona, já com LEIA-ME.md; itens históricos têm só as etapas aplicáveis (R-E2) e projeto.md lista as que não se aplicam"
 
 guardrails:
   - id: G-01
