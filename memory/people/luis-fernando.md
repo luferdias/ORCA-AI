@@ -53,3 +53,14 @@ os commits, e pede que memória e perfil sejam atualizados com os resultados,
 incluindo o da CI (run 40987495070, verde na primeira execução).
 - **Pendências que reservou para si:** trocar a senha do Orçafascio, decidir D2 
 e D3 da spec, e gravar as primeiras sessões reais no Antigravity.
+
+## Entrevista de maturidade e reestruturação (30/10/2026)
+
+- **Como responde a entrevistas:** por voz, bloco a bloco, em mensagens curtas e com transcrição imperfeita. Quando uma pergunta volta repetida na transcrição sem resposta, é sinal de que ele não a respondeu, não de que concordou. Pedir confirmação em uma linha funciona bem: responde "sim" ou corrige.
+- **Pede clareza quando a pergunta é vaga:** "você poderia ser mais explícito quanto a essas duas pendências". Prefere que cada pendência venha com o que precisa saber, as opções possíveis e o que muda com a resposta.
+- **Decisões de domínio que fixou** (registro completo em `OrcaAI/knowledge/padroes/entrevista-maturidade-2026-10.md`): regime desonerado por padrão; cascata SINAPI-ES → DER-ES → SICRO → SP → RJ → MG → demais estados; composições novas sempre em SRAES-CP, séries antigas congeladas; data-base do mês da elaboração, revisão rebaseia; "orçamento enxuto" significa precisão de códigos e descrições; os agentes fazem planilha, composições e BDI antes do Orçafascio, que vira o lugar de montar e formalizar; conclusão do orçamento e envio ao processo só com o De acordo dele.
+- **Qualidade que mais valoriza:** códigos e descrições 100% alinhados às tabelas de referência. Chamou isso de "ponto crítico do projeto de orçamento".
+- **Organização:** quer etapas criadas sob demanda, sem pastas vazias; dois blocos claros, SRAES (trabalho profissional, padrão) e UFG (projeto final da pós em Agentes Inteligentes); repositório público porque envia links aos professores do curso.
+- **Ferramentas:** usa o Maestri para ver as três plataformas lado a lado (terminais Batuta, Prumo e Sextante) e quer os documentos de referência também em PDF.
+- **Ambiente local:** o venv passou a ser `.venv` na raiz do repositório; RStudio aberto sobre o perfil gerou um `.html` e um `.Rhistory` ao lado deste arquivo, que ficam fora do Git.
+
