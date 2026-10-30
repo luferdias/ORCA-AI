@@ -1,0 +1,3 @@
+item,codigo,sistema,descricao,unidade,quantidade,custo_unitario_sem_bdi,bdi_percentual,preco_unitario_com_bdi,preco_total_com_bdi,fonte,data_base,observacoes
+1.1,,,,un,0,0,25,0,0,,, 
+

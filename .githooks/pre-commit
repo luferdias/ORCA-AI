@@ -58,9 +58,9 @@ unset IFS
 
 status=0
 echo "pre-commit: ruff check ($# arquivo(s) Python)"
-$ruff check "$@" || status=1
+$ruff check --force-exclude "$@" || status=1
 echo "pre-commit: ruff format --check"
-$ruff format --check "$@" || status=1
+$ruff format --check --force-exclude "$@" || status=1
 
 if [ $status -ne 0 ]; then
     echo >&2
