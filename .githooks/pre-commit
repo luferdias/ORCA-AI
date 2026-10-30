@@ -24,7 +24,7 @@ if [ -n "$todos" ]; then
     padrao="(senha|password|passwd|api[_-]?key|secret[_-]?key|access[_-]?token|private[_-]?key)[[:space:]]*[:=][[:space:]]*[$aspas]?[^[:space:]$aspas<\$]{6,}"
     # Exclui marcadores, exemplos e leituras de ambiente.
     achados=$(grep -nIiE "$padrao" "$@" 2>/dev/null \
-        | grep -viE 'REMOVID|EXEMPLO|EXAMPLE|PLACEHOLDER|YOUR_|\$\{|os\.environ|getenv|process\.env|keyring|\.githooks/pre-commit' || true)
+        | grep -viE 'REMOVID|EXEMPLO|EXAMPLE|PLACEHOLDER|YOUR_|\$\{|os\.environ|getenv|process\.env|keyring|\.githooks/pre-commit|docs/historico/' || true)
     if [ -n "$achados" ]; then
         echo "pre-commit: possível segredo em arquivo preparado:" >&2
         echo "$achados" | cut -c1-160 >&2

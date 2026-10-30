@@ -1,0 +1,4 @@
+interface:
+  display_name: "orcafascio-integration"
+  short_description: "Estrutura orçamentos de obras usando os modelos e organização lógica do Orçafascio, focado no uso correto das bases SINA"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

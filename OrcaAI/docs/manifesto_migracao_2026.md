@@ -119,3 +119,17 @@ Documentos da CAG que estavam em `docs/` (`projeto.md`, `plano_de_execucao.md`, 
 | `build_entregavel3.py`, `generate_pdf_reportlab.py` | `docs/historico/entregavel_3_scripts/` (Entregável 3 TRL e PI, cujos produtos não estão no repositório) |
 | Fichas `AGENTE_01` (link absoluto) e `AGENTE_07` ("Agente 11") | corrigidas no lugar |
 
+
+## F3 — Catálogo único e projeções (29/10/2026)
+
+| Ação | Origem | Destino | Observação |
+| --- | --- | --- | --- |
+| Fonte única | — | `OrcaAI/agents/catalogo.yaml` | 12 agentes, 11 subagentes, 5 subagentes de ML, 40 skills, 13 workflows, parâmetros fixos, guardrails, pausas e protocolo |
+| Gerador | — | `OrcaAI/tools/orca_tools/catalogo.py`, `OrcaAI/tools/cli/gerar_projecoes.py` | `--verificar` compara as projeções com o catálogo; teste `test_projecoes_sincronizadas` |
+| Skills canônicas | `.agent/skills/` (33) | `OrcaAI/agents/skills/` | `git mv`; `.agent/skills` e `.claude/skills` passam a ser cópias geradas (6 e 21 skills); skills do Codex ganham `agents/openai.yaml` |
+| Fichas antigas | `OrcaAI/agents/AGENTE_01…10.md`, `AGENTE_5S.md` | `OrcaAI/agents/fichas/historico/` | preservadas; fichas 2.0 geradas em `OrcaAI/agents/fichas/` |
+| Claude Code | — | `.claude/agents/` (6 agentes + 3 subagentes), `.claude/skills/`, bloco em `CLAUDE.md` | gerados |
+| Codex | — | bloco em `AGENTS.md` | preferências do engenheiro preservadas fora do bloco |
+| Antigravity | — | `.agent/rules/GEMINI.md`, `.agent/agents/` (A10, A11), `.agent/subagents/` (3), `.agent/skills/`, `.agent/workflows/` (13), `.agent/ARCHITECTURE.md` | gerados |
+| Kit genérico do Antigravity | `.agent/workflows/` (11), `.agent/scripts/` (4), `mcp_config.json`, `ARCHITECTURE.md`, `rules/GEMINI.md`, `agents/` (6) | `OrcaAI/docs/historico/antigravity_2026-10/` | decisão D6; `.agent/.shared/ui-ux-pro-max` (560 KB) removido, cópia em `.temp_ag_kit/.agent/.shared` |
+| Subagentes e workflows do zip | `.agent/subagents/` (9), `.agent/workflows/` (8), `.agent/rules/orca-central.md` | removidos das pastas ativas | substituídos pelos gerados; originais em `docs/historico/orca_central_2026-07/` e `antigravity_2026-10/rules/` |

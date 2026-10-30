@@ -1,0 +1,4 @@
+interface:
+  display_name: "orcamento-limpeza-hvac-es"
+  short_description: "Skill especializada na orçamentação e composições de custo unitário para a limpeza robotizada de sistemas de ar condicio"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "documentos-tecnicos-gerador"
+  short_description: "Skill geradora de especificações técnicas, termos de referência e memoriais descritivos para manutenção de Grupos Gerado"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

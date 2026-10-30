@@ -1,0 +1,4 @@
+interface:
+  display_name: "cronograma-fisico-financeiro"
+  short_description: "Cria cronogramas fisico-financeiros vinculados ao orcamento, com etapas, percentuais mensais, desembolso e criterios de "
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

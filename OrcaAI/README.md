@@ -66,18 +66,10 @@ OrcaAI/
 │   ├── lfd_learning_protocol.md               # Protocolo de Aprendizado por Demonstração (LfD)
 │   ├── market_research_protocol.md            # Estratégia de Pesquisa de Mercado Escalonada
 │   └── guardrails_validation_spec.md          # Validadores G-01 a G-10
-├── agents/                                    # Fichas Técnicas dos Agentes Especialistas
-│   ├── AGENTE_01_OrcaMasterOrchestrator.md
-│   ├── AGENTE_02_EngenheiroCustosSenior.md
-│   ├── AGENTE_03_OrcafascioPilot.md
-│   ├── AGENTE_04_PesquisadorMercado.md
-│   ├── AGENTE_05_MineradorBasesOficiais.md
-│   ├── AGENTE_06_CompositorCustosUnitarios.md
-│   ├── AGENTE_07_EspecialistaEspecificacao.md
-│   ├── AGENTE_08_EngenheiroPlanejamentoEConomico.md
-│   ├── AGENTE_09_AuditorConformidade.md
-│   ├── AGENTE_10_EspecialistaInstrucaoProcessualSEI.md
-│   └── AGENTE_5S_AuditorOrganizacao.md
+├── agents/                                    # Catálogo único e projeções
+│   ├── catalogo.yaml                          # FONTE ÚNICA: agentes, subagentes, skills, workflows
+│   ├── fichas/                                # Fichas 2.0 geradas (A1 a A12) + historico/ (AGENTE_01 a 10 e 5S)
+│   └── skills/                                # 33 skills canônicas (copiadas para .claude/skills e .agent/skills)
 ├── tools/                                     # Pacote Python orca_tools, CLIs e testes
 │   ├── orca_tools/                            # bdi_calculator, cronograma_generator, excel_budget_generator, code_guardrail_validator, estrutura_projeto
 │   ├── cli/                                   # criar_projeto, validar_estrutura, gerar_indice_dossie, orcafascio_es_automation

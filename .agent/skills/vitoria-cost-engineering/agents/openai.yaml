@@ -1,0 +1,4 @@
+interface:
+  display_name: "vitoria-cost-engineering"
+  short_description: "Engenharia de Custos e Orçamentação na Construção Civil focada em Vitória, Espírito Santo (ES). Prioriza SINAPI e IOPES."
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

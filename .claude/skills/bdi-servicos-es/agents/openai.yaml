@@ -1,0 +1,4 @@
+interface:
+  display_name: "bdi-servicos-es"
+  short_description: "Skill de cálculo, justificativa e parametrização de BDI (Bonificações e Despesas Indiretas) para contratos de serviços c"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

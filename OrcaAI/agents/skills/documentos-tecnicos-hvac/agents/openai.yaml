@@ -1,0 +1,4 @@
+interface:
+  display_name: "documentos-tecnicos-hvac"
+  short_description: "Skill geradora de documentos técnicos formais para serviços de limpeza robotizada e manutenção de sistemas de ar condici"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

@@ -1,27 +1,28 @@
 ---
-description: Gera especificacao tecnica, memoriais, demonstrativo de BDI, termo de referencia e relatorios a partir da planilha validada.
+description: Gera especificação, memorial, TR, demonstrativo de BDI e relatórios a partir da planilha validada.
 ---
+
+<!-- Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalogo.yaml. Não edite à mão. -->
 
 # /gerar-documentos
 
 $ARGUMENTS
 
+**Plataforma:** codex · **Aciona:** A6 DescritorEspecificador, subagente `renderizador-documentos`
+
 ## Objetivo
 
-Produzir documentos tecnicos coerentes com a planilha orcamentaria.
+Gera especificação, memorial, TR, demonstrativo de BDI e relatórios a partir da planilha validada.
 
 ## Fluxo
 
-1. Confirmar que validacoes foram executadas.
-2. Acionar `documentalista-tecnico`.
-3. Escolher templates em `templates/`.
-4. Gerar documentos em `06-documentos/`.
-5. Acionar `document-renderer-subagent`.
+1. Confirmar que /validar-orcamento foi executado sem bloqueios.
+2. Acionar A6 com os templates de OrcaAI/templates/.
+3. Acionar renderizador-documentos para DOCX e PDF em 06-documentos/.
 
-## Saida
+## Saída
 
-- Especificacao tecnica.
-- Memorial ou termo de referencia.
-- Demonstrativo de BDI.
-- Relatorio de cotacoes, quando houver.
-
+- especificação técnica
+- memorial ou TR
+- demonstrativo de BDI
+- relatório de cotações quando houver

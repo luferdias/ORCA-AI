@@ -1,0 +1,4 @@
+interface:
+  display_name: "normalizacao-planilhas-orcamento"
+  short_description: "Normaliza planilhas de orcamento para o modelo unico da Central Orca, preservando fontes, codigos, unidades, BDI, quanti"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

@@ -1,28 +1,28 @@
 ---
-description: Valida planilha orcamentaria, codigos SINAPI/IOPES, fontes, BDI, curva ABC e riscos de sobrepreco.
+description: Valida planilha, códigos, fontes, BDI, curva ABC e riscos antes dos documentos finais.
 ---
+
+<!-- Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalogo.yaml. Não edite à mão. -->
 
 # /validar-orcamento
 
 $ARGUMENTS
 
+**Plataforma:** claude_code · **Aciona:** A4 AuditorDuplaChecagem, subagente `validador-codigos`
+
 ## Objetivo
 
-Rodar verificacoes tecnicas antes de gerar documentos finais.
+Valida planilha, códigos, fontes, BDI, curva ABC e riscos antes dos documentos finais.
 
 ## Fluxo
 
-1. Acionar `validador-codigos`.
-2. Acionar `code-validator-subagent`.
-3. Acionar `guardrail-controladoria`.
-4. Aplicar `curva-abc-sobrepreco`.
-5. Aplicar `auditoria-fontes-precos`.
-6. Gerar relatorios em `05-validacoes/`.
+1. Acionar validador-codigos (validate_codes.py) contra as bases locais.
+2. Acionar A4 para G-01 a G-10, curva ABC, auditoria de fontes e matriz de riscos.
+3. Gerar relatórios em 05-validacoes/.
 
-## Saida
+## Saída
 
-- `validacao-codigos.md`.
-- `relatorio-guardrails.md`.
-- `curva-abc.md`.
-- Lista de bloqueios criticos.
-
+- validacao-codigos.md
+- relatorio-guardrails.md
+- curva-abc.md
+- lista de bloqueios

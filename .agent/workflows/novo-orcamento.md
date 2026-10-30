@@ -1,29 +1,29 @@
 ---
-description: Abre um novo projeto de orcamento publico na Central Orca e conduz o fluxo completo de triagem, planejamento, composicao, validacao e dossie.
+description: Abre um item de orçamento e conduz triagem, planejamento e extração inicial de escopo.
 ---
 
-# /novo-orcamento
+<!-- Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalogo.yaml. Não edite à mão. -->
+
+# /novo-orcamento <slug>
 
 $ARGUMENTS
 
+**Plataforma:** claude_code · **Aciona:** A1 OrcaMaestro, A3 EngenheiroCivilSenior
+
 ## Objetivo
 
-Criar ou iniciar um projeto de orcamento publico assistido por agentes.
+Abre um item de orçamento e conduz triagem, planejamento e extração inicial de escopo.
 
 ## Fluxo
 
-1. Acionar `central-orchestrator`.
-2. Acionar `intake-triage-agent`.
-3. Criar pasta em `projetos/`.
-4. Criar `projeto.md` e `log-decisoes.md`.
-5. Acionar `project-planner`.
-6. Classificar servico e skills obrigatorias.
-7. Iniciar extracao de escopo e quantitativos.
+1. Acionar A1 para a triagem e as perguntas mínimas.
+2. Criar a pasta com tools/cli/criar_projeto.py <slug> e preencher projeto.md.
+3. Acionar A1 para plano-execucao.md: objetivo, escopo, entradas, agentes, skills, tarefas, critérios e pausas.
+4. Acionar A3 para extrair escopo e quantitativos iniciais.
 
-## Saida
+## Saída
 
-- Pasta de projeto criada.
-- `projeto.md`.
-- `plano-execucao.md`.
-- Lista de pendencias iniciais.
-
+- pasta do item
+- projeto.md
+- plano-execucao.md
+- pendências iniciais

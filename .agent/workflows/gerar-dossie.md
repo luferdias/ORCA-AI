@@ -1,26 +1,27 @@
 ---
-description: Monta o pacote final do projeto com indice, checklist, planilha, memoria, validacoes, documentos e pendencias.
+description: Monta o pacote final com índice, checklist, planilha, memória, validações, documentos e pendências.
 ---
+
+<!-- Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalogo.yaml. Não edite à mão. -->
 
 # /gerar-dossie
 
 $ARGUMENTS
 
+**Plataforma:** claude_code · **Aciona:** A1 OrcaMaestro, A4 AuditorDuplaChecagem
+
 ## Objetivo
 
-Preparar o pacote final para assinatura, revisao ou instrucao processual.
+Monta o pacote final com índice, checklist, planilha, memória, validações, documentos e pendências.
 
 ## Fluxo
 
-1. Acionar `revisor-final`.
-2. Acionar `guardrail-controladoria`.
-3. Aplicar `dossie-licitacao-publica`.
-4. Gerar indice do dossie.
-5. Listar arquivos finais e pendencias.
+1. Acionar A4 para a revisão final.
+2. Aplicar dossie-licitacao-publica; gerar indice-dossie.md com tools/cli/gerar_indice_dossie.py.
+3. Acionar A1 para listar finais e pendências.
 
-## Saida
+## Saída
 
-- `indice-dossie.md`.
-- `checklist-final.md`.
-- Lista de documentos finais.
-
+- indice-dossie.md
+- checklist-final.md
+- lista de documentos finais

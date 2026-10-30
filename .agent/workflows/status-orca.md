@@ -1,27 +1,23 @@
 ---
-description: Mostra status de um projeto da Central Orca, incluindo arquivos, fases, pendencias, validacoes e proximas acoes.
+description: Mostra a fase atual de um item, pendências e próximo comando.
 ---
+
+<!-- Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalogo.yaml. Não edite à mão. -->
 
 # /status-orca
 
 $ARGUMENTS
 
+**Plataforma:** qualquer · **Aciona:** —
+
 ## Objetivo
 
-Mostrar onde o projeto esta no fluxo da Central Orca.
+Mostra a fase atual de um item, pendências e próximo comando.
 
-## Verificar
+## Fluxo
 
-- `projeto.md`.
-- `plano-execucao.md`.
-- `log-decisoes.md`.
-- planilhas em `03-orcamento`.
-- cotacoes em `04-cotacoes`.
-- validacoes em `05-validacoes`.
-- documentos em `06-documentos`.
-- assinados em `07-assinados`.
+1. Ler projeto.md, plano-execucao.md, log-decisoes.md e as oito pastas de etapa.
 
-## Saida
+## Saída
 
-Resumo objetivo com fase atual, pendencias e proximo comando sugerido.
-
+- resumo com fase atual, pendências e próximo comando sugerido

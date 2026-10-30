@@ -1,24 +1,25 @@
 ---
-description: Executa revisao final de coerencia entre escopo, orcamento, memoria, documentos e dossie.
+description: Revisão final de coerência entre escopo, orçamento, memória, documentos e dossiê.
 ---
+
+<!-- Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalogo.yaml. Não edite à mão. -->
 
 # /revisar-final
 
 $ARGUMENTS
 
+**Plataforma:** claude_code · **Aciona:** A4 AuditorDuplaChecagem
+
 ## Objetivo
 
-Fazer a revisao final antes de assinatura, envio ou instrucao processual.
+Revisão final de coerência entre escopo, orçamento, memória, documentos e dossiê.
 
 ## Fluxo
 
-1. Acionar `revisor-final`.
-2. Conferir bloqueios do `guardrail-controladoria`.
-3. Revisar documentos finais.
-4. Gerar `checklist-final.md`.
-5. Pausar para aprovacao humana.
+1. Acionar A4 para o checklist de revisão final.
+2. Conferir bloqueios pendentes; gerar checklist-final.md.
+3. Pausar para aprovação humana.
 
-## Saida
+## Saída
 
-Status final: aprovado, aprovado com ressalvas ou bloqueado.
-
+- status aprovado, aprovado com ressalvas ou bloqueado

@@ -37,6 +37,33 @@
 ## ORCA-AI 2.0 (revisão de estrutura e agentes)
 
 - Especificação consolidada em `OrcaAI/spec/orca_ai_2_0_estrutura_e_agentes.md` (PDF ao lado), versão 0.2 de 29/10/2026, rascunho para decisão. Regra fixada pelo engenheiro: **não cortar nada do que já existe; melhorar**. Doze agentes em três camadas (Claude Code: A1 maestro, A2 arquiteto 5S, A3 engenheiro civil sênior, A4 auditor de dupla checagem, A5 instrução SEI, A12 ML/UFG; Codex: A6 descritor, A7 compositor de CPU, A8 planilhista, A9 minerador de bases; Antigravity: A10 piloto do Orçafascio, A11 portais e mercado), onze subagentes utilitários e cinco de ML. Catálogo único em `agents/catalogo.yaml` gera `CLAUDE.md`, `AGENTS.md` e `.agent/`.
-- F1 executada em 29/10/2026 (commits `f1db3ed`, `4fa127b` e seguinte): conteúdo do `Orca.zip` recuperado (9 skills, 9 subagentes em `.agent/subagents`, 8 workflows, `projetos/_modelo`, regras em `.agent/rules/orca-central.md`) e arquivado em `OrcaAI/docs/historico/`; Seiri com `node_modules`, logs, backup, zip duplicado e `Projetos/` removidos; `ml/outputs` fora do Git. F2 executada em 29/10/2026: doze itens na estrutura única, `scripts/` e `skills/` viraram `OrcaAI/tools/` (pacote `orca_tools` com testes), fichas e docs corrigidos. Registro completo em `OrcaAI/docs/manifesto_migracao_2026.md`. Próxima: F3 (catálogo único).
+- F1 executada em 29/10/2026 (commits `f1db3ed`, `4fa127b` e seguinte): conteúdo do `Orca.zip` recuperado (9 skills, 9 subagentes em `.agent/subagents`, 8 workflows, `projetos/_modelo`, regras em `.agent/rules/orca-central.md`) e arquivado em `OrcaAI/docs/historico/`; Seiri com `node_modules`, logs, backup, zip duplicado e `Projetos/` removidos; `ml/outputs` fora do Git. F2 executada em 29/10/2026: doze itens na estrutura única, `scripts/` e `skills/` viraram `OrcaAI/tools/` (pacote `orca_tools` com testes), fichas e docs corrigidos. F3 executada em 29/10/2026: `OrcaAI/agents/catalogo.yaml` é a fonte única; `OrcaAI/tools/cli/gerar_projecoes.py` regenera `.claude/`, `AGENTS.md`, `.agent/` e as fichas; `--verificar` garante sincronia. Skills canônicas em `OrcaAI/agents/skills/`. Registro completo em `OrcaAI/docs/manifesto_migracao_2026.md`. Próximas: F4 (produção), F5 (LfD), F6 (CI).
 - Credenciais do Orçafascio: **login manual pelo engenheiro em cada sessão; nenhuma senha no sistema**. Senha removida de 23 arquivos no commit `3354d3f`; o hook de pre-commit bloqueia segredos. Pendente: trocar a senha no Orçafascio e decidir a reescrita do histórico (D3).
 - Decisões abertas D1 a D6 e D8 na seção 14 da spec (D7 decidida; D8 executada na prática pela F1).
+
+<!-- orca:catalogo:inicio -->
+## Catálogo de agentes 2.0 (2.0.0, 2026-10-29)
+
+Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalogo.yaml. Não edite à mão.
+
+| Id | Agente | Plataforma | Missão |
+| --- | --- | --- | --- |
+| A1 | OrcaMaestro | Claude Code | Conduzir a demanda da leitura do escopo até o dossiê de contratação pública. |
+| A2 | Arquiteto5S | Claude Code | Guardião dos cinco sensos e da arquitetura do repositório. |
+| A3 | EngenheiroCivilSenior | Claude Code | Autoridade técnica de engenharia civil e de custos. |
+| A4 | AuditorDuplaChecagem | Claude Code | Última linha de defesa: guardrails, dupla checagem e revisão final. |
+| A5 | InstrutorProcessualSEI | Claude Code | Blindagem jurídica e instrução processual no SEI. |
+| A6 | DescritorEspecificador | Codex | Descrições canônicas, especificações técnicas e memoriais. |
+| A7 | CompositorCPU | Codex | Fichas analíticas de composição própria SRAES-CP com insumos oficiais. |
+| A8 | PlanilhistaPlanejador | Codex | Planilha orçamentária, BDI, curva ABC, cronograma, PERT/CPM e Curva S. |
+| A9 | MineradorBases | Codex | Ingestão, normalização e índice local das bases oficiais. |
+| A10 | PilotoOrcafascio | Antigravity | Observar o engenheiro no Orçafascio e, após o De acordo, operar com trava anti-alucinação. |
+| A11 | PesquisadorPortaisMercado | Antigravity | Tabelas vigentes nos portais oficiais e pesquisa de mercado da IN 65/2021. |
+| A12 | PesquisadorMLUFG | Claude Code | Extensão acadêmica de Machine Learning, com experimentos rastreáveis. |
+
+- Agentes do Claude Code em `.claude/agents/` (A1, A2, A3, A4, A5, A12 e subagentes `validador-codigos`, `notificador-aprovacao`, `redator-academico`); skills em `.claude/skills/`.
+- Codex lê `AGENTS.md`; Antigravity lê `.agent/`. Fichas completas em `OrcaAI/agents/fichas/`. Fonte: `OrcaAI/agents/catalogo.yaml`.
+- Regra de ouro: Nenhum agente inventa código, preço, coeficiente ou fonte. Se a base oficial não resolver, registra pendência, pesquisa mercado e pede aprovação humana.
+- Orçafascio: manual, pelo engenheiro, no início de cada sessão; nenhum agente armazena, solicita ou digita a senha.
+- Comandos: `/novo-orcamento`, `/observar-orcafascio`, `/orcafascio`, `/pesquisar-precos`, `/atualizar-bases`, `/validar-orcamento`, `/gerar-documentos`, `/instruir-sei`, `/gerar-dossie`, `/revisar-final`, `/status-orca`, `/auditar-5s`, `/experimento-ml`.
+<!-- orca:catalogo:fim -->

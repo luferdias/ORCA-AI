@@ -21,7 +21,7 @@ Orca_AI/
 ├── OrcaAI/                                    # 🧠 NÚCLEO OPERACIONAL DO ORCA AI
 │   ├── README.md                              # Documentação executiva completa do sistema
 │   ├── spec/                                  # Especificações Técnicas (System, LfD, Market, Guardrails)
-│   ├── agents/                                # Fichas Técnicas dos 10 Agentes + Agente 5S (catálogo 2.0 em spec/)
+│   ├── agents/                                # catalogo.yaml (fonte única), fichas geradas e 33 skills
 │   ├── tools/                                 # Pacote Python orca_tools, CLIs e testes
 │   ├── templates/                             # Modelos formais de peças técnicas e SEI
 │   ├── workflows/                             # Procedimentos Operacionais Padrão (POPs)
@@ -43,7 +43,9 @@ Orca_AI/
 │       ├── _projetos_basicos/                       # Plantas DWG/PDF e arquivos de engenharia
 │       ├── _modelo/                                 # Modelo de item: 00-entrada a 07-assinados
 │       └── _governanca_sei_agu_cgu/                 # ⚖️ Pareceres AGU, CGU, Respostas e TJTR
-├── .agent/                                    # Configuração Antigravity / Regras Globais
+├── .agent/                                    # Projeção gerada para o Antigravity (A10, A11, workflows)
+├── .claude/                                   # Projeção gerada para o Claude Code (A1–A5, A12)
+├── AGENTS.md                                  # Projeção gerada para o Codex (A6–A9)
 └── .githooks/, pyproject.toml                 # Qualidade de código (ruff e hook de pre-commit)
 ```
 

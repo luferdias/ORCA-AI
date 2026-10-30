@@ -1,0 +1,4 @@
+interface:
+  display_name: "descritor-servicos-sinapi"
+  short_description: "Especialista em elaborar descrições detalhadas de serviços de engenharia civil padronizadas de acordo com os critérios d"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."
