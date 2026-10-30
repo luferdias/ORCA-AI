@@ -2,7 +2,7 @@
 title: "ORCA-AI — Layout de operação com três plataformas"
 subtitle: "Claude Code, Codex e Antigravity: quem faz o quê, como um orçamento atravessa as três, e as regras fixadas na entrevista de maturidade"
 author: "Setor de Engenharia — SRAES/MGI · engenheiro Luis Fernando, com o ORCA-AI"
-date: "Versão 1.2 — 30 de outubro de 2026"
+date: "Versão 1.3 — 30 de outubro de 2026"
 lang: pt-BR
 ---
 
@@ -261,8 +261,19 @@ sozinho na primeira abertura e precisa ser reiniciado; Codex e Antigravity
 pedem permissão na primeira chamada ao `maestri` e na primeira leitura fora
 da pasta do papel.
 
-Os papéis ficam salvos no workspace (`maestri role list`); o layout ainda não
-foi salvo como partitura, o que permitiria reabrir a equipe com um comando.
+Os papéis ficam salvos no workspace (`maestri role list`). Em 30/10/2026 o
+layout foi salvo como partitura **"ORCA-AI · Layout"** (escopo do workspace):
+Batuta como Maestro, Prumo, Sextante, o fichário de notas e as ligações entre
+eles, sem histórico de chat. Para reabrir a equipe em uma sessão nova, com o
+Maestro ligado no Batuta:
+
+```
+maestri partitura insert "ORCA-AI · Layout"
+```
+
+Os comandos de partitura só funcionam no terminal marcado como Maestro no
+canvas; o Batuta precisa estar marcado antes de salvar ou regravar
+(`maestri partitura update`).
 
 ## 9. Como uma sessão de trabalho começa
 
@@ -287,4 +298,3 @@ foi salvo como partitura, o que permitiria reabrir a equipe com um comando.
 | Instalar o Playwright no venv e gravar as três primeiras trilhas no Orçafascio | Engenheiro com o Sextante |
 | Levar ao catálogo a transferência formal da conferência de códigos para o A11 (hoje descrita nesta spec e nos papéis do Maestri) | Claude Code |
 | Mapear o subitem 2.11 do item 2026-007 (ressalva G-02 restante) | A3 |
-| Salvar o layout como partitura do Maestri | Quando o engenheiro pedir |
