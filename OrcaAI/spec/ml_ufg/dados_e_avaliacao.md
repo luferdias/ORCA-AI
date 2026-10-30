@@ -8,7 +8,7 @@ Estado: especificação proposta. Amostras de tabelas oficiais foram inspecionad
 
 Os referenciais oficiais fornecem o catálogo de serviços e composições. Os projetos fornecem exemplos de demandas e escolhas feitas na rotina da SRA-ES. A [especificação das bases](bases_servicos_e_atualizacao.md) define fontes, edições, campos e atualização; a [auditoria de acesso](../../docs/auditoria_bases_referenciais_2026-09-27.md) registra o que foi efetivamente conferido.
 
-Os 12 projetos permanecem em `OrcaAI/projetos/`, com os seguintes nomes:
+Os 12 projetos permanecem em `OrcaAI/projetos/`. Nomes originais (até 28/10/2026; renomeados na fase F2 em 29/10/2026 para `2026-001-teto-elevadores` … `2026-012-reforma-suporte-cag`, na estrutura `00-entrada` a `07-assinados`):
 
 1. `Item 01 - teto_elevadores`
 2. `Item 02 - Limpeza_robotizada_AC`

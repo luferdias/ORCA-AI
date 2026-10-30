@@ -7,12 +7,12 @@ from pathlib import Path
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Gera indice simples de dossie para um projeto Orca."
+        description="Gera índice simples de dossiê para um item em OrcaAI/projetos."
     )
     parser.add_argument("projeto", help="Slug do projeto dentro de projetos/")
     args = parser.parse_args()
 
-    root = Path(__file__).resolve().parents[1]
+    root = Path(__file__).resolve().parents[2]
     project = root / "projetos" / args.projeto
     if not project.is_dir():
         print(f"Projeto nao encontrado: {project}")

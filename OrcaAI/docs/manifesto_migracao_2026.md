@@ -52,3 +52,70 @@ Registro de toda remoção, movimentação e recuperação executada nas fases d
 | `relatorio_didatico_2026-09-27` | 67 | 44 | `1e8e87341178d1da…` | — |
 | `relatorio_final_2026-09-27` | 67 | 44 | `e6c898778a5e264f…` | — |
 | `verificacao_der_inicial` | 132 | 35 | `73735ce6fdc8cde0…` | — |
+## F2 — Seiton: acervo de projetos (29/10/2026, commit 3e6c752)
+
+319 arquivos movidos com `git mv`; conferência por SHA-256 de todos os arquivos de `projetos/` antes e depois: nenhum perdido. Regras de distribuição: `assinado` → `07-assinados`; especificações → `06-documentos`; orçamentos, BDI, cronogramas e memórias → `03-orcamento`; propostas de fornecedores e pesquisa IN 65 → `04-cotacoes`; projetos recebidos e DWG → `00-entrada`; scripts de automação → `05-validacoes/scripts`.
+
+| Pasta anterior | Pasta nova | Etapa | Arquivos |
+| --- | --- | --- | ---: |
+| `Item 01 - teto_elevadores` | `2026-001-teto-elevadores` | `(raiz)` | 1 |
+| `Item 01 - teto_elevadores` | `2026-001-teto-elevadores` | `00-entrada` | 2 |
+| `Item 01 - teto_elevadores` | `2026-001-teto-elevadores` | `03-orcamento` | 11 |
+| `Item 01 - teto_elevadores` | `2026-001-teto-elevadores` | `06-documentos` | 2 |
+| `Item 01 - teto_elevadores` | `2026-001-teto-elevadores` | `07-assinados` | 2 |
+| `Item 02 - Limpeza_robotizada_AC` | `2026-002-limpeza-robotizada-ac` | `(raiz)` | 1 |
+| `Item 02 - Limpeza_robotizada_AC` | `2026-002-limpeza-robotizada-ac` | `03-orcamento` | 10 |
+| `Item 02 - Limpeza_robotizada_AC` | `2026-002-limpeza-robotizada-ac` | `06-documentos` | 2 |
+| `Item 02 - Limpeza_robotizada_AC` | `2026-002-limpeza-robotizada-ac` | `07-assinados` | 2 |
+| `Item 03 - Lavagem_envidracada` | `2026-003-lavagem-fachada-envidracada` | `03-orcamento` | 10 |
+| `Item 03 - Lavagem_envidracada` | `2026-003-lavagem-fachada-envidracada` | `06-documentos` | 2 |
+| `Item 03 - Lavagem_envidracada` | `2026-003-lavagem-fachada-envidracada` | `07-assinados` | 2 |
+| `Item 04 - Junta_dilatacao` | `2026-004-juntas-dilatacao` | `03-orcamento` | 10 |
+| `Item 04 - Junta_dilatacao` | `2026-004-juntas-dilatacao` | `06-documentos` | 2 |
+| `Item 04 - Junta_dilatacao` | `2026-004-juntas-dilatacao` | `07-assinados` | 2 |
+| `Item 05 - Pintura_grade` | `2026-005-pintura-grades` | `03-orcamento` | 10 |
+| `Item 05 - Pintura_grade` | `2026-005-pintura-grades` | `06-documentos` | 2 |
+| `Item 05 - Pintura_grade` | `2026-005-pintura-grades` | `07-assinados` | 2 |
+| `Item 06 - insulfilm` | `2026-006-pelicula-controle-solar` | `03-orcamento` | 10 |
+| `Item 06 - insulfilm` | `2026-006-pelicula-controle-solar` | `06-documentos` | 2 |
+| `Item 06 - insulfilm` | `2026-006-pelicula-controle-solar` | `07-assinados` | 2 |
+| `Item 07 - Pintura_externa_MGIES` | `2026-007-pintura-externa` | `03-orcamento` | 17 |
+| `Item 07 - Pintura_externa_MGIES` | `2026-007-pintura-externa` | `05-validacoes` | 57 |
+| `Item 07 - Pintura_externa_MGIES` | `2026-007-pintura-externa` | `06-documentos` | 6 |
+| `Item 07 - Pintura_externa_MGIES` | `2026-007-pintura-externa` | `07-assinados` | 4 |
+| `Item 08 - impermeabilizacao_cisterna` | `2026-008-impermeabilizacao-cisterna` | `03-orcamento` | 10 |
+| `Item 08 - impermeabilizacao_cisterna` | `2026-008-impermeabilizacao-cisterna` | `06-documentos` | 2 |
+| `Item 08 - impermeabilizacao_cisterna` | `2026-008-impermeabilizacao-cisterna` | `07-assinados` | 2 |
+| `Item 09 - limpeza_FV` | `2026-009-limpeza-fotovoltaica` | `03-orcamento` | 12 |
+| `Item 09 - limpeza_FV` | `2026-009-limpeza-fotovoltaica` | `06-documentos` | 2 |
+| `Item 09 - limpeza_FV` | `2026-009-limpeza-fotovoltaica` | `07-assinados` | 2 |
+| `Item 10 - MNT_gerador_subestacao` | `2026-010-manutencao-gerador-subestacao` | `03-orcamento` | 12 |
+| `Item 10 - MNT_gerador_subestacao` | `2026-010-manutencao-gerador-subestacao` | `04-cotacoes` | 5 |
+| `Item 10 - MNT_gerador_subestacao` | `2026-010-manutencao-gerador-subestacao` | `06-documentos` | 4 |
+| `Item 10 - MNT_gerador_subestacao` | `2026-010-manutencao-gerador-subestacao` | `07-assinados` | 2 |
+| `Item 11 - Impermeabilizacao_Marquise` | `2026-011-impermeabilizacao-marquise` | `00-entrada` | 1 |
+| `Item 11 - Impermeabilizacao_Marquise` | `2026-011-impermeabilizacao-marquise` | `03-orcamento` | 10 |
+| `Item 11 - Impermeabilizacao_Marquise` | `2026-011-impermeabilizacao-marquise` | `06-documentos` | 3 |
+| `Item 11 - Impermeabilizacao_Marquise` | `2026-011-impermeabilizacao-marquise` | `07-assinados` | 2 |
+| `Item 12 - Reforma_Suporte_CAG (duas subpastas 2026-001 unificadas)` | `2026-012-reforma-suporte-cag` | `(raiz)` | 3 |
+| `Item 12 - Reforma_Suporte_CAG (duas subpastas 2026-001 unificadas)` | `2026-012-reforma-suporte-cag` | `00-entrada` | 12 |
+| `Item 12 - Reforma_Suporte_CAG (duas subpastas 2026-001 unificadas)` | `2026-012-reforma-suporte-cag` | `02-quantitativos` | 6 |
+| `Item 12 - Reforma_Suporte_CAG (duas subpastas 2026-001 unificadas)` | `2026-012-reforma-suporte-cag` | `03-orcamento` | 23 |
+| `Item 12 - Reforma_Suporte_CAG (duas subpastas 2026-001 unificadas)` | `2026-012-reforma-suporte-cag` | `05-validacoes` | 2 |
+| `Item 12 - Reforma_Suporte_CAG (duas subpastas 2026-001 unificadas)` | `2026-012-reforma-suporte-cag` | `06-documentos` | 13 |
+| `Projetos Básicos` | `_projetos_basicos` | `(raiz)` | 18 |
+
+Documentos da CAG que estavam em `docs/` (`projeto.md`, `plano_de_execucao.md`, `logs_de_decisoes.md`) voltaram ao item `2026-012`: plano e log substituem os modelos em branco; `projeto.md` ficou em `05-validacoes/historico/projeto_docs_2026-07.md`, ao lado de `projeto_variante_2026-001.md`. Cada item 01 a 11 recebeu `projeto.md`, `plano-execucao.md` e `log-decisoes.md` novos, com o nome da pasta anterior registrado.
+
+## F2 — Seiton: ferramentas Python (29/10/2026)
+
+| Origem | Destino |
+| --- | --- |
+| `OrcaAI/skills/{bdi_calculator,cronograma_generator,excel_budget_generator,code_guardrail_validator}.py` | `OrcaAI/tools/orca_tools/` (pacote, com `estrutura_projeto.py` novo e 18 testes) |
+| `OrcaAI/scripts/criar_projeto_orca.py`, `validar_estrutura_orca.py` | `OrcaAI/tools/cli/criar_projeto.py`, `validar_estrutura.py` (reescritos para a estrutura real) |
+| `OrcaAI/scripts/gerar_indice_dossie.py`, `orcafascio_es_automation.py` | `OrcaAI/tools/cli/` (o segundo reescrito para login manual, sem `.env`) |
+| `OrcaAI/scripts/*.ps1` (4) | `OrcaAI/tools/windows/` |
+| `build_despacho_24_58.py`, `build_despacho_engenharia_v2.py`, `generate_despacho.py`, `update_docx.py` | `projetos/_governanca_sei_agu_cgu/scripts/` (uso único, documentos SEI) |
+| `build_entregavel3.py`, `generate_pdf_reportlab.py` | `docs/historico/entregavel_3_scripts/` (Entregável 3 TRL e PI, cujos produtos não estão no repositório) |
+| Fichas `AGENTE_01` (link absoluto) e `AGENTE_07` ("Agente 11") | corrigidas no lugar |
+

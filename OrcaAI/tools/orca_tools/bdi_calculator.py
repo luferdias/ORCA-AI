@@ -52,46 +52,57 @@ def calcular_bdi(params: ParametrosBDI) -> Dict[str, Any]:
     }
 
 
+BDI_SERVICO_MGI = 25.00
+BDI_FORNECIMENTO_MGI = 14.02
+
+# Decomposição oficial do BDI de 25,00% usada nos treze memoriais de justificativa
+# do acervo (itens 01 a 12), regime DESONERADO: AC 3,38%; R 0,85%; S+G 0,48%;
+# DF 0,85%; L 6,00%; I = ISS 5,00% + COFINS 3,00% + PIS 0,65% + CPRB 1,80% = 10,45%.
+# Fonte: Justificativa_Tecnica_BDI_25_*.pdf e Composicao de BDI *.pdf em
+# OrcaAI/projetos/*/03-orcamento (3º quartil do Acórdão TCU 2.622/2013).
+PARAMETROS_SERVICO_MGI = ParametrosBDI(
+    ac=0.0338,
+    s=0.0048,
+    r=0.0085,
+    g=0.0000,
+    df=0.0085,
+    lucro=0.0600,
+    pis=0.0065,
+    cofins=0.0300,
+    iss=0.0500,
+    cprb=0.0180,
+)
+
+
 def obter_bdi_padrao_mgi(tipo: str = "servico") -> Dict[str, Any]:
     """
-    Retorna o BDI parametrizado oficial para o MGI/SRA-ES.
-    - 'servico': 25,00% (Serviços e Obras)
-    - 'fornecimento': 14,02% (Fornecimento de Materiais/Equipamentos)
+    Retorna o BDI institucional do MGI/SRA-ES.
+    - 'servico': 25,00%, com a decomposição oficial dos memoriais do acervo
+      (regime desonerado, CPRB 1,80%); o valor é calculado pela fórmula do TCU
+      e confere com o memorial.
+    - 'fornecimento': 14,02%, BDI diferenciado reduzido para fornecimento puro
+      de materiais e equipamentos (faixa média do Acórdão TCU 2.622/2013, de
+      11,10% a 18,45%). O acervo não possui memorial próprio com a decomposição
+      desse percentual; o valor é devolvido como taxa fixa, sem decomposição.
     """
     if tipo == "servico":
-        # Calibrado para atingir exatamente 25.00%
-        params = ParametrosBDI(
-            ac=0.0400,
-            s=0.0080,
-            r=0.0120,
-            g=0.0080,
-            df=0.0123,
-            lucro=0.0740,
-            pis=0.0065,
-            cofins=0.0300,
-            iss=0.0500,
+        res = calcular_bdi(PARAMETROS_SERVICO_MGI)
+        assert res["bdi_percentual"] == BDI_SERVICO_MGI, res
+        res["tipo"] = "Serviços de Engenharia e Manutenção (BDI 25%, desonerado)"
+        res["regime_encargos"] = "Desonerado"
+        res["fonte"] = (
+            "Memoriais Justificativa_Tecnica_BDI_25 do acervo (Acórdão TCU 2.622/2013, 3º quartil)"
         )
-        res = calcular_bdi(params)
-        res["tipo"] = "Serviços de Engenharia e Manutenção (BDI 25%)"
         return res
-    elif tipo == "fornecimento":
-        # Faixa média do Acórdão TCU 2.622/2013 para Fornecimento de Bens
-        params = ParametrosBDI(
-            ac=0.0345,
-            s=0.0048,
-            r=0.0085,
-            g=0.0048,
-            df=0.0085,
-            lucro=0.0511,
-            pis=0.0065,
-            cofins=0.0300,
-            iss=0.0000,
-        )
-        res = calcular_bdi(params)
-        res["tipo"] = "Fornecimento de Bens e Equipamentos (BDI Diferenciado Reduzido)"
-        return res
-    else:
-        raise ValueError("Tipo inválido. Use 'servico' ou 'fornecimento'.")
+    if tipo == "fornecimento":
+        return {
+            "bdi_decimal": round(BDI_FORNECIMENTO_MGI / 100.0, 6),
+            "bdi_percentual": BDI_FORNECIMENTO_MGI,
+            "tipo": "Fornecimento de Bens e Equipamentos (BDI Diferenciado Reduzido)",
+            "fonte": "Acórdão TCU 2.622/2013, faixa média para fornecimento; sem memorial próprio no acervo",
+            "decomposicao": None,
+        }
+    raise ValueError("Tipo inválido. Use 'servico' ou 'fornecimento'.")
 
 
 if __name__ == "__main__":

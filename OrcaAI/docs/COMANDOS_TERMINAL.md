@@ -1,6 +1,6 @@
 # Comandos de Terminal para Operar a Central Orca
 
-Este roteiro considera Windows PowerShell e a pasta `Orca` criada dentro do projeto `Orcamento_de_Obra`.
+Roteiro original em Windows PowerShell (julho/2026). Desde 29/10/2026 o ambiente principal é macOS, com o repositório `ORCA-AI`; os caminhos abaixo são históricos, e os comandos atuais estão em `OrcaAI/tools/README.md`. Este roteiro considerava a pasta `Orca` criada dentro do projeto `Orcamento_de_Obra`.
 
 > Ajuste o nome do projeto conforme o servico real.
 
@@ -34,7 +34,7 @@ Preencha no arquivo `.env`:
 ```text
 ORCAFASCIO_URL=https://app.orcafascio.com/
 ORCAFASCIO_LOGIN=seu_login
-ORCAFASCIO_PASSWORD=sua_senha
+# senha: não existe variável; o engenheiro faz o login manualmente
 ORCA_DEFAULT_UF=ES
 ORCA_DEFAULT_MUNICIPIO=Vitoria
 ORCA_DEFAULT_BDI_SERVICO=25.00

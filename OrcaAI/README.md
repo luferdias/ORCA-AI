@@ -78,11 +78,10 @@ OrcaAI/
 │   ├── AGENTE_09_AuditorConformidade.md
 │   ├── AGENTE_10_EspecialistaInstrucaoProcessualSEI.md
 │   └── AGENTE_5S_AuditorOrganizacao.md
-├── skills/                                    # Módulos Python Executáveis
-│   ├── bdi_calculator.py                      # Calculadora de BDI (TCU 2.622/2013)
-│   ├── cronograma_generator.py                # Gerador de Cronograma Físico-Financeiro
-│   ├── excel_budget_generator.py              # Compilador de Planilhas Excel (.xlsx)
-│   └── code_guardrail_validator.py            # Validador de Códigos e Guardrails
+├── tools/                                     # Pacote Python orca_tools, CLIs e testes
+│   ├── orca_tools/                            # bdi_calculator, cronograma_generator, excel_budget_generator, code_guardrail_validator, estrutura_projeto
+│   ├── cli/                                   # criar_projeto, validar_estrutura, gerar_indice_dossie, orcafascio_es_automation
+│   └── tests/
 ├── templates/                                 # Modelos Formais de Peças Técnicas
 │   ├── modelo_especificacao_tecnica.md
 │   ├── modelo_justificativa_bdi.md
@@ -92,18 +91,19 @@ OrcaAI/
 │   ├── pipeline_aprendizado_orcafascio.md
 │   └── pipeline_geracao_dossie_completo.md
 └── projetos/                                  # 📁 Acervo de Projetos e Demandas Orçamentárias
-    ├── Item 01 - teto_elevadores/             # Recuperação do teto da casa de máquinas
-    ├── Item 02 - Limpeza_robotizada_AC/       # Limpeza robotizada de dutos e PMOC
-    ├── Item 03 - Lavagem_envidracada/         # Lavagem técnica de pele de vidro/fachada
-    ├── Item 04 - Junta_dilatacao/             # Tratamento e calafetação de juntas
-    ├── Item 05 - Pintura_grade/               # Pintura e proteção anticorrosiva de gradis
-    ├── Item 06 - insulfilm/                   # Aplicação de película de controle solar
-    ├── Item 07 - Pintura_externa_MGIES/       # Pintura predial externa
-    ├── Item 08 - impermeabilizacao_cisterna/  # Impermeabilização de reservatório inferior
-    ├── Item 09 - limpeza_FV/                  # O&M e limpeza de módulos fotovoltaicos
-    ├── Item 10 - MNT_gerador_subestacao/      # Manutenção de gerador e subestação abrigada
-    ├── Item 11 - Impermeabilizacao_Marquise/  # Impermeabilização da marquise frontal
-    ├── Item 12 - Reforma_Suporte_CAG/         # Reforma estrutural do suporte dos chillers
-    ├── Projetos Básicos/                      # Plantas DWG/PDF e arquivos de engenharia
+    ├── 2026-001-teto-elevadores/             # Recuperação do teto da casa de máquinas
+    ├── 2026-002-limpeza-robotizada-ac/       # Limpeza robotizada de dutos e PMOC
+    ├── 2026-003-lavagem-fachada-envidracada/         # Lavagem técnica de pele de vidro/fachada
+    ├── 2026-004-juntas-dilatacao/             # Tratamento e calafetação de juntas
+    ├── 2026-005-pintura-grades/               # Pintura e proteção anticorrosiva de gradis
+    ├── 2026-006-pelicula-controle-solar/                   # Aplicação de película de controle solar
+    ├── 2026-007-pintura-externa/       # Pintura predial externa
+    ├── 2026-008-impermeabilizacao-cisterna/  # Impermeabilização de reservatório inferior
+    ├── 2026-009-limpeza-fotovoltaica/                  # O&M e limpeza de módulos fotovoltaicos
+    ├── 2026-010-manutencao-gerador-subestacao/      # Manutenção de gerador e subestação abrigada
+    ├── 2026-011-impermeabilizacao-marquise/  # Impermeabilização da marquise frontal
+    ├── 2026-012-reforma-suporte-cag/         # Reforma estrutural do suporte dos chillers
+    ├── _projetos_basicos/                     # Plantas DWG/PDF e arquivos de engenharia
+    ├── _modelo/                               # Modelo de item (00-entrada a 07-assinados)
     └── _governanca_sei_agu_cgu/               # Acervo Processual, Pareceres AGU, CGU e TJTR
 ```

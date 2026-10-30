@@ -19,7 +19,7 @@ Mesmo recebendo **poucas informações técnicas iniciais** ou uma demanda sumar
 - **Exemplo de Transformação**:
   - *Input sumarizado*: "Lavagem dos vidros do prédio MGI."
   - *Descrição Padronizada pelo Agente 7*: `"LAVAGEM DE FACHADA ENVIDRAÇADA / PELE DE VIDRO COM APLICAÇÃO MANUAL DE DETERGENTE DESENGRAXANTE BIODEGRADÁVEL, UTILIZANDO PLATAFORMA ELEVATÓRIA ARTICULADA E HIDROJATEADORA DE ALTA PRESSÃO, INCLUSIVE ENXÁGUE E SECAGEM COM PANO DE MICROFIBRA. AF_08/2026"`
-- **Conexão com o Agente 11**: Esta descrição padronizada é o **gatilho técnico direto** entregue ao **Agente 11 (CompositorCustosUnitarios)**, que a utiliza para identificar exatamente os insumos oficiais (mão de obra, materiais, ferramentas) e calcular a produtividade da CPU.
+- **Conexão com o Agente 6**: Esta descrição padronizada é o **gatilho técnico direto** entregue ao **Agente 6 (CompositorCustosUnitarios)**, que a utiliza para identificar exatamente os insumos oficiais (mão de obra, materiais, ferramentas) e calcular a produtividade da CPU.
 
 ### 2. Estrutura das Peças Técnicas Oficiais (Caderno de Encargos / TR)
 Cada especificação técnica gerada deve conter obrigatoriamente:

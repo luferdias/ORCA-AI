@@ -25,13 +25,13 @@ Orca/
   .agent/
     agents/       Agentes principais
     subagents/    Subagentes operacionais
-    skills/       Conhecimentos especializados
+    skills/       Conhecimentos especializados (instruções de prompt)
     workflows/    Comandos do Antigravity
     rules/        Regras globais
   bases/          Bases SINAPI, IOPES, SICRO e exportacoes Orcafascio
   projetos/       Projetos de orcamento
   templates/      Modelos de planilha, memoria, BDI e relatorios
-  scripts/        Utilitarios locais
+  tools/          Pacote Python orca_tools, CLIs e testes
   output/         Relatorios consolidados
 ```
 
@@ -86,7 +86,7 @@ E configure as variaveis no seu ambiente:
 ```text
 ORCAFASCIO_URL=https://app.orcafascio.com/
 ORCAFASCIO_LOGIN=seu_login
-ORCAFASCIO_PASSWORD=sua_senha
+# senha: não existe variável; o engenheiro faz o login manualmente
 ORCA_DEFAULT_UF=ES
 ORCA_DEFAULT_MUNICIPIO=Vitoria
 ORCA_DEFAULT_BDI_SERVICO=25.00

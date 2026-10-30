@@ -33,7 +33,7 @@ flowchart TD
 ### 1. Criar projeto
 
 ```powershell
-python scripts/criar_projeto_orca.py "2026-001-nome-do-servico"
+python OrcaAI/tools/cli/criar_projeto.py 2026-013-nome-do-servico
 ```
 
 ### 2. Inserir arquivos

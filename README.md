@@ -21,28 +21,28 @@ Orca_AI/
 ├── OrcaAI/                                    # 🧠 NÚCLEO OPERACIONAL DO ORCA AI
 │   ├── README.md                              # Documentação executiva completa do sistema
 │   ├── spec/                                  # Especificações Técnicas (System, LfD, Market, Guardrails)
-│   ├── agents/                                # Fichas Técnicas dos 10 Agentes + Agente 5S
-│   ├── skills/                                # Módulos Python de cálculo e automação
-│   ├── scripts/                               # Ferramentas e geradores de despachos e planilhas
+│   ├── agents/                                # Fichas Técnicas dos 10 Agentes + Agente 5S (catálogo 2.0 em spec/)
+│   ├── tools/                                 # Pacote Python orca_tools, CLIs e testes
 │   ├── templates/                             # Modelos formais de peças técnicas e SEI
 │   ├── workflows/                             # Procedimentos Operacionais Padrão (POPs)
 │   ├── docs/                                  # Manuais, Tutoriais e Fluxogramas operacionais
 │   ├── bases/                                 # Tabelas oficiais indexadas (SINAPI, IOPES, SICRO)
 │   └── projetos/                              # 📁 Acervo de Projetos e Contratações Reais
-│       ├── Item 01 - teto_elevadores/         # Recuperação estrutural do teto dos elevadores
-│       ├── Item 02 - Limpeza_robotizada_AC/   # Limpeza robotizada de dutos (PMOC)
-│       ├── Item 03 - Lavagem_envidracada/     # Lavagem técnica de pele de vidro
-│       ├── Item 04 - Junta_dilatacao/         # Tratamento de juntas de dilatação
-│       ├── Item 05 - Pintura_grade/           # Pintura e proteção de gradis metálicos
-│       ├── Item 06 - insulfilm/               # Película de controle solar
-│       ├── Item 07 - Pintura_externa_MGIES/   # Pintura externa predial
-│       ├── Item 08 - impermeabilizacao_cisterna/ # Impermeabilização de reservatório
-│       ├── Item 09 - limpeza_FV/              # O&M de usina solar fotovoltaica
-│       ├── Item 10 - MNT_gerador_subestacao/  # Manutenção de gerador e subestação
-│       ├── Item 11 - Impermeabilizacao_Marquise/ # Impermeabilização de marquise
-│       ├── Item 12 - Reforma_Suporte_CAG/     # Reforma do suporte dos chillers (CAG)
-│       ├── Projetos Básicos/                  # Plantas DWG/PDF e arquivos de engenharia
-│       └── _governanca_sei_agu_cgu/           # ⚖️ Pareceres AGU, CGU, Respostas e TJTR
+│       ├── 2026-001-teto-elevadores/                # Recuperação estrutural do teto dos elevadores
+│       ├── 2026-002-limpeza-robotizada-ac/          # Limpeza robotizada de dutos (PMOC)
+│       ├── 2026-003-lavagem-fachada-envidracada/    # Lavagem técnica de pele de vidro
+│       ├── 2026-004-juntas-dilatacao/               # Tratamento de juntas de dilatação
+│       ├── 2026-005-pintura-grades/                 # Pintura e proteção de gradis metálicos
+│       ├── 2026-006-pelicula-controle-solar/        # Película de controle solar
+│       ├── 2026-007-pintura-externa/                # Pintura externa predial
+│       ├── 2026-008-impermeabilizacao-cisterna/     # Impermeabilização de reservatório
+│       ├── 2026-009-limpeza-fotovoltaica/           # O&M de usina solar fotovoltaica
+│       ├── 2026-010-manutencao-gerador-subestacao/  # Manutenção de gerador e subestação
+│       ├── 2026-011-impermeabilizacao-marquise/     # Impermeabilização de marquise
+│       ├── 2026-012-reforma-suporte-cag/            # Reforma do suporte dos chillers (CAG)
+│       ├── _projetos_basicos/                       # Plantas DWG/PDF e arquivos de engenharia
+│       ├── _modelo/                                 # Modelo de item: 00-entrada a 07-assinados
+│       └── _governanca_sei_agu_cgu/                 # ⚖️ Pareceres AGU, CGU, Respostas e TJTR
 ├── .agent/                                    # Configuração Antigravity / Regras Globais
 └── .githooks/, pyproject.toml                 # Qualidade de código (ruff e hook de pre-commit)
 ```
