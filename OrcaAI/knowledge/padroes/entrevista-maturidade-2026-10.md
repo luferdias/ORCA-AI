@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: bloco A respondido; blocos B a E pendentes.
+Estado: blocos A e B respondidos; blocos C a E pendentes.
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -63,7 +63,78 @@ especificados.
   escolhida; a composição própria herda a descrição e a unidade dessa base
   quando existe serviço análogo.
 
-## Blocos B a E
+## Bloco B — Regras fixas que o sistema deve obedecer
+
+### Pergunta 4 — BDI e regime
+
+**Resposta.** O padrão passa a ser o regime dos memoriais do acervo, e as
+fichas devem ser corrigidas para esse regime. Há casos de orçamento "bem
+enxuto" em que o tratamento pode ser diferente.
+
+**Leitura adotada e ponto a confirmar.** A transcrição traz "padrão mesmo não
+desonerado" e, logo em seguida, "encargos sociais do Espírito Santo
+desonerado". Os treze memoriais fecham 25,00% só com a CPRB de 1,8%, o que é
+regime desonerado, e encargos desonerados exigem a CPRB no BDI (Acórdão
+2.622/2013-TCU-Plenário). A leitura coerente é **regime desonerado como
+padrão**, corrigindo as fichas e a spec que dizem "não desonerado". **A
+confirmar** com o engenheiro antes de alterar o catálogo. Também a confirmar o
+que muda no "orçamento bem enxuto".
+
+**Regras derivadas.**
+
+- R-B1. BDI de serviço padrão: 25,00% pela decomposição dos memoriais
+  (AC 3,38; R 0,85; S+G 0,48; DF 0,85; L 6,00; I 10,45 com CPRB 1,8), regime
+  desonerado. BDI de fornecimento: 14,02%, taxa fixa.
+- R-B2. Fichas, spec e `catalogo.yaml` passam a dizer "desonerado por padrão"
+  assim que a leitura de R-B1 for confirmada; `bdi_calculator` já reproduz a
+  decomposição.
+- R-B3. Qualquer BDI fora do padrão exige memorial próprio em
+  `06-documentos/` e registro em `log-decisoes.md`.
+
+### Pergunta 5 — encargos sociais
+
+**Resposta.** Encargos sociais do SINAPI-ES, regime desonerado.
+
+**Regras derivadas.**
+
+- R-B4. Planilhas e composições usam a tabela SINAPI-ES **desonerada**. O
+  normalizador e o `validar_item.py` apontam divergência quando a exportação
+  do Orçafascio vier "Não desonerado".
+- R-B5. Regime de encargos e regime do BDI são o mesmo em todo o item; a
+  mistura é bloqueio (guardrail), não ressalva.
+
+### Pergunta 6 — séries antigas de códigos próprios
+
+**Resposta.** Os itens já aprovados não são congelados; as séries seguem.
+
+**Leitura adotada e ponto a confirmar.** Duas leituras possíveis: (a) as
+séries antigas (`SRAES-ELEV-`, `COMP-CAG-`, `SRA-ES-`) continuam válidas e em
+uso, sem migração; (b) elas passam a seguir o padrão `SRAES-CP-nnn` daqui em
+diante, sem reescrever os itens aprovados. **A confirmar.**
+
+**Regras derivadas.**
+
+- R-B6. Nenhum item aprovado é reescrito por causa de código próprio. O
+  guardrail G-01 deixa de emitir ressalva para as séries históricas nos
+  itens de 2026-001 a 2026-012.
+- R-B7. Para composições novas, o padrão é `SRAES-CP-nnn` (serviço) e
+  `SRAES-INS-nnn` (insumo), salvo decisão contrária na confirmação de R-B6.
+
+### Pergunta 7 — data-base e virada de tabela
+
+**Resposta.** A data-base é a tabela do mês da elaboração. Quando o orçamento
+atravessa a virada de tabela ou é revisado dois ou três meses depois, a
+revisão adota a tabela vigente e atualiza os preços.
+
+**Regras derivadas.**
+
+- R-B8. Data-base = competência vigente no mês de elaboração, registrada em
+  `projeto.md`. Toda revisão posterior ao fechamento rebaseia o orçamento
+  para a competência vigente na data da revisão, gera nova versão da
+  planilha e registra a mudança em `log-decisoes.md`; o A11 garante o índice
+  da competência nova antes da revisão.
+
+## Blocos C a E
 
 Pendentes. As perguntas estão na nota "5 · Entrevista de maturidade" do
 fichário "ORCA-AI · Layout" no Maestri e na seção 5 deste layout.
