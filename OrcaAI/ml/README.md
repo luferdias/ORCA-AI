@@ -147,6 +147,8 @@ A configuração está em [configs/regressao.json](configs/regressao.json). Grup
 
 ## Arquivos de resultados
 
+Desde 29/10/2026 a pasta `outputs/` não é versionada: as execuções ficam no disco local sincronizado pelo OneDrive, e o Git guarda apenas `outputs/MANIFESTO.json` e `outputs/MANIFESTO_arquivos.tsv`, com o SHA-256 de cada arquivo. Os links desta documentação para `outputs/` funcionam na cópia local; no GitHub, use os links permanentes de [ENTREGA_UFG.md](ENTREGA_UFG.md), que apontam para o commit `e20741b`.
+
 Cada execução gera `outputs/<identificador>/`, com `RESULTADOS.md`, `execucao.json` e uma pasta por base. A apresentação HTML/PDF, os gráficos explicativos e as tabelas derivadas ficam na pasta do relatório didático. Quando há uma avaliação adicional para comparação, ela fica em `comparacao_mesma_janela/`, com seu próprio registro de execução e resultados.
 
 Os arquivos técnicos de cada base continuam disponíveis:

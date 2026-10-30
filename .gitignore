@@ -15,3 +15,8 @@ __pycache__/
 # Dependências instaladas, logs e backups de CAD não são versionados.
 node_modules/
 *.log
+
+# Execuções de ML ficam locais (OneDrive); só os manifestos são versionados.
+OrcaAI/ml/outputs/*
+!OrcaAI/ml/outputs/MANIFESTO.json
+!OrcaAI/ml/outputs/MANIFESTO_arquivos.tsv

@@ -1,0 +1,125 @@
+{
+ "gerado_em": "2026-10-29T22:05:14",
+ "finalidade": "Registro das execuções de ML retiradas do controle de versão na fase F1 (29/10/2026). Os arquivos permanecem na pasta local OrcaAI/ml/outputs, sincronizada pelo OneDrive, e são ignorados pelo Git.",
+ "execucoes": [
+  {
+   "pasta": "20260927T184724_638519Z",
+   "arquivos": 0,
+   "bytes": 0,
+   "digest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status_registrado": null
+  },
+  {
+   "pasta": "20260927T184801_695117Z",
+   "arquivos": 0,
+   "bytes": 0,
+   "digest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "status_registrado": null
+  },
+  {
+   "pasta": "20260927T185450_466046Z",
+   "arquivos": 214,
+   "bytes": 245743409,
+   "digest_sha256": "081e22b9df72d5a4703a3c65b5b91c2f2200ec6f8e48520b2af4a0a919a25255",
+   "status_registrado": null
+  },
+  {
+   "pasta": "20260927T211131_310095Z",
+   "arquivos": 759,
+   "bytes": 571666582,
+   "digest_sha256": "822dcad6e944b35396cb0462397e6508747c8c392a928aaa363375a9988ce5aa",
+   "status_registrado": null
+  },
+  {
+   "pasta": "20260927T211258_775620Z",
+   "arquivos": 759,
+   "bytes": 571666582,
+   "digest_sha256": "fa07aed3386e964a0928525274ef387e3a6ed3e7060ef7c93510f1f98fe77c57",
+   "status_registrado": null
+  },
+  {
+   "pasta": "20260927T211358_192111Z",
+   "arquivos": 761,
+   "bytes": 571674778,
+   "digest_sha256": "2df73a9b8f2fefc9b617b6083c1aed5c29fa39b432b81ea3c11a4f64ed400c1e",
+   "status_registrado": null
+  },
+  {
+   "pasta": "apresentacao_2026-09-27",
+   "arquivos": 759,
+   "bytes": 571645580,
+   "digest_sha256": "8a25ed1a499d3b20c8849468676c37759731d51347e4ef51864d6028012ab951",
+   "status_registrado": null
+  },
+  {
+   "pasta": "entrega_ufg_acabamentos_2026-09-27",
+   "arquivos": 144,
+   "bytes": 28931043,
+   "digest_sha256": "0a32beeea4b97b6db1db69b4d9cd14f31bd17115bfd48aeb30480b327e2bdacc",
+   "status_registrado": "concluido"
+  },
+  {
+   "pasta": "entrega_ufg_acabamentos_2026-09-27_previa_layout",
+   "arquivos": 144,
+   "bytes": 28952778,
+   "digest_sha256": "f3c16f1b8942bdcfe5fdcb2905434f829153ad1194f2f2b066538ea78b2b67e7",
+   "status_registrado": "concluido"
+  },
+  {
+   "pasta": "estudo_acabamentos_2026-09-27",
+   "arquivos": 83,
+   "bytes": 20431137,
+   "digest_sha256": "cddd382e01fc1a1308c52e034bcdc0444d7622d6d40c063b283aa80372d75a6b",
+   "status_registrado": "erro"
+  },
+  {
+   "pasta": "estudo_acabamentos_final_2026-09-27",
+   "arquivos": 144,
+   "bytes": 28964884,
+   "digest_sha256": "319c08a7239f9a5c55ec8d414f79daa770f565195ce03a881bf22548af418369",
+   "status_registrado": "concluido"
+  },
+  {
+   "pasta": "janela_comum_2026-05",
+   "arquivos": 348,
+   "bytes": 241785921,
+   "digest_sha256": "d3ed98f867fcff2bfe8fe8b7ff6b852962b83c8ece60ca5ab463058b6c845793",
+   "status_registrado": null
+  },
+  {
+   "pasta": "regressao_2026-09-27",
+   "arquivos": 344,
+   "bytes": 286228264,
+   "digest_sha256": "d43578b6d0b08677d1373e51b06363dae74298e4bc1e169806353861c5ffcd9a",
+   "status_registrado": null
+  },
+  {
+   "pasta": "regressao_validada_2026-09-27",
+   "arquivos": 344,
+   "bytes": 286228264,
+   "digest_sha256": "1b66bb9cbbfe1311158ce1856d7477815d2c570abae2a4cb0874905e17c978a3",
+   "status_registrado": null
+  },
+  {
+   "pasta": "relatorio_didatico_2026-09-27",
+   "arquivos": 67,
+   "bytes": 43692707,
+   "digest_sha256": "1e8e87341178d1da5767b296c174e75927a709c2cf8123b7a28e2addf57f3ee7",
+   "status_registrado": null
+  },
+  {
+   "pasta": "relatorio_final_2026-09-27",
+   "arquivos": 67,
+   "bytes": 43650718,
+   "digest_sha256": "e6c898778a5e264fc563239abac6a27d28427e8e201baab59badad2f68bbbaf5",
+   "status_registrado": null
+  },
+  {
+   "pasta": "verificacao_der_inicial",
+   "arquivos": 132,
+   "bytes": 35395875,
+   "digest_sha256": "73735ce6fdc8cde038dc9b713592c8873f1a5f81eb53019d5ed4e35d155bc255",
+   "status_registrado": null
+  }
+ ]
+}
