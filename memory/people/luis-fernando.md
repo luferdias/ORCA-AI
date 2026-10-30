@@ -63,4 +63,5 @@ e D3 da spec, e gravar as primeiras sessões reais no Antigravity.
 - **Organização:** quer etapas criadas sob demanda, sem pastas vazias; dois blocos claros, SRAES (trabalho profissional, padrão) e UFG (projeto final da pós em Agentes Inteligentes); repositório público porque envia links aos professores do curso.
 - **Ferramentas:** usa o Maestri para ver as três plataformas lado a lado (terminais Batuta, Prumo e Sextante) e quer os documentos de referência também em PDF.
 - **Ambiente local:** o venv passou a ser `.venv` na raiz do repositório; RStudio aberto sobre o perfil gerou um `.html` e um `.Rhistory` ao lado deste arquivo, que ficam fora do Git.
+- **Rotina de fechamento:** ao fim de cada bloco de trabalho pede, nesta ordem, `git log` dos commits do dia, atualização da memória, atualização deste perfil e conferência da CI do último commit; repete o ciclo mesmo quando nada mudou, porque quer a confirmação explícita, não a suposição. Responder com o estado real (inclusive "nada mudou") e fazer o commit do perfil quando houver conteúdo novo. Em 30/10/2026 o ciclo fechou com 18 commits, CI verde no run 41062597524 e árvore limpa.
 
