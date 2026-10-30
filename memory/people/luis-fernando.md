@@ -65,3 +65,10 @@ e D3 da spec, e gravar as primeiras sessões reais no Antigravity.
 - **Ambiente local:** o venv passou a ser `.venv` na raiz do repositório; RStudio aberto sobre o perfil gerou um `.html` e um `.Rhistory` ao lado deste arquivo, que ficam fora do Git.
 - **Rotina de fechamento:** ao fim de cada bloco de trabalho pede, nesta ordem, `git log` dos commits do dia, atualização da memória, atualização deste perfil e conferência da CI do último commit; repete o ciclo mesmo quando nada mudou, porque quer a confirmação explícita, não a suposição. Responder com o estado real (inclusive "nada mudou") e fazer o commit do perfil quando houver conteúdo novo. Em 30/10/2026 o ciclo fechou com 18 commits, CI verde no run 41062597524 e árvore limpa.
 
+## Operação do layout no Maestri (30/10/2026, fim da manhã)
+
+- **Opera mais de um terminal ao mesmo tempo.** Enquanto conversava com o Engenheiro Chefe, trabalhou diretamente no Batuta, que fez três commits no repositório (modelo de ordem de serviço, protocolo da OS em arquivo, partitura salva). Antes de editar spec, CLAUDE.md ou catálogo, conferir `origin/main` e reler o arquivo: outro terminal pode ter mudado.
+- **Questiona redundância na arquitetura.** Perguntou qual era a função do Claude Code maestro se o Batuta já orquestra, e só aceitou manter os dois depois de ouvir motivos concretos (contexto limpo por orçamento, construção separada da operação, partitura). Quer justificativa explícita, não "é assim que está".
+- **Nomes pela função de engenharia.** Rejeitou "Mestre de Obras" para o terminal maestro e pediu algo na linha de "engenheiro civil manager"; aceitou **Engenheiro Chefe**. Os terminais de produção seguem com codinomes (Batuta, Prumo, Sextante). Ao nomear algo que o representa, usar o vocabulário do escritório de engenharia, não metáfora de canteiro.
+- **Pede opinião e deixa decidir.** "Qual você acha que se encaixa melhor?" é um convite a escolher e aplicar, dizendo o motivo; ele corrige se discordar.
+
