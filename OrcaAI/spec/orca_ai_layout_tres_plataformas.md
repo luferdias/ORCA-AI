@@ -2,7 +2,7 @@
 title: "ORCA-AI — Layout de operação com três plataformas"
 subtitle: "Claude Code, Codex e Antigravity: quem faz o quê, como um orçamento atravessa as três, e as regras fixadas na entrevista de maturidade"
 author: "Setor de Engenharia — SRAES/MGI · engenheiro Luis Fernando, com o ORCA-AI"
-date: "Versão 1.3 — 30 de outubro de 2026"
+date: "Versão 1.4 — 30 de outubro de 2026"
 lang: pt-BR
 ---
 
@@ -241,10 +241,32 @@ modo UFG, partindo do contrato em `OrcaAI/ufg/spec/api_knowledge.md`.
 
 ## 8. Layout no canvas do Maestri
 
-Três terminais, um por plataforma, conectados entre si e a um fichário de notas.
+Quatro terminais: o maestro do canvas e um terminal de produção por plataforma,
+conectados entre si e a um fichário de notas.
+
+### 8.1 Dois Claude Code, duas funções
+
+O engenheiro perguntou, em 30/10/2026, qual é a função do Claude Code maestro
+se o Batuta já orquestra. Decisão dele: **manter os dois, com funções
+distintas**, e dar ao maestro um nome que diga o que ele é.
+
+| Terminal | Função | Agentes | Quando o engenheiro fala com ele |
+| --- | --- | --- | --- |
+| **Engenheiro Chefe** (maestro do canvas) | Governa o escritório: spec, catálogo, ferramentas, CI, canvas do Maestri, memória e perfil; conduz entrevistas, registra decisões e monta a equipe | A2 Arquiteto5S e a coordenação geral | Para mudar o sistema, montar ou ajustar a equipe, registrar decisões, revisar a arquitetura |
+| **Batuta** (produção) | Rege cada orçamento, do escopo ao dossiê; emite ordens de serviço em arquivo ao Prumo e ao Sextante | A1, A3, A4, A5 (e A12 no modo UFG) | Para fazer um orçamento, especificação ou dossiê |
+
+Motivos da separação: cada orçamento começa no Batuta com contexto limpo, só
+com o papel, o `CLAUDE.md` e as notas; construir o sistema e operá-lo não se
+misturam na mesma sessão, o que evita que uma sessão de produção altere o
+catálogo por conveniência; e a partitura "ORCA-AI · Layout" reabre a equipe
+de produção com o Batuta como maestro mesmo sem a sessão do Engenheiro Chefe.
+Custo aceito: duas sessões Claude em paralelo.
+
+### 8.2 Terminais
 
 | Terminal | Preset | Papel | Ícone |
 | --- | --- | --- | --- |
+| **Engenheiro Chefe** | Claude Code (maestro) | Governança e construção do sistema; recruta, define papéis e notas; fala com os três terminais de produção | crachá, roxo |
 | **Batuta** | Claude Code | ORCA · Orquestração e engenharia: hospeda A1 a A5 e A12; delega por `maestri ask` ao Prumo e ao Sextante com a ordem de serviço completa | cérebro, azul |
 | **Prumo** | Codex | ORCA · Especificações, orçamentos e composições: hospeda A6 a A9; escreve em `01-escopo` a `06-documentos`; devolve ao Batuta | esquadro, verde |
 | **Sextante** | Antigravity | ORCA · Dupla checagem, portais e Orçafascio: hospeda A10 e A11; confere código a código; abre o Orçafascio e espera o login | escudo, laranja |
@@ -252,7 +274,8 @@ Três terminais, um por plataforma, conectados entre si e a um fichário de nota
 Fichário **ORCA-AI · Layout**: (1) panorama, (2) fluxo de um orçamento, (3)
 Playwright e tabelas, (4) diagnóstico da árvore com o que foi executado, (5)
 entrevista de maturidade com o estado de cada bloco. As notas 1 e 2 estão
-ligadas aos três terminais; a 3 ao Sextante; a 4 ao Batuta.
+ligadas aos três terminais de produção; a 3 ao Sextante; a 4 ao Batuta; todas
+ao Engenheiro Chefe, que as criou.
 
 Teste de prontidão de 30/10/2026: os três terminais leram a projeção da sua
 plataforma e a nota de panorama e descreveram corretamente agentes, pastas,
@@ -277,7 +300,8 @@ canvas; o Batuta precisa estar marcado antes de salvar ou regravar
 
 ## 9. Como uma sessão de trabalho começa
 
-1. O engenheiro abre o Maestri com os três terminais e diz a demanda ao Batuta.
+1. O engenheiro abre o Maestri e diz a demanda ao Batuta (orçamento) ou ao
+   Engenheiro Chefe (mudança no sistema).
 2. O Batuta cria o item (`criar_projeto.py`), registra o gatilho em
    `projeto.md` e emite a ordem de serviço do escopo (A3) como arquivo
    `05-validacoes/os-001.md` (seção 2.2).
