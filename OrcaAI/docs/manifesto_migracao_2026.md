@@ -166,3 +166,21 @@ Pendente do engenheiro: gravar as primeiras sessões reais no Antigravity (login
 | Especificação atualizada para a versão 0.3 com o estado de execução | `OrcaAI/spec/orca_ai_2_0_estrutura_e_agentes.md` e PDF |
 
 Pendentes: relatório 5S mensal (`/auditar-5s`) e decisões D2 (cópia e release das execuções de ML) e D3 (reescrita do histórico).
+
+## F7 — Reestruturação após a entrevista de maturidade (30/10/2026)
+
+Executada em 30/10/2026 a partir das respostas do engenheiro às quinze
+perguntas do A3 (`OrcaAI/knowledge/padroes/entrevista-maturidade-2026-10.md`).
+
+| Commit | Mudança | Regra |
+| --- | --- | --- |
+| `33f912c` | Etapas sob demanda: `criar_etapa`, `LEIA-ME.md` por etapa, validação sem etapas obrigatórias; 44 etapas vazias removidas dos doze itens, registradas em cada `projeto.md` | R-E1, R-E2 |
+| `bfc115e` | G-01 tolera séries próprias históricas nos itens aprovados até `2026-012` (limite no catálogo) | R-B6 |
+| `dc90a0d` | Normalizador: BDI do item segue o cabeçalho quando o preço exportado bate dentro de um centavo | R-D5 |
+| `fb574d6` | Bloco UFG: `OrcaAI/ml` → `OrcaAI/ufg/ml`, `OrcaAI/spec/ml_ufg` → `OrcaAI/ufg/spec`; modos `sraes` e `ufg` no catálogo e nas projeções; venv único em `.venv` na raiz; `.temp_ag_kit` e `.claude/worktrees` apagados (único script não arquivado copiado para `docs/historico/antigravity_2026-10/scripts_kit/`) | R-E3, R-E4 |
+| `49f98f2` | Padrão de especificação técnica derivado das doze especificações do acervo | R-C1 |
+
+Resultado do `validar_item.py` nos doze itens após a F7: onze aprovados sem
+ressalva; o item 2026-007 mantém uma ressalva G-02 (item 2.11, BDI implícito
+24,95%). Links permanentes da entrega UFG ao commit `e20741b` não mudam.
+

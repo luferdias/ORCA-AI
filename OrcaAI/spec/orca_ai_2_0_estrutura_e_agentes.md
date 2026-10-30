@@ -586,6 +586,7 @@ Ordem: F0 hoje; F1 e F2 só com Claude Code; F3 antes de F4; F5 depois de F3.
 | F4 | concluída, exceto API | `3853cca` | Índices de bases, normalizador, renderizador, validação de ponta a ponta nos doze itens | API Knowledge (depende de Qdrant); leitura da planilha analítica do Orçafascio |
 | F5 | preparada | este commit | Formato e utilitários das trilhas; primeiro padrão derivado do acervo; comandos `/observar-orcafascio` e `/orcafascio` gerados | Sessões reais gravadas pelo engenheiro no Antigravity; padrões a partir de trilhas |
 | F6 | preparada | este commit | CI no GitHub: ruff, segredos, estrutura dos itens, projeções, testes de ferramentas e de ML | Relatório 5S mensal; reescrita do histórico (D3) |
+| F7 | Reestruturação após a entrevista de maturidade | **Executada em 30/10/2026**: etapas sob demanda; G-01 tolera séries históricas nos itens aprovados; bloco `OrcaAI/ufg/` com modos `sraes` e `ufg`; venv na raiz; padrão de especificação técnica do acervo. Ver F7 do manifesto de migração. |
 
 ---
 
