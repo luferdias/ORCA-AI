@@ -32,3 +32,10 @@
 - `core.fileMode false` está ativo neste clone porque o OneDrive altera permissões dos arquivos. O OneDrive também não preserva links simbólicos: não criar symlinks no repositório.
 - Documentação para o usuário: seção 5 do `README.md` da raiz e seção "Qualidade de código" de `OrcaAI/ml/README.md`.
 - Em 29/10/2026 o venv do ml subiu para pandas 3.1.0, numpy 2.5.4, reportlab 5.1.0 e pytest 9.2.0. O estudo de acabamentos e a regressão dos 18 nichos foram reexecutados e reproduziram as métricas, seleções e previsões de 27/09/2026; as únicas diferenças são no último dígito de ponto flutuante. As pastas em `OrcaAI/ml/outputs` não foram regeneradas e continuam sendo a referência entregue.
+
+## ORCA-AI 2.0 (revisão de estrutura e agentes)
+
+- Especificação consolidada em `OrcaAI/spec/orca_ai_2_0_estrutura_e_agentes.md` (PDF ao lado), versão 0.2 de 29/10/2026, rascunho para decisão. Regra fixada pelo engenheiro: **não cortar nada do que já existe; melhorar**. Doze agentes em três camadas (Claude Code: A1 maestro, A2 arquiteto 5S, A3 engenheiro civil sênior, A4 auditor de dupla checagem, A5 instrução SEI, A12 ML/UFG; Codex: A6 descritor, A7 compositor de CPU, A8 planilhista, A9 minerador de bases; Antigravity: A10 piloto do Orçafascio, A11 portais e mercado), onze subagentes utilitários e cinco de ML. Catálogo único em `agents/catalogo.yaml` gera `CLAUDE.md`, `AGENTS.md` e `.agent/`.
+- `Orca.zip` na raiz (julho/2026) guarda 12 agentes, 9 subagentes, 8 workflows, `_modelo` de projeto e 9 skills que não existem mais em `.agent/skills`. Não apagar antes de recuperar (fase F1 da spec).
+- Credenciais do Orçafascio: **login manual pelo engenheiro em cada sessão; nenhuma senha no sistema**. Senha removida de 23 arquivos no commit `3354d3f`; o hook de pre-commit bloqueia segredos. Pendente: trocar a senha no Orçafascio e decidir a reescrita do histórico (D3).
+- Decisões abertas D1 a D8 na seção 14 da spec. Nenhuma fase de migração foi executada ainda.
