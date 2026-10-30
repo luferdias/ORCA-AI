@@ -16,3 +16,16 @@ Status: **validado por evidência do acervo** (29/10/2026). Fonte: as doze plani
 
 - Ao observar uma sessão nova, comparar com este padrão e registrar divergências como eventos com `justificativa`.
 - Em modo autônomo: buscar primeiro SINAPI-ES e IOPES na data-base do item; propor composição própria só com o De acordo; travar BDI em 25%; nunca inserir código sem validação do A4.
+
+
+## Descrição adaptada à obra (entrevista de 30/10/2026, regra R-D3)
+
+O engenheiro adapta a descrição do serviço no Orçafascio ao que será
+executado, mantendo código, unidade e preço da tabela de referência. A
+planilha normalizada deve, portanto, guardar duas descrições: a de referência
+(índice local) e a da obra (exportação). O validador trata a diferença como
+ressalva documentada quando o código, a unidade e o preço batem e a adaptação
+está registrada no item; sem registro, continua bloqueio. Serviço sem
+referência vira composição própria SRAES-CP antes de entrar no Orçafascio
+(R-D4), e a exportação é confrontada com a planilha dos agentes ao fim do
+ciclo (R-D5).

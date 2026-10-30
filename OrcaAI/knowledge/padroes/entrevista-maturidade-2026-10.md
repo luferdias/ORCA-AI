@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: blocos A, B e C respondidos; blocos D e E pendentes.
+Estado: blocos A a D respondidos; bloco E pendente.
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -189,7 +189,64 @@ técnica. O projeto básico também é anexado ao processo.
   matriz de riscos, ART/RRT, termo de referência. `validar_estrutura.py`
   exige apenas R-C6.
 
-## Blocos D e E
+## Bloco D — Orçafascio e aprendizado por demonstração
+
+### Pergunta 11 — sequência no Orçafascio e onde se perde tempo
+
+**Resposta.** A sequência é a descrita: cria a obra, monta a EAP, insere as
+composições, aplica o BDI, exporta. Quando o serviço existe na tabela de
+referência, entra como está. Quando não bate exatamente, adapta-se a
+descrição ao serviço da obra que será executada, mantendo a referência da
+tabela; ou faz-se a composição própria, e ela é registrada. Perde-se tempo
+fazendo tudo isso à mão. A ideia agora é inverter: os agentes já fazem a
+planilha, as composições e o cálculo do BDI, buscando os códigos nos sites
+das tabelas (DER e as outras); dentro do Orçafascio só se monta o orçamento,
+passo a passo, e é essa montagem que o aprendizado por demonstração vai
+observar e automatizar.
+
+**Regras derivadas.**
+
+- R-D1. A fonte do orçamento é a planilha produzida pelos agentes em
+  `03-orcamento/` (A7 e A8, com os índices locais e a conferência do A11).
+  O Orçafascio não é a origem dos dados; é o instrumento de formalização.
+- R-D2. Sequência canônica no Orçafascio, usada como roteiro das trilhas
+  LfD: (1) criar a obra com bancos, praça e data-base; (2) montar a EAP
+  igual à planilha; (3) inserir as composições pelo código; (4) aplicar o
+  BDI do item; (5) exportar sintético e analítico. Cada passo é um evento
+  da trilha (`orca_tools.trilhas_lfd`).
+- R-D3. Descrição adaptada: é permitido alterar a descrição do serviço no
+  Orçafascio para refletir a obra, desde que código, unidade e preço da
+  referência sejam mantidos e a planilha normalizada guarde as duas
+  descrições, a de referência e a da obra. Divergência de descrição
+  **registrada** é ressalva documentada; divergência **não registrada**
+  continua bloqueio (refina R-C4).
+- R-D4. Serviço sem referência vira composição própria SRAES-CP antes de
+  entrar no Orçafascio, nunca uma composição "inventada" lá dentro.
+- R-D5. Fechamento do ciclo: a exportação do Orçafascio, normalizada, é
+  comparada com a planilha dos agentes. Qualquer diferença de código,
+  quantidade, unidade, preço ou BDI é bloqueio até ser explicada em
+  `log-decisoes.md`. Esse confronto é a segunda dupla checagem do item.
+
+### Pergunta 12 — autonomia e De acordo
+
+**Resposta.** Depois de observar o engenheiro três vezes, o sistema pode
+executar sozinho a montagem no Orçafascio. O que nunca faz sem o De acordo:
+concluir o orçamento e levá-lo ao processo. Essa conclusão é do engenheiro.
+
+**Regras derivadas.**
+
+- R-D6. Autonomia por atividade: cada atividade da sequência R-D2 só é
+  liberada para execução autônoma do A10 depois de três trilhas LfD
+  válidas da mesma atividade, com padrão escrito pelo A3 em
+  `knowledge/padroes/` e validado pelo A4. Antes disso, o A10 apenas
+  observa e sugere.
+- R-D7. Gatilhos de pausa obrigatória no Orçafascio: concluir ou fechar o
+  orçamento, gerar os documentos finais, e qualquer ação ligada ao processo
+  SEI. O notificador-aprovacao registra o De acordo em `log-decisoes.md`.
+- R-D8. O login continua manual em toda sessão (regra fixa do sistema). A
+  autonomia de R-D6 começa depois do login e termina antes de R-D7.
+
+## Bloco E
 
 Pendentes. As perguntas estão na nota "5 · Entrevista de maturidade" do
 fichário "ORCA-AI · Layout" no Maestri e na seção 5 deste layout.
