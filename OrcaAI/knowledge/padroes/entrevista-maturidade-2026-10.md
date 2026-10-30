@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: blocos A a D respondidos; bloco E pendente.
+Estado: cinco blocos respondidos em 30/10/2026. Pendentes de confirmação: R-B1 (regime), R-B6 (séries antigas), R-E3 (ferramenta da apresentação UFG).
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -246,7 +246,56 @@ concluir o orçamento e levá-lo ao processo. Essa conclusão é do engenheiro.
 - R-D8. O login continua manual em toda sessão (regra fixa do sistema). A
   autonomia de R-D6 começa depois do login e termina antes de R-D7.
 
-## Bloco E
+## Bloco E — Organização do projeto
+
+### Pergunta 13 — etapas e itens antigos
+
+**Resposta.** As etapas são criadas sob demanda, e cada etapa criada vem com
+a estrutura completa. Os itens antigos podem perder as etapas que não se
+aplicam.
+
+**Regras derivadas.**
+
+- R-E1. `criar_projeto.py` cria só os arquivos de controle (`projeto.md`,
+  `plano-execucao.md`, `log-decisoes.md`) e `00-entrada`. As demais etapas
+  nascem por `criar_etapa` quando a ordem de serviço as aciona, já com o
+  conteúdo mínimo esperado (um `LEIA-ME.md` dizendo o que a etapa recebe e
+  entrega). `_modelo/` guarda o conjunto completo como referência.
+- R-E2. Nos itens 2026-001 a 2026-012, as etapas que só tinham `.gitkeep`
+  são removidas e `projeto.md` registra "etapas não aplicáveis".
+  `validar_estrutura.py` deixa de exigir as oito etapas; exige os três
+  arquivos de controle e aceita só etapas do conjunto conhecido.
+
+### Pergunta 14 — modo SRAES e modo UFG
+
+**Resposta.** Dois blocos: o bloco SRAES, que é o padrão, e o bloco UFG
+(projeto final do curso de Agentes Inteligentes). O engenheiro citou uma
+ferramenta para "a estrutura da apresentação desse projeto"; a transcrição
+registrou "Fest P / Fast P" e não deu para identificar com segurança.
+
+**Regras derivadas.**
+
+- R-E3. `OrcaAI/ufg/` reúne o que é acadêmico (`ml/`, `spec/ml_ufg/`,
+  entregas). O catálogo declara dois modos: `sraes` (padrão; agentes A1 a
+  A11) e `ufg` (A12 e os subagentes de ML; só leitura nas bases e no
+  acervo). **A confirmar:** a ferramenta da apresentação (FastAPI? SpecKit?
+  outra?).
+- R-E4. O modo é escolhido pela ordem de serviço ou pelo comando
+  (`/experimento-ml` entra no modo UFG). Nada do modo UFG altera itens,
+  catálogo ou padrões do modo SRAES.
+
+### Pergunta 15 — quem mais toca no repositório
+
+**Resposta.** Ninguém mais. Poderia ser privado.
+
+**Regras derivadas.**
+
+- R-E5. Visibilidade: o repositório pode voltar a ser privado. Antes disso,
+  lembrar que a entrega ao professor Ronaldo (28/09/2026) usa links
+  permanentes públicos ao commit `e20741b`; tornar privado quebra esses
+  links para quem não for colaborador. Recomendação: manter público até a
+  nota final da disciplina ou adicionar o professor como colaborador de
+  leitura antes de fechar. Decisão do engenheiro.
 
 Pendentes. As perguntas estão na nota "5 · Entrevista de maturidade" do
 fichário "ORCA-AI · Layout" no Maestri e na seção 5 deste layout.
