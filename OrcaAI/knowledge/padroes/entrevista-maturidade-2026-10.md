@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: blocos A e B respondidos; blocos C a E pendentes.
+Estado: blocos A, B e C respondidos; blocos D e E pendentes.
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -52,9 +52,10 @@ especificados.
 
 **Regras derivadas.**
 
-- R-A6. Cascata de bases para o serviço: SINAPI-ES → SICRO-ES → composição
-  própria SRAES-CP. **A confirmar:** a posição do DER-ES/IOPES nessa cascata;
-  o catálogo atual o coloca entre o SINAPI-ES e o SICRO.
+- R-A6. Cascata de bases para o serviço: SINAPI-ES → DER-ES/IOPES → SICRO →
+  outras tabelas de referência → composição própria SRAES-CP. (Confirmado na
+  pergunta 9: "primeiramente, depois o DER, depois o SICRO, depois outras
+  tabelas". O catálogo já está nessa ordem.)
 - R-A7. Composição própria é montada com insumos de bases oficiais (SINAPI
   insumos ES, SICRO-ES, DER-ES) e com os materiais tal como especificados no
   projeto. Pesquisa de mercado entra apenas para o insumo sem base oficial,
@@ -134,7 +135,61 @@ revisão adota a tabela vigente e atualiza os preços.
   planilha e registra a mudança em `log-decisoes.md`; o A11 garante o índice
   da competência nova antes da revisão.
 
-## Blocos C a E
+## Bloco C — Especificação técnica e documentos
+
+### Pergunta 8 — estrutura da especificação técnica
+
+**Resposta.** Vale o modelo que já foi usado nos orçamentos dos itens 01 a 12,
+não um modelo genérico.
+
+**Regras derivadas.**
+
+- R-C1. A estrutura canônica da especificação técnica da SRA é a dos
+  documentos do acervo (itens 2026-001 a 2026-012). O A3 deriva dela o
+  padrão `knowledge/padroes/especificacao-tecnica-sra.md`, e o A6 só escreve
+  nessa estrutura. O modelo genérico de `templates/` passa a ser
+  subordinado ao padrão derivado.
+
+### Pergunta 9 — dupla checagem e evidência
+
+**Resposta.** A evidência é a captura de tela. O foco principal do sistema é
+a parte dos códigos das tabelas de referência: quem elabora o orçamento, o
+Codex, insere o código e verifica se os materiais estão corretos; é o ponto
+crítico do orçamento. Os códigos têm de estar 100% alinhados com as
+referências, nesta ordem: SINAPI, depois DER, depois SICRO, depois outras
+tabelas.
+
+**Regras derivadas.**
+
+- R-C2. Quem insere o código (A7/A8 no Codex) já confere na fonte e anota a
+  evidência; quem faz a dupla checagem (A11 no Antigravity) confere de novo,
+  de forma independente, código a código, e grava `05-validacoes/`.
+- R-C3. Evidência mínima por código: captura de tela da fonte (portal ou
+  Orçafascio) com data visível, mais a linha do índice local quando existir.
+  O hash do ZIP cobre a competência, não o código.
+- R-C4. Código, descrição, unidade e preço divergentes da referência são
+  **bloqueio**, não ressalva: o item não avança para `06-documentos`.
+- R-C5. O A4 (Claude Code) não refaz a conferência; recebe o relatório do
+  A11, verifica a cobertura (todo código tem evidência) e assina.
+
+### Pergunta 10 — documentos do dossiê
+
+**Resposta.** Quatro peças básicas em todo orçamento: planilha orçamentária,
+planilha de composições de custo unitário, cálculo do BDI e especificação
+técnica. O projeto básico também é anexado ao processo.
+
+**Regras derivadas.**
+
+- R-C6. Obrigatórios em todo item: `03-orcamento/planilha-orcamentaria`,
+  `03-orcamento/composicoes`, `06-documentos/memorial-bdi` e
+  `06-documentos/especificacao-tecnica`, mais o projeto básico recebido em
+  `00-entrada` e anexado ao processo.
+- R-C7. Condicionais, gerados só quando a ordem de serviço pedir:
+  cronograma físico-financeiro, curva ABC, pesquisa de mercado (IN 65),
+  matriz de riscos, ART/RRT, termo de referência. `validar_estrutura.py`
+  exige apenas R-C6.
+
+## Blocos D e E
 
 Pendentes. As perguntas estão na nota "5 · Entrevista de maturidade" do
 fichário "ORCA-AI · Layout" no Maestri e na seção 5 deste layout.
