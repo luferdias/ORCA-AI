@@ -43,40 +43,9 @@ Orca_AI/
 │       ├── Item 12 - Reforma_Suporte_CAG/     # Reforma do suporte dos chillers (CAG)
 │       ├── Projetos Básicos/                  # Plantas DWG/PDF e arquivos de engenharia
 │       └── _governanca_sei_agu_cgu/           # ⚖️ Pareceres AGU, CGU, Respostas e TJTR
-└── .agent/                                    # Configuração Antigravity / Regras Globais
+├── .agent/                                    # Configuração Antigravity / Regras Globais
+└── .githooks/, pyproject.toml                 # Qualidade de código (ruff e hook de pre-commit)
 ```
-
----
-
-### Área de projetos de IA
-
-A pasta `Projetos/`, na raiz do repositório, organiza as três áreas abaixo:
-
-```text
-Projetos/
-├── ORCA-AI/
-│   ├── agents/
-│   ├── prompts/
-│   ├── workflows/
-│   ├── shared -> ../Shared-Knowledge/
-│   └── outputs/
-├── Machine-Learning/
-│   ├── models/
-│   ├── datasets/
-│   ├── notebooks/
-│   ├── shared -> ../Shared-Knowledge/
-│   └── outputs/
-└── Shared-Knowledge/
-    ├── docs/
-    ├── specs/
-    ├── embeddings/
-    ├── vector_db/
-    └── api/
-```
-
-`Projetos/ORCA-AI/` reúne agentes, prompts, fluxos e resultados; `Machine-Learning/` reúne modelos, dados e experimentos; `Shared-Knowledge/` reúne o conhecimento compartilhado. As subpastas começam vazias, com arquivos `.gitkeep` para inclusão no Git. O conteúdo operacional existente continua em `OrcaAI/`.
-
-Os links simbólicos `shared` dão aos dois projetos acesso à mesma pasta `Shared-Knowledge/`.
 
 ---
 

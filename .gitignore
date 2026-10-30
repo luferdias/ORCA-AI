@@ -11,3 +11,7 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Dependências instaladas, logs e backups de CAD não são versionados.
+node_modules/
+*.log
