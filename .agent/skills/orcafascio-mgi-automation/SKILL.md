@@ -10,10 +10,10 @@ Você tem autonomia para interagir via interface web diretamente na plataforma *
 ## 2. Credenciais de Acesso SRA-ES
 - **URL Alvo:** `https://app.orcafascio.com/`
 - **Login:** `mgi.sra-es.serl@gestao.gov.br`
-- **Senha:** `SRAES@2025`
+- **Autenticação:** feita pelo engenheiro Luis Fernando, manualmente, no início de cada sessão. Nenhuma senha é armazenada no repositório, em skill, script ou variável de ambiente.
 
 ## 3. Regras de Preenchimento Web
-1. **Autenticação:** Abra a URL, direcione o foco aos campos de E-mail e Senha e efetue o Login.
+1. **Autenticação:** Abra a URL e aguarde o engenheiro efetuar o login. Não preencha o campo de senha e não solicite a senha ao usuário; só prossiga quando a tela inicial do orçamento estiver visível.
 2. **Setup do Projeto/Busca:** No seletor de tabelas ou buscas de novos insumos/serviços, selecione impreterivelmente o **mês/ano mais recente** disponível para garantir a atualização monetária exigida pelo TCU e configure a localidade para a Base do Espírito Santo.
 3. **BDI:** O BDI embutido na aplicação de relatórios deve ser travado em exatos **25%**.
 4. **Acionamento de Gatilhos:** Caso não encontre de forma alguma o item desejado dentro da base local Vitória, recrute a skill correlata para formação e **obrigatóriamente notifique o usuário para validação antes de inserir qualquer preço próprio manual na tela**.

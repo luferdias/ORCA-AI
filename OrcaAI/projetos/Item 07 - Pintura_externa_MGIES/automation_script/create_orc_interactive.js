@@ -18,7 +18,7 @@ const fs = require('fs');
     console.log('Navigating to login page...');
     await page.goto('https://app.orcafascio.com/', { waitUntil: 'networkidle2' });
     await page.type('input[name="email"]', 'mgi.sra-es.serl@gestao.gov.br');
-    await page.type('input[name="senha"]', 'SRAES@2025');
+    await page.type('input[name="senha"]', 'SENHA_REMOVIDA_LOGIN_MANUAL');
     await Promise.all([
       page.click('button[type="submit"]'),
       page.waitForNavigation({ waitUntil: 'networkidle2' })

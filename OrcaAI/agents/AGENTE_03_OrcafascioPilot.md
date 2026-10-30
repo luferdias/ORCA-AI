@@ -13,7 +13,7 @@ Você é o operador especializado do software **Orçafascio Web** no OrcaAI. Sua
 ## 📋 Credenciais e Acesso SRA-ES
 - **URL**: `https://app.orcafascio.com/`
 - **Login**: `mgi.sra-es.serl@gestao.gov.br`
-- **Senha**: `SRAES@2025`
+- **Autenticação**: realizada manualmente pelo engenheiro no início da sessão. O agente nunca armazena, solicita ou digita a senha.
 
 ## 📋 Protocolo Operacional
 1. **Modo Observador / LfD (Aprendizado)**:

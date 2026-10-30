@@ -1,6 +1,7 @@
 #!/bin/sh
-# Hook de pre-commit do ORCA-AI: roda ruff check e ruff format --check
-# nos arquivos Python preparados para commit.
+# Hook de pre-commit do ORCA-AI.
+# 1) Varredura de segredos em todos os arquivos de texto preparados.
+# 2) ruff check e ruff format --check nos arquivos Python preparados.
 #
 # Ativar uma vez por clone:
 #   git config core.hooksPath .githooks
@@ -12,6 +13,29 @@ set -e
 raiz=$(git rev-parse --show-toplevel)
 cd "$raiz"
 
+# ---------------------------------------------------------------- segredos
+todos=$(git diff --cached --name-only --diff-filter=ACMR)
+if [ -n "$todos" ]; then
+    IFS='
+'
+    set -- $todos
+    unset IFS
+    aspas="\"'\`"
+    padrao="(senha|password|passwd|api[_-]?key|secret[_-]?key|access[_-]?token|private[_-]?key)[[:space:]]*[:=][[:space:]]*[$aspas]?[^[:space:]$aspas<\$]{6,}"
+    # Exclui marcadores, exemplos e leituras de ambiente.
+    achados=$(grep -nIiE "$padrao" "$@" 2>/dev/null \
+        | grep -viE 'REMOVID|EXEMPLO|EXAMPLE|PLACEHOLDER|YOUR_|\$\{|os\.environ|getenv|process\.env|keyring|\.githooks/pre-commit' || true)
+    if [ -n "$achados" ]; then
+        echo "pre-commit: possível segredo em arquivo preparado:" >&2
+        echo "$achados" | cut -c1-160 >&2
+        echo >&2
+        echo "pre-commit: remova a credencial. Regra do projeto: o engenheiro faz o login" >&2
+        echo "            manualmente; nenhuma senha ou chave fica no repositório." >&2
+        exit 1
+    fi
+fi
+
+# ------------------------------------------------------------------ python
 arquivos=$(git diff --cached --name-only --diff-filter=ACMR -- '*.py')
 [ -z "$arquivos" ] && exit 0
 
@@ -27,7 +51,6 @@ else
     exit 1
 fi
 
-# IFS por linha para suportar caminhos com espaços.
 IFS='
 '
 set -- $arquivos

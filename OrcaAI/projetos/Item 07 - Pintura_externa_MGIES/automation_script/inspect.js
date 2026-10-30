@@ -18,7 +18,7 @@ const fs = require('fs');
     
     console.log('Filling email and password...');
     await page.type('input[name="email"]', 'mgi.sra-es.serl@gestao.gov.br');
-    await page.type('input[name="senha"]', 'SRAES@2025');
+    await page.type('input[name="senha"]', 'SENHA_REMOVIDA_LOGIN_MANUAL');
     
     console.log('Clicking login button...');
     await Promise.all([
