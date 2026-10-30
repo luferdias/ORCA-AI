@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-008-impermeabilizacao-cisterna
 
-Data: 29/10/2026. Planilha: `Item 08 - Orçamento Impermeabilização_cisterna.xlsx`. Data-base declarada: 2026-02.
+Data: 30/10/2026. Planilha: `Item 08 - Orçamento Impermeabilização_cisterna.xlsx`. Data-base declarada: 2026-02.
 Itens com código SINAPI ou IOPES submetidos ao validador: 1 de 5.
 
 Catálogos: `sinapi`, `iopes`.

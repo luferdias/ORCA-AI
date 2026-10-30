@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-006-pelicula-controle-solar
 
-Data: 29/10/2026. Planilha: `Item 06 - Insulfilm.xlsx`. Data-base declarada: 2026-04.
+Data: 30/10/2026. Planilha: `Item 06 - Insulfilm.xlsx`. Data-base declarada: 2026-04.
 
 Nenhum item com código SINAPI ou IOPES nesta planilha; validação externa não aplicável.
 

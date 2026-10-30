@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-009-limpeza-fotovoltaica
 
-Data: 29/10/2026. Planilha: `Item 09 - Orçamento Limpeza dos paineis FV.xlsx`. Data-base declarada: 2026-04.
+Data: 30/10/2026. Planilha: `Item 09 - Orçamento Limpeza dos paineis FV.xlsx`. Data-base declarada: 2026-04.
 
 Nenhum item com código SINAPI ou IOPES nesta planilha; validação externa não aplicável.
 

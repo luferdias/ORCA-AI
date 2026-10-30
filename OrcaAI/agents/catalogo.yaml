@@ -29,6 +29,8 @@ parametros_fixos:
   bdi_fornecimento: "14,02% para fornecimento puro de materiais e equipamentos relevantes (faixa média do Acórdão, 11,10% a 18,45%)"
   regime_encargos: "um único regime por planilha (G-06); os memoriais do acervo usam desonerado; a spec do sistema diz não desonerado por padrão: divergência registrada, decisão do engenheiro"
   codigos_proprios: "serviços SRAES-CP-NNN; insumos de mercado SRAES-INS-NNN; proibido código genérico sem a chancela SRAES-"
+  itens_historicos_ate: "2026-012"
+  series_historicas: "nos itens aprovados até itens_historicos_ate, as séries próprias históricas (SRAES-ELEV-, SRAES-LIMP-, SRAES-GER-, SRAES-SUB-, SRAES-JUNTAS-, SRA-ES-, COMP-HVAC-, COMP-CAG-) são toleradas pelo G-01 e nenhum item aprovado é reescrito (R-B6); o uso delas em composições novas aguarda confirmação do engenheiro"
   cascata_bases:
     - "P0 local: SINAPI-ES (Caixa/IBGE); IOPES / DER-ES (edificações, projetos e rodovias)"
     - "P1 Sudeste: EMOP-RJ, SCO-Rio; CDHU, FDE, CPOS, SIURB-SP, DER-SP TPU; SUDECAP, SETOP-MG, SICOR-MG"

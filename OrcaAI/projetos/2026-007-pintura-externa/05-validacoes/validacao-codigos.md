@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-007-pintura-externa
 
-Data: 29/10/2026. Planilha: `Item 07 - Orçamento Edifício Sede MGI-rev1.xlsx`. Data-base declarada: 2026-04.
+Data: 30/10/2026. Planilha: `Item 07 - Orçamento Edifício Sede MGI-rev1.xlsx`. Data-base declarada: 2026-04.
 Itens com código SINAPI ou IOPES submetidos ao validador: 17 de 31.
 
 Catálogos: `sinapi`, `iopes`.

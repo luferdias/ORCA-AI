@@ -54,3 +54,15 @@ def test_fonte_desconhecida_nao_casa_por_substring():
         auditar_orcamento([item("4939", "ORSE - 02/2026 - Sergipe")])["status_geral"]
         == "APROVADO"
     )
+
+
+def test_serie_historica_tolerada_em_item_aprovado():
+    r = auditar_orcamento(
+        [item("SRAES-ELEV-001", "Próprio")], series_historicas_toleradas=True
+    )
+    assert r["status_geral"] == "APROVADO" and not r["alertas"]
+    assert "R-B6" in r["conformidades"][0]
+    r2 = auditar_orcamento(
+        [item("XYZ", "DESCONHECIDA")], series_historicas_toleradas=True
+    )
+    assert r2["status_geral"] == "BLOQUEADO"

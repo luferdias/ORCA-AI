@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-003-lavagem-fachada-envidracada
 
-Data: 29/10/2026. Planilha: `Item 03 - lavagem da fachada envidraçad.xlsx`. Data-base declarada: 2026-02.
+Data: 30/10/2026. Planilha: `Item 03 - lavagem da fachada envidraçad.xlsx`. Data-base declarada: 2026-02.
 
 Nenhum item com código SINAPI ou IOPES nesta planilha; validação externa não aplicável.
 

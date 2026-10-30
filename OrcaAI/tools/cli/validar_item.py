@@ -22,6 +22,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from orca_tools.catalogo import carregar  # noqa: E402
 from orca_tools.code_guardrail_validator import auditar_orcamento  # noqa: E402
 from orca_tools.estrutura_projeto import raiz_orcaai  # noqa: E402
 from orca_tools.normalizar_planilha import gravar_csv, normalizar_orcafascio_sintetico  # noqa: E402
@@ -104,7 +105,10 @@ def main() -> int:
         }
         for r in plan.itens
     ]
-    audit = auditar_orcamento(itens)
+    cat = carregar(raiz / "agents" / "catalogo.yaml")
+    limite = str(cat["parametros_fixos"].get("itens_historicos_ate", ""))
+    historico = bool(limite) and args.item[: len(limite)] <= limite
+    audit = auditar_orcamento(itens, series_historicas_toleradas=historico)
     hoje = time.strftime("%d/%m/%Y")
     val = pasta_item / "05-validacoes"
     val.mkdir(exist_ok=True)
@@ -251,6 +255,11 @@ def main() -> int:
         "## Escopo desta validação automática",
         "",
         "- G-01 e G-02 executados por `orca_tools.code_guardrail_validator`; G-03 a G-10 exigem revisão do A4 com memórias de cálculo, cotações e documentos.",
+        (
+            "- Item aprovado do acervo: séries próprias históricas toleradas pelo G-01 (R-B6)."
+            if historico
+            else "- Item novo: composições próprias devem usar SRAES-CP / SRAES-INS."
+        ),
         "- Códigos oficiais conferidos em `validacao-codigos.md`.",
         f"- Planilha normalizada: `03-orcamento/{csv_norm.name}`.",
     ]

@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-012-reforma-suporte-cag
 
-Data: 29/10/2026. Planilha: `Orçamento reforma da CAG.xlsx`. Data-base declarada: 2026-06.
+Data: 30/10/2026. Planilha: `Orçamento reforma da CAG.xlsx`. Data-base declarada: 2026-06.
 Itens com código SINAPI ou IOPES submetidos ao validador: 1 de 20.
 
 Catálogos: `sinapi`.

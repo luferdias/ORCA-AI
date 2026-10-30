@@ -32,7 +32,15 @@ def auditar_orcamento(
     regime_encargos: str = "Nao_Desonerado",
     bdi_padrao_servico: float = 25.0,
     bdi_padrao_fornecimento: float = 14.02,
+    series_historicas_toleradas: bool = False,
 ) -> Dict[str, Any]:
+    """Audita G-01 e G-02.
+
+    ``series_historicas_toleradas=True`` aplica a regra R-B6 da entrevista de
+    maturidade (30/10/2026): nos itens já aprovados (2026-001 a 2026-012) as
+    séries próprias históricas (SRAES-ELEV-, COMP-CAG-, SRA-ES-, ...) são
+    conformidade documentada, não ressalva; nenhum item aprovado é reescrito.
+    """
     relatorio = {
         "status_geral": "APROVADO",
         "bloqueios": [],
@@ -86,10 +94,15 @@ def auditar_orcamento(
             )
         ):
             # Séries próprias históricas do acervo (SRAES-ELEV-, SRAES-FV-, ...):
-            # têm a chancela SRAES-, mas devem ser mapeadas para SRAES-CP/INS.
-            relatorio["alertas"].append(
-                f"G-01 (Série própria histórica): Item {it.get('item', idx)} ({cod}) usa série fora do padrão SRAES-CP/SRAES-INS; mapear na próxima revisão."
-            )
+            # têm a chancela SRAES-, mas o padrão novo é SRAES-CP/INS.
+            if series_historicas_toleradas:
+                relatorio["conformidades"].append(
+                    f"G-01 (Série própria histórica tolerada, R-B6): Item {it.get('item', idx)} [{cod}] em item aprovado; não reescrever."
+                )
+            else:
+                relatorio["alertas"].append(
+                    f"G-01 (Série própria histórica): Item {it.get('item', idx)} ({cod}) usa série fora do padrão SRAES-CP/SRAES-INS; mapear na próxima revisão."
+                )
         elif (
             not _fonte_oficial(fonte, fontes_oficiais)
             and not cod.startswith("SRAES-CP-")

@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-010-manutencao-gerador-subestacao
 
-Data: 29/10/2026. Planilha: `Item 10 - grupo gerador + subestação.xlsx`. Data-base declarada: 2026-04.
+Data: 30/10/2026. Planilha: `Item 10 - grupo gerador + subestação.xlsx`. Data-base declarada: 2026-04.
 
 Nenhum item com código SINAPI ou IOPES nesta planilha; validação externa não aplicável.
 

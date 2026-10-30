@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-001-teto-elevadores
 
-Data: 29/10/2026. Planilha: `Item 01 - Orçamento Tetos dos elevadores.xlsx`. Data-base declarada: 2026-04.
+Data: 30/10/2026. Planilha: `Item 01 - Orçamento Tetos dos elevadores.xlsx`. Data-base declarada: 2026-04.
 
 Nenhum item com código SINAPI ou IOPES nesta planilha; validação externa não aplicável.
 

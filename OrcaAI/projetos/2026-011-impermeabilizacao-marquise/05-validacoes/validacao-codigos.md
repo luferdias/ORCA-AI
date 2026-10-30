@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-011-impermeabilizacao-marquise
 
-Data: 29/10/2026. Planilha: `Item 11 - Orçamento impermeabilização da marquise.xlsx`. Data-base declarada: 2026-02.
+Data: 30/10/2026. Planilha: `Item 11 - Orçamento impermeabilização da marquise.xlsx`. Data-base declarada: 2026-02.
 Itens com código SINAPI ou IOPES submetidos ao validador: 3 de 32.
 
 Catálogos: `sinapi`, `iopes`.

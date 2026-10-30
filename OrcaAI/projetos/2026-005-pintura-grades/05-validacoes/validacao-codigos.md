@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-005-pintura-grades
 
-Data: 29/10/2026. Planilha: `Item 05 - Pintura das grades.xlsx`. Data-base declarada: 2026-02.
+Data: 30/10/2026. Planilha: `Item 05 - Pintura das grades.xlsx`. Data-base declarada: 2026-02.
 Itens com código SINAPI ou IOPES submetidos ao validador: 4 de 6.
 
 Catálogos: `sinapi`, `iopes`.

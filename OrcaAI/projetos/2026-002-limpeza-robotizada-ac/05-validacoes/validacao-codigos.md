@@ -1,6 +1,6 @@
 # Validação de códigos — 2026-002-limpeza-robotizada-ac
 
-Data: 29/10/2026. Planilha: `Item 02 - Orçamento Limpeza robotizada dos dutos AC.xlsx`. Data-base declarada: 2026-02.
+Data: 30/10/2026. Planilha: `Item 02 - Orçamento Limpeza robotizada dos dutos AC.xlsx`. Data-base declarada: 2026-02.
 
 Nenhum item com código SINAPI ou IOPES nesta planilha; validação externa não aplicável.
 
