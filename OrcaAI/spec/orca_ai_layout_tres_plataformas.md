@@ -2,7 +2,7 @@
 title: "ORCA-AI — Layout de operação com três plataformas"
 subtitle: "Claude Code, Codex e Antigravity: quem faz o quê, como um orçamento atravessa as três, e as regras fixadas na entrevista de maturidade"
 author: "Setor de Engenharia — SRAES/MGI · engenheiro Luis Fernando, com o ORCA-AI"
-date: "Versão 1.1 — 30 de outubro de 2026"
+date: "Versão 1.2 — 30 de outubro de 2026"
 lang: pt-BR
 ---
 
@@ -99,12 +99,36 @@ observa e automatiza (R-D2). A exportação, normalizada, é confrontada com a
 planilha dos agentes; qualquer diferença de código, quantidade, unidade, preço
 ou BDI é bloqueio até ser explicada (R-D5).
 
-### 2.2 Protocolo de ordem de serviço
+### 2.2 Protocolo de ordem de serviço (OS)
 
-O Claude Code escreve `05-validacoes/os-NNN.md` com item, etapa, entradas,
-saídas esperadas, critérios de aceite e prazo. Codex e Antigravity respondem no
-mesmo arquivo com estado, artefatos, evidências, decisões e limitações. Toda
-decisão vai para `log-decisoes.md`.
+Decisão do engenheiro em 30/10/2026, no segundo teste de prontidão do layout:
+**a ordem de serviço é um arquivo no item, não a mensagem do Maestri.** A
+mensagem `maestri ask` leva só o caminho e um resumo; o contrato da delegação
+é o arquivo, que fica no repositório e entra no dossiê. A regra está em
+`catalogo.yaml` (`protocolo.ordem_de_servico`), espelhada em `AGENTS.md` e em
+`.agent/rules/GEMINI.md`; o modelo está em
+`OrcaAI/projetos/_modelo/05-validacoes/os-modelo.md` (commit `17b54d7`).
+
+1. **Pedido.** O Batuta copia o modelo para `05-validacoes/os-NNN.md` (NNN
+   sequencial por item, a partir de 001) e preenche: item, etapa, solicitante,
+   destinatário, plataforma, objetivo, entradas, saídas esperadas, critérios
+   de aceite, dependências e prazo. **Sem critério de aceite a OS não é
+   emitida.** Se `05-validacoes/` ainda não existe, nasce antes com
+   `criar_projeto.py <item> --etapa 05-validacoes` (R-E1).
+2. **Aviso.** `maestri ask "Prumo"` ou `"Sextante"` com
+   `"OS-NNN <item>: <resumo> — ver 05-validacoes/os-NNN.md"`.
+3. **Resposta.** Prumo ou Sextante preenchem, no mesmo arquivo: estado
+   (concluída, parcial ou bloqueada), artefatos gravados, evidências (fonte,
+   URL, data da consulta, hash ou competência), decisões, limitações e próximo
+   responsável. Nada que a base oficial não resolva é inventado: vira
+   pendência registrada.
+4. **Devolução.** `maestri ask "Batuta"` com
+   `"OS-NNN <item>: <estado> — ver 05-validacoes/os-NNN.md"`. O A4 fecha a OS
+   e assina.
+
+Toda aprovação ou pendência também vai para `log-decisoes.md`, com data,
+decisão, motivo, responsável e evidência. A nota "2 · Fluxo de um orçamento"
+do fichário do Maestri repete este protocolo para os três terminais.
 
 ### 2.3 Peças obrigatórias do dossiê
 
@@ -244,7 +268,8 @@ foi salvo como partitura, o que permitiria reabrir a equipe com um comando.
 
 1. O engenheiro abre o Maestri com os três terminais e diz a demanda ao Batuta.
 2. O Batuta cria o item (`criar_projeto.py`), registra o gatilho em
-   `projeto.md` e emite a ordem de serviço do escopo (A3).
+   `projeto.md` e emite a ordem de serviço do escopo (A3) como arquivo
+   `05-validacoes/os-001.md` (seção 2.2).
 3. Escopo aprovado pela chefia e De acordo registrado, o Batuta aciona o Prumo
    para quantitativos, composições e planilha, e o Sextante para cotações e
    conferência.
