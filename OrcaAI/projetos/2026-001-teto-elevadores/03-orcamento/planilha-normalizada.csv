@@ -1,0 +1,16 @@
+item,codigo,sistema,descricao,unidade,quantidade,custo_unitario_sem_bdi,bdi_percentual,preco_unitario_com_bdi,preco_total_com_bdi,fonte,data_base,observacoes,grupo,tipo_item
+1,,,SERVIÇOS PRELIMINARES E PROJETOS,,,,,,,,,,1 SERVIÇOS PRELIMINARES E PROJETOS,grupo
+1.1,SRAES-ELEV-001,PROPRIA,"Proteção física do piso, espelhos, botoeiras e painéis laterais da cabina contra riscos e impactos durante a execução",cabina,3.0,273.52,25.0,341.9,1025.7,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E PROJETOS,servico
+1.2,SRAES-ELEV-002,PROPRIA,Levantamento cadastral em campo e elaboração de projeto executivo (CAD) para fabricação das chapas de aço inox e alçapão do teto,cabina,3.0,247.63,25.0,309.53,928.59,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E PROJETOS,servico
+2,,,REMOÇÕES,,,,,,,,,,2 REMOÇÕES,grupo
+2.1,SRAES-ELEV-003,PROPRIA,"Remoção cuidadosa e controlada das chapas de teto existentes, incluindo retirada de luminárias, grelhas, suportes e exaustores da cabina do elevador, com descida e descarte ecológico do material",cabina,3.0,124.26,25.0,155.32,465.96,Próprio,2026-04,,2 REMOÇÕES,servico
+3,,,ESTRUTURA METÁLICA E CHAPARIA EM INOX,,,,,,,,,,3 ESTRUTURA METÁLICA E CHAPARIA EM INOX,grupo
+3.1,SRAES-ELEV-004,PROPRIA,"Fornecimento e instalação de revestimento do teto em chapa de Aço Inox AISI 304, acabamento escovado nº 4, espessura mínima de 3,0 mm (corte a laser e dobras)",m²,9.5,1783.26,25.0,2229.07,21176.16,Próprio,2026-04,,3 ESTRUTURA METÁLICA E CHAPARIA EM INOX,servico
+3.2,SRAES-ELEV-005,PROPRIA,"Fornecimento e montagem de estrutura auxiliar de fixação/reforço de teto (perfis metálicos tipo Metalon 40x20mm, travessas e parafusos sextavados inox A2 com arruelas de neoprene antivibração).",cabina,3.0,1422.88,25.0,1778.6,5335.8,Próprio,2026-04,,3 ESTRUTURA METÁLICA E CHAPARIA EM INOX,servico
+4,,,"ILUMINAÇÃO, ELÉTRICA E CFTV",,,,,,,,,,"4 ILUMINAÇÃO, ELÉTRICA E CFTV",grupo
+4.1,SRAES-ELEV-006,PROPRIA,"Fornecimento e instalação de luminária tipo painel LED Slim de embutir, com potência adequada para garantir iluminância média >= 200 lx no piso da cabina",cabina,3.0,172.83,25.0,216.03,648.09,Próprio,2026-04,,"4 ILUMINAÇÃO, ELÉTRICA E CFTV",servico
+4.2,SRAES-ELEV-007,PROPRIA,"Reorganização, identificação e proteção mecânica com eletrodutos flexíveis do cabeamento elétrico e rede de dados (CFTV) sobre o teto da cabina",cabina,3.0,483.12,25.0,603.9,1811.7,Próprio,2026-04,,"4 ILUMINAÇÃO, ELÉTRICA E CFTV",servico
+4.3,SRAES-ELEV-008,PROPRIA,"Reinstalação, fixação e ajuste de posicionamento das câmeras de CFTV existentes no novo teto, garantindo campo de visão integral",cabina,3.0,99.9,24.99,124.87,374.61,Próprio,2026-04,,"4 ILUMINAÇÃO, ELÉTRICA E CFTV",servico
+5,,,ACABAMENTOS E LIMPEZA TÉCNICA,,,,,,,,,,5 ACABAMENTOS E LIMPEZA TÉCNICA,grupo
+5.1,SRAES-ELEV-009,PROPRIA,"Limpeza profunda, polimento e reinstalação das grelhas de ventilação originais no novo teto, sem obstrução do fluxo de ar",cabina,3.0,58.56,25.0,73.2,219.6,Próprio,2026-04,,5 ACABAMENTOS E LIMPEZA TÉCNICA,servico
+5.2,SRAES-ELEV-010,PROPRIA,Limpeza técnica final das superfícies em aço inox utilizando produtos específicos (limpa inox) para remoção de marcas de dedo e resíduos de instalação,cabina,3.0,55.46,24.99,69.32,207.96,Próprio,2026-04,,5 ACABAMENTOS E LIMPEZA TÉCNICA,servico

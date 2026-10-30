@@ -1,0 +1,72 @@
+{
+  "summary": {
+    "checked": 5,
+    "matched": 0,
+    "missing": 0,
+    "description_mismatch": 0,
+    "unit_mismatch": 0,
+    "unknown_system": 5
+  },
+  "results": [
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-009-limpeza-fotovoltaica/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 2,
+      "system": "unknown",
+      "code": "1",
+      "normalized_code": "1",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-009-limpeza-fotovoltaica/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 3,
+      "system": "unknown",
+      "code": "1.1",
+      "normalized_code": "11",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-009-limpeza-fotovoltaica/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 4,
+      "system": "unknown",
+      "code": "2",
+      "normalized_code": "2",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-009-limpeza-fotovoltaica/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 5,
+      "system": "unknown",
+      "code": "2.1",
+      "normalized_code": "21",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-009-limpeza-fotovoltaica/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 6,
+      "system": "unknown",
+      "code": "2.2",
+      "normalized_code": "22",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    }
+  ]
+}

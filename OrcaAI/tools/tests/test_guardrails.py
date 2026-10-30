@@ -33,3 +33,24 @@ def test_bdi_divergente_gera_ressalva():
     assert r["status_geral"] == "RESSALVAS"
     r2 = auditar_orcamento([item("1234", "SINAPI", bdi=14.02, tipo="fornecimento")])
     assert r2["status_geral"] == "APROVADO"
+
+
+def test_serie_propria_historica_gera_ressalva_e_nao_bloqueio():
+    r = auditar_orcamento([item("SRAES-ELEV-001", "Próprio")])
+    assert r["status_geral"] == "RESSALVAS"
+    assert "SRAES-CP" in r["alertas"][0]
+
+
+def test_composicao_propria_com_serie_comp_gera_ressalva():
+    r = auditar_orcamento([item("COMP-HVAC-001", "Próprio")])
+    assert r["status_geral"] == "RESSALVAS"
+
+
+def test_fonte_desconhecida_nao_casa_por_substring():
+    assert (
+        auditar_orcamento([item("4939", "DESCONHECIDA")])["status_geral"] == "BLOQUEADO"
+    )
+    assert (
+        auditar_orcamento([item("4939", "ORSE - 02/2026 - Sergipe")])["status_geral"]
+        == "APROVADO"
+    )

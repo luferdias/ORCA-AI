@@ -1,0 +1,31 @@
+{
+ "fonte": "sinapi_es",
+ "competencia": "2026-04",
+ "publicado_em": "2026-05-12",
+ "origem_zip": "OrcaAI/bases/sinapi/2026-04/originais/SINAPI-2026-04-formato-xlsx.zip",
+ "origem_sha256": "aeb74337285a33598cc4b764708a18a64445c23a1da57aca00f8c61aff8171b1",
+ "servicos": 8241,
+ "insumos": 9710,
+ "servicos_csv_sha256": "0528b044f6d350d4e408003b8dbeb3a520706f0369e2f64a2b89080334a80f2c",
+ "gerado_em": "2026-10-29T22:36:40",
+ "duracao_s": 5.0,
+ "relatorio_leitura": {
+  "fonte": "sinapi_es",
+  "competencia": "2026-04",
+  "publicado_em": "2026-05-12",
+  "arquivo": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/bases/sinapi/2026-04/originais/SINAPI-2026-04-formato-xlsx.zip",
+  "arquivo_sha256": "aeb74337285a33598cc4b764708a18a64445c23a1da57aca00f8c61aff8171b1",
+  "zip_crc_verificado": true,
+  "composicoes_analitico": 10378,
+  "composicoes_lidas": 10378,
+  "composicoes_validas": 8241,
+  "composicoes_excluidas": 2137,
+  "excluidos_por_motivo": {
+   "custo_zero": 2137
+  },
+  "coluna_custo_es": "S",
+  "assinatura_tipo": "cpu_hierarquica_v1",
+  "percentual_as_unidade": "fracao_0_a_1",
+  "percentual_as_ausente": 0
+ }
+}

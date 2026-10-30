@@ -133,3 +133,15 @@ Documentos da CAG que estavam em `docs/` (`projeto.md`, `plano_de_execucao.md`, 
 | Antigravity | — | `.agent/rules/GEMINI.md`, `.agent/agents/` (A10, A11), `.agent/subagents/` (3), `.agent/skills/`, `.agent/workflows/` (13), `.agent/ARCHITECTURE.md` | gerados |
 | Kit genérico do Antigravity | `.agent/workflows/` (11), `.agent/scripts/` (4), `mcp_config.json`, `ARCHITECTURE.md`, `rules/GEMINI.md`, `agents/` (6) | `OrcaAI/docs/historico/antigravity_2026-10/` | decisão D6; `.agent/.shared/ui-ux-pro-max` (560 KB) removido, cópia em `.temp_ag_kit/.agent/.shared` |
 | Subagentes e workflows do zip | `.agent/subagents/` (9), `.agent/workflows/` (8), `.agent/rules/orca-central.md` | removidos das pastas ativas | substituídos pelos gerados; originais em `docs/historico/orca_central_2026-07/` e `antigravity_2026-10/rules/` |
+
+## F4 — Linha de produção (29/10/2026)
+
+| Entrega | Onde | Observação |
+| --- | --- | --- |
+| Indexador de bases (A9) | `orca_tools/indice_bases.py`, `tools/cli/indexar_bases.py` | Reusa os leitores validados do módulo de ML; `knowledge/indices/<fonte>/<competencia>/servicos.csv` (SINAPI: também `insumos.csv` das abas ISD e ICD, coluna ES) ignorados pelo Git; `manifesto.json` versionado. Construídos: SINAPI-ES 2026-02, 2026-04 e 2026-06; DER-ES 2026-02 e 2026-04 (não há ZIP DER de 2026-06 no acervo) |
+| Normalizador de planilhas (A8) | `orca_tools/normalizar_planilha.py` | Lê a exportação "Orçamento Sintético" do Orçafascio usada nos doze itens; grava `03-orcamento/planilha-normalizada.csv` no modelo único |
+| Renderizador (subagente) | `orca_tools/renderizar.py` | Markdown para DOCX (pandoc) e PDF (pandoc + Chrome) |
+| Validação de ponta a ponta (A4) | `tools/cli/validar_item.py` | Normaliza, audita G-01 e G-02, confere códigos SINAPI/IOPES contra o índice da data-base declarada e grava `05-validacoes/relatorio-guardrails.md`, `validacao-codigos.md`, `validacao-codigos.json` e `codigos-oficiais.csv`. Executado nos doze itens |
+| Guardrail G-01 refinado | `orca_tools/code_guardrail_validator.py` | Bancos oficiais da cascata completa, comparação por palavra inteira sem acento; séries próprias históricas (`SRAES-ELEV-`, `SRAES-LIMP-`, `SRAES-GER-`, `SRAES-SUB-`, `SRA-ES-`, `COMP-HVAC-`, `COMP-CAG-`) viram ressalva com pedido de mapeamento para `SRAES-CP` |
+| Achados do acervo | `projetos/*/05-validacoes/` | Todos os doze itens passam sem bloqueio; dez ficam em RESSALVAS pelas séries próprias históricas; itens 05 e 08 APROVADOS em G-01 e G-02. Validação de códigos: Item 07 com 12 códigos consistentes e 5 descrições reescritas pelo engenheiro (a conferir pelo A4); Item 05 com 2 códigos não encontrados no índice de 2026-02 (a investigar). A planilha analítica do Orçafascio não tem valores em cache e fica para leitura futura |
+| API Knowledge | — | Não iniciada; depende de Qdrant (fase posterior) |

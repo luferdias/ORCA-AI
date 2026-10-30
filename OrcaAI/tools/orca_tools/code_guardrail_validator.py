@@ -3,7 +3,28 @@ Validador de Guardrails e Anti-Alucinação - OrcaAI
 Executa os testes G-01 a G-10 antes da emissão de orçamentos e relatórios oficiais.
 """
 
+import re
+import unicodedata
 from typing import List, Dict, Any
+
+
+def _tokens(texto: str) -> set:
+    """Palavras inteiras, sem acentos e em maiúsculas: 'Próprio' -> {'PROPRIO'}."""
+    sem_acento = "".join(
+        c
+        for c in unicodedata.normalize("NFD", texto or "")
+        if unicodedata.category(c) != "Mn"
+    )
+    return {t for t in re.split(r"[^A-Z0-9]+", sem_acento.upper()) if t}
+
+
+def _fonte_oficial(fonte: str, oficiais: List[str]) -> bool:
+    """Compara por palavra inteira: 'SINAPI-ES' e 'CPOS/CDHU' casam; 'DESCONHECIDA' não."""
+    return any(f in _tokens(fonte) for f in oficiais)
+
+
+def _fonte_propria(fonte: str) -> bool:
+    return bool(_tokens(fonte) & {"PROPRIO", "PROPRIA", "PROPRIAS", "PROPRIOS", "CP"})
 
 
 def auditar_orcamento(
@@ -19,18 +40,28 @@ def auditar_orcamento(
         "conformidades": [],
     }
 
+    # Bancos oficiais admitidos (cascata P0 a P3 do catálogo do ORCA-AI).
     fontes_oficiais = [
         "SINAPI",
-        "SINAPI-ES",
         "IOPES",
-        "IOPES-ES",
+        "DER",
         "SICRO",
-        "SICRO3",
         "ORSE",
+        "SBC",
         "SUDECAP",
         "SETOP",
+        "SICOR",
         "EMOP",
+        "SCO",
         "SIURB",
+        "CPOS",
+        "CDHU",
+        "FDE",
+        "SEINFRA",
+        "SEDOP",
+        "AGESUL",
+        "CAERN",
+        "TPU",
     ]
 
     for idx, it in enumerate(itens_orcamento, start=1):
@@ -46,7 +77,21 @@ def auditar_orcamento(
             )
             relatorio["status_geral"] = "BLOQUEADO"
         elif (
-            not any(f in fonte for f in fontes_oficiais)
+            not _fonte_oficial(fonte, fontes_oficiais)
+            and not cod.startswith("SRAES-CP-")
+            and not cod.startswith("SRAES-INS-")
+            and (
+                cod.upper().startswith(("SRAES-", "SRA-ES-", "COMP-"))
+                or _fonte_propria(fonte)
+            )
+        ):
+            # Séries próprias históricas do acervo (SRAES-ELEV-, SRAES-FV-, ...):
+            # têm a chancela SRAES-, mas devem ser mapeadas para SRAES-CP/INS.
+            relatorio["alertas"].append(
+                f"G-01 (Série própria histórica): Item {it.get('item', idx)} ({cod}) usa série fora do padrão SRAES-CP/SRAES-INS; mapear na próxima revisão."
+            )
+        elif (
+            not _fonte_oficial(fonte, fontes_oficiais)
             and not cod.startswith("SRAES-CP-")
             and not cod.startswith("SRAES-INS-")
         ):

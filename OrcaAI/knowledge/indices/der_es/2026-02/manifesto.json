@@ -1,0 +1,15 @@
+{
+ "fonte": "der_es",
+ "competencia": "2026-02",
+ "publicado_em": "",
+ "origem_zip": "OrcaAI/bases/der_es/2026-02/originais/TABELA REFERENCIAL OBRAS - DER-ES - 2026-02 - FEV.zip",
+ "origem_sha256": "1a7537f06fa9b2a1aff5982ae95ae6bf2ec16498e28430445e55584fbcce9a3c",
+ "servicos": 1339,
+ "insumos": 0,
+ "servicos_csv_sha256": "cde6190ed629bea6f00163130144f70762fedb4ee5bf19f349e1a76ff943fa8e",
+ "gerado_em": "2026-10-29T22:38:37",
+ "duracao_s": 0.1,
+ "relatorio_leitura": {
+  "servicos_lidos": 1339
+ }
+}

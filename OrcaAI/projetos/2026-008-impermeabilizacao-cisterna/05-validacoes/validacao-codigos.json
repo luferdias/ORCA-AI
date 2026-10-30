@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "checked": 1,
+    "matched": 1,
+    "missing": 0,
+    "description_mismatch": 0,
+    "unit_mismatch": 0,
+    "unknown_system": 0
+  },
+  "results": [
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-008-impermeabilizacao-cisterna/05-validacoes/codigos-oficiais.csv",
+      "sheet": null,
+      "row_number": 2,
+      "system": "sinapi",
+      "code": "100480",
+      "normalized_code": "100480",
+      "status": "ok",
+      "issues": [
+        "Codigo localizado e consistente com a base local."
+      ]
+    }
+  ]
+}

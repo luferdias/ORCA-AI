@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "checked": 1,
+    "matched": 0,
+    "missing": 0,
+    "description_mismatch": 0,
+    "unit_mismatch": 0,
+    "unknown_system": 1
+  },
+  "results": [
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-012-reforma-suporte-cag/05-validacoes/codigos-oficiais.csv",
+      "sheet": null,
+      "row_number": 2,
+      "system": "iopes",
+      "code": "200401",
+      "normalized_code": "200401",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    }
+  ]
+}

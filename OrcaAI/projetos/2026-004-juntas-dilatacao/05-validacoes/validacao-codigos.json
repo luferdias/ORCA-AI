@@ -1,0 +1,216 @@
+{
+  "summary": {
+    "checked": 17,
+    "matched": 0,
+    "missing": 0,
+    "description_mismatch": 0,
+    "unit_mismatch": 0,
+    "unknown_system": 17
+  },
+  "results": [
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 2,
+      "system": "unknown",
+      "code": "1",
+      "normalized_code": "1",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 3,
+      "system": "unknown",
+      "code": "1.1",
+      "normalized_code": "11",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 4,
+      "system": "unknown",
+      "code": "1.2",
+      "normalized_code": "12",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 5,
+      "system": "unknown",
+      "code": "2",
+      "normalized_code": "2",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 6,
+      "system": "unknown",
+      "code": "2.1",
+      "normalized_code": "21",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 7,
+      "system": "unknown",
+      "code": "2.2",
+      "normalized_code": "22",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 8,
+      "system": "unknown",
+      "code": "2.3",
+      "normalized_code": "23",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 9,
+      "system": "unknown",
+      "code": "2.4",
+      "normalized_code": "24",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 10,
+      "system": "unknown",
+      "code": "3",
+      "normalized_code": "3",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 11,
+      "system": "unknown",
+      "code": "3.1",
+      "normalized_code": "31",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 12,
+      "system": "unknown",
+      "code": "3.2",
+      "normalized_code": "32",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 13,
+      "system": "unknown",
+      "code": "4",
+      "normalized_code": "4",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 14,
+      "system": "unknown",
+      "code": "4.1",
+      "normalized_code": "41",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 15,
+      "system": "unknown",
+      "code": "4.2",
+      "normalized_code": "42",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 16,
+      "system": "unknown",
+      "code": "4.3",
+      "normalized_code": "43",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 17,
+      "system": "unknown",
+      "code": "5",
+      "normalized_code": "5",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    },
+    {
+      "source_path": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/projetos/2026-004-juntas-dilatacao/03-orcamento/planilha-normalizada.csv",
+      "sheet": null,
+      "row_number": 18,
+      "system": "unknown",
+      "code": "5.1",
+      "normalized_code": "51",
+      "status": "unknown-system",
+      "issues": [
+        "Sistema nao identificado para este codigo."
+      ]
+    }
+  ]
+}

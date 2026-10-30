@@ -1,0 +1,10 @@
+item,codigo,sistema,descricao,unidade,quantidade,custo_unitario_sem_bdi,bdi_percentual,preco_unitario_com_bdi,preco_total_com_bdi,fonte,data_base,observacoes,grupo,tipo_item
+1,,,SERVIÇOS PRELIMINARES E SEGURANÇA,,,,,,,,,,1 SERVIÇOS PRELIMINARES E SEGURANÇA,grupo
+1.1,SRAES-FILM-001,PROPRIA,Mobilização e desmobilização de pessoal e equipamentos leves (andaimes móveis e ferramentas),un,1.0,1319.6,25.0,1649.5,1649.5,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E SEGURANÇA,servico
+1.2,SRAES-FILM-002,PROPRIA,"Locação de andaime tubular tipo torre com rodízios, pisos e guarda-corpo, para acesso interno aos caixilhos",mês,2.0,450.0,25.0,562.5,1125.0,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E SEGURANÇA,servico
+2,,,PREPARO DE SUPERFÍCIE (REMOÇÃO),,,,,,,,,,2 PREPARO DE SUPERFÍCIE (REMOÇÃO),grupo
+2.1,SRAES-FILM-003,PROPRIA,Remoção manual de película e remoção química de cola,m²,2500.0,8.45,24.97,10.56,26400.0,Próprio,2026-04,,2 PREPARO DE SUPERFÍCIE (REMOÇÃO),servico
+3,,,APLICAÇÃO DE NOVA PELÍCULA,,,,,,,,,,3 APLICAÇÃO DE NOVA PELÍCULA,grupo
+3.1,SRAES-FILM-004,PROPRIA,"Fornecimento e aplicação interna de película de controle solar Prata Fumê (tipo Gray Silver Gray 10), incluindo função anti-estilhaçamento",m²,2500.0,41.11,24.98,51.38,128450.0,Próprio,2026-04,,3 APLICAÇÃO DE NOVA PELÍCULA,servico
+4,,,SERVIÇOS FINAIS,,,,,,,,,,4 SERVIÇOS FINAIS,grupo
+4.1,SRAES-FILM-005,PROPRIA,Limpeza final dos vidros e esquadrias,m²,2500.0,4.38,24.89,5.47,13675.0,Próprio,2026-04,,4 SERVIÇOS FINAIS,servico

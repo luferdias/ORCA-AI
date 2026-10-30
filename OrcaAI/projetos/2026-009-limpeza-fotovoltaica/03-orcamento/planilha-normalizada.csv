@@ -1,0 +1,6 @@
+item,codigo,sistema,descricao,unidade,quantidade,custo_unitario_sem_bdi,bdi_percentual,preco_unitario_com_bdi,preco_total_com_bdi,fonte,data_base,observacoes,grupo,tipo_item
+1,,,SERVIÇOS DE LIMPEZA E MANUTENÇÃO PREVENTIVA,,,,,,,,,,1 SERVIÇOS DE LIMPEZA E MANUTENÇÃO PREVENTIVA,grupo
+1.1,SRAES-FV-001,PROPRIA,"Limpeza por módulo fotovoltaico, incluindo todos os módulos das usinas do edifício sede do MGI e o anexo da Vila Rubim.",un,561.0,31.79,24.98,39.73,22288.53,Próprio,2026-04,,1 SERVIÇOS DE LIMPEZA E MANUTENÇÃO PREVENTIVA,servico
+2,,,SERVIÇOS TÉCNICOS DE ENGENHARIA,,,,,,,,,,2 SERVIÇOS TÉCNICOS DE ENGENHARIA,grupo
+2.1,SRAES-FV-002,PROPRIA,"Elaboração de Parecer Técnico de Unidade Geradora, englobando todas as usinas fotovoltaicas do MGI/ES, incluindo vistoria e emissão de ART/CREA-ES.",un,1.0,1883.42,25.0,2354.27,2354.27,Próprio,2026-04,,2 SERVIÇOS TÉCNICOS DE ENGENHARIA,servico
+2.2,SRAES-FV-003,PROPRIA,"Elaboração de Laudo Técnico com levantamento e registro fotográfico completo (1 foto/string), englobando todas as usinas fotovoltaicas do MGI/ES.",un,1.0,2008.68,25.0,2510.85,2510.85,Próprio,2026-04,,2 SERVIÇOS TÉCNICOS DE ENGENHARIA,servico

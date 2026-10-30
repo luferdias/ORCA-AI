@@ -20,3 +20,6 @@ node_modules/
 OrcaAI/ml/outputs/*
 !OrcaAI/ml/outputs/MANIFESTO.json
 !OrcaAI/ml/outputs/MANIFESTO_arquivos.tsv
+
+# Índices locais das bases: só o manifesto é versionado.
+OrcaAI/knowledge/indices/**/servicos.csv

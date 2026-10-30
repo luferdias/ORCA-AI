@@ -1,0 +1,36 @@
+item,codigo,sistema,descricao,unidade,quantidade,custo_unitario_sem_bdi,bdi_percentual,preco_unitario_com_bdi,preco_total_com_bdi,fonte,data_base,observacoes,grupo,tipo_item
+1,,,SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,,,,,,,,,,1 SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,grupo
+1.1,05.007.0015-A,EMOP,"LOCACAO DE CADEIRA SUSPENSA (BALANCIM),CONFORME NR 18 E ABNT NBR 14751,INCLUSIVE KIT DE SEGURANCA COMPLETO,EXCLUSIVE MON MONTAGEM E DESMONTAGEM (VIDE ITEM 05.008.0004)",UNXMES,6.0,412.06,25.0,515.07,3090.42,EMOP,2026-04,,1 SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,servico
+1.2,05.008.0004-0,EMOP,MONTAGEM E DESMONTAGEM DE CADEIRA SUSPENSA (BALANCIM).CUSTO POR BALANCIM 3%-DESGASTE DE FERRAMENTAS E EPI,UN,2.0,125.27,24.99,156.58,313.16,EMOP,2026-04,,1 SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,servico
+1.3,SRA-ES-021,PROPRIA,Taxas de Prefeitura para Licenciamento de obra,un,1.0,550.0,25.0,687.5,687.5,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,servico
+1.4,SRA-ES-022,PROPRIA,Emissão de Anotação de Responsabilidade Técnica (ART) - Execução Obras e Serviços,SRAES,1.0,797.24,25.0,996.55,996.55,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,servico
+1.5,012689,SBC,MOBILIZACAO E DESMOBILIZACAO DE CANTEIRO,UN,1.0,5484.2,25.0,6855.25,6855.25,SBC,2026-04,,1 SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,servico
+1.6,SRAES-CP-031,PROPRIA,"Locação de andaime metálico tubular, incluindo montagem e desmontagem, para pintura do teto",m²xmês,45.0,15.0,25.0,18.75,843.75,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E APOIO OPERACIONAL DAS TRÊS FRENTES,servico
+2,,,EDIFÍCIO SEDE E ANEXO DO MGI,,,,,,,,,,2 EDIFÍCIO SEDE E ANEXO DO MGI,grupo
+2.1,4939,ORSE,Pintura de acabamento com tinta emborrachada - 02 demãos,m²,3562.0,26.56,25.0,33.2,118258.4,ORSE,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.2,88629,SINAPI,Argamassa traço 1:3 para emboço de regularização,m³,14.0,671.84,25.0,839.8,11757.2,SINAPI,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.3,010246,IOPES,Lixamento manual de parede com pintura PVA para nivelamento e preparo da superfície para recebimento de nova camada de tinta,m²,1500.0,5.04,25.0,6.3,9450.0,IOPES,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.4,290,ORSE,"Fornecimento e instalação de Rufo em chapa de alumínio, esp = 0,6mm, larg = 30,0cm, na cobertura",m,60.0,147.77,25.0,184.71,11082.6,ORSE,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.5,99814,SINAPI,Limpeza de superfície do telhado metálico do Anexo e das pingadeiras metálicas das fachadas Norte/Sul c/ jato de alta pressão,m²,1157.0,1.94,24.74,2.42,2799.94,SINAPI,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.6,SRAES-CP-401,PROPRIA,Pintura c/ tinta poliuretânica de acabamento no telhado metálico do Anexo do MGI e nas pingadeiras metálicas das fachadas Norte/Sul (2 demãos),m²,1157.0,44.33,24.99,55.41,64109.37,Próprio,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.7,010246,IOPES,"Lixamento manual do teto p/ pintura, nivelamento e preparo da superfície para recebimento de nova camada de tinta",m²,350.0,5.04,25.0,6.3,2205.0,IOPES,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.8,4939,ORSE,Pintura de acabamento c/ tinta emborrachada em teto do térreo (H ≈ 7 m) - 2 demãos,m²,350.0,26.56,25.0,33.2,11620.0,ORSE,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.9,102491,SINAPI,"Pintura acrílica em piso/ladrilho (2 demãos), na calçada cidadã, no entorno do MGI/ES",m²,155.0,24.48,25.0,30.6,4743.0,SINAPI,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.10,102509,SINAPI,"Demarcação de faixa de pedestres com tinta retrorrefletiva, na calçada cidadã",m²,40.0,38.96,25.0,48.7,1948.0,SINAPI,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.11,SRAES-CP-010,PROPRIA,"Tratamento de trincas e execução de juntas de dilatação/indução de fissuras em piso cimentado, com preenchimento elástico, na calçada cidadã",m,20.0,14.51,24.95,18.13,362.6,Próprio,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.12,99814,SINAPI,"Lavagem de superfície de piso com hidrojateamento de alta pressão para remoção de incrustações e limpeza pesada, na calçada cidadã",m²,730.0,1.94,24.74,2.42,1766.6,SINAPI,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.13,SRAES-CP-011,PROPRIA,"Aplicação de fundo preparador/selador para piso (1ª demão de ancoragem), na calçada cidadã",m²,730.0,4.03,24.81,5.03,3671.9,Próprio,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.14,SRAES-CP-012,PROPRIA,"Pintura de piso com tinta acrílica premium (cor concreto aparente), acabamento antiderrapante com adição de quartzo malha fina — 2 demãos, na calçada cidadã",m²,730.0,41.89,24.99,52.36,38222.8,Próprio,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+2.15,200401,IOPES,"Limpeza geral da obra (edificação), após a pintura",m²,400.0,9.88,25.0,12.35,4940.0,IOPES,2026-04,,2 EDIFÍCIO SEDE E ANEXO DO MGI,servico
+3,,,ESTACIONAMENTO DA PRINCESA ISABEL,,,,,,,,,,3 ESTACIONAMENTO DA PRINCESA ISABEL,grupo
+3.1,88629,SINAPI,"ARGAMASSA TRAÇO 1:3 (EM VOLUME DE CIMENTO E AREIA MÉDIA ÚMIDA), PREPARO MANUAL. AF_08/2019",m³,3.0,671.84,25.0,839.8,2519.4,SINAPI,2026-04,,3 ESTACIONAMENTO DA PRINCESA ISABEL,servico
+3.2,010246,IOPES,Lixamento manual de parede com pintura PVA para nivelamento e preparo da superfície para recebimento de nova camada de tinta,m²,330.0,5.04,25.0,6.3,2079.0,IOPES,2026-04,,3 ESTACIONAMENTO DA PRINCESA ISABEL,servico
+3.3,104642,SINAPI,"PINTURA LÁTEX ACRÍLICA STANDARD, APLICAÇÃO MANUAL EM PAREDES, DUAS DEMÃOS. AF_04/2023",m²,330.0,12.45,24.98,15.56,5134.8,SINAPI,2026-04,,3 ESTACIONAMENTO DA PRINCESA ISABEL,servico
+3.4,100744,SINAPI,PINTURA COM TINTA ALQUÍDICA DE ACABAMENTO (ESMALTE SINTÉTICO BRILHANTE) APLICADA A ROLO OU PINCEL SOBRE PERFIL METÁLICO EXECUTADO EM FÁBRICA (POR DEMÃO). AF_01/2020,m²,533.0,14.1,24.96,17.62,9391.46,SINAPI,2026-04,,3 ESTACIONAMENTO DA PRINCESA ISABEL,servico
+3.5,3714,ORSE,"Pintura de acabamento em superfícies metálicas com aplicação de 01 demão de tinta esmalte poliuretano, RENNER RETHANE FLV 653, bi-componente ou similar - R1",m²,1157.0,17.01,24.99,21.26,24597.82,ORSE,2026-04,,3 ESTACIONAMENTO DA PRINCESA ISABEL,servico
+3.6,200401,IOPES,Limpeza geral da obra (edificação),m²,200.0,9.88,25.0,12.35,2470.0,IOPES,2026-04,,3 ESTACIONAMENTO DA PRINCESA ISABEL,servico
+4,,,ANEXO DA VILA RUBIM,,,,,,,,,,4 ANEXO DA VILA RUBIM,grupo
+4.1,104642,SINAPI,"PINTURA LÁTEX ACRÍLICA STANDARD, APLICAÇÃO MANUAL EM PAREDES, DUAS DEMÃOS. AF_04/2023",m²,340.0,12.45,24.98,15.56,5290.4,SINAPI,2026-04,,4 ANEXO DA VILA RUBIM,servico
+4.2,88629,SINAPI,"ARGAMASSA TRAÇO 1:3 (EM VOLUME DE CIMENTO E AREIA MÉDIA ÚMIDA), PREPARO MANUAL. AF_08/2019",m³,3.0,671.84,25.0,839.8,2519.4,SINAPI,2026-04,,4 ANEXO DA VILA RUBIM,servico
+4.3,010246,IOPES,Lixamento manual de parede com pintura PVA para nivelamento e preparo da superfície para recebimento de nova camada de tinta,m²,340.0,5.04,25.0,6.3,2142.0,IOPES,2026-04,,4 ANEXO DA VILA RUBIM,servico
+4.4,200401,IOPES,Limpeza geral da obra (edificação),m²,200.0,9.88,25.0,12.35,2470.0,IOPES,2026-04,,4 ANEXO DA VILA RUBIM,servico
