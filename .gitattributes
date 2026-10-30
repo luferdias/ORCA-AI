@@ -1,0 +1,21 @@
+# Scripts e configuração sempre com LF, para o hook e os CLIs rodarem igual no Mac, no Linux e no Git Bash do Windows.
+.githooks/*   text eol=lf
+*.sh          text eol=lf
+*.py          text eol=lf
+*.yaml        text eol=lf
+*.yml         text eol=lf
+*.toml        text eol=lf
+*.ini         text eol=lf
+*.ps1         text eol=crlf
+
+# Binários do acervo: nunca converter fim de linha nem tentar diff textual.
+*.pdf  binary
+*.docx binary
+*.xlsx binary
+*.xlsm binary
+*.zip  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.dwg  binary
+*.rvt  binary

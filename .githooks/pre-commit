@@ -41,13 +41,15 @@ arquivos=$(git diff --cached --name-only --diff-filter=ACMR -- '*.py')
 
 if [ -x ".venv/bin/ruff" ]; then
     ruff=".venv/bin/ruff"
+elif [ -x ".venv/Scripts/ruff.exe" ]; then
+    ruff=".venv/Scripts/ruff.exe"       # venv criado no Windows
 elif command -v ruff >/dev/null 2>&1; then
     ruff="ruff"
 elif command -v uvx >/dev/null 2>&1; then
     ruff="uvx ruff@0.17.3"
 else
     echo "pre-commit: ruff não encontrado. Instale com:" >&2
-    echo "  .venv/bin/pip install -r OrcaAI/ufg/ml/requirements-dev.txt" >&2
+    echo "  sh preparar_ambiente.sh   (Windows: powershell -File preparar_ambiente.ps1)" >&2
     exit 1
 fi
 

@@ -13,7 +13,13 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-CHROME = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
+CHROMES = (
+    Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"),
+    Path(r"C:/Program Files/Google/Chrome/Application/chrome.exe"),
+    Path(r"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"),
+    Path("/usr/bin/google-chrome"),
+    Path("/usr/bin/chromium-browser"),
+)
 CSS = """
 @page { size: A4; margin: 18mm 16mm; }
 body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; line-height: 1.42; }
@@ -38,7 +44,9 @@ def _exigir(nome: str, caminho: str | None, dica: str) -> str:
 
 def markdown_para_html(md: Path, html: Path, titulo: str | None = None) -> Path:
     pandoc = _exigir(
-        "pandoc", shutil.which("pandoc"), "Instale com: brew install pandoc"
+        "pandoc",
+        shutil.which("pandoc"),
+        "Instale com: brew install pandoc (macOS) ou winget install JohnMacFarlane.Pandoc (Windows)",
     )
     with tempfile.NamedTemporaryFile(
         "w", suffix=".css", delete=False, encoding="utf-8"
@@ -71,10 +79,13 @@ def html_para_pdf(html: Path, pdf: Path) -> Path:
     chrome = (
         shutil.which("google-chrome")
         or shutil.which("chromium")
-        or (str(CHROME) if CHROME.exists() else None)
+        or shutil.which("chrome")
+        or next((str(c) for c in CHROMES if c.exists()), None)
     )
     chrome = _exigir(
-        "Google Chrome", chrome, "Instale o Chrome ou use pandoc com wkhtmltopdf."
+        "Google Chrome",
+        chrome,
+        "Instale o Chrome (macOS, Windows ou Linux) ou use pandoc com wkhtmltopdf.",
     )
     subprocess.run(
         [
@@ -103,7 +114,9 @@ def markdown_para_pdf(md: Path, pdf: Path, titulo: str | None = None) -> Path:
 
 def markdown_para_docx(md: Path, docx: Path, modelo: Path | None = None) -> Path:
     pandoc = _exigir(
-        "pandoc", shutil.which("pandoc"), "Instale com: brew install pandoc"
+        "pandoc",
+        shutil.which("pandoc"),
+        "Instale com: brew install pandoc (macOS) ou winget install JohnMacFarlane.Pandoc (Windows)",
     )
     args = [pandoc, str(md), "-f", "markdown", "-t", "docx", "-o", str(docx)]
     if modelo:

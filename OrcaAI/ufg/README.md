@@ -18,8 +18,7 @@ Regras do modo UFG:
   acervo em `OrcaAI/projetos/`; nunca escreve neles.
 - Não altera `OrcaAI/agents/catalogo.yaml` nem `OrcaAI/knowledge/padroes/`.
 - Agentes: A12 PesquisadorMLUFG e os cinco subagentes de ML do catálogo.
-- Ambiente Python: `.venv` na raiz do repositório
-  (`python3.12 -m venv .venv && .venv/bin/pip install -r OrcaAI/ufg/ml/requirements-dev.txt`).
+- Ambiente Python: `.venv` na raiz do repositório, criado por `sh preparar_ambiente.sh` (macOS/Linux) ou `preparar_ambiente.ps1` (Windows).
 - Testes: `cd OrcaAI/ufg/ml && ../../../.venv/bin/python -m pytest -q`.
 
 Apresentação e avaliação do projeto final: o ORCA-AI será exposto por uma

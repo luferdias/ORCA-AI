@@ -9,7 +9,7 @@ Pacote com os módulos de cálculo e validação que antes ficavam em `OrcaAI/sk
 | `windows/` | scripts PowerShell de conversão para PDF, da época em que o projeto rodava no Windows |
 | `tests/` | testes do pacote |
 
-Executar, com o ambiente `.venv` da raiz do repositório (tem `openpyxl` e `pytest`):
+Executar, com o ambiente `.venv` da raiz do repositório (tem `openpyxl` e `pytest`; no Windows troque `../../.venv/bin/python` por `..\\..\\.venv\\Scripts\\python.exe`):
 
 ```bash
 cd OrcaAI/tools

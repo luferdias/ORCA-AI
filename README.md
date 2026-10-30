@@ -81,7 +81,7 @@ O [relatório preliminar de viabilidade](OrcaAI/docs/viabilidade_ml_dados_estrut
 
 ## 5. Qualidade de código
 
-O lint e a formatação dos arquivos Python usam o [ruff](https://docs.astral.sh/ruff/), configurado em [pyproject.toml](pyproject.toml). A versão fica pinada em [requirements-dev.txt](OrcaAI/ufg/ml/requirements-dev.txt).
+O lint e a formatação dos arquivos Python usam o [ruff](https://docs.astral.sh/ruff/), configurado em [pyproject.toml](pyproject.toml). A versão fica pinada em [requirements-dev.txt](OrcaAI/ufg/ml/requirements-dev.txt), instalada no `.venv` da raiz do repositório.
 
 ```bash
 ruff check .          # verifica
@@ -95,4 +95,35 @@ Um hook de pre-commit versionado em [.githooks/pre-commit](.githooks/pre-commit)
 git config core.hooksPath .githooks
 ```
 
-O hook usa o ruff do `.venv (raiz)`, do PATH ou, na falta deles, `uvx ruff@0.17.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.
+O hook usa o ruff do `.venv` da raiz (no Windows, `.venv\\Scripts`), do PATH ou, na falta deles, `uvx ruff@0.17.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.
+
+## 6. Em outro clone ou plataforma (Mac, Windows, nuvem)
+
+Tudo o que define o sistema está no Git: catálogo e projeções para Claude Code, Codex e Antigravity, ferramentas, testes, hook, CI, specs, padrões, acervo e bases. Um clone novo fica pronto com um comando:
+
+```bash
+sh preparar_ambiente.sh            # macOS e Linux
+```
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\preparar_ambiente.ps1   # Windows
+```
+
+O script cria o `.venv` na raiz, instala as dependências, ativa o hook de pre-commit, ajusta `core.fileMode` e roda as verificações. Com `--indices` (ou `-Indices`) também reconstrói os índices locais das bases.
+
+| Viaja com o repositório | Fica em cada máquina |
+| --- | --- |
+| `CLAUDE.md`, `AGENTS.md`, `.agent/`, `.claude/`, `OrcaAI/` inteiro, hook, CI | `.venv` (o script recria) |
+| Acervo dos doze itens e bases oficiais com manifestos | `core.hooksPath` e `core.fileMode` (o script configura) |
+| Perfil do usuário em `memory/people/` | Índices em `OrcaAI/knowledge/indices/` (só manifestos versionados; `--indices` refaz) |
+| | Execuções de ML em `OrcaAI/ufg/ml/outputs/` (só manifestos versionados) |
+| | Canvas, papéis e partitura do Maestri (`.maestri/` fora do Git; papéis descritos em `OrcaAI/spec/orca_ai_layout_tres_plataformas.md`) |
+
+Regras para trabalhar de vários lugares:
+
+- `git pull` antes de editar e commits pequenos; dois terminais ou duas máquinas podem escrever no mesmo arquivo.
+- Um único clone dentro do OneDrive; outros clones ficam fora dele.
+- No Windows, o Git for Windows executa o hook com o seu próprio `sh`; `.gitattributes` mantém scripts com LF.
+- Na nuvem do Claude Code o hook não roda, mas a CI verifica cada push.
+- Ferramentas externas opcionais: pandoc e Google Chrome (PDF), Playwright (Orçafascio).
+
