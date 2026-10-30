@@ -8,7 +8,7 @@
 5. Escreve ``05-validacoes/relatorio-guardrails.md`` e ``validacao-codigos.md``.
 
 Uso:
-    OrcaAI/ml/.venv/bin/python OrcaAI/tools/cli/validar_item.py 2026-001-teto-elevadores [--planilha ARQ.xlsx]
+    .venv/bin/python OrcaAI/tools/cli/validar_item.py 2026-001-teto-elevadores [--planilha ARQ.xlsx]
 """
 
 from __future__ import annotations

@@ -23,7 +23,7 @@ Este documento consolida **tudo** o que o ORCA-AI já definiu, em três geraçõ
 | --- | --- | --- | --- |
 | **Central Orca** | julho/2026 | `Orca.zip` na raiz (128 entradas) | 12 agentes, 9 subagentes, 8 workflows, 33 skills, estrutura de projeto `00-entrada` a `07-assinados`, modelo de item orçamentário, templates, tutorial e comandos |
 | **ORCA-AI** | agosto e setembro/2026 | `OrcaAI/` | 10 agentes numerados mais o Agente 5S, especificação do sistema, guardrails G-01 a G-10, protocolo LfD, protocolo de pesquisa de mercado, 12 contratações reais, acervo jurídico, bases SINAPI e DER-ES com manifestos |
-| **Extensão ML/UFG** | setembro e outubro/2026 | `OrcaAI/spec/ml_ufg/`, `OrcaAI/ml/`, `OrcaAI/knowledge/` | A11 e cinco subagentes de ML, cinco skills externas selecionadas, API Knowledge, estudo de regressão, classificação e agrupamento entregue à UFG, 223 testes, lint e hook |
+| **Extensão ML/UFG** | setembro e outubro/2026 | `OrcaAI/ufg/spec/`, `OrcaAI/ufg/ml/`, `OrcaAI/knowledge/` | A11 e cinco subagentes de ML, cinco skills externas selecionadas, API Knowledge, estudo de regressão, classificação e agrupamento entregue à UFG, 223 testes, lint e hook |
 
 A regra desta revisão, definida pelo engenheiro em 29/10/2026, é: **não cortar nada; melhorar o que já existe.** Por isso a seção 2 inventaria o que existe, a seção 3 diagnostica, as seções 4 a 12 propõem, e o Anexo A mostra, item a item, para onde cada coisa existente vai na versão 2.0.
 
@@ -196,7 +196,7 @@ Quatro descrições do mesmo fluxo convivem e são compatíveis:
 | Central Orca (julho) | central-orchestrator, intake-triage-agent, project-planner, engenheiro-orcamentista-publico, orcamentista-mgi-es, compositor-custos, pesquisador-bases-oficiais, pesquisador-mercado, validador-codigos, guardrail-controladoria, documentalista-tecnico, revisor-final | `Orca.zip` |
 | Subagentes (julho) | browser-orcafascio, spreadsheet-normalizer, pdf-docx-extractor, quantity-takeoff, quotation-harvester, code-validator, bdi-calculator, document-renderer, approval-notifier | `Orca.zip` |
 | Antigravity (atual) | orchestrator, project-planner, explorer-agent, documentation-writer, orcamentista-mgi, engenheiro-orcamentista, mais 14 agentes genéricos do kit | `.agent/agents/` |
-| Extensão ML | A11 PesquisadorMLUFG; SA-ML-01 curadoria; SA-ML-02 conhecimento e busca; SA-ML-03 treinamento; SA-ML-04 integração e API; SA-ML-05 avaliação | `OrcaAI/spec/ml_ufg/` |
+| Extensão ML | A11 PesquisadorMLUFG; SA-ML-01 curadoria; SA-ML-02 conhecimento e busca; SA-ML-03 treinamento; SA-ML-04 integração e API; SA-ML-05 avaliação | `OrcaAI/ufg/spec/` |
 
 Atribuições relevantes que cada ficha trouxe e que a 2.0 preserva estão incorporadas na seção 6.
 
@@ -245,11 +245,11 @@ A senha institucional do Orçafascio estava em texto claro em 23 arquivos versio
 
 | Item | Tamanho ou quantidade | Situação |
 | --- | --- | --- |
-| `OrcaAI/ml/outputs/` | 3,8 GB, 4.046 `.joblib`, 476 imagens | Dezessete execuções; quatro cópias idênticas de 547 MB; sete repetições do mesmo CSV de 82 MB. O `.git` tem 579 MB. |
+| `OrcaAI/ufg/ml/outputs/` | 3,8 GB, 4.046 `.joblib`, 476 imagens | Dezessete execuções; quatro cópias idênticas de 547 MB; sete repetições do mesmo CSV de 82 MB. O `.git` tem 579 MB. |
 | `Item 07/automation_script/node_modules/` | 3.164 arquivos JS/TS/map | Dependências de Node dentro de pasta de obra |
 | Logs do Chrome, `.bak` de DWG, zip duplicado dos projetos básicos | 6 arquivos | Lixo de execução e duplicação |
 | `Orca.zip` na raiz | 120 KB | Geração de julho, com 9 skills, 9 subagentes e 8 workflows que precisam ser recuperados antes de arquivá-lo |
-| `relatorio_regressao.pdf`, `Organograma ORCA-AI.png` na raiz | 2 arquivos | Pertencem a `OrcaAI/ml/entregas` e `OrcaAI/spec/ml_ufg` |
+| `relatorio_regressao.pdf`, `Organograma ORCA-AI.png` na raiz | 2 arquivos | Pertencem a `OrcaAI/ufg/ml/entregas` e `OrcaAI/ufg/spec` |
 | `.temp_ag_kit/`, `.sixth/`, `.venv/` da raiz (layout Windows) | pastas | Já ignoradas; ocupam a raiz |
 | `Projetos/` na raiz | 13 `.gitkeep` | Estrutura experimental nunca usada; README descreve links simbólicos removidos |
 
@@ -498,7 +498,7 @@ O A10 abre o site e aguarda o login do engenheiro. Não preenche senha, não a s
 
 ## 11. Extensão acadêmica de Machine Learning
 
-Preservada na íntegra: proposta alinhada às aulas (LinearRegression, RandomForest com árvore e KNN, KMeans), plano de consolidação de acabamentos, protocolo de avaliação, registro mínimo de exemplo, pacote acadêmico de um experimento, cinco skills selecionadas e duas reservas, organograma. Mudanças na 2.0: A11 passa a A12 na numeração; `OrcaAI/ml/outputs` sai do Git com manifesto e release das três execuções entregues; o estudo ganha o comando `/experimento-ml`. Aprendizado por reforço continua fora do escopo.
+Preservada na íntegra: proposta alinhada às aulas (LinearRegression, RandomForest com árvore e KNN, KMeans), plano de consolidação de acabamentos, protocolo de avaliação, registro mínimo de exemplo, pacote acadêmico de um experimento, cinco skills selecionadas e duas reservas, organograma. Mudanças na 2.0: A11 passa a A12 na numeração; `OrcaAI/ufg/ml/outputs` sai do Git com manifesto e release das três execuções entregues; o estudo ganha o comando `/experimento-ml`. Aprendizado por reforço continua fora do escopo.
 
 ---
 
@@ -639,12 +639,12 @@ Ordem: F0 hoje; F1 e F2 só com Claude Code; F3 antes de F4; F5 depois de F3.
 | Auditoria de bases, viabilidade de ML, sincronização | `docs/` |
 | Bases SINAPI (20) e DER-ES (17) com manifestos; catálogo de 12 fontes | `bases/`, sem mover ZIPs |
 | `knowledge/datasets` | `knowledge/datasets` |
-| Extensão ML: spec, código, testes, entregas | `spec/ml_ufg/`, `ml/`, `ml/entregas/` |
+| Extensão ML: spec, código, testes, entregas | `ufg/spec/`, `ufg/ml/`, `ufg/ml/entregas/` (bloco UFG desde 30/10/2026) |
 | `ml/outputs` (17 execuções) | OneDrive com manifesto; release das três entregues |
 | 12 itens, projetos básicos, governança | `projetos/` na estrutura única; originais preservados em `00-entrada` ou na subpasta de origem |
 | `Item 07/automation_script` (sem `node_modules`) | `projetos/2025-007-pintura-externa/05-validacoes/scripts/`; `package.json` mantido |
 | `Orca.zip` | `docs/historico/Orca-2026-07.zip` após recuperação |
-| `Organograma ORCA-AI.png`, `relatorio_regressao.pdf` | `spec/ml_ufg/` e `ml/entregas/` |
+| `Organograma ORCA-AI.png`, `relatorio_regressao.pdf` | `ufg/spec/` e `ufg/ml/entregas/` |
 | `Projetos/` da raiz | Removida; conceito absorvido por `knowledge/` |
 | `CLAUDE.md`, `AGENTS.md` | Gerados do catálogo; preferências do engenheiro preservadas em bloco fixo |
 | `pyproject.toml`, hook, ruff, 223 testes | Mantidos; CI na F6 |
@@ -656,7 +656,7 @@ Ordem: F0 hoje; F1 e F2 só com Claude Code; F3 antes de F4; F5 depois de F3.
 - Protocolo LfD: `OrcaAI/spec/lfd_learning_protocol.md`
 - Protocolo de mercado: `OrcaAI/spec/market_research_protocol.md`
 - Arquitetura da Central Orca: `OrcaAI/docs/central-orcamento-publico-agentes-arquitetura.md` e `Orca.zip`
-- Extensão ML/UFG: `OrcaAI/spec/ml_ufg/` (README, proposta, plano, agentes e subagentes, skills, dados e avaliação, bases, API Knowledge)
+- Extensão ML/UFG: `OrcaAI/ufg/spec/` (README, proposta, plano, agentes e subagentes, skills, dados e avaliação, bases, API Knowledge)
 - Fichas atuais: `OrcaAI/agents/`
 - Fluxos: `OrcaAI/workflows/`, `OrcaAI/docs/FLUXOGRAMA_OPERACAO.md`, `OrcaAI/docs/TUTORIAL.md`, `OrcaAI/docs/COMANDOS_TERMINAL.md`
-- Qualidade: `pyproject.toml`, `.githooks/pre-commit`, `OrcaAI/ml/README.md`
+- Qualidade: `pyproject.toml`, `.githooks/pre-commit`, `OrcaAI/ufg/ml/README.md`

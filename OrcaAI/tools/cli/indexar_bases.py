@@ -1,9 +1,9 @@
 """Constrói o índice local de uma base oficial (comando /atualizar-bases, agente A9).
 
 Uso:
-    OrcaAI/ml/.venv/bin/python OrcaAI/tools/cli/indexar_bases.py sinapi_es 2026-04
-    OrcaAI/ml/.venv/bin/python OrcaAI/tools/cli/indexar_bases.py der_es 2026-04
-    OrcaAI/ml/.venv/bin/python OrcaAI/tools/cli/indexar_bases.py --todas 2026-04
+    .venv/bin/python OrcaAI/tools/cli/indexar_bases.py sinapi_es 2026-04
+    .venv/bin/python OrcaAI/tools/cli/indexar_bases.py der_es 2026-04
+    .venv/bin/python OrcaAI/tools/cli/indexar_bases.py --todas 2026-04
 
 O ZIP original deve estar em OrcaAI/bases/<fonte>/<competencia>/originais/.
 Gera OrcaAI/knowledge/indices/<fonte>/<competencia>/servicos.csv (ignorado pelo

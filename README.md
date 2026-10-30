@@ -67,21 +67,21 @@ Orca_AI/
 
 ## 4. Aplicação acadêmica de Machine Learning — UFG
 
-A primeira etapa, **regressão**, está implementada no [módulo Python para VS Code](OrcaAI/ml/README.md). O [arquivo principal](OrcaAI/ml/executar_regressao.py) executa SINAPI-ES e DER-ES/IOPES separadamente, com datasets reais, avaliação temporal e comparação com o último custo conhecido. Classificação e agrupamento seguem como próximas etapas.
+A primeira etapa, **regressão**, está implementada no [módulo Python para VS Code](OrcaAI/ufg/ml/README.md). O [arquivo principal](OrcaAI/ufg/ml/executar_regressao.py) executa SINAPI-ES e DER-ES/IOPES separadamente, com datasets reais, avaliação temporal e comparação com o último custo conhecido. Classificação e agrupamento seguem como próximas etapas.
 
-A [proposta atual do trabalho](OrcaAI/spec/ml_ufg/proposta_projeto_ml_es.md) define Regressão Linear, Random Forest e K-Means, a partir dos materiais da disciplina. Prevê execução em Python no VS Code, primeiro no SINAPI-ES e depois no DER-ES/IOPES, com comparação dos resultados. Aprendizado por reforço fica para uma evolução futura, conforme decisão do engenheiro Luis Fernando.
+A [proposta atual do trabalho](OrcaAI/ufg/spec/proposta_projeto_ml_es.md) define Regressão Linear, Random Forest e K-Means, a partir dos materiais da disciplina. Prevê execução em Python no VS Code, primeiro no SINAPI-ES e depois no DER-ES/IOPES, com comparação dos resultados. Aprendizado por reforço fica para uma evolução futura, conforme decisão do engenheiro Luis Fernando.
 
-A [estrutura agêntica proposta para ML/UFG](OrcaAI/spec/ml_ufg/README.md) mantém o orquestrador central, aproveita os especialistas e as skills existentes e define uma extensão acadêmica com cinco subagentes de apoio. O pacote inclui o organograma, a seleção de cinco skills externas, os critérios de dados e avaliação e o contrato inicial da API Knowledge.
+A [estrutura agêntica proposta para ML/UFG](OrcaAI/ufg/spec/README.md) mantém o orquestrador central, aproveita os especialistas e as skills existentes e define uma extensão acadêmica com cinco subagentes de apoio. O pacote inclui o organograma, a seleção de cinco skills externas, os critérios de dados e avaliação e o contrato inicial da API Knowledge.
 
 Os 12 projetos de orçamento permanecem em `OrcaAI/projetos/`. A API Knowledge e os novos papéis agênticos continuam especificados para etapas posteriores; as skills externas selecionadas ainda não foram instaladas.
 
-A [auditoria de bases oficiais de 27/09/2026](OrcaAI/docs/auditoria_bases_referenciais_2026-09-27.md) registra competências localizadas, arquivos amostrados e pendências de acesso. O [catálogo de fontes](OrcaAI/bases/catalogo_fontes_referenciais.json) e o [protocolo de atualização por projeto](OrcaAI/spec/ml_ufg/bases_servicos_e_atualizacao.md) orientam a pesquisa com prioridade no Espírito Santo.
+A [auditoria de bases oficiais de 27/09/2026](OrcaAI/docs/auditoria_bases_referenciais_2026-09-27.md) registra competências localizadas, arquivos amostrados e pendências de acesso. O [catálogo de fontes](OrcaAI/bases/catalogo_fontes_referenciais.json) e o [protocolo de atualização por projeto](OrcaAI/ufg/spec/bases_servicos_e_atualizacao.md) orientam a pesquisa com prioridade no Espírito Santo.
 
 O [relatório preliminar de viabilidade](OrcaAI/docs/viabilidade_ml_dados_estruturados_es_2026-09-27.md) registra a análise anterior à leitura das aulas. A seleção de modelos e o escopo vigente estão na proposta atual.
 
 ## 5. Qualidade de código
 
-O lint e a formatação dos arquivos Python usam o [ruff](https://docs.astral.sh/ruff/), configurado em [pyproject.toml](pyproject.toml). A versão fica pinada em [requirements-dev.txt](OrcaAI/ml/requirements-dev.txt).
+O lint e a formatação dos arquivos Python usam o [ruff](https://docs.astral.sh/ruff/), configurado em [pyproject.toml](pyproject.toml). A versão fica pinada em [requirements-dev.txt](OrcaAI/ufg/ml/requirements-dev.txt).
 
 ```bash
 ruff check .          # verifica
@@ -95,4 +95,4 @@ Um hook de pre-commit versionado em [.githooks/pre-commit](.githooks/pre-commit)
 git config core.hooksPath .githooks
 ```
 
-O hook usa o ruff do `OrcaAI/ml/.venv`, do PATH ou, na falta deles, `uvx ruff@0.17.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.
+O hook usa o ruff do `.venv (raiz)`, do PATH ou, na falta deles, `uvx ruff@0.17.3`. Para pular a verificação em um commit específico, use `git commit --no-verify`.

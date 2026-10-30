@@ -16,7 +16,7 @@ Inteligentes da UFG.
 ## Forma de trabalho observada em 29/10/2026
 
 - **Ambiente:** macOS, repositório dentro do OneDrive, Python 3.12 no 
-`OrcaAI/ml/.venv`, `uv`/`uvx` disponíveis no Homebrew. Ver efeitos do OneDrive 
+`.venv (raiz)`, `uv`/`uvx` disponíveis no Homebrew. Ver efeitos do OneDrive 
 sobre o git no `CLAUDE.md`, seção "Qualidade de código".
 - **Fluxo com git:** prefere avançar em passos pequenos, cada um commitado e 
 enviado para `origin/main` logo em seguida. Mensagens de commit em português, no

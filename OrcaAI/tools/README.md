@@ -9,19 +9,19 @@ Pacote com os módulos de cálculo e validação que antes ficavam em `OrcaAI/sk
 | `windows/` | scripts PowerShell de conversão para PDF, da época em que o projeto rodava no Windows |
 | `tests/` | testes do pacote |
 
-Executar, com o ambiente de `OrcaAI/ml/.venv` (tem `openpyxl` e `pytest`):
+Executar, com o ambiente `.venv` da raiz do repositório (tem `openpyxl` e `pytest`):
 
 ```bash
 cd OrcaAI/tools
-../ml/.venv/bin/python -m pytest -q
-../ml/.venv/bin/python cli/validar_estrutura.py
-../ml/.venv/bin/python cli/criar_projeto.py 2026-013-nome-do-servico
-../ml/.venv/bin/python cli/criar_projeto.py 2026-013-nome-do-servico --etapa 03-orcamento
-../ml/.venv/bin/python cli/gerar_projecoes.py --verificar
-../ml/.venv/bin/python cli/indexar_bases.py --todas 2026-04
-../ml/.venv/bin/python cli/validar_item.py 2026-007-pintura-externa
+../../.venv/bin/python -m pytest -q
+../../.venv/bin/python cli/validar_estrutura.py
+../../.venv/bin/python cli/criar_projeto.py 2026-013-nome-do-servico
+../../.venv/bin/python cli/criar_projeto.py 2026-013-nome-do-servico --etapa 03-orcamento
+../../.venv/bin/python cli/gerar_projecoes.py --verificar
+../../.venv/bin/python cli/indexar_bases.py --todas 2026-04
+../../.venv/bin/python cli/validar_item.py 2026-007-pintura-externa
 ```
 
-O ambiente precisa de `pyyaml` (catálogo) e `openpyxl` (planilhas), ambos em `OrcaAI/ml/requirements.txt`. Os índices locais ficam em `OrcaAI/knowledge/indices/` e só os manifestos são versionados.
+O ambiente precisa de `pyyaml` (catálogo) e `openpyxl` (planilhas), ambos em `OrcaAI/ufg/ml/requirements.txt`. Os índices locais ficam em `OrcaAI/knowledge/indices/` e só os manifestos são versionados.
 
 Scripts de uso único de documentos SEI ficam em `projetos/_governanca_sei_agu_cgu/scripts/`; os do Entregável 3 (TRL e PI) ficam em `docs/historico/entregavel_3_scripts/`.

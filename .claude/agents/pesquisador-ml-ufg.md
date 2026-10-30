@@ -17,14 +17,14 @@ Extensão acadêmica de Machine Learning, com experimentos rastreáveis.
 
 ## Atribuições
 
-- Conduzir regressão, classificação e agrupamento sobre dados estruturados de SINAPI-ES e DER-ES, em OrcaAI/ml, com manifesto por execução.
+- Conduzir regressão, classificação e agrupamento sobre dados estruturados de SINAPI-ES e DER-ES, em OrcaAI/ufg/ml, com manifesto por execução.
 - Delegar a SA-ML-01 a SA-ML-04; receber parecer independente de SA-ML-05 via A4.
 - Não alterar o acervo original, não promover modelo e não tomar decisões de orçamento.
 
 ## Entradas
 
 - bases históricas
-- OrcaAI/ml
+- OrcaAI/ufg/ml
 - critérios da disciplina
 
 ## Saídas
@@ -58,6 +58,11 @@ Nenhum agente inventa código, preço, coeficiente ou fonte. Se a base oficial n
   - P3 nuvem Orçafascio: mais de 30 bases ativas na conta MGI-ES
   - auxiliares: CUB-ES e ANP combustíveis (indicadores, não catálogos)
 - Pesquisa de mercado: IN SEGES/ME 65/2021: Nível 1 Grande Vitória; 2 Rio de Janeiro; 3 São Paulo; 4 Belo Horizonte. Três propostas válidas com razão social, CNPJ, endereço, contato, data (validade 180 dias), marca e modelo, frete CIF Vitória, tributação; mediana; descarte motivado acima de 25% da média; pausa antes de integrar à CPU
+
+## Modos de operação
+
+- **Modo SRAES (padrão)** (A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11; raiz `OrcaAI/ (exceto OrcaAI/ufg/)`): Trabalho profissional da SRA-ES: itens em OrcaAI/projetos, agentes A1 a A11, padrões em OrcaAI/knowledge/padroes. É o modo de toda sessão que não declarar outro.
+- **Modo UFG (projeto final do curso de Agentes Inteligentes)** (A12, ML-1, ML-2, ML-3, ML-4, ML-5; raiz `OrcaAI/ufg/`): Extensão acadêmica em OrcaAI/ufg: ml/, spec/ e entregas. Entra pelo comando /experimento-ml ou quando o engenheiro disser que é o projeto da UFG. Só leitura nas bases, no acervo e nos padrões do modo SRAES; nada do modo UFG altera itens, catálogo ou padrões profissionais (R-E4).
 
 ## Guardrails
 

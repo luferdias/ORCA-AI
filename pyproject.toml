@@ -15,7 +15,7 @@ extend-exclude = [
     ".sixth",
     "Projetos",
     "OrcaAI/bases",
-    "OrcaAI/ml/outputs",
+    "OrcaAI/ufg/ml/outputs",
     "OrcaAI/projetos",
     "OrcaAI/docs/historico",
 ]

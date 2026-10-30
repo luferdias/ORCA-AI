@@ -39,15 +39,15 @@ fi
 arquivos=$(git diff --cached --name-only --diff-filter=ACMR -- '*.py')
 [ -z "$arquivos" ] && exit 0
 
-if [ -x "OrcaAI/ml/.venv/bin/ruff" ]; then
-    ruff="OrcaAI/ml/.venv/bin/ruff"
+if [ -x ".venv/bin/ruff" ]; then
+    ruff=".venv/bin/ruff"
 elif command -v ruff >/dev/null 2>&1; then
     ruff="ruff"
 elif command -v uvx >/dev/null 2>&1; then
     ruff="uvx ruff@0.17.3"
 else
     echo "pre-commit: ruff não encontrado. Instale com:" >&2
-    echo "  OrcaAI/ml/.venv/bin/pip install -r OrcaAI/ml/requirements-dev.txt" >&2
+    echo "  .venv/bin/pip install -r OrcaAI/ufg/ml/requirements-dev.txt" >&2
     exit 1
 fi
 

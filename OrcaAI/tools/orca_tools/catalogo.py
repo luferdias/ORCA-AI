@@ -149,6 +149,10 @@ def _regras_comuns(cat: dict) -> str:
 {_lista(p["cascata_bases"], "  - ")}
 - Pesquisa de mercado: {p["cascata_mercado"]}
 
+## Modos de operação
+
+{_lista(f"**{m['nome']}** ({', '.join(m['agentes'])}; raiz `{m['raiz']}`): {m['descricao']}" for m in cat["modos"].values())}
+
 ## Guardrails
 
 | ID | Validador | Regra | Ação |
@@ -389,7 +393,7 @@ def gerar(cat: dict, raiz_origem: Path, raiz_destino: Path) -> dict[str, str]:
     partes += [
         "### Ferramentas e testes",
         "",
-        "- Pacote Python `OrcaAI/tools/orca_tools` (BDI, cronograma, planilha Excel, guardrails, estrutura de item); testes com `cd OrcaAI/tools && ../ml/.venv/bin/python -m pytest -q`.",
+        "- Pacote Python `OrcaAI/tools/orca_tools` (BDI, cronograma, planilha Excel, guardrails, estrutura de item); testes com `cd OrcaAI/tools && ../../.venv/bin/python -m pytest -q`.",
         "- Lint: `ruff check .` e `ruff format .` na raiz; o hook de pre-commit bloqueia segredos e erros de lint.",
         "- Nunca gravar credenciais em arquivo, variável ou prompt.",
         "",

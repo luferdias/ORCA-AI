@@ -30,7 +30,7 @@ As classes são derivadas dos grupos oficiais e ainda não foram homologadas por
 
 O K-Means pode retornar `sem_candidato_valido`: isso significa que nenhum k respeitou o tamanho mínimo de grupo definido antes do teste. Nesse caso, o programa preserva os resultados, gera um diagnóstico identificado e conclui as demais tarefas. Esse diagnóstico não é promovido a agrupamento aprovado.
 
-Consulte o [plano e os critérios do estudo](../spec/ml_ufg/plano_consolidacao_acabamentos.md). Registre as populações de cada tarefa: um serviço no snapshot da classificação não equivale a uma observação serviço/mês da regressão. MAPE, F1 e silhouette respondem a perguntas diferentes e não devem ser somados ou transformados em uma classificação única dos algoritmos.
+Consulte o [plano e os critérios do estudo](../spec/plano_consolidacao_acabamentos.md). Registre as populações de cada tarefa: um serviço no snapshot da classificação não equivale a uma observação serviço/mês da regressão. MAPE, F1 e silhouette respondem a perguntas diferentes e não devem ser somados ou transformados em uma classificação única dos algoritmos.
 
 ## Regressão original
 
@@ -43,7 +43,7 @@ Aplicação em Python para o engenheiro Luis Fernando. Primeiro experimento da d
 ## Executar no VS Code
 
 1. Abra [ORCA-ML.code-workspace](ORCA-ML.code-workspace) no VS Code.
-2. Selecione o interpretador de `ml/.venv` em **Python: Select Interpreter**. O ambiente local foi preparado com Python 3.12.
+2. Selecione o interpretador de `.venv` da raiz do repositório em **Python: Select Interpreter**. O ambiente local foi preparado com Python 3.12.
 3. Abra [executar_regressao.py](executar_regressao.py) e clique em **Run Python File / Executar Arquivo Python**.
 
 O programa lê os dois datasets já preparados, avalia os modelos e salva uma nova pasta em `outputs/`. **Agora também gera uma apresentação didática em HTML e PDF**, com gráficos por grupo de serviços, legendas, valores e explicações estatísticas. Ao terminar, o terminal mostra os caminhos dos relatórios. A execução padrão é local, sem download ou acesso aos portais.
@@ -207,4 +207,4 @@ O hook usa o ruff deste `.venv`, do PATH ou, na falta deles, `uvx ruff@0.17.3`. 
 
 ## Relação com a disciplina
 
-[Proposta aprovada para implementação](../spec/ml_ufg/proposta_projeto_ml_es.md) · [Mapa das aulas](../spec/ml_ufg/mapa_materiais_disciplina.md) · [Registro de implementação](IMPLEMENTACAO.md).
+[Proposta aprovada para implementação](../spec/proposta_projeto_ml_es.md) · [Mapa das aulas](../spec/mapa_materiais_disciplina.md) · [Registro de implementação](IMPLEMENTACAO.md).

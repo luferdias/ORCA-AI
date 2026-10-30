@@ -4,7 +4,7 @@
 
 - [Catálogo de fontes oficiais e condições de acesso](catalogo_fontes_referenciais.json).
 - [Auditoria dos portais e amostras em 27/09/2026](../docs/auditoria_bases_referenciais_2026-09-27.md).
-- [Especificação de dados, ML e atualização por projeto](../spec/ml_ufg/bases_servicos_e_atualizacao.md).
+- [Especificação de dados, ML e atualização por projeto](../ufg/spec/bases_servicos_e_atualizacao.md).
 
 Ao iniciar um orçamento, consultar a última edição publicada para a fonte e a UF aplicáveis, conferir o arquivo e registrar a versão usada. Competência, publicação e captura são datas distintas. Retificações geram nova revisão; arquivos anteriores permanecem disponíveis.
 

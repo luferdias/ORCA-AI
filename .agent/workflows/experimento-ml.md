@@ -16,7 +16,7 @@ Executa um experimento da extensão ML/UFG com manifesto e relatório.
 
 ## Fluxo
 
-1. Acionar A12; executar em OrcaAI/ml com saída em pasta nova.
+1. Acionar A12; executar em OrcaAI/ufg/ml com saída em pasta nova.
 2. Registrar manifesto; submeter a SA-ML-05 e A4.
 
 ## Saída

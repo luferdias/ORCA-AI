@@ -42,7 +42,7 @@ VECTOR_DB=qdrant
 QDRANT_URL=http://localhost:6333
 ```
 
-No arranjo futuro proposto, `OrcaAI/api/` e `OrcaAI/ml/` são componentes irmãos de `OrcaAI/knowledge/`. O código resolverá `KNOWLEDGE_PATH` a partir da raiz declarada de cada componente, independentemente do diretório de onde o processo for iniciado. Carregar a variável e aplicar essa regra são responsabilidades da implementação.
+No arranjo futuro proposto, `OrcaAI/api/` e `OrcaAI/ufg/ml/` são componentes irmãos de `OrcaAI/knowledge/`. O código resolverá `KNOWLEDGE_PATH` a partir da raiz declarada de cada componente, independentemente do diretório de onde o processo for iniciado. Carregar a variável e aplicar essa regra são responsabilidades da implementação.
 
 `QDRANT_URL` aponta para o Qdrant acessível pelo processo da API. Em execução local, usa o endereço informado. Se forem usados contêineres separados, o endereço deve refletir a rede entre os serviços. A referência oficial apresenta a porta HTTP 6333 e persistência local: [Qdrant Local Quickstart](https://qdrant.tech/documentation/quickstart/).
 

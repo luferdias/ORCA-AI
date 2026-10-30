@@ -10,14 +10,14 @@ Extensão acadêmica de Machine Learning, com experimentos rastreáveis.
 
 ## Atribuições
 
-- Conduzir regressão, classificação e agrupamento sobre dados estruturados de SINAPI-ES e DER-ES, em OrcaAI/ml, com manifesto por execução.
+- Conduzir regressão, classificação e agrupamento sobre dados estruturados de SINAPI-ES e DER-ES, em OrcaAI/ufg/ml, com manifesto por execução.
 - Delegar a SA-ML-01 a SA-ML-04; receber parecer independente de SA-ML-05 via A4.
 - Não alterar o acervo original, não promover modelo e não tomar decisões de orçamento.
 
 ## Entradas
 
 - bases históricas
-- OrcaAI/ml
+- OrcaAI/ufg/ml
 - critérios da disciplina
 
 ## Saídas

@@ -1,6 +1,6 @@
 # Registro de implementação da regressão
 
-Plano: `../spec/ml_ufg/proposta_projeto_ml_es.md`. Autorização: pedido do engenheiro Luis Fernando em 27/09/2026 para baixar as duas bases, criar datasets e executar regressão em Python/VS Code.
+Plano: `../spec/proposta_projeto_ml_es.md`. Autorização: pedido do engenheiro Luis Fernando em 27/09/2026 para baixar as duas bases, criar datasets e executar regressão em Python/VS Code.
 
 ## Etapas
 

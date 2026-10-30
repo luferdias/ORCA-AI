@@ -17,11 +17,11 @@ jobs:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: |
-            OrcaAI/ml/requirements.txt
-            OrcaAI/ml/requirements-dev.txt
+            OrcaAI/ufg/ml/requirements.txt
+            OrcaAI/ufg/ml/requirements-dev.txt
 
       - name: Dependências
-        run: python -m pip install -r OrcaAI/ml/requirements-dev.txt
+        run: python -m pip install -r OrcaAI/ufg/ml/requirements-dev.txt
 
       - name: Lint e formatação (ruff)
         run: |
@@ -48,5 +48,5 @@ jobs:
         run: python -m pytest -q
 
       - name: Testes do módulo de ML
-        working-directory: OrcaAI/ml
+        working-directory: OrcaAI/ufg/ml
         run: python -m pytest -q

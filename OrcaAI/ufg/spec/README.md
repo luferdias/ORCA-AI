@@ -95,7 +95,7 @@ ORCA-AI/
 │   ├── bases/                   # Bases de referência existentes
 │   ├── skills/                  # Módulos de cálculo existentes
 │   ├── workflows/               # Fluxos de orçamento existentes
-│   ├── spec/ml_ufg/             # Este pacote de especificações
+│   ├── ufg/spec/                # Este pacote de especificações
 │   ├── ml/                      # Futuro: experimentos, modelos e notebooks
 │   ├── api/                     # Futuro: serviço API Knowledge
 │   └── knowledge/               # Futuro: material derivado e versionado
@@ -106,7 +106,7 @@ ORCA-AI/
 └── Projetos/                    # Estrutura inicial já existente
 ```
 
-No desenho recomendado, `OrcaAI/knowledge/` será a fonte canônica dos dados derivados, e `OrcaAI/ml/` concentrará os modelos e experimentos. `Projetos/` permanece como a estrutura experimental inicial da conversa; não será uma segunda fonte ativa nem terá sincronização automática com a extensão. Uma eventual consolidação será decidida antes de preencher essas pastas com dados.
+No desenho recomendado, `OrcaAI/knowledge/` será a fonte canônica dos dados derivados, e `OrcaAI/ufg/ml/` concentrará os modelos e experimentos. `Projetos/` permanece como a estrutura experimental inicial da conversa; não será uma segunda fonte ativa nem terá sincronização automática com a extensão. Uma eventual consolidação será decidida antes de preencher essas pastas com dados.
 
 O projeto externo `Machine Learning`, indicado pelo usuário, poderá fornecer materiais da disciplina. Sua integração será definida sem mover o ORCA-AI. `heineken` permanece um contexto mencionado na conversa, cuja relação com o trabalho precisa ser esclarecida; ele não é tratado como fonte já disponível nem misturado aos casos da SRA-ES.
 

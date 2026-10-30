@@ -22,7 +22,7 @@ Em 28/09/2026, o engenheiro Luis Fernando autorizou tornar o repositório públi
 - [Relatório navegável, com gráficos e tabelas](outputs/entrega_ufg_acabamentos_2026-09-27/relatorio_consolidado/relatorio.html).
 - [Texto do relatório em Markdown](outputs/entrega_ufg_acabamentos_2026-09-27/relatorio_consolidado/RELATORIO.md).
 - [Registro da execução, parâmetros e hashes](outputs/entrega_ufg_acabamentos_2026-09-27/execucao_estudo.json).
-- [Plano e critérios definidos para os experimentos](../spec/ml_ufg/plano_consolidacao_acabamentos.md).
+- [Plano e critérios definidos para os experimentos](../spec/plano_consolidacao_acabamentos.md).
 
 ## Código para executar no VS Code
 

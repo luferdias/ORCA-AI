@@ -1,7 +1,7 @@
 """Regenera as projeções do catálogo único de agentes.
 
 Uso, a partir de qualquer pasta:
-    OrcaAI/ml/.venv/bin/python OrcaAI/tools/cli/gerar_projecoes.py [--verificar]
+    .venv/bin/python OrcaAI/tools/cli/gerar_projecoes.py [--verificar]
 
 Com --verificar, gera em pasta temporária e compara com o repositório; sai com
 código 1 se houver diferença (uso em CI e no comando /auditar-5s).

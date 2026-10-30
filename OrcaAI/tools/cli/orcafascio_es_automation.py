@@ -5,7 +5,7 @@ Playwright aberto, para que o engenheiro faça o login e conduza a sessão.
 Nenhuma credencial é lida de arquivo, variável de ambiente ou prompt.
 
 Uso:
-    OrcaAI/ml/.venv/bin/python -m pip install playwright && playwright install chromium
+    .venv/bin/python -m pip install playwright && playwright install chromium
     python OrcaAI/tools/cli/orcafascio_es_automation.py
 """
 

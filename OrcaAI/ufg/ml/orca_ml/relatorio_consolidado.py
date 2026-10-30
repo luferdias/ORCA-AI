@@ -679,10 +679,10 @@ def _secoes(run, bases, graphs):
     add(
         "10. Reprodução e referências",
         [
-            "No VS Code, abra a pasta OrcaAI/ml, selecione o Python de .venv e execute executar_estudo.py. Para recriar somente a apresentação, utilize gerar_relatorio_estudo.py com a pasta da execução concluída. O relatório não treina modelos. Cada nova execução usa uma pasta nova para preservar resultados anteriores.",
+            "No VS Code, abra a pasta OrcaAI/ufg/ml, selecione o Python de .venv e execute executar_estudo.py. Para recriar somente a apresentação, utilize gerar_relatorio_estudo.py com a pasta da execução concluída. O relatório não treina modelos. Cada nova execução usa uma pasta nova para preservar resultados anteriores.",
             "Os CSVs de dados, previsões, partições, matrizes, centroides, projeções e métricas ficam nas pastas de cada fonte. execucao_estudo.json registra parâmetros e hashes do código; manifesto_relatorio.json registra os hashes dos arquivos efetivamente usados nesta apresentação. As sementes e versões de Python/scikit-learn estão nos resumos das tarefas.",
             *provenance,
-            "Materiais da disciplina: OrcaAI/spec/ml_ufg/mapa_materiais_disciplina.md identifica as aulas e exemplos que fundamentaram a escolha de LinearRegression, Random Forest, árvore, KNN e K-Means. O código, os dados derivados e as tabelas de auditoria acompanham esta entrega.",
+            "Materiais da disciplina: OrcaAI/ufg/spec/mapa_materiais_disciplina.md identifica as aulas e exemplos que fundamentaram a escolha de LinearRegression, Random Forest, árvore, KNN e K-Means. O código, os dados derivados e as tabelas de auditoria acompanham esta entrega.",
         ],
         links=[
             (

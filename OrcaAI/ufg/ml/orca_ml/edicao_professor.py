@@ -8,7 +8,7 @@ from urllib.parse import quote
 
 REPOSITORIO = "https://github.com/luferdias/ORCA-AI"
 COMMIT = "e20741b0214dff489147fa04739bb2a1ed44bc07"
-EXECUCAO = "OrcaAI/ml/outputs/entrega_ufg_acabamentos_2026-09-27"
+EXECUCAO = "OrcaAI/ufg/ml/outputs/entrega_ufg_acabamentos_2026-09-27"
 SHA_EXECUCAO = "4ac92b962c47abf391bd2bf2eb0c3206bcc1b040a8f99f25811a9d438544fc46"
 
 

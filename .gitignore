@@ -17,9 +17,13 @@ node_modules/
 *.log
 
 # Execuções de ML ficam locais (OneDrive); só os manifestos são versionados.
-OrcaAI/ml/outputs/*
-!OrcaAI/ml/outputs/MANIFESTO.json
-!OrcaAI/ml/outputs/MANIFESTO_arquivos.tsv
+OrcaAI/ufg/ml/outputs/*
+!OrcaAI/ufg/ml/outputs/MANIFESTO.json
+!OrcaAI/ufg/ml/outputs/MANIFESTO_arquivos.tsv
 
 # Índices locais das bases: só o manifesto é versionado.
 OrcaAI/knowledge/indices/**/servicos.csv
+
+# Renderizações locais e histórico do R sobre os arquivos de memória não são versionados.
+.Rhistory
+memory/**/*.html
