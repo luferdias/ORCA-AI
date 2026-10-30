@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Confirmado também R-B6 (séries antigas congeladas; novas composições em SRAES-CP). Pendentes: R-E3 (ferramenta da apresentação UFG), R-E5 (visibilidade).
+Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Confirmado também R-B6 (séries antigas congeladas; novas composições em SRAES-CP). R-E3 e R-E5 confirmados em seguida (FastAPI ou Django, a definir; repositório público). Nenhuma pergunta pendente.
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -283,8 +283,10 @@ registrou "Fest P / Fast P" e não deu para identificar com segurança.
 - R-E3. `OrcaAI/ufg/` reúne o que é acadêmico (`ml/`, `spec/ml_ufg/`,
   entregas). O catálogo declara dois modos: `sraes` (padrão; agentes A1 a
   A11) e `ufg` (A12 e os subagentes de ML; só leitura nas bases e no
-  acervo). **A confirmar:** a ferramenta da apresentação (FastAPI? SpecKit?
-  outra?).
+  acervo). Ferramenta confirmada em 30/10/2026: **FastAPI ou Django**, a
+  definir com o desenvolvimento do modo UFG, para expor o ORCA-AI à
+  apresentação e à avaliação do curso; ponto de partida é a API Knowledge de
+  `OrcaAI/ufg/spec/api_knowledge.md`.
 - R-E4. O modo é escolhido pela ordem de serviço ou pelo comando
   (`/experimento-ml` entra no modo UFG). Nada do modo UFG altera itens,
   catálogo ou padrões do modo SRAES.
@@ -295,12 +297,13 @@ registrou "Fest P / Fast P" e não deu para identificar com segurança.
 
 **Regras derivadas.**
 
-- R-E5. Visibilidade: o repositório pode voltar a ser privado. Antes disso,
-  lembrar que a entrega ao professor Ronaldo (28/09/2026) usa links
-  permanentes públicos ao commit `e20741b`; tornar privado quebra esses
-  links para quem não for colaborador. Recomendação: manter público até a
-  nota final da disciplina ou adicionar o professor como colaborador de
-  leitura antes de fechar. Decisão do engenheiro.
+- R-E5. Visibilidade: o repositório **permanece público** (decisão do
+  engenheiro em 30/10/2026). Motivo: ele continuará atualizando o projeto e
+  enviando links aos professores da pós-graduação em Agentes Inteligentes,
+  como já fez com o professor Ronaldo. Consequência: nenhuma senha, dado
+  pessoal de terceiros ou documento sigiloso pode ser versionado; o hook e a
+  CI varrem segredos a cada commit, e a decisão D3 (reescrever o histórico
+  por causa da senha antiga do Orçafascio) ganha peso.
 
 Pendentes. As perguntas estão na nota "5 · Entrevista de maturidade" do
 fichário "ORCA-AI · Layout" no Maestri e na seção 5 deste layout.

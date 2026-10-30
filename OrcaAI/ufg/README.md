@@ -22,6 +22,8 @@ Regras do modo UFG:
   (`python3.12 -m venv .venv && .venv/bin/pip install -r OrcaAI/ufg/ml/requirements-dev.txt`).
 - Testes: `cd OrcaAI/ufg/ml && ../../../.venv/bin/python -m pytest -q`.
 
-A ferramenta para a estrutura da apresentação do projeto final ainda será
-confirmada pelo engenheiro (registro em
-`OrcaAI/knowledge/padroes/entrevista-maturidade-2026-10.md`, pergunta 14).
+Apresentação e avaliação do projeto final: o ORCA-AI será exposto por uma
+API em **FastAPI ou Django**, a definir durante o desenvolvimento do modo UFG
+(decisão do engenheiro em 30/10/2026). Ponto de partida: o contrato da API
+Knowledge em `spec/api_knowledge.md`. O repositório continua público porque o
+engenheiro envia links do projeto aos professores do curso.

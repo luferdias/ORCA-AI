@@ -30,7 +30,7 @@ modos:
     raiz: "OrcaAI/ (exceto OrcaAI/ufg/)"
   ufg:
     nome: "Modo UFG (projeto final do curso de Agentes Inteligentes)"
-    descricao: "Extensão acadêmica em OrcaAI/ufg: ml/, spec/ e entregas. Entra pelo comando /experimento-ml ou quando o engenheiro disser que é o projeto da UFG. Só leitura nas bases, no acervo e nos padrões do modo SRAES; nada do modo UFG altera itens, catálogo ou padrões profissionais (R-E4)."
+    descricao: "Extensão acadêmica em OrcaAI/ufg: ml/, spec/ e entregas. Entra pelo comando /experimento-ml ou quando o engenheiro disser que é o projeto da UFG. Apresentação e avaliação do curso por API em FastAPI ou Django, a definir. Só leitura nas bases, no acervo e nos padrões do modo SRAES; nada do modo UFG altera itens, catálogo ou padrões profissionais (R-E4)."
     agentes: ["A12", "ML-1", "ML-2", "ML-3", "ML-4", "ML-5"]
     raiz: "OrcaAI/ufg/"
 

@@ -72,7 +72,7 @@ Nenhum agente inventa código, preço, coeficiente ou fonte. Se a base oficial n
 ## Modos de operação
 
 - **Modo SRAES (padrão)** (A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11; raiz `OrcaAI/ (exceto OrcaAI/ufg/)`): Trabalho profissional da SRA-ES: itens em OrcaAI/projetos, agentes A1 a A11, padrões em OrcaAI/knowledge/padroes. É o modo de toda sessão que não declarar outro.
-- **Modo UFG (projeto final do curso de Agentes Inteligentes)** (A12, ML-1, ML-2, ML-3, ML-4, ML-5; raiz `OrcaAI/ufg/`): Extensão acadêmica em OrcaAI/ufg: ml/, spec/ e entregas. Entra pelo comando /experimento-ml ou quando o engenheiro disser que é o projeto da UFG. Só leitura nas bases, no acervo e nos padrões do modo SRAES; nada do modo UFG altera itens, catálogo ou padrões profissionais (R-E4).
+- **Modo UFG (projeto final do curso de Agentes Inteligentes)** (A12, ML-1, ML-2, ML-3, ML-4, ML-5; raiz `OrcaAI/ufg/`): Extensão acadêmica em OrcaAI/ufg: ml/, spec/ e entregas. Entra pelo comando /experimento-ml ou quando o engenheiro disser que é o projeto da UFG. Apresentação e avaliação do curso por API em FastAPI ou Django, a definir. Só leitura nas bases, no acervo e nos padrões do modo SRAES; nada do modo UFG altera itens, catálogo ou padrões profissionais (R-E4).
 
 ## Guardrails
 

@@ -2,7 +2,7 @@
 title: "ORCA-AI — Layout de operação com três plataformas"
 subtitle: "Claude Code, Codex e Antigravity: quem faz o quê, como um orçamento atravessa as três, e as regras fixadas na entrevista de maturidade"
 author: "Setor de Engenharia — SRAES/MGI · engenheiro Luis Fernando, com o ORCA-AI"
-date: "Versão 1.0 — 30 de outubro de 2026"
+date: "Versão 1.1 — 30 de outubro de 2026"
 lang: pt-BR
 ---
 
@@ -147,9 +147,12 @@ texto de cada regra em `OrcaAI/knowledge/padroes/entrevista-maturidade-2026-10.m
 | D. Orçafascio e aprendizado | R-D1 a R-D8 | Planilha dos agentes é a origem; sequência canônica como roteiro das trilhas; descrição adaptada permitida com código, unidade e preço mantidos; autonomia por atividade após três trilhas; fechar o orçamento e tocar o SEI só com De acordo |
 | E. Organização | R-E1 a R-E5 | Etapas sob demanda; itens antigos sem etapas vazias; blocos SRAES e UFG com dois modos; ninguém mais toca no repositório |
 
-Pendentes de resposta: a ferramenta da apresentação do projeto da UFG (R-E3,
-transcrita como "Fest P") e a visibilidade do repositório (R-E5; tornar privado
-quebra os links públicos da entrega ao professor).
+Confirmações finais do engenheiro, ainda em 30/10/2026: a apresentação e a
+avaliação do projeto da UFG serão por uma API em **FastAPI ou Django**, a
+definir no desenvolvimento do modo UFG (R-E3); o repositório **permanece
+público**, porque ele continuará enviando links do projeto aos professores da
+pós-graduação em Agentes Inteligentes (R-E5). A entrevista não tem pergunta
+pendente.
 
 ## 5. Padrão de especificação técnica
 
@@ -206,8 +209,11 @@ ORCA-AI/
 | **UFG** | `/experimento-ml` ou quando o engenheiro disser que é o projeto da UFG | A12 e os cinco subagentes de ML | `OrcaAI/ufg/` | Só dentro de `ufg/`; bases, acervo e padrões em leitura |
 
 Os links permanentes da entrega ao professor Ronaldo apontam para o commit
-`e20741b` e continuam válidos enquanto o repositório for público ou o professor
-for colaborador.
+`e20741b`. O repositório permanece público por decisão do engenheiro, que
+seguirá enviando links aos professores do curso; por isso nada sigiloso pode
+ser versionado, e o hook e a CI varrem segredos a cada commit. A apresentação
+e a avaliação do curso serão por uma API em FastAPI ou Django, a definir no
+modo UFG, partindo do contrato em `OrcaAI/ufg/spec/api_knowledge.md`.
 
 ## 8. Layout no canvas do Maestri
 
@@ -251,8 +257,7 @@ foi salvo como partitura, o que permitiria reabrir a equipe com um comando.
 
 | Pendência | Responsável |
 | --- | --- |
-| Ferramenta da apresentação do projeto da UFG ("Fest P") | Engenheiro |
-| Visibilidade do repositório (privado ou público até a nota final) | Engenheiro |
+| Escolher entre FastAPI e Django e implementar a API do modo UFG | Engenheiro com o A12 |
 | Trocar a senha do Orçafascio; decisões D2 e D3 da spec 2.0 | Engenheiro |
 | Instalar o Playwright no venv e gravar as três primeiras trilhas no Orçafascio | Engenheiro com o Sextante |
 | Levar ao catálogo a transferência formal da conferência de códigos para o A11 (hoje descrita nesta spec e nos papéis do Maestri) | Claude Code |
