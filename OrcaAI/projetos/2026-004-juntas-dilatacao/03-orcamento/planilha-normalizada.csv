@@ -1,7 +1,7 @@
 item,codigo,sistema,descricao,unidade,quantidade,custo_unitario_sem_bdi,bdi_percentual,preco_unitario_com_bdi,preco_total_com_bdi,fonte,data_base,observacoes,grupo,tipo_item
 1,,,SERVIÇOS PRELIMINARES E CANTEIRO,,,,,,,,,,1 SERVIÇOS PRELIMINARES E CANTEIRO,grupo
 1.1,SRAES-JUNTAS-001,PROPRIA,Mobilização e desmobilização de pessoal e equipamentos,un,1.0,1599.16,25.0,1998.95,1998.95,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E CANTEIRO,servico
-1.2,SRAES-JUNTAS-002,PROPRIA,Isolamento e sinalização de áreas de risco na projeção da fachada com fita zebrada fixada em estrutura,m,50.0,7.79,24.9,9.73,486.5,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E CANTEIRO,servico
+1.2,SRAES-JUNTAS-002,PROPRIA,Isolamento e sinalização de áreas de risco na projeção da fachada com fita zebrada fixada em estrutura,m,50.0,7.79,25.0,9.73,486.5,Próprio,2026-04,,1 SERVIÇOS PRELIMINARES E CANTEIRO,servico
 2,,,ACESSO EM ALTURA E SEGURANÇA DO TRABALHO,,,,,,,,,,2 ACESSO EM ALTURA E SEGURANÇA DO TRABALHO,grupo
 2.1,SRAES-JUNTAS-003,PROPRIA,"Locação de andaime suspenso ou balancim manual, incluindo cabos e contrapesos",mês,2.0,770.0,25.0,962.5,1925.0,Próprio,2026-04,,2 ACESSO EM ALTURA E SEGURANÇA DO TRABALHO,servico
 2.2,SRAES-JUNTAS-004,PROPRIA,"Instalação, montagem e desmontagem de linha de vida temporária para balancim",un,1.0,5449.32,25.0,6811.65,6811.65,Próprio,2026-04,,2 ACESSO EM ALTURA E SEGURANÇA DO TRABALHO,servico
@@ -13,6 +13,6 @@ item,codigo,sistema,descricao,unidade,quantidade,custo_unitario_sem_bdi,bdi_perc
 4,,,RECUPERAÇÃO DAS JUNTAS DE DILATAÇÃO,,,,,,,,,,4 RECUPERAÇÃO DAS JUNTAS DE DILATAÇÃO,grupo
 4.1,SRAES-JUNTAS-009,PROPRIA,Remoção estritamente manual de selante elastomérico antigo e limpeza,m,86.0,18.76,25.0,23.45,2016.7,Próprio,2026-04,,4 RECUPERAÇÃO DAS JUNTAS DE DILATAÇÃO,servico
 4.2,SRAES-JUNTAS-010,PROPRIA,Recomposição e regularização de bordas de junta de dilatação com argamassa polimérica de reparo,m,86.0,50.77,25.0,63.46,5457.56,Próprio,2026-04,,4 RECUPERAÇÃO DAS JUNTAS DE DILATAÇÃO,servico
-4.3,SRAES-JUNTAS-011,PROPRIA,"Selagem de junta de dilatação com selante poliuretano (PU), seção 20x10 mm, incluindo fundo de junta (Ø 25mm) e primer",m,86.0,46.61,24.99,58.26,5010.36,Próprio,2026-04,,4 RECUPERAÇÃO DAS JUNTAS DE DILATAÇÃO,servico
+4.3,SRAES-JUNTAS-011,PROPRIA,"Selagem de junta de dilatação com selante poliuretano (PU), seção 20x10 mm, incluindo fundo de junta (Ø 25mm) e primer",m,86.0,46.61,25.0,58.26,5010.36,Próprio,2026-04,,4 RECUPERAÇÃO DAS JUNTAS DE DILATAÇÃO,servico
 5,,,ENCERRAMENTO,,,,,,,,,,5 ENCERRAMENTO,grupo
 5.1,SRAES-JUNTAS-012,PROPRIA,"Emissão de Laudo Técnico Final atestando os serviços de recuperação das juntas, emitido pelo Engenheiro responsável com ART",un,1.0,954.48,25.0,1193.1,1193.1,Próprio,2026-04,,5 ENCERRAMENTO,servico

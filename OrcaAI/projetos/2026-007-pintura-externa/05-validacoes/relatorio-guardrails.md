@@ -10,14 +10,11 @@ Data: 30/10/2026. Obra: Pintura do Edifício Sede e Anexo MGI/ES, Estacionamento
 
 ## Ressalvas
 
-- G-02 (BDI Serviço): Item 2.5 aplica BDI de 24.74%, diferente do padrão MGI de 25.0%.
 - G-02 (BDI Serviço): Item 2.11 aplica BDI de 24.95%, diferente do padrão MGI de 25.0%.
-- G-02 (BDI Serviço): Item 2.12 aplica BDI de 24.74%, diferente do padrão MGI de 25.0%.
-- G-02 (BDI Serviço): Item 2.13 aplica BDI de 24.81%, diferente do padrão MGI de 25.0%.
 
 ## Conformidades
 
-- 58 verificações conformes (G-01 e G-02).
+- 61 verificações conformes (G-01 e G-02).
 
 ## Escopo desta validação automática
 

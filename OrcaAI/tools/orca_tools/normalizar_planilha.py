@@ -176,7 +176,19 @@ def normalizar_orcafascio_sintetico(
         unit_bdi = _num(r[c_unit_bdi]) if c_unit_bdi is not None else None
         bdi = out.bdi_percentual
         if unit and unit_bdi:
-            bdi = round((unit_bdi / unit - 1.0) * 100.0, 2)
+            implicito = round((unit_bdi / unit - 1.0) * 100.0, 2)
+            # O Orçafascio arredonda o preço com BDI a centavos; em preços
+            # pequenos isso desloca o BDI implícito (24,74% em vez de 25%).
+            # Se o preço exportado bate com o BDI do cabeçalho dentro de um
+            # centavo, o BDI do item é o do cabeçalho; senão, o implícito.
+            cab = out.bdi_percentual
+            if (
+                cab is not None
+                and abs(unit_bdi - round(unit * (1 + cab / 100), 2)) <= 0.01
+            ):
+                bdi = cab
+            else:
+                bdi = implicito
         out.linhas.append(
             {
                 "item": item,

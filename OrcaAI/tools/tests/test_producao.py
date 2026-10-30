@@ -62,6 +62,10 @@ def _planilha_orcafascio(tmp_path):
             0.5,
         ]
     )
+    ws.append([" 2.2 ", " 88309 ", "SINAPI", "PEDREIRO", "H", 1, 1.9, 2.38, 2.38, 0.1])
+    ws.append(
+        [" 2.3 ", " 88310 ", "SINAPI", "OUTRO BDI", "H", 1, 100.0, 130.0, 130.0, 0.1]
+    )
     ws.append([])
     ws.append(["Total sem BDI", 200.0])
     p = tmp_path / "orc.xlsx"
@@ -74,7 +78,11 @@ def test_normaliza_exportacao_orcafascio(tmp_path):
     assert (
         n.obra == "Obra teste" and n.data_base == "2026-04" and n.bdi_percentual == 25.0
     )
-    assert [r["codigo"] for r in n.itens] == ["88316", "SRAES-CP-001"]
+    assert [r["codigo"] for r in n.itens] == ["88316", "SRAES-CP-001", "88309", "88310"]
+    # 1,90 × 1,25 = 2,375 → 2,38 exportado: BDI do cabeçalho, não 25,26% implícito
+    assert n.itens[2]["bdi_percentual"] == 25.0
+    # 100 → 130 não bate com 25%: fica o BDI implícito de 30%
+    assert n.itens[3]["bdi_percentual"] == 30.0
     assert n.itens[0]["sistema"] == "SINAPI" and n.itens[1]["sistema"] == "PROPRIA"
     assert n.itens[0]["bdi_percentual"] == 25.0 and n.itens[0]["grupo"].startswith("1")
     csv = gravar_csv(n, tmp_path / "saida" / "planilha-normalizada.csv")
