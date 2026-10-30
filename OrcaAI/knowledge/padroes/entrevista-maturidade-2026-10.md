@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Pendentes: R-B6 (séries antigas em composições novas), R-E3 (ferramenta da apresentação UFG), R-E5 (visibilidade).
+Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Confirmado também R-B6 (séries antigas congeladas; novas composições em SRAES-CP). Pendentes: R-E3 (ferramenta da apresentação UFG), R-E5 (visibilidade).
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -112,18 +112,19 @@ por padrão".
 
 **Resposta.** Os itens já aprovados não são congelados; as séries seguem.
 
-**Leitura adotada e ponto a confirmar.** Duas leituras possíveis: (a) as
-séries antigas (`SRAES-ELEV-`, `COMP-CAG-`, `SRA-ES-`) continuam válidas e em
-uso, sem migração; (b) elas passam a seguir o padrão `SRAES-CP-nnn` daqui em
-diante, sem reescrever os itens aprovados. **A confirmar.**
+**Confirmação do engenheiro (30/10/2026).** "Novas composições em SRAES-CP;
+as antigas ficam congeladas." As séries antigas (`SRAES-ELEV-`, `COMP-CAG-`,
+`SRA-ES-` e outras) permanecem nos itens já aprovados, sem migração; nenhuma
+composição nova as utiliza.
 
 **Regras derivadas.**
 
 - R-B6. Nenhum item aprovado é reescrito por causa de código próprio. O
   guardrail G-01 deixa de emitir ressalva para as séries históricas nos
   itens de 2026-001 a 2026-012.
-- R-B7. Para composições novas, o padrão é `SRAES-CP-nnn` (serviço) e
-  `SRAES-INS-nnn` (insumo), salvo decisão contrária na confirmação de R-B6.
+- R-B7. Para composições novas, o padrão é sempre `SRAES-CP-nnn` (serviço) e
+  `SRAES-INS-nnn` (insumo). Em item novo, série antiga é bloqueio G-01, não
+  ressalva; a tolerância de R-B6 vale só para os itens até `2026-012`.
 
 ### Pergunta 7 — data-base e virada de tabela
 

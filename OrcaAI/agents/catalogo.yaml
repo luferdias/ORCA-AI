@@ -42,7 +42,7 @@ parametros_fixos:
   regime_encargos: "desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5)"
   codigos_proprios: "serviços SRAES-CP-NNN; insumos de mercado SRAES-INS-NNN; proibido código genérico sem a chancela SRAES-"
   itens_historicos_ate: "2026-012"
-  series_historicas: "nos itens aprovados até itens_historicos_ate, as séries próprias históricas (SRAES-ELEV-, SRAES-LIMP-, SRAES-GER-, SRAES-SUB-, SRAES-JUNTAS-, SRA-ES-, COMP-HVAC-, COMP-CAG-) são toleradas pelo G-01 e nenhum item aprovado é reescrito (R-B6); o uso delas em composições novas aguarda confirmação do engenheiro"
+  series_historicas: "nos itens aprovados até itens_historicos_ate, as séries próprias históricas (SRAES-ELEV-, SRAES-LIMP-, SRAES-GER-, SRAES-SUB-, SRAES-JUNTAS-, SRA-ES-, COMP-HVAC-, COMP-CAG-) são toleradas pelo G-01 e nenhum item aprovado é reescrito; ficam congeladas nos itens aprovados e não entram em composições novas, que usam sempre SRAES-CP-NNN e SRAES-INS-NNN (R-B6, decisão do engenheiro em 30/10/2026)"
   cascata_bases:
     - "P0 SINAPI-ES (Caixa/IBGE)"
     - "P1 IOPES / DER-ES (edificações, projetos e rodovias)"
