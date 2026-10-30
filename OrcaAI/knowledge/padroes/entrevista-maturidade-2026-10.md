@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: cinco blocos respondidos em 30/10/2026. Pendentes de confirmação: R-B1 (regime), R-B6 (séries antigas), R-E3 (ferramenta da apresentação UFG).
+Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Pendentes: R-B6 (séries antigas em composições novas), R-E3 (ferramenta da apresentação UFG), R-E5 (visibilidade).
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -52,10 +52,11 @@ especificados.
 
 **Regras derivadas.**
 
-- R-A6. Cascata de bases para o serviço: SINAPI-ES → DER-ES/IOPES → SICRO →
-  outras tabelas de referência → composição própria SRAES-CP. (Confirmado na
-  pergunta 9: "primeiramente, depois o DER, depois o SICRO, depois outras
-  tabelas". O catálogo já está nessa ordem.)
+- R-A6. Cascata de bases para o serviço, confirmada em detalhe pelo
+  engenheiro: SINAPI-ES → DER-ES/IOPES → SICRO → São Paulo → Rio de Janeiro →
+  Minas Gerais → demais estados, "e assim pelo Brasil todo" → composição
+  própria SRAES-CP. O catálogo (`parametros_fixos.cascata_bases`) foi
+  reordenado nessa sequência em 30/10/2026.
 - R-A7. Composição própria é montada com insumos de bases oficiais (SINAPI
   insumos ES, SICRO-ES, DER-ES) e com os materiais tal como especificados no
   projeto. Pesquisa de mercado entra apenas para o insumo sem base oficial,
@@ -72,14 +73,12 @@ especificados.
 fichas devem ser corrigidas para esse regime. Há casos de orçamento "bem
 enxuto" em que o tratamento pode ser diferente.
 
-**Leitura adotada e ponto a confirmar.** A transcrição traz "padrão mesmo não
-desonerado" e, logo em seguida, "encargos sociais do Espírito Santo
-desonerado". Os treze memoriais fecham 25,00% só com a CPRB de 1,8%, o que é
-regime desonerado, e encargos desonerados exigem a CPRB no BDI (Acórdão
-2.622/2013-TCU-Plenário). A leitura coerente é **regime desonerado como
-padrão**, corrigindo as fichas e a spec que dizem "não desonerado". **A
-confirmar** com o engenheiro antes de alterar o catálogo. Também a confirmar o
-que muda no "orçamento bem enxuto".
+**Confirmação do engenheiro (30/10/2026).** "O regime é desonerado." O
+"orçamento bem enxuto" não é um BDI diferente: é um orçamento feito com muita
+atenção, mais preciso, em que tanto os códigos quanto as descrições dos
+serviços representam o que realmente será executado na obra. Catálogo, spec,
+template de composição própria e validador foram corrigidos para "desonerado
+por padrão".
 
 **Regras derivadas.**
 
@@ -91,6 +90,11 @@ que muda no "orçamento bem enxuto".
   decomposição.
 - R-B3. Qualquer BDI fora do padrão exige memorial próprio em
   `06-documentos/` e registro em `log-decisoes.md`.
+- R-B9. Orçamento enxuto: o critério de qualidade é a precisão, não o
+  tamanho. Cada código deve ser o que melhor representa o serviço executado,
+  e cada descrição deve dizer exatamente o que será feito (liga-se a R-D3,
+  descrição adaptada à obra). O A4 verifica isso item a item antes de
+  aprovar.
 
 ### Pergunta 5 — encargos sociais
 

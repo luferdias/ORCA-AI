@@ -56,7 +56,7 @@ sequenceDiagram
 ### Fase 2: Assimilação e Síntese de Padrão
 1. O OrcaAI constrói uma matriz de correspondência entre o escopo descrito no memorial e as composições escolhidas.
 2. O sistema gera um resumo de calibração:
-   - Taxa de desoneração detectada (Não Desonerado por padrão).
+   - Taxa de desoneração detectada (Desonerado por padrão, R-B1).
    - Famílias de composições prioritárias (ex: 88xxx para alvenaria/pintura, 98xxx para instalações).
    - Validação de que não houve desvios de BDI (travado em 25%).
 

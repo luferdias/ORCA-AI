@@ -107,7 +107,7 @@ Esta seção é o registro do que o projeto já definiu. Nada aqui é proposta; 
 - Fornecimento puro de materiais e equipamentos relevantes (painéis solares, grupos geradores, chillers): **14,02%**, faixa média do Acórdão (11,10% a 18,45%).
 - O BDI do Orçafascio fica travado em 25% para serviços.
 
-**Regime de encargos.** Não desonerado por padrão; desonerado quando solicitado. Nunca misturar regimes na mesma planilha (G-06).
+**Regime de encargos.** Desonerado por padrão (decisão do engenheiro em 30/10/2026, regra R-B1 da entrevista de maturidade, coerente com os treze memoriais de BDI do acervo); não desonerado só por decisão registrada em `log-decisoes.md`. Nunca misturar regimes na mesma planilha (G-06).
 
 **Codificação própria.** Serviços `SRAES-CP-001`, `SRAES-CP-002`...; insumos de mercado `SRAES-INS-001`...; proibido código genérico sem a chancela `SRAES-`. Códigos de skills anteriores (`SRAES-FV-001`, `COMP-HVAC-001`, `PR-01`) passam a ser aliases históricos mapeados para a série `SRAES-CP`.
 

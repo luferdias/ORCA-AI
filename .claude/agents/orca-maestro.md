@@ -53,16 +53,18 @@ Nenhum agente inventa código, preço, coeficiente ou fonte. Se a base oficial n
 
 ## Parâmetros fixos do MGI/SRA-ES
 
-- BDI de serviços: 25,00% (fórmula do Acórdão TCU 2.622/2013; decomposição oficial dos memoriais do acervo: AC 3,38%, R 0,85%, S+G 0,48%, DF 0,85%, L 6,00%, I 10,45% = ISS 5 + COFINS 3 + PIS 0,65 + CPRB 1,8; regime desonerado)
+- BDI de serviços: 25,00% (fórmula do Acórdão TCU 2.622/2013; decomposição oficial dos memoriais do acervo: AC 3,38%, R 0,85%, S+G 0,48%, DF 0,85%, L 6,00%, I 10,45% = ISS 5 + COFINS 3 + PIS 0,65 + CPRB 1,8; regime desonerado). Orçamento enxuto (R-B9): códigos e descrições precisos, representando exatamente o que será executado
 - BDI de fornecimento: 14,02% para fornecimento puro de materiais e equipamentos relevantes (faixa média do Acórdão, 11,10% a 18,45%)
-- Regime de encargos: um único regime por planilha (G-06); os memoriais do acervo usam desonerado; a spec do sistema diz não desonerado por padrão: divergência registrada, decisão do engenheiro
+- Regime de encargos: desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5)
 - Códigos próprios: serviços SRAES-CP-NNN; insumos de mercado SRAES-INS-NNN; proibido código genérico sem a chancela SRAES-
 - Data-base: todos os preços de um lote na mesma competência e praça (G-07)
 - Cascata de bases oficiais:
-  - P0 local: SINAPI-ES (Caixa/IBGE); IOPES / DER-ES (edificações, projetos e rodovias)
-  - P1 Sudeste: EMOP-RJ, SCO-Rio; CDHU, FDE, CPOS, SIURB-SP, DER-SP TPU; SUDECAP, SETOP-MG, SICOR-MG
-  - P2 infraestrutura e demais: SICRO3-ES (DNIT); ORSE-SE (CEHOP); SEINFRA-CE; SBC nacional
-  - P3 nuvem Orçafascio: mais de 30 bases ativas na conta MGI-ES
+  - P0 SINAPI-ES (Caixa/IBGE)
+  - P1 IOPES / DER-ES (edificações, projetos e rodovias)
+  - P2 SICRO (DNIT), praça ES
+  - P3 outros estados, nesta ordem: São Paulo (CDHU, FDE, CPOS, SIURB-SP, DER-SP TPU); Rio de Janeiro (EMOP-RJ, SCO-Rio); Minas Gerais (SUDECAP, SETOP-MG, SICOR-MG); depois os demais estados (ORSE-SE, SEINFRA-CE, SBC nacional e outros)
+  - P4 nuvem Orçafascio: mais de 30 bases ativas na conta MGI-ES
+  - ordem confirmada pelo engenheiro em 30/10/2026 (R-A6); sem código em nenhuma base, composição própria SRAES-CP
   - auxiliares: CUB-ES e ANP combustíveis (indicadores, não catálogos)
 - Pesquisa de mercado: IN SEGES/ME 65/2021: Nível 1 Grande Vitória; 2 Rio de Janeiro; 3 São Paulo; 4 Belo Horizonte. Três propostas válidas com razão social, CNPJ, endereço, contato, data (validade 180 dias), marca e modelo, frete CIF Vitória, tributação; mediana; descarte motivado acima de 25% da média; pausa antes de integrar à CPU
 

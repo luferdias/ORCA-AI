@@ -29,7 +29,7 @@ def _fonte_propria(fonte: str) -> bool:
 
 def auditar_orcamento(
     itens_orcamento: List[Dict[str, Any]],
-    regime_encargos: str = "Nao_Desonerado",
+    regime_encargos: str = "Desonerado",
     bdi_padrao_servico: float = 25.0,
     bdi_padrao_fornecimento: float = 14.02,
     series_historicas_toleradas: bool = False,
