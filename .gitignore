@@ -30,3 +30,7 @@ memory/**/*.html
 
 # Estado local do Maestri (papéis, canvas) não é versionado; os papéis estão descritos na spec do layout.
 .maestri/
+
+# Artefatos do Windows/OneDrive (nunca versionar)
+desktop.ini
+Thumbs.db
