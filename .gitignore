@@ -34,3 +34,6 @@ memory/**/*.html
 # Artefatos do Windows/OneDrive (nunca versionar)
 desktop.ini
 Thumbs.db
+
+# Restos da migração do .git para ~/.gitdirs (D-095): o OneDrive pode ressuscitar pedaços; nunca commitar
+.git.migrado*/

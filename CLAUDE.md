@@ -73,7 +73,7 @@ Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalog
 
 ## Sincronização com o GitHub — premissa multiplataforma (decisor, 30/10/2026)
 
-Este projeto é trabalhado no **Antigravity, VS Code, Codex e Claude Code**, no **Mac (casa) e no Windows (trabalho)**.
+Este projeto é trabalhado no **Antigravity, VS Code, Codex e Claude Code**, no **Mac (casa), no Windows de casa (`C:\Users\luisf`) e no Windows do trabalho (`C:\Users\luis.fernando`)**.
 **GitHub = fonte da verdade; OneDrive = só backup de arquivos.** A sincronização é automática
 (`git-autosync`: serviço do sistema a cada 15 min + hooks do Claude Code — ver `VOLT-AI/docs/git-autosync/LEIA-ME.md`),
 mas todo agente, em qualquer plataforma, segue a mesma regra, porque Codex e Antigravity não têm hooks:
@@ -81,5 +81,5 @@ mas todo agente, em qualquer plataforma, segue a mesma regra, porque Codex e Ant
 1. **Ao começar:** `git fetch origin` e, na branch principal com árvore limpa, `git pull --ff-only origin <principal>`.
 2. **Ao terminar (ou a cada marco):** `git add -A` (nunca arquivos de credencial), `git commit` em português imperativo, `git push origin <branch>`.
 3. Nunca `push --force`; divergência resolve-se com `git pull --rebase` e, se falhar, para e avisa.
-4. O `.git` de cada máquina vive **fora** do OneDrive (`~/.gitdirs/<nome>.git` no Mac, `C:\Users\luis.fernando\.gitdirs\<nome>.git` no Windows); a pasta sincronizada tem só o ponteiro `.git` (arquivo). Não criar pastas `.git` dentro do OneDrive.
+4. O `.git` de cada máquina vive **fora** do OneDrive (`~/.gitdirs/<nome>.git` no Mac, `%USERPROFILE%\.gitdirs\<nome>.git` no Windows — `luis.fernando` no PC do trabalho, `luisf` no de casa); a pasta sincronizada tem só o ponteiro `.git` (arquivo). Não criar pastas `.git` dentro do OneDrive.
 5. Se a árvore "sumir" sem mtime nas pastas (OneDrive re-enumerando, M-52 do VOLT-AI): não restaurar nem commitar — esperar e reconferir `git status`.
