@@ -37,3 +37,7 @@ Thumbs.db
 
 # Restos da migração do .git para ~/.gitdirs (D-095): o OneDrive pode ressuscitar pedaços; nunca commitar
 .git.migrado*/
+
+# cofre do mensageiro (nunca versionar)
+.config/orca-ai/
+*.telegram.env
