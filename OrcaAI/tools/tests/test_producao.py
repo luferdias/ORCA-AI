@@ -138,3 +138,11 @@ def test_renderiza_markdown_em_docx(tmp_path):
     )
     docx = markdown_para_docx(md, tmp_path / "doc.docx")
     assert docx.exists() and docx.stat().st_size > 2000
+
+
+def test_preco_com_bdi_tolera_um_centavo_sem_erro_de_ponto_flutuante():
+    from orca_tools.normalizar_planilha import preco_bate_com_bdi
+
+    assert preco_bate_com_bdi(14.51, 18.13, 25.0)  # item 2.11 do 2026-007
+    assert preco_bate_com_bdi(1.94, 2.42, 25.0)
+    assert not preco_bate_com_bdi(14.51, 18.11, 25.0)
