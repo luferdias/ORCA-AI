@@ -1,0 +1,15 @@
+{
+ "fonte": "der_es",
+ "competencia": "2026-05",
+ "publicado_em": "",
+ "origem_zip": "OrcaAI/bases/der_es/2026-05/originais/TABELA REFERENCIAL OBRAS - DER-ES - 2026-05 - MAI.zip",
+ "origem_sha256": "9d7efd575c10dc676bc49f5acb5630fa9b3cd2b98449be07612e1891e8d213f6",
+ "servicos": 1363,
+ "insumos": 0,
+ "servicos_csv_sha256": "fc4b39ac706fc43a9fc1517cce911ea6dc804e35314ff8ed802a897d58cb9149",
+ "gerado_em": "2026-11-07T20:39:26",
+ "duracao_s": 0.9,
+ "relatorio_leitura": {
+  "servicos_lidos": 1363
+ }
+}

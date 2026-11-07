@@ -1,7 +1,7 @@
 """Índice local das bases oficiais (A9 MineradorBases).
 
 Lê os ZIPs originais de ``OrcaAI/bases/<fonte>/<competencia>/originais/`` com
-os leitores já validados do módulo de ML (``orca_ml.sinapi`` e ``orca_ml.der``)
+os leitores já validados do módulo de ML (``OrcaAI/ufg/ml``) (``orca_ml.sinapi`` e ``orca_ml.der``)
 e grava um índice tabular em ``OrcaAI/knowledge/indices/<fonte>/<competencia>/``:
 
 - ``servicos.csv``: fonte, competencia, codigo, descricao, unidade, grupo,
@@ -43,7 +43,7 @@ FONTES = {"sinapi_es": "sinapi", "der_es": "der_es"}
 
 
 def _ml_no_path() -> None:
-    ml = raiz_orcaai() / "ml"
+    ml = raiz_orcaai() / "ufg" / "ml"
     if str(ml) not in sys.path:
         sys.path.insert(0, str(ml))
 
