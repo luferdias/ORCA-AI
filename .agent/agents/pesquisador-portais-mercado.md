@@ -19,7 +19,7 @@ Tabelas vigentes nos portais oficiais e pesquisa de mercado da IN 65/2021.
 ## Atribuições
 
 - Portais: localizar e baixar a edição vigente de cada fonte do catálogo pela regra da última tabela, com URL, data de publicação e hash; atualizar bases/catalogo_fontes_referenciais.json.
-- Mercado: cascata Vitória, RJ, SP e BH; três propostas válidas com todos os campos da IN 65; mediana; descarte motivado; mapa de cotações; relatório em 04-cotacoes/relatorio-cotacoes.md.
+- Mercado: cascata Vitória, SP, RJ e BH; três propostas válidas com todos os campos da IN 65; mediana; descarte motivado; mapa de cotações; relatório em 04-cotacoes/relatorio-cotacoes.md.
 - Pausa obrigatória antes de integrar o valor à composição própria; para bens comuns, Painel de Preços e BPS.
 
 ## Entradas
@@ -52,14 +52,13 @@ Nenhum agente inventa código, preço, coeficiente ou fonte. Se a base oficial n
 - Códigos próprios: serviços SRAES-CP-NNN; insumos de mercado SRAES-INS-NNN; proibido código genérico sem a chancela SRAES-
 - Data-base: todos os preços de um lote na mesma competência e praça (G-07)
 - Cascata de bases oficiais:
-  - P0 SINAPI-ES (Caixa/IBGE)
-  - P1 IOPES / DER-ES (edificações, projetos e rodovias)
-  - P2 SICRO (DNIT), praça ES
-  - P3 outros estados, nesta ordem: São Paulo (CDHU, FDE, CPOS, SIURB-SP, DER-SP TPU); Rio de Janeiro (EMOP-RJ, SCO-Rio); Minas Gerais (SUDECAP, SETOP-MG, SICOR-MG); depois os demais estados (ORSE-SE, SEINFRA-CE, SBC nacional e outros)
-  - P4 nuvem Orçafascio: mais de 30 bases ativas na conta MGI-ES
-  - ordem confirmada pelo engenheiro em 30/10/2026 (R-A6); sem código em nenhuma base, composição própria SRAES-CP
+  - Preço de serviço pronto só das bases do ES, nesta ordem: P0 SINAPI-ES (Caixa/IBGE); P1 DER-ES/IOPES (edificações, projetos e rodovias); P2 SICRO (DNIT), praça ES
+  - Sem o serviço em P0, P1 ou P2: composição própria SRAES-CP. As bases dos demais estados servem de referência de estrutura e coeficientes do serviço, nesta ordem: São Paulo (CDHU, FDE, CPOS, SIURB-SP, DER-SP TPU); Rio de Janeiro (EMOP-RJ, SCO-Rio); Minas Gerais (SUDECAP, SETOP-MG, SICOR-MG); depois os demais estados (ORSE-SE, SEINFRA-CE, SBC nacional e outros) e a nuvem Orçafascio
+  - Na composição própria, os insumos são sempre do ES (SINAPI-ES, DER-ES/IOPES, SICRO-ES), com o código oficial; insumo sem base no ES vai para a pesquisa de mercado (cascata_mercado)
+  - Coeficientes propostos pelo A7 com a composição de referência citada; cada coeficiente é validado em entrevista pelo engenheiro orçamentista antes de entrar na planilha
+  - ordem confirmada pelo engenheiro em 30/10/2026 (R-A6) e revista em 07/11/2026 (R-A6 revisada, R-A7, R-A9): outros estados deixam de fornecer preço de serviço e passam a fornecer só a estrutura da composição própria
   - auxiliares: CUB-ES e ANP combustíveis (indicadores, não catálogos)
-- Pesquisa de mercado: IN SEGES/ME 65/2021: Nível 1 Grande Vitória; 2 Rio de Janeiro; 3 São Paulo; 4 Belo Horizonte. Três propostas válidas com razão social, CNPJ, endereço, contato, data (validade 180 dias), marca e modelo, frete CIF Vitória, tributação; mediana; descarte motivado acima de 25% da média; pausa antes de integrar à CPU
+- Pesquisa de mercado: IN SEGES/ME 65/2021, ordem revista em 07/11/2026 (R-A9): Nível 1 Grande Vitória; 2 São Paulo; 3 Rio de Janeiro; 4 Belo Horizonte (capitais). Três propostas válidas com razão social, CNPJ, endereço, contato, data (validade 180 dias), marca e modelo, frete CIF Vitória, tributação; mediana; descarte motivado acima de 25% da média; pausa antes de integrar à CPU
 
 ## Modos de operação
 

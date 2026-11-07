@@ -7,7 +7,7 @@
 
 A pesquisa de mercado é acionada **exclusivamente** quando o insumo, equipamento ou serviço não constar em nenhuma das bases de dados oficiais vigentes (SINAPI, IOPES, SICRO, ORSE ou bases estaduais correlatas).
 
-O OrcaAI executa uma **cascata de busca geográfica estruturada**, priorizando fornecedores locais para garantir a compatibilidade logística com o município de Vitória/ES.
+O OrcaAI executa uma **cascata de busca geográfica estruturada**, priorizando fornecedores locais para garantir a compatibilidade logística com o município de Vitória/ES. Ordem revista pelo engenheiro em 07/11/2026 (R-A9): Grande Vitória, São Paulo, Rio de Janeiro e Belo Horizonte.
 
 ---
 
@@ -19,13 +19,13 @@ flowchart TD
     Tier1 --> Eval1{"Obteve 3 cotações\nválidas no ES?"}
     
     Eval1 -- Sim --> Estatistica["Cálculo do Preço de Referência\n(Mediana dos Valores Válidos)"]
-    Eval1 -- Não --> Tier2["Nível 2: Rio de Janeiro (RJ)\n(Fornecedores Regionais / Polo Sudeste 1)"]
+    Eval1 -- Não --> Tier2["Nível 2: São Paulo (SP)\n(Polo Industrial / Distribuidores Nacionais)"]
     
-    Tier2 --> Eval2{"Obteve 3 cotações\nválidas no RJ?"}
+    Tier2 --> Eval2{"Obteve 3 cotações\nválidas em SP?"}
     Eval2 -- Sim --> Estatistica
-    Eval2 -- Não --> Tier3["Nível 3: São Paulo (SP)\n(Polo Industrial / Distribuidores Nacionais)"]
+    Eval2 -- Não --> Tier3["Nível 3: Rio de Janeiro (RJ)\n(Fornecedores Regionais / Polo Sudeste 1)"]
     
-    Tier3 --> Eval3{"Obteve 3 cotações\nválidas em SP?"}
+    Tier3 --> Eval3{"Obteve 3 cotações\nválidas no RJ?"}
     Eval3 -- Sim --> Estatistica
     Eval3 -- Não --> Tier4["Nível 4: Belo Horizonte (MG)\n(Polo Central / Fornecedores Sudeste 2)"]
     

@@ -68,7 +68,8 @@ refaz a conferência; verifica a cobertura e assina (regras R-C2 a R-C5).
 | BDI de fornecimento | 14,02%, taxa fixa |
 | Regime de encargos | **Desonerado por padrão** (decisão de 30/10/2026); um só regime por planilha; encargos e BDI no mesmo regime |
 | Códigos próprios | `SRAES-CP-nnn` serviço, `SRAES-INS-nnn` insumo; séries antigas congeladas nos itens aprovados |
-| Cascata de bases | SINAPI-ES → DER-ES/IOPES → SICRO → SP → RJ → MG → demais estados → composição própria |
+| Cascata de bases | Preço de serviço só do ES: SINAPI-ES → DER-ES/IOPES → SICRO-ES. Fora delas, composição própria SRAES-CP com insumos do ES; SP, RJ, MG e demais estados dão só a estrutura e os coeficientes de referência (R-A6 revisada e R-A7, 07/11/2026) |
+| Pesquisa de mercado | Insumo sem base no ES: Grande Vitória → São Paulo → Rio de Janeiro → Belo Horizonte (R-A9, 07/11/2026) |
 | Data-base | Competência do mês de elaboração; revisão rebaseia para a vigente |
 | Orçafascio | Login manual pelo engenheiro em toda sessão; nenhuma senha no sistema |
 

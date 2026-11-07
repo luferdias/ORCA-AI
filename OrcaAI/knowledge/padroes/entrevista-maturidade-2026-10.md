@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Confirmado também R-B6 (séries antigas congeladas; novas composições em SRAES-CP). R-E3 e R-E5 confirmados em seguida (FastAPI ou Django, a definir; repositório público). Nenhuma pergunta pendente.
+Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Confirmado também R-B6 (séries antigas congeladas; novas composições em SRAES-CP). R-E3 e R-E5 confirmados em seguida (FastAPI ou Django, a definir; repositório público). Nenhuma pergunta pendente. Em 07/11/2026 o engenheiro reviu R-A6 e R-A7 e acrescentou R-A9 a R-A12 (seção "Revisão de 07/11/2026", no fim).
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -56,7 +56,8 @@ especificados.
   engenheiro: SINAPI-ES → DER-ES/IOPES → SICRO → São Paulo → Rio de Janeiro →
   Minas Gerais → demais estados, "e assim pelo Brasil todo" → composição
   própria SRAES-CP. O catálogo (`parametros_fixos.cascata_bases`) foi
-  reordenado nessa sequência em 30/10/2026.
+  reordenado nessa sequência em 30/10/2026. **Revista em 07/11/2026**: ver
+  R-A6 revisada no fim deste documento.
 - R-A7. Composição própria é montada com insumos de bases oficiais (SINAPI
   insumos ES, SICRO-ES, DER-ES) e com os materiais tal como especificados no
   projeto. Pesquisa de mercado entra apenas para o insumo sem base oficial,
@@ -307,3 +308,44 @@ registrou "Fest P / Fast P" e não deu para identificar com segurança.
 
 Pendentes. As perguntas estão na nota "5 · Entrevista de maturidade" do
 fichário "ORCA-AI · Layout" no Maestri e na seção 5 deste layout.
+
+## Revisão de 07/11/2026 — fluxo de elaboração do orçamento
+
+Respostas do engenheiro, por voz, na sessão de 07/11/2026, depois de descrever
+o fluxo que o orçamento deve seguir: projeto básico (PDF, DWG ou Revit) e
+escopo detalhado → SINAPI-ES → DER-ES/IOPES → SICRO-ES → composição própria →
+pesquisa de mercado, com entrevistas ao longo da elaboração.
+
+**Regras derivadas.**
+
+- R-A6 revisada. Preço de serviço pronto vem só das bases do Espírito Santo,
+  nesta ordem: SINAPI-ES (última competência) → DER-ES/IOPES → SICRO-ES. Se o
+  serviço não existir em nenhuma das três, ele vira composição própria
+  SRAES-CP. As bases dos demais estados (São Paulo primeiro, depois Rio de
+  Janeiro, Minas Gerais e os demais) deixam de fornecer preço de serviço e
+  passam a fornecer **só a estrutura da composição**: quais insumos, mão de
+  obra e equipamentos o serviço leva e os coeficientes de referência.
+- R-A7 complementada. Na composição própria entram sempre os insumos do
+  Espírito Santo, com o código oficial (SINAPI-ES, DER-ES/IOPES, SICRO-ES).
+  Insumo sem base no ES vai para a pesquisa de mercado. O A7 propõe cada
+  coeficiente citando a composição de referência que o sustenta, e o
+  engenheiro orçamentista valida, ajusta ou recusa coeficiente por
+  coeficiente, em entrevista, antes de o valor entrar na planilha.
+- R-A9. Cascata da pesquisa de mercado (IN 65/2021): Grande Vitória →
+  São Paulo → Rio de Janeiro → Belo Horizonte (capitais). Substitui a ordem
+  anterior, que trazia o Rio de Janeiro antes de São Paulo.
+- R-A10. Formatos de entrada. PDF é lido direto. DWG é convertido em DXF
+  pelo sistema; se a conversão não for possível, o agente pede ao engenheiro,
+  que converte e reenvia. Do Revit, o engenheiro exporta em IFC (preferido)
+  ou em DWG/DXF. O arquivo `.rvt` não é lido diretamente.
+- R-A11. Quantitativos. Se o engenheiro tiver a tabela de quantitativos, ela
+  entra em `02-quantitativos/` e é conferida contra o projeto. Se não tiver,
+  o levantamento é feito em conjunto, ambiente por ambiente da planta, com a
+  memória de cálculo registrada a cada passo.
+- R-A12. Entrevista durante a elaboração. O orçamento é conduzido em rodadas
+  curtas de perguntas ao engenheiro nos pontos de decisão (escopo e
+  premissas, serviço que não fechou nas bases do ES, coeficientes de
+  composição própria, preço de mercado). Cada resposta vai para
+  `log-decisoes.md`, com data, decisão e motivo.
+- R-B1 aplicada. O índice local passa a trazer os serviços SINAPI-ES no
+  regime desonerado (autorização do engenheiro em 07/11/2026).
