@@ -58,7 +58,7 @@ Nenhum agente inventa código, preço, coeficiente ou fonte. Se a base oficial n
 
 - BDI de serviços: 25,00% (fórmula do Acórdão TCU 2.622/2013; decomposição oficial dos memoriais do acervo: AC 3,38%, R 0,85%, S+G 0,48%, DF 0,85%, L 6,00%, I 10,45% = ISS 5 + COFINS 3 + PIS 0,65 + CPRB 1,8; regime desonerado). Orçamento enxuto (R-B9): códigos e descrições precisos, representando exatamente o que será executado
 - BDI de fornecimento: 14,02% para fornecimento puro de materiais e equipamentos relevantes (faixa média do Acórdão, 11,10% a 18,45%)
-- Regime de encargos: desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5)
+- Regime de encargos: desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5). Desde 07/11/2026: o orçamento é comparado nos dois regimes e o menor preço global é registrado (R-B10); itens do DER-ES/IOPES, publicado só sem desoneração, entram com esse custo e justificativa explícita, como exceção documentada ao G-06 (R-B11)
 - Códigos próprios: serviços SRAES-CP-NNN; insumos de mercado SRAES-INS-NNN; proibido código genérico sem a chancela SRAES-
 - Data-base: todos os preços de um lote na mesma competência e praça (G-07)
 - Cascata de bases oficiais:

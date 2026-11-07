@@ -23,7 +23,7 @@ import re
 import sys
 import time
 import unicodedata
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from orca_tools.estrutura_projeto import raiz_orcaai
@@ -300,8 +300,8 @@ class Indice:
     competencia: str
     por_codigo: dict[str, dict]
     linhas: list[dict]
-
     regime: str = REGIME_PADRAO
+    por_regime: dict[str, dict[str, dict]] = field(default_factory=dict)
 
     @classmethod
     def carregar(
@@ -334,6 +334,12 @@ class Indice:
             r["_busca"] = _norm(r["descricao"])
         linhas.sort(key=lambda r: r.get("regime") != regime)
         por_codigo: dict[str, dict] = {}
+        por_regime: dict[str, dict[str, dict]] = {}
+        for r in linhas:
+            if r["tipo"] == "servico":
+                por_regime.setdefault(r["codigo"], {}).setdefault(
+                    r.get("regime", ""), r
+                )
         preferidas: list[dict] = []
         vistos: set[tuple[str, str]] = set()
         for r in linhas:
@@ -343,7 +349,15 @@ class Indice:
             vistos.add(chave)
             preferidas.append(r)
             por_codigo.setdefault(r["codigo"], r)
-        return cls(fonte, competencia, por_codigo, preferidas, regime)
+        return cls(fonte, competencia, por_codigo, preferidas, regime, por_regime)
+
+    def custos_por_regime(self, codigo: str) -> dict[str, float]:
+        """Custo do serviço em cada regime publicado: {regime: custo}."""
+        return {
+            reg: float(r["custo"])
+            for reg, r in self.por_regime.get(str(codigo).strip(), {}).items()
+            if r.get("custo") not in (None, "")
+        }
 
     def codigo(self, codigo: str) -> dict | None:
         return self.por_codigo.get(str(codigo).strip())

@@ -55,11 +55,13 @@ Atribuições:
 - Aplicar o BDI decidido pelo A3 e demonstrá-lo pela fórmula do TCU; curva ABC com faixas A 80%, B 15% e C 5%.
 - Cronograma físico-financeiro com etapas, percentuais mensais e critérios de medição, fechando em 100%; PERT/CPM, Gantt e Curva S reativos.
 - Ordenar a EAP em sete blocos construtivos: mobilização e preliminares; isolamento e demolições; infraestrutura e reforços; camadas principais e instalações; acabamentos e pintura; testes e comissionamento; desmobilização.
-- Manter orca_tools.bdi_calculator, cronograma_generator e excel_budget_generator.
+- Comparar o orçamento nos dois regimes antes de fechar a planilha (R-B10): tools/cli/comparar_regimes.py <item> --gravar grava 05-validacoes/comparacao-regimes.md; registrar o resultado em log-decisoes.md; se o não desonerado vencer ou o resultado for inconclusivo, a escolha volta ao engenheiro.
+- Itens do DER-ES/IOPES entram com o custo sem desoneração, única tabela publicada pelo DER-ES, com a justificativa explícita na planilha e no log (R-B11).
+- Manter orca_tools.bdi_calculator, comparar_regimes, cronograma_generator e excel_budget_generator.
 
 Skills (ler o SKILL.md indicado antes de produzir): `OrcaAI/agents/skills/bdi-servicos-es/SKILL.md`, `OrcaAI/agents/skills/cronograma-fisico-financeiro/SKILL.md`, `OrcaAI/agents/skills/curva-abc-sobrepreco/SKILL.md`, `OrcaAI/agents/skills/normalizacao-planilhas-orcamento/SKILL.md`, `OrcaAI/agents/skills/vitoria-cost-engineering/SKILL.md`
 
-Entradas: EAP; CPUs; preços; decisão de BDI. Saídas: 01_Planilha_Orcamentaria_Analitica.xlsx; 03_Demonstrativo_BDI; 04_Cronograma.xlsx.
+Entradas: EAP; CPUs; preços; decisão de BDI. Saídas: 01_Planilha_Orcamentaria_Analitica.xlsx; 03_Demonstrativo_BDI; 04_Cronograma.xlsx; 05-validacoes/comparacao-regimes.md.
 
 ### A9 · MineradorBases
 
@@ -98,7 +100,7 @@ Nenhum agente inventa código, preço, coeficiente ou fonte. Se a base oficial n
 
 - BDI de serviços: 25,00% (fórmula do Acórdão TCU 2.622/2013; decomposição oficial dos memoriais do acervo: AC 3,38%, R 0,85%, S+G 0,48%, DF 0,85%, L 6,00%, I 10,45% = ISS 5 + COFINS 3 + PIS 0,65 + CPRB 1,8; regime desonerado). Orçamento enxuto (R-B9): códigos e descrições precisos, representando exatamente o que será executado
 - BDI de fornecimento: 14,02% para fornecimento puro de materiais e equipamentos relevantes (faixa média do Acórdão, 11,10% a 18,45%)
-- Regime de encargos: desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5)
+- Regime de encargos: desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5). Desde 07/11/2026: o orçamento é comparado nos dois regimes e o menor preço global é registrado (R-B10); itens do DER-ES/IOPES, publicado só sem desoneração, entram com esse custo e justificativa explícita, como exceção documentada ao G-06 (R-B11)
 - Códigos próprios: serviços SRAES-CP-NNN; insumos de mercado SRAES-INS-NNN; proibido código genérico sem a chancela SRAES-
 - Data-base: todos os preços de um lote na mesma competência e praça (G-07)
 - Cascata de bases oficiais:

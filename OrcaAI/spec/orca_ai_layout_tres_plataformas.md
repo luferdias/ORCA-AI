@@ -66,7 +66,7 @@ refaz a conferência; verifica a cobertura e assina (regras R-C2 a R-C5).
 | --- | --- |
 | BDI de serviço | 25,00%, decomposição dos memoriais do acervo (AC 3,38; R 0,85; S+G 0,48; DF 0,85; L 6,00; I 10,45 com CPRB 1,8) |
 | BDI de fornecimento | 14,02%, taxa fixa |
-| Regime de encargos | **Desonerado por padrão** (decisão de 30/10/2026); um só regime por planilha; encargos e BDI no mesmo regime |
+| Regime de encargos | **Desonerado por padrão** (decisão de 30/10/2026); um só regime por planilha; encargos e BDI no mesmo regime. Desde 07/11/2026: comparação obrigatória dos dois regimes com `comparar_regimes.py` (R-B10); itens do DER-ES, publicado só sem desoneração, entram com justificativa explícita (R-B11) |
 | Códigos próprios | `SRAES-CP-nnn` serviço, `SRAES-INS-nnn` insumo; séries antigas congeladas nos itens aprovados |
 | Cascata de bases | Preço de serviço só do ES: SINAPI-ES → DER-ES/IOPES → SICRO-ES. Fora delas, composição própria SRAES-CP com insumos do ES; SP, RJ, MG e demais estados dão só a estrutura e os coeficientes de referência (R-A6 revisada e R-A7, 07/11/2026) |
 | Pesquisa de mercado | Insumo sem base no ES: Grande Vitória → São Paulo → Rio de Janeiro → Belo Horizonte (R-A9, 07/11/2026) |

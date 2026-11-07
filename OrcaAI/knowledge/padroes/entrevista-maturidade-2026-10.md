@@ -6,7 +6,7 @@ respostas chegaram por voz; o texto abaixo é a interpretação, e cada regra
 derivada aponta a resposta que a sustenta. Regras marcadas **a confirmar**
 dependem de um ponto ambíguo na transcrição.
 
-Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Confirmado também R-B6 (séries antigas congeladas; novas composições em SRAES-CP). R-E3 e R-E5 confirmados em seguida (FastAPI ou Django, a definir; repositório público). Nenhuma pergunta pendente. Em 07/11/2026 o engenheiro reviu R-A6 e R-A7 e acrescentou R-A9 a R-A12 (seção "Revisão de 07/11/2026", no fim).
+Estado: cinco blocos respondidos em 30/10/2026. Confirmados em seguida: R-A6 (ordem completa da cascata), R-B1 (regime desonerado) e R-B9 (orçamento enxuto). Confirmado também R-B6 (séries antigas congeladas; novas composições em SRAES-CP). R-E3 e R-E5 confirmados em seguida (FastAPI ou Django, a definir; repositório público). Nenhuma pergunta pendente. Em 07/11/2026 o engenheiro reviu R-A6 e R-A7 e acrescentou R-A9 a R-A12, R-B10 e R-B11 (seção "Revisão de 07/11/2026", no fim).
 
 ## Bloco A — Como nasce um orçamento na SRA
 
@@ -349,3 +349,19 @@ pesquisa de mercado, com entrevistas ao longo da elaboração.
   `log-decisoes.md`, com data, decisão e motivo.
 - R-B1 aplicada. O índice local passa a trazer os serviços SINAPI-ES no
   regime desonerado (autorização do engenheiro em 07/11/2026).
+- R-B10. Verificação dos dois regimes. Antes de fechar a planilha, o A8
+  compara o orçamento no regime desonerado (BDI 25,00%) e no não desonerado
+  (BDI 22,54%, a mesma decomposição sem a CPRB, estimativa sem memorial) com
+  `tools/cli/comparar_regimes.py`, grava `05-validacoes/comparacao-regimes.md`
+  e registra o resultado em `log-decisoes.md`. O desonerado continua o padrão;
+  se o não desonerado vencer, ou se a parcela comparável for menor que 80% do
+  orçamento (resultado inconclusivo), a escolha volta ao engenheiro.
+  Fundamento: adotar o regime de menor preço global, como orienta o TCU.
+- R-B11. DER-ES/IOPES sem desoneração. O DER-ES publica só a tabela de
+  serviços não desonerados (leis sociais de 157,27% para horista e 73,85% para
+  mensalista, maio/2026; verificado no arquivo e no portal em 07/11/2026).
+  Quando o serviço não está no SINAPI-ES e vem do DER-ES, ele entra com esse
+  custo, como segunda opção da cascata, e a planilha e o `log-decisoes.md`
+  dizem isso de forma explícita. É exceção documentada ao G-06 (um só regime
+  por planilha). Se o DER-ES passar a publicar tabela desonerada, ela tem
+  prioridade.
