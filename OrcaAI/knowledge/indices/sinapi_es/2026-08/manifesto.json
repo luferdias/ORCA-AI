@@ -4,11 +4,15 @@
  "publicado_em": "2026-09-11",
  "origem_zip": "OrcaAI/bases/sinapi/2026-08/originais/SINAPI-2026-08-formato-xlsx.zip",
  "origem_sha256": "08d3939b91e595f1f8941ccc18917766f339e7b9a49a306f584c632bf6188590",
- "servicos": 8402,
+ "servicos": 16804,
+ "servicos_por_regime": {
+  "com_desoneracao": 8402,
+  "sem_desoneracao": 8402
+ },
  "insumos": 9752,
- "servicos_csv_sha256": "597cc8cfc2cea0ad196f3a473c744197b20b2bbe6cafeb71b261d213f2133e25",
- "gerado_em": "2026-11-07T20:39:25",
- "duracao_s": 11.4,
+ "servicos_csv_sha256": "5010ddd03d69b010b9043ca80e70d113e919e703a64cc9c774926a48fd91e522",
+ "gerado_em": "2026-11-07T21:26:38",
+ "duracao_s": 12.9,
  "relatorio_leitura": {
   "fonte": "sinapi_es",
   "competencia": "2026-08",
@@ -26,6 +30,8 @@
   "coluna_custo_es": "S",
   "assinatura_tipo": "cpu_hierarquica_v1",
   "percentual_as_unidade": "fracao_0_a_1",
-  "percentual_as_ausente": 0
+  "percentual_as_ausente": 0,
+  "servicos_com_desoneracao": 8402,
+  "excluidos_ccd": 2145
  }
 }

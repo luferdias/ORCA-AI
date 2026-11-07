@@ -108,6 +108,25 @@ def test_indice_consulta_e_busca(tmp_path):
     assert [r["codigo"] for r in idx.buscar("pedreiro encargos")][0] == "88309"
 
 
+def test_indice_prefere_regime_desonerado(tmp_path):
+    pasta = tmp_path / "sinapi_es" / "2026-08"
+    pasta.mkdir(parents=True)
+    (pasta / "servicos.csv").write_text(
+        "fonte,competencia,codigo,descricao,unidade,grupo,custo,regime,publicado_em,arquivo_sha256,localizador\n"
+        "sinapi_es,2026-08,88489,PINTURA LATEX ACRILICA PREMIUM,M2,PINTURA,15.53,sem_desoneracao,,x,CSD\n"
+        "sinapi_es,2026-08,88489,PINTURA LATEX ACRILICA PREMIUM,M2,PINTURA,14.90,com_desoneracao,,x,CCD\n"
+        "sinapi_es,2026-08,99999,SERVICO SO NAO DESONERADO,M2,PINTURA,10.00,sem_desoneracao,,x,CSD\n",
+        encoding="utf-8",
+    )
+    idx = Indice.carregar("sinapi_es", "2026-08", tmp_path)
+    assert idx.codigo("88489")["regime"] == "com_desoneracao"
+    assert idx.codigo("88489")["custo"] == "14.90"
+    assert idx.codigo("99999")["regime"] == "sem_desoneracao"
+    assert [r["regime"] for r in idx.buscar("pintura latex")] == ["com_desoneracao"]
+    nd = Indice.carregar("sinapi_es", "2026-08", tmp_path, regime="sem_desoneracao")
+    assert nd.codigo("88489")["custo"] == "15.53"
+
+
 @pytest.mark.skipif(shutil.which("pandoc") is None, reason="pandoc ausente")
 def test_renderiza_markdown_em_docx(tmp_path):
     from orca_tools.renderizar import markdown_para_docx
