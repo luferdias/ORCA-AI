@@ -170,3 +170,6 @@ mas todo agente, em qualquer plataforma, segue a mesma regra, porque Codex e Ant
 3. Nunca `push --force`; divergência resolve-se com `git pull --rebase` e, se falhar, para e avisa.
 4. O `.git` de cada máquina vive **fora** do OneDrive (`~/.gitdirs/<nome>.git` no Mac, `%USERPROFILE%\.gitdirs\<nome>.git` no Windows — `luis.fernando` no PC do trabalho, `luisf` no de casa); a pasta sincronizada tem só o ponteiro `.git` (arquivo). Não criar pastas `.git` dentro do OneDrive.
 5. Se a árvore "sumir" sem mtime nas pastas (OneDrive re-enumerando, M-52 do VOLT-AI): não restaurar nem commitar — esperar e reconferir `git status`.
+
+## Caixa da Elisa
+No início da sessão, leia `caixa-elisa/` e trate os recados sem marca de lido; ao tratar, acrescente `<!-- tratado em DD/MM HH:MM -->` no fim da linha. Detalhes em `caixa-elisa/LEIA-ME.md`.
