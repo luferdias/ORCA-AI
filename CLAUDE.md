@@ -75,7 +75,7 @@ Gerado por OrcaAI/tools/cli/gerar_projecoes.py a partir de OrcaAI/agents/catalog
 
 Este projeto é trabalhado no **Antigravity, VS Code, Codex e Claude Code**, no **Mac (casa), no Windows de casa (`C:\Users\luisf`) e no Windows do trabalho (`C:\Users\luis.fernando`)**.
 **GitHub = fonte da verdade; OneDrive = só backup de arquivos.** A sincronização é automática
-(`git-autosync`: serviço do sistema a cada 15 min + hooks do Claude Code — ver `VOLT-AI/docs/git-autosync/LEIA-ME.md`),
+(`git-autosync`: serviço do sistema a cada 15 min + hooks do Claude Code — ver `Second Brain/sistema/git-autosync/LEIA-ME.md`),
 mas todo agente, em qualquer plataforma, segue a mesma regra, porque Codex e Antigravity não têm hooks:
 
 1. **Ao começar:** `git fetch origin` e, na branch principal com árvore limpa, `git pull --ff-only origin <principal>`.
