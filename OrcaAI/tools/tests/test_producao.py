@@ -108,6 +108,25 @@ def test_indice_consulta_e_busca(tmp_path):
     assert [r["codigo"] for r in idx.buscar("pedreiro encargos")][0] == "88309"
 
 
+def test_indice_prefere_regime_desonerado(tmp_path):
+    pasta = tmp_path / "sinapi_es" / "2026-08"
+    pasta.mkdir(parents=True)
+    (pasta / "servicos.csv").write_text(
+        "fonte,competencia,codigo,descricao,unidade,grupo,custo,regime,publicado_em,arquivo_sha256,localizador\n"
+        "sinapi_es,2026-08,88489,PINTURA LATEX ACRILICA PREMIUM,M2,PINTURA,15.53,sem_desoneracao,,x,CSD\n"
+        "sinapi_es,2026-08,88489,PINTURA LATEX ACRILICA PREMIUM,M2,PINTURA,14.90,com_desoneracao,,x,CCD\n"
+        "sinapi_es,2026-08,99999,SERVICO SO NAO DESONERADO,M2,PINTURA,10.00,sem_desoneracao,,x,CSD\n",
+        encoding="utf-8",
+    )
+    idx = Indice.carregar("sinapi_es", "2026-08", tmp_path)
+    assert idx.codigo("88489")["regime"] == "com_desoneracao"
+    assert idx.codigo("88489")["custo"] == "14.90"
+    assert idx.codigo("99999")["regime"] == "sem_desoneracao"
+    assert [r["regime"] for r in idx.buscar("pintura latex")] == ["com_desoneracao"]
+    nd = Indice.carregar("sinapi_es", "2026-08", tmp_path, regime="sem_desoneracao")
+    assert nd.codigo("88489")["custo"] == "15.53"
+
+
 @pytest.mark.skipif(shutil.which("pandoc") is None, reason="pandoc ausente")
 def test_renderiza_markdown_em_docx(tmp_path):
     from orca_tools.renderizar import markdown_para_docx
@@ -119,3 +138,53 @@ def test_renderiza_markdown_em_docx(tmp_path):
     )
     docx = markdown_para_docx(md, tmp_path / "doc.docx")
     assert docx.exists() and docx.stat().st_size > 2000
+
+
+def test_preco_com_bdi_tolera_um_centavo_sem_erro_de_ponto_flutuante():
+    from orca_tools.normalizar_planilha import preco_bate_com_bdi
+
+    assert preco_bate_com_bdi(14.51, 18.13, 25.0)  # item 2.11 do 2026-007
+    assert preco_bate_com_bdi(1.94, 2.42, 25.0)
+    assert not preco_bate_com_bdi(14.51, 18.11, 25.0)
+
+
+def test_comparar_regimes_cobertura_e_vencedor(tmp_path):
+    from orca_tools.comparar_regimes import (
+        BDI_DESONERADO,
+        BDI_NAO_DESONERADO,
+        comparar,
+    )
+
+    assert BDI_DESONERADO == 25.0 and BDI_NAO_DESONERADO == 22.54
+    pasta = tmp_path / "sinapi_es" / "2026-08"
+    pasta.mkdir(parents=True)
+    (pasta / "servicos.csv").write_text(
+        "fonte,competencia,codigo,descricao,unidade,grupo,custo,regime,publicado_em,arquivo_sha256,localizador\n"
+        "sinapi_es,2026-08,88489,PINTURA,M2,P,15.53,sem_desoneracao,,x,CSD\n"
+        "sinapi_es,2026-08,88489,PINTURA,M2,P,15.11,com_desoneracao,,x,CCD\n",
+        encoding="utf-8",
+    )
+    idx = Indice.carregar("sinapi_es", "2026-08", tmp_path)
+    so_sinapi = [
+        {
+            "item": "1",
+            "codigo": "88489",
+            "sistema": "SINAPI",
+            "quantidade": "100",
+            "custo_unitario_sem_bdi": "15.11",
+        }
+    ]
+    r = comparar(so_sinapi, idx)
+    assert r.total_desonerado == 1889.0 and r.total_nao_desonerado == 1903.0
+    assert r.vencedor == "desonerado" and r.cobertura == 1.0
+    com_propria = so_sinapi + [
+        {
+            "item": "2",
+            "codigo": "SRAES-CP-001",
+            "sistema": "PROPRIA",
+            "quantidade": "1",
+            "custo_unitario_sem_bdi": "10000",
+        }
+    ]
+    r2 = comparar(com_propria, idx)
+    assert r2.vencedor == "inconclusivo" and r2.total_desonerado == 1889.0

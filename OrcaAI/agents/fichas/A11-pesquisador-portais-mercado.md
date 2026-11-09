@@ -11,7 +11,7 @@ Tabelas vigentes nos portais oficiais e pesquisa de mercado da IN 65/2021.
 ## Atribuições
 
 - Portais: localizar e baixar a edição vigente de cada fonte do catálogo pela regra da última tabela, com URL, data de publicação e hash; atualizar bases/catalogo_fontes_referenciais.json.
-- Mercado: cascata Vitória, RJ, SP e BH; três propostas válidas com todos os campos da IN 65; mediana; descarte motivado; mapa de cotações; relatório em 04-cotacoes/relatorio-cotacoes.md.
+- Mercado: cascata Vitória, SP, RJ e BH; três propostas válidas com todos os campos da IN 65; mediana; descarte motivado; mapa de cotações; relatório em 04-cotacoes/relatorio-cotacoes.md.
 - Pausa obrigatória antes de integrar o valor à composição própria; para bens comuns, Painel de Preços e BPS.
 
 ## Entradas

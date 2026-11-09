@@ -98,6 +98,16 @@ def _sistema(banco: str, codigo: str) -> str:
     return banco.strip().upper() or "DESCONHECIDO"
 
 
+def preco_bate_com_bdi(custo: float, preco_com_bdi: float, bdi: float) -> bool:
+    """O preço com BDI exportado bate com custo × (1 + BDI) dentro de um centavo?
+
+    A folga de 1e-9 absorve o ponto flutuante: 18,13 - 18,14 dá
+    0,010000000000001, e não 0,01. Sem ela, o item 2.11 do 2026-007 virava
+    falso positivo de BDI 24,95% (corrigido em 07/11/2026).
+    """
+    return abs(preco_com_bdi - round(custo * (1 + bdi / 100), 2)) <= 0.01 + 1e-9
+
+
 def normalizar_orcafascio_sintetico(
     caminho: Path, aba: str | None = None
 ) -> PlanilhaNormalizada:
@@ -182,10 +192,7 @@ def normalizar_orcafascio_sintetico(
             # Se o preço exportado bate com o BDI do cabeçalho dentro de um
             # centavo, o BDI do item é o do cabeçalho; senão, o implícito.
             cab = out.bdi_percentual
-            if (
-                cab is not None
-                and abs(unit_bdi - round(unit * (1 + cab / 100), 2)) <= 0.01
-            ):
+            if cab is not None and preco_bate_com_bdi(unit, unit_bdi, cab):
                 bdi = cab
             else:
                 bdi = implicito

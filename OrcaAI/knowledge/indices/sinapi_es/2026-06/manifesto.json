@@ -4,16 +4,20 @@
  "publicado_em": "2026-07-10",
  "origem_zip": "OrcaAI/bases/sinapi/2026-06/originais/SINAPI-2026-06-formato-xlsx.zip",
  "origem_sha256": "83a133d782a18cc091e95011829341659d1a599dc27df90d63385bc296d925d9",
- "servicos": 8402,
+ "servicos": 16804,
+ "servicos_por_regime": {
+  "com_desoneracao": 8402,
+  "sem_desoneracao": 8402
+ },
  "insumos": 9752,
- "servicos_csv_sha256": "53f099d4cbcdeb25cf735da6468ccb7243a28ef25be6773673948ea3457bb5e5",
- "gerado_em": "2026-10-29T22:38:42",
- "duracao_s": 4.6,
+ "servicos_csv_sha256": "006b0ca6bc73330ecd86efd379eaec04f403281630714a590fe1ce4ae63e818a",
+ "gerado_em": "2026-11-07T21:26:25",
+ "duracao_s": 14.0,
  "relatorio_leitura": {
   "fonte": "sinapi_es",
   "competencia": "2026-06",
   "publicado_em": "2026-07-10",
-  "arquivo": "/Users/luisfdias/Library/CloudStorage/OneDrive-Pessoal/04 - Meus Documentos/GitHub/ORCA-AI/OrcaAI/bases/sinapi/2026-06/originais/SINAPI-2026-06-formato-xlsx.zip",
+  "arquivo": "/home/user/ORCA-AI/OrcaAI/bases/sinapi/2026-06/originais/SINAPI-2026-06-formato-xlsx.zip",
   "arquivo_sha256": "83a133d782a18cc091e95011829341659d1a599dc27df90d63385bc296d925d9",
   "zip_crc_verificado": true,
   "composicoes_analitico": 10454,
@@ -26,6 +30,8 @@
   "coluna_custo_es": "S",
   "assinatura_tipo": "cpu_hierarquica_v1",
   "percentual_as_unidade": "fracao_0_a_1",
-  "percentual_as_ausente": 0
+  "percentual_as_ausente": 0,
+  "servicos_com_desoneracao": 8402,
+  "excluidos_ccd": 2052
  }
 }

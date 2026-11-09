@@ -39,19 +39,18 @@ regra_de_ouro: "Nenhum agente inventa código, preço, coeficiente ou fonte. Se 
 parametros_fixos:
   bdi_servico: "25,00% (fórmula do Acórdão TCU 2.622/2013; decomposição oficial dos memoriais do acervo: AC 3,38%, R 0,85%, S+G 0,48%, DF 0,85%, L 6,00%, I 10,45% = ISS 5 + COFINS 3 + PIS 0,65 + CPRB 1,8; regime desonerado). Orçamento enxuto (R-B9): códigos e descrições precisos, representando exatamente o que será executado"
   bdi_fornecimento: "14,02% para fornecimento puro de materiais e equipamentos relevantes (faixa média do Acórdão, 11,10% a 18,45%)"
-  regime_encargos: "desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5)"
+  regime_encargos: "desonerado por padrão (decisão do engenheiro em 30/10/2026, R-B1, coerente com os treze memoriais do acervo); um único regime por planilha (G-06); encargos e BDI no mesmo regime (R-B5). Desde 07/11/2026: o orçamento é comparado nos dois regimes e o menor preço global é registrado (R-B10); itens do DER-ES/IOPES, publicado só sem desoneração, entram com esse custo e justificativa explícita, como exceção documentada ao G-06 (R-B11)"
   codigos_proprios: "serviços SRAES-CP-NNN; insumos de mercado SRAES-INS-NNN; proibido código genérico sem a chancela SRAES-"
   itens_historicos_ate: "2026-012"
   series_historicas: "nos itens aprovados até itens_historicos_ate, as séries próprias históricas (SRAES-ELEV-, SRAES-LIMP-, SRAES-GER-, SRAES-SUB-, SRAES-JUNTAS-, SRA-ES-, COMP-HVAC-, COMP-CAG-) são toleradas pelo G-01 e nenhum item aprovado é reescrito; ficam congeladas nos itens aprovados e não entram em composições novas, que usam sempre SRAES-CP-NNN e SRAES-INS-NNN (R-B6, decisão do engenheiro em 30/10/2026)"
   cascata_bases:
-    - "P0 SINAPI-ES (Caixa/IBGE)"
-    - "P1 IOPES / DER-ES (edificações, projetos e rodovias)"
-    - "P2 SICRO (DNIT), praça ES"
-    - "P3 outros estados, nesta ordem: São Paulo (CDHU, FDE, CPOS, SIURB-SP, DER-SP TPU); Rio de Janeiro (EMOP-RJ, SCO-Rio); Minas Gerais (SUDECAP, SETOP-MG, SICOR-MG); depois os demais estados (ORSE-SE, SEINFRA-CE, SBC nacional e outros)"
-    - "P4 nuvem Orçafascio: mais de 30 bases ativas na conta MGI-ES"
-    - "ordem confirmada pelo engenheiro em 30/10/2026 (R-A6); sem código em nenhuma base, composição própria SRAES-CP"
+    - "Preço de serviço pronto só das bases do ES, nesta ordem: P0 SINAPI-ES (Caixa/IBGE); P1 DER-ES/IOPES (edificações, projetos e rodovias); P2 SICRO (DNIT), praça ES"
+    - "Sem o serviço em P0, P1 ou P2: composição própria SRAES-CP. As bases dos demais estados servem de referência de estrutura e coeficientes do serviço, nesta ordem: São Paulo (CDHU, FDE, CPOS, SIURB-SP, DER-SP TPU); Rio de Janeiro (EMOP-RJ, SCO-Rio); Minas Gerais (SUDECAP, SETOP-MG, SICOR-MG); depois os demais estados (ORSE-SE, SEINFRA-CE, SBC nacional e outros) e a nuvem Orçafascio"
+    - "Na composição própria, os insumos são sempre do ES (SINAPI-ES, DER-ES/IOPES, SICRO-ES), com o código oficial; insumo sem base no ES vai para a pesquisa de mercado (cascata_mercado)"
+    - "Coeficientes propostos pelo A7 com a composição de referência citada; cada coeficiente é validado em entrevista pelo engenheiro orçamentista antes de entrar na planilha"
+    - "ordem confirmada pelo engenheiro em 30/10/2026 (R-A6) e revista em 07/11/2026 (R-A6 revisada, R-A7, R-A9): outros estados deixam de fornecer preço de serviço e passam a fornecer só a estrutura da composição própria"
     - "auxiliares: CUB-ES e ANP combustíveis (indicadores, não catálogos)"
-  cascata_mercado: "IN SEGES/ME 65/2021: Nível 1 Grande Vitória; 2 Rio de Janeiro; 3 São Paulo; 4 Belo Horizonte. Três propostas válidas com razão social, CNPJ, endereço, contato, data (validade 180 dias), marca e modelo, frete CIF Vitória, tributação; mediana; descarte motivado acima de 25% da média; pausa antes de integrar à CPU"
+  cascata_mercado: "IN SEGES/ME 65/2021, ordem revista em 07/11/2026 (R-A9): Nível 1 Grande Vitória; 2 São Paulo; 3 Rio de Janeiro; 4 Belo Horizonte (capitais). Três propostas válidas com razão social, CNPJ, endereço, contato, data (validade 180 dias), marca e modelo, frete CIF Vitória, tributação; mediana; descarte motivado acima de 25% da média; pausa antes de integrar à CPU"
   data_base: "todos os preços de um lote na mesma competência e praça (G-07)"
   pecas_do_dossie:
     - "01_Planilha_Orcamentaria_Analitica.xlsx e .pdf"
@@ -282,9 +281,11 @@ agentes:
       - "Aplicar o BDI decidido pelo A3 e demonstrá-lo pela fórmula do TCU; curva ABC com faixas A 80%, B 15% e C 5%."
       - "Cronograma físico-financeiro com etapas, percentuais mensais e critérios de medição, fechando em 100%; PERT/CPM, Gantt e Curva S reativos."
       - "Ordenar a EAP em sete blocos construtivos: mobilização e preliminares; isolamento e demolições; infraestrutura e reforços; camadas principais e instalações; acabamentos e pintura; testes e comissionamento; desmobilização."
-      - "Manter orca_tools.bdi_calculator, cronograma_generator e excel_budget_generator."
+      - "Comparar o orçamento nos dois regimes antes de fechar a planilha (R-B10): tools/cli/comparar_regimes.py <item> --gravar grava 05-validacoes/comparacao-regimes.md; registrar o resultado em log-decisoes.md; se o não desonerado vencer ou o resultado for inconclusivo, a escolha volta ao engenheiro."
+      - "Itens do DER-ES/IOPES entram com o custo sem desoneração, única tabela publicada pelo DER-ES, com a justificativa explícita na planilha e no log (R-B11)."
+      - "Manter orca_tools.bdi_calculator, comparar_regimes, cronograma_generator e excel_budget_generator."
     entradas: ["EAP", "CPUs", "preços", "decisão de BDI"]
-    saidas: ["01_Planilha_Orcamentaria_Analitica.xlsx", "03_Demonstrativo_BDI", "04_Cronograma.xlsx"]
+    saidas: ["01_Planilha_Orcamentaria_Analitica.xlsx", "03_Demonstrativo_BDI", "04_Cronograma.xlsx", "05-validacoes/comparacao-regimes.md"]
     skills: [bdi-servicos-es, cronograma-fisico-financeiro, curva-abc-sobrepreco, normalizacao-planilhas-orcamento, vitoria-cost-engineering]
     tools: [read_file, write_file, run_command]
     absorve: ["Agente 8 EngenheiroPlanejamentoEConomico", "bdi-calculator-subagent"]
@@ -328,7 +329,7 @@ agentes:
     missao: "Tabelas vigentes nos portais oficiais e pesquisa de mercado da IN 65/2021."
     atribuicoes:
       - "Portais: localizar e baixar a edição vigente de cada fonte do catálogo pela regra da última tabela, com URL, data de publicação e hash; atualizar bases/catalogo_fontes_referenciais.json."
-      - "Mercado: cascata Vitória, RJ, SP e BH; três propostas válidas com todos os campos da IN 65; mediana; descarte motivado; mapa de cotações; relatório em 04-cotacoes/relatorio-cotacoes.md."
+      - "Mercado: cascata Vitória, SP, RJ e BH; três propostas válidas com todos os campos da IN 65; mediana; descarte motivado; mapa de cotações; relatório em 04-cotacoes/relatorio-cotacoes.md."
       - "Pausa obrigatória antes de integrar o valor à composição própria; para bens comuns, Painel de Preços e BPS."
     entradas: ["catálogo de fontes", "lista de insumos sem base"]
     saidas: ["ZIPs originais com manifesto", "mapa de cotações", "relatório de cotações"]
@@ -517,7 +518,7 @@ workflows:
     aciona: [A11, coletor-cotacoes]
     descricao: "Pesquisa de mercado para itens sem base oficial, com três cotações e aprovação humana."
     fluxo:
-      - "Acionar A11 na cascata Vitória, RJ, SP e BH."
+      - "Acionar A11 na cascata Vitória, SP, RJ e BH."
       - "Acionar coletor-cotacoes para organizar propostas e evidências."
       - "Gerar 04-cotacoes/relatorio-cotacoes.md com mediana e descartes motivados."
       - "Pausar para aprovação e registrar em log-decisoes.md."
