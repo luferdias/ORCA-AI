@@ -1,0 +1,4 @@
+interface:
+  display_name: "termo-referencia-obras-servicos"
+  short_description: "Gera estrutura de termo de referencia, projeto basico, memorial descritivo e justificativas tecnicas para obras e servic"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

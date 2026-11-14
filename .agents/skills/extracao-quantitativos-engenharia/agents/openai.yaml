@@ -1,0 +1,4 @@
+interface:
+  display_name: "extracao-quantitativos-engenharia"
+  short_description: "Extrai e organiza quantitativos de obras e servicos de engenharia a partir de memoriais, planilhas, PDFs, DWGs convertid"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

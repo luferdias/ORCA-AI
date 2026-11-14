@@ -1,0 +1,4 @@
+interface:
+  display_name: "clean-code"
+  short_description: "Pragmatic coding standards - concise, direct, no over-engineering, no unnecessary comments"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

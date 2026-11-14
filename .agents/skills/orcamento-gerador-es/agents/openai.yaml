@@ -1,0 +1,4 @@
+interface:
+  display_name: "orcamento-gerador-es"
+  short_description: "Skill de parametrização orçamentária e composições de custo unitário para serviços de manutenção de grupo gerador de ene"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

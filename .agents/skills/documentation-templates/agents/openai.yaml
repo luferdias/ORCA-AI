@@ -1,0 +1,4 @@
+interface:
+  display_name: "documentation-templates"
+  short_description: "Documentation templates and structure guidelines. README, API docs, code comments, and AI-friendly documentation."
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."

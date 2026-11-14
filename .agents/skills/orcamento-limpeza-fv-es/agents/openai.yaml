@@ -1,0 +1,4 @@
+interface:
+  display_name: "orcamento-limpeza-fv-es"
+  short_description: "Skill especializada em composição analítica de custos para serviços de operação e manutenção (O&M) de usinas fotovoltaic"
+  default_prompt: "Leia SKILL.md desta skill e aplique-a ao pedido, respeitando a regra de ouro do ORCA-AI: nunca inventar código, preço, coeficiente ou fonte."
