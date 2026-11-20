@@ -14,7 +14,9 @@ Planilha orçamentária, BDI, curva ABC, cronograma, PERT/CPM e Curva S.
 - Aplicar o BDI decidido pelo A3 e demonstrá-lo pela fórmula do TCU; curva ABC com faixas A 80%, B 15% e C 5%.
 - Cronograma físico-financeiro com etapas, percentuais mensais e critérios de medição, fechando em 100%; PERT/CPM, Gantt e Curva S reativos.
 - Ordenar a EAP em sete blocos construtivos: mobilização e preliminares; isolamento e demolições; infraestrutura e reforços; camadas principais e instalações; acabamentos e pintura; testes e comissionamento; desmobilização.
-- Manter orca_tools.bdi_calculator, cronograma_generator e excel_budget_generator.
+- Comparar o orçamento nos dois regimes antes de fechar a planilha (R-B10): tools/cli/comparar_regimes.py <item> --gravar grava 05-validacoes/comparacao-regimes.md; registrar o resultado em log-decisoes.md; se o não desonerado vencer ou o resultado for inconclusivo, a escolha volta ao engenheiro.
+- Itens do DER-ES/IOPES entram com o custo sem desoneração, única tabela publicada pelo DER-ES, com a justificativa explícita na planilha e no log (R-B11).
+- Manter orca_tools.bdi_calculator, comparar_regimes, cronograma_generator e excel_budget_generator.
 
 ## Entradas
 
@@ -28,6 +30,7 @@ Planilha orçamentária, BDI, curva ABC, cronograma, PERT/CPM e Curva S.
 - 01_Planilha_Orcamentaria_Analitica.xlsx
 - 03_Demonstrativo_BDI
 - 04_Cronograma.xlsx
+- 05-validacoes/comparacao-regimes.md
 
 ## Skills
 

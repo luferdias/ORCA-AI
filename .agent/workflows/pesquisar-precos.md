@@ -16,7 +16,7 @@ Pesquisa de mercado para itens sem base oficial, com três cotações e aprovaç
 
 ## Fluxo
 
-1. Acionar A11 na cascata Vitória, RJ, SP e BH.
+1. Acionar A11 na cascata Vitória, SP, RJ e BH.
 2. Acionar coletor-cotacoes para organizar propostas e evidências.
 3. Gerar 04-cotacoes/relatorio-cotacoes.md com mediana e descartes motivados.
 4. Pausar para aprovação e registrar em log-decisoes.md.
